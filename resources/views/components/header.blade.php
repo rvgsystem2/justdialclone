@@ -235,7 +235,7 @@
                         class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2.5 rounded-lg font-medium text-center transition-colors">
                         Login
                     </a>
-                    <a href="{{ route('signup') }}
+                    <a href="{{ route('signup') }}"
                         class="bg-white hover:bg-gray-50
                         text-gray-800 border border-gray-300 px-4 py-2.5 rounded-lg font-medium text-center
                         transition-colors">
