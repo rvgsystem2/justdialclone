@@ -87,7 +87,7 @@
             </a>
 
             <!-- Free Listing -->
-            <a href="{{route('listing')}}" class="relative group">
+            <a href="{{ route('listing') }}" class="relative group">
                 <div class="flex flex-col items-start leading-tight">
                     <span
                         class="bg-red-600 text-white text-[10px] px-1.5 py-0.5 rounded font-bold tracking-wide">BUSINESS</span>
@@ -121,8 +121,10 @@
                     x-transition:leave="transition ease-in duration-75" x-transition:leave-start="opacity-100 scale-100"
                     x-transition:leave-end="opacity-0 scale-95"
                     class="absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg py-1 z-50 border border-gray-200">
-                    <a href="{{route('login')}}" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Login</a>
-                    <a href="{{route('signup')}}" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Sign Up</a>
+                    <a href="{{ route('login') }}"
+                        class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Login</a>
+                    <a href="{{ route('signup') }}" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Sign
+                        Up</a>
                     {{-- <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Your Profile</a>
                     <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Settings</a>
                     <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Sign out</a> --}}
@@ -188,7 +190,7 @@
                         <span class="material-symbols-outlined text-gray-500">campaign</span>
                         <span class="font-medium">Advertise</span>
                     </a>
-                    <a href="{{route('listing')}}"
+                    <a href="{{ route('listing') }}"
                         class="flex items-center space-x-3 text-gray-700 hover:text-blue-600 hover:bg-gray-50 p-2 rounded-lg transition-colors">
                         <span class="material-symbols-outlined text-gray-500">add_business</span>
                         <span class="font-medium">Free Listing</span>

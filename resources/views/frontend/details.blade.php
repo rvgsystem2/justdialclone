@@ -44,7 +44,7 @@
                     </div>
 
                     <div class="flex flex-wrap gap-2">
-                        @foreach (['share', 'edit'] as $icon)
+                        @foreach (['share'] as $icon)
                             <button
                                 class="flex items-center gap-1 bg-white border border-gray-300 text-gray-700 px-3 py-2 rounded-lg text-sm font-medium hover:bg-gray-50 transition-colors">
                                 <span class="material-symbols-outlined text-base">{{ $icon }}</span>
@@ -101,13 +101,6 @@
                             <img src="{{ $img }}" class="w-full h-full object-cover" alt="Jewellery">
                         </div>
                     @endforeach
-                    <div
-                        class="aspect-square rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow bg-gray-100 flex items-center justify-center">
-                        <button class="flex flex-col items-center justify-center text-blue-600">
-                            <span class="material-symbols-outlined text-3xl">add</span>
-                            <span class="text-sm font-medium mt-1">Upload More</span>
-                        </button>
-                    </div>
                 </div>
             </div>
 
