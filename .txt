@@ -1,0 +1,975 @@
+<!-- Layout file: resources/views/layouts/app.blade.php -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JustDial Clone - Find Local Services</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 min-h-screen">
+    <!-- Header -->
+    <header class="bg-yellow-500 text-white shadow-md">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="flex items-center mb-4 md:mb-0">
+                    <h1 class="text-2xl font-bold">JustDial</h1>
+                </div>
+                <div class="w-full md:w-1/2 mb-4 md:mb-0">
+                    <div class="relative">
+                        <input type="text" placeholder="Search for services, businesses..." class="w-full py-2 px-4 rounded-full text-gray-800 focus:outline-none">
+                        <button class="absolute right-0 top-0 bottom-0 bg-gray-800 text-white px-4 rounded-r-full">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="flex space-x-4">
+                    <a href="#" class="hover:text-gray-200"><i class="fas fa-user-circle text-xl"></i></a>
+                    <a href="#" class="hover:text-gray-200"><i class="fas fa-bell text-xl"></i></a>
+                    <a href="#" class="hover:text-gray-200 hidden md:block">Login / Register</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Content -->
+    @yield('content')
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8 mt-10">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">About</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-yellow-500">About Us</a></li>
+                        <li><a href="#" class="hover:text-yellow-500">Careers</a></li>
+                        <li><a href="#" class="hover:text-yellow-500">Contact Us</a></li>
+                        <li><a href="#" class="hover:text-yellow-500">Investor Relations</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">For Business</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-yellow-500">List Your Business</a></li>
+                        <li><a href="#" class="hover:text-yellow-500">Advertise</a></li>
+                        <li><a href="#" class="hover:text-yellow-500">Business App</a></li>
+                        <li><a href="#" class="hover:text-yellow-500">Business Blog</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Support</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-yellow-500">Help Center</a></li>
+                        <li><a href="#" class="hover:text-yellow-500">Privacy Policy</a></li>
+                        <li><a href="#" class="hover:text-yellow-500">Terms of Service</a></li>
+                        <li><a href="#" class="hover:text-yellow-500">Complaint Resolution</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Connect With Us</h3>
+                    <div class="flex space-x-4 mb-4">
+                        <a href="#" class="hover:text-yellow-500"><i class="fab fa-facebook-f text-xl"></i></a>
+                        <a href="#" class="hover:text-yellow-500"><i class="fab fa-twitter text-xl"></i></a>
+                        <a href="#" class="hover:text-yellow-500"><i class="fab fa-instagram text-xl"></i></a>
+                        <a href="#" class="hover:text-yellow-500"><i class="fab fa-linkedin-in text-xl"></i></a>
+                    </div>
+                    <p>Download App</p>
+                    <div class="flex space-x-2 mt-2">
+                        <a href="#"><img src="/api/placeholder/120/40" alt="Google Play" class="h-10"></a>
+                        <a href="#"><img src="/api/placeholder/120/40" alt="App Store" class="h-10"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-6 text-sm text-center">
+                <p>&copy; 2025 JustDial Clone. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</body>
+</html>
+
+<!-- Home page: resources/views/home.blade.php -->
+@extends('layouts.app')
+
+@section('content')
+<!-- Hero Section -->
+<section class="bg-gradient-to-r from-yellow-400 to-yellow-600 text-white py-12">
+    <div class="container mx-auto px-4">
+        <div class="max-w-3xl mx-auto text-center">
+            <h1 class="text-4xl font-bold mb-4">Find Local Services & Businesses Near You</h1>
+            <p class="text-xl mb-8">Discover the best services in your area with verified ratings and reviews</p>
+            <div class="bg-white rounded-full p-2 flex items-center">
+                <div class="border-r border-gray-300 pr-3">
+                    <select class="appearance-none bg-transparent text-gray-800 font-medium focus:outline-none">
+                        <option>All Categories</option>
+                        <option>Restaurants</option>
+                        <option>Home Services</option>
+                        <option>Doctors</option>
+                        <!-- More options -->
+                    </select>
+                </div>
+                <input type="text" placeholder="Search for services or businesses..." class="flex-1 p-2 text-gray-800 focus:outline-none">
+                <button class="bg-yellow-500 text-white px-6 py-2 rounded-full hover:bg-yellow-600 transition">Search</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Popular Categories -->
+<section class="container mx-auto px-4 py-10">
+    <h2 class="text-2xl font-bold mb-6 text-gray-800">Explore Popular Categories</h2>
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6">
+        <!-- Category Cards -->
+        <div class="bg-white shadow-md rounded-lg p-4 text-center hover:shadow-lg transition">
+            <i class="fas fa-utensils text-3xl text-orange-500 mb-2"></i>
+            <h3 class="font-semibold text-lg">Restaurants</h3>
+        </div>
+        <div class="bg-white shadow-md rounded-lg p-4 text-center hover:shadow-lg transition">
+            <i class="fas fa-tools text-3xl text-blue-500 mb-2"></i>
+            <h3 class="font-semibold text-lg">Home Services</h3>
+        </div>
+        <div class="bg-white shadow-md rounded-lg p-4 text-center hover:shadow-lg transition">
+            <i class="fas fa-user-md text-3xl text-green-500 mb-2"></i>
+            <h3 class="font-semibold text-lg">Doctors</h3>
+        </div>
+        <div class="bg-white shadow-md rounded-lg p-4 text-center hover:shadow-lg transition">
+            <i class="fas fa-hotel text-3xl text-purple-500 mb-2"></i>
+            <h3 class="font-semibold text-lg">Hotels</h3>
+        </div>
+        <div class="bg-white shadow-md rounded-lg p-4 text-center hover:shadow-lg transition">
+            <i class="fas fa-car text-3xl text-red-500 mb-2"></i>
+            <h3 class="font-semibold text-lg">Auto Services</h3>
+        </div>
+        <div class="bg-white shadow-md rounded-lg p-4 text-center hover:shadow-lg transition">
+            <i class="fas fa-spa text-3xl text-pink-500 mb-2"></i>
+            <h3 class="font-semibold text-lg">Beauty & Spa</h3>
+        </div>
+        <div class="bg-white shadow-md rounded-lg p-4 text-center hover:shadow-lg transition">
+            <i class="fas fa-graduation-cap text-3xl text-indigo-500 mb-2"></i>
+            <h3 class="font-semibold text-lg">Education</h3>
+        </div>
+        <div class="bg-white shadow-md rounded-lg p-4 text-center hover:shadow-lg transition">
+            <i class="fas fa-shopping-bag text-3xl text-yellow-500 mb-2"></i>
+            <h3 class="font-semibold text-lg">Shopping</h3>
+        </div>
+        <div class="bg-white shadow-md rounded-lg p-4 text-center hover:shadow-lg transition">
+            <i class="fas fa-plane text-3xl text-blue-400 mb-2"></i>
+            <h3 class="font-semibold text-lg">Travel</h3>
+        </div>
+        <div class="bg-white shadow-md rounded-lg p-4 text-center hover:shadow-lg transition">
+            <i class="fas fa-dumbbell text-3xl text-gray-700 mb-2"></i>
+            <h3 class="font-semibold text-lg">Fitness</h3>
+        </div>
+        <div class="bg-white shadow-md rounded-lg p-4 text-center hover:shadow-lg transition">
+            <i class="fas fa-money-bill-wave text-3xl text-green-600 mb-2"></i>
+            <h3 class="font-semibold text-lg">Financial</h3>
+        </div>
+        <div class="bg-white shadow-md rounded-lg p-4 text-center hover:shadow-lg transition">
+            <i class="fas fa-ellipsis-h text-3xl text-gray-500 mb-2"></i>
+            <h3 class="font-semibold text-lg">More</h3>
+        </div>
+    </div>
+</section>
+
+<!-- Top Rated Services -->
+<section class="container mx-auto px-4 py-10">
+    <div class="flex justify-between items-center mb-6">
+        <h2 class="text-2xl font-bold text-gray-800">Top Rated Services</h2>
+        <a href="#" class="text-yellow-500 hover:text-yellow-600">View All</a>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Business Card -->
+        <div class="bg-white shadow-md rounded-lg overflow-hidden hover:shadow-lg transition">
+            <img src="/api/placeholder/400/200" alt="Business" class="w-full h-48 object-cover">
+            <div class="p-4">
+                <div class="flex justify-between items-start mb-2">
+                    <h3 class="font-bold text-lg">Spice Garden Restaurant</h3>
+                    <span class="bg-green-100 text-green-800 text-xs font-semibold px-2 py-1 rounded">4.8 ★</span>
+                </div>
+                <p class="text-gray-600 text-sm mb-2">Indian, Chinese, Continental</p>
+                <p class="text-gray-500 text-sm mb-4"><i class="fas fa-map-marker-alt mr-1"></i> Koramangala, Bangalore</p>
+                <div class="flex justify-between">
+                    <span class="text-sm text-gray-500"><i class="far fa-clock mr-1"></i> Open Now</span>
+                    <button class="text-yellow-500 hover:text-yellow-600"><i class="fas fa-phone-alt mr-1"></i> Call Now</button>
+                </div>
+            </div>
+        </div>
+        <div class="bg-white shadow-md rounded-lg overflow-hidden hover:shadow-lg transition">
+            <img src="/api/placeholder/400/200" alt="Business" class="w-full h-48 object-cover">
+            <div class="p-4">
+                <div class="flex justify-between items-start mb-2">
+                    <h3 class="font-bold text-lg">Elite Home Services</h3>
+                    <span class="bg-green-100 text-green-800 text-xs font-semibold px-2 py-1 rounded">4.7 ★</span>
+                </div>
+                <p class="text-gray-600 text-sm mb-2">Plumbing, Electrical, Carpentry</p>
+                <p class="text-gray-500 text-sm mb-4"><i class="fas fa-map-marker-alt mr-1"></i> Indiranagar, Bangalore</p>
+                <div class="flex justify-between">
+                    <span class="text-sm text-gray-500"><i class="far fa-clock mr-1"></i> Open Now</span>
+                    <button class="text-yellow-500 hover:text-yellow-600"><i class="fas fa-phone-alt mr-1"></i> Call Now</button>
+                </div>
+            </div>
+        </div>
+        <div class="bg-white shadow-md rounded-lg overflow-hidden hover:shadow-lg transition">
+            <img src="/api/placeholder/400/200" alt="Business" class="w-full h-48 object-cover">
+            <div class="p-4">
+                <div class="flex justify-between items-start mb-2">
+                    <h3 class="font-bold text-lg">Dr. Sharma's Clinic</h3>
+                    <span class="bg-green-100 text-green-800 text-xs font-semibold px-2 py-1 rounded">4.9 ★</span>
+                </div>
+                <p class="text-gray-600 text-sm mb-2">Dentist, General Physician</p>
+                <p class="text-gray-500 text-sm mb-4"><i class="fas fa-map-marker-alt mr-1"></i> HSR Layout, Bangalore</p>
+                <div class="flex justify-between">
+                    <span class="text-sm text-gray-500"><i class="far fa-clock mr-1"></i> Closed, Opens 9AM</span>
+                    <button class="text-yellow-500 hover:text-yellow-600"><i class="fas fa-phone-alt mr-1"></i> Call Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Popular Locations -->
+<section class="container mx-auto px-4 py-10">
+    <h2 class="text-2xl font-bold mb-6 text-gray-800">Popular Locations</h2>
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
+        <div class="bg-white shadow rounded-lg p-4 text-center hover:bg-yellow-50 transition">
+            <h3 class="font-medium">Bangalore</h3>
+        </div>
+        <div class="bg-white shadow rounded-lg p-4 text-center hover:bg-yellow-50 transition">
+            <h3 class="font-medium">Mumbai</h3>
+        </div>
+        <div class="bg-white shadow rounded-lg p-4 text-center hover:bg-yellow-50 transition">
+            <h3 class="font-medium">Delhi</h3>
+        </div>
+        <div class="bg-white shadow rounded-lg p-4 text-center hover:bg-yellow-50 transition">
+            <h3 class="font-medium">Chennai</h3>
+        </div>
+        <div class="bg-white shadow rounded-lg p-4 text-center hover:bg-yellow-50 transition">
+            <h3 class="font-medium">Hyderabad</h3>
+        </div>
+        <div class="bg-white shadow rounded-lg p-4 text-center hover:bg-yellow-50 transition">
+            <h3 class="font-medium">Kolkata</h3>
+        </div>
+        <div class="bg-white shadow rounded-lg p-4 text-center hover:bg-yellow-50 transition">
+            <h3 class="font-medium">Pune</h3>
+        </div>
+        <div class="bg-white shadow rounded-lg p-4 text-center hover:bg-yellow-50 transition">
+            <h3 class="font-medium">Ahmedabad</h3>
+        </div>
+        <div class="bg-white shadow rounded-lg p-4 text-center hover:bg-yellow-50 transition">
+            <h3 class="font-medium">Jaipur</h3>
+        </div>
+        <div class="bg-white shadow rounded-lg p-4 text-center hover:bg-yellow-50 transition">
+            <h3 class="font-medium">Chandigarh</h3>
+        </div>
+        <div class="bg-white shadow rounded-lg p-4 text-center hover:bg-yellow-50 transition">
+            <h3 class="font-medium">Lucknow</h3>
+        </div>
+        <div class="bg-white shadow rounded-lg p-4 text-center hover:bg-yellow-50 transition">
+            <h3 class="font-medium">Kochi</h3>
+        </div>
+    </div>
+</section>
+
+<!-- App Download Section -->
+<section class="bg-gray-100 py-12">
+    <div class="container mx-auto px-4">
+        <div class="flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-8 md:mb-0">
+                <h2 class="text-3xl font-bold mb-4">Download Our App</h2>
+                <p class="text-gray-600 mb-6">Get the JustDial experience on your mobile with our app. Find services, book appointments, and get instant notifications.</p>
+                <div class="flex space-x-4">
+                    <a href="#" class="bg-black text-white px-4 py-2 rounded-lg flex items-center hover:bg-gray-800">
+                        <i class="fab fa-google-play text-2xl mr-2"></i>
+                        <div>
+                            <p class="text-xs">GET IT ON</p>
+                            <p class="font-medium">Google Play</p>
+                        </div>
+                    </a>
+                    <a href="#" class="bg-black text-white px-4 py-2 rounded-lg flex items-center hover:bg-gray-800">
+                        <i class="fab fa-apple text-2xl mr-2"></i>
+                        <div>
+                            <p class="text-xs">DOWNLOAD ON THE</p>
+                            <p class="font-medium">App Store</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="md:w-1/2">
+                <img src="/api/placeholder/600/400" alt="Mobile App" class="rounded-lg shadow-lg">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonials -->
+<section class="container mx-auto px-4 py-10">
+    <h2 class="text-2xl font-bold mb-6 text-center text-gray-800">What Our Users Say</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-white shadow-md rounded-lg p-6">
+            <div class="flex items-center mb-4">
+                <img src="/api/placeholder/60/60" alt="User" class="w-12 h-12 rounded-full">
+                <div class="ml-4">
+                    <h4 class="font-semibold">Rajesh Kumar</h4>
+                    <div class="text-yellow-500">★★★★★</div>
+                </div>
+            </div>
+            <p class="text-gray-600">"Found an amazing plumber through JustDial who fixed my bathroom issues at a reasonable price. The verified ratings helped me choose the right service."</p>
+        </div>
+        <div class="bg-white shadow-md rounded-lg p-6">
+            <div class="flex items-center mb-4">
+                <img src="/api/placeholder/60/60" alt="User" class="w-12 h-12 rounded-full">
+                <div class="ml-4">
+                    <h4 class="font-semibold">Priya Singh</h4>
+                    <div class="text-yellow-500">★★★★★</div>
+                </div>
+            </div>
+            <p class="text-gray-600">"JustDial has been my go-to app for finding services in my new city. Their restaurant recommendations have never disappointed me!"</p>
+        </div>
+        <div class="bg-white shadow-md rounded-lg p-6">
+            <div class="flex items-center mb-4">
+                <img src="/api/placeholder/60/60" alt="User" class="w-12 h-12 rounded-full">
+                <div class="ml-4">
+                    <h4 class="font-semibold">Ahmed Khan</h4>
+                    <div class="text-yellow-500">★★★★☆</div>
+                </div>
+            </div>
+            <p class="text-gray-600">"As a business owner, JustDial has helped me reach more customers. The platform is easy to use and their customer support is excellent."</p>
+        </div>
+    </div>
+</section>
+@endsection
+
+<!-- Listing page: resources/views/listings.blade.php -->
+@extends('layouts.app')
+
+@section('content')
+<section class="container mx-auto px-4 py-6">
+    <div class="flex flex-col md:flex-row">
+        <!-- Filters Sidebar -->
+        <div class="w-full md:w-1/4 mb-6 md:mb-0 md:pr-6">
+            <div class="bg-white shadow-md rounded-lg p-4 sticky top-20">
+                <h3 class="font-bold text-lg mb-4">Filters</h3>
+                
+                <!-- Categories -->
+                <div class="mb-4">
+                    <h4 class="font-semibold mb-2">Categories</h4>
+                    <div class="space-y-2">
+                        <label class="flex items-center">
+                            <input type="checkbox" class="form-checkbox text-yellow-500">
+                            <span class="ml-2 text-sm">All</span>
+                        </label>
+                        <label class="flex items-center">
+                            <input type="checkbox" class="form-checkbox text-yellow-500">
+                            <span class="ml-2 text-sm">Restaurants</span>
+                        </label>
+                        <label class="flex items-center">
+                            <input type="checkbox" class="form-checkbox text-yellow-500">
+                            <span class="ml-2 text-sm">Cafes</span>
+                        </label>
+                        <label class="flex items-center">
+                            <input type="checkbox" class="form-checkbox text-yellow-500">
+                            <span class="ml-2 text-sm">Fast Food</span>
+                        </label>
+                        <label class="flex items-center">
+                            <input type="checkbox" class="form-checkbox text-yellow-500">
+                            <span class="ml-2 text-sm">Fine Dining</span>
+                        </label>
+                    </div>
+                </div>
+                
+                <!-- Rating -->
+                <div class="mb-4">
+                    <h4 class="font-semibold mb-2">Rating</h4>
+                    <div class="space-y-2">
+                        <label class="flex items-center">
+                            <input type="radio" name="rating" class="form-radio text-yellow-500">
+                            <span class="ml-2 text-sm">Any</span>
+                        </label>
+                        <label class="flex items-center">
+                            <input type="radio" name="rating" class="form-radio text-yellow-500">
+                            <span class="ml-2 text-sm">4★ & above</span>
+                        </label>
+                        <label class="flex items-center">
+                            <input type="radio" name="rating" class="form-radio text-yellow-500">
+                            <span class="ml-2 text-sm">3★ & above</span>
+                        </label>
+                    </div>
+                </div>
+                
+                <!-- Price -->
+                <div class="mb-4">
+                    <h4 class="font-semibold mb-2">Price</h4>
+                    <div class="space-y-2">
+                        <label class="flex items-center">
+                            <input type="checkbox" class="form-checkbox text-yellow-500">
+                            <span class="ml-2 text-sm">₹ (Inexpensive)</span>
+                        </label>
+                        <label class="flex items-center">
+                            <input type="checkbox" class="form-checkbox text-yellow-500">
+                            <span class="ml-2 text-sm">₹₹ (Moderate)</span>
+                        </label>
+                        <label class="flex items-center">
+                            <input type="checkbox" class="form-checkbox text-yellow-500">
+                            <span class="ml-2 text-sm">₹₹₹ (Expensive)</span>
+                        </label>
+                    </div>
+                </div>
+                
+                <!-- Open Now -->
+                <div class="mb-4">
+                    <label class="flex items-center">
+                        <input type="checkbox" class="form-checkbox text-yellow-500">
+                        <span class="ml-2 font-semibold">Open Now</span>
+                    </label>
+                </div>
+                
+                <!-- Features -->
+                <div class="mb-4">
+                    <h4 class="font-semibold mb-2">Features</h4>
+                    <div class="space-y-2">
+                        <label class="flex items-center">
+                            <input type="checkbox" class="form-checkbox text-yellow-500">
+                            <span class="ml-2 text-sm">Home Delivery</span>
+                        </label>
+                        <label class="flex items-center">
+                            <input type="checkbox" class="form-checkbox text-yellow-500">
+                            <span class="ml-2 text-sm">Outdoor Seating</span>
+                        </label>
+                        <label class="flex items-center">
+                            <input type="checkbox" class="form-checkbox text-yellow-500">
+                            <span class="ml-2 text-sm">Credit Cards Accepted</span>
+                        </label>
+                        <label class="flex items-center">
+                            <input type="checkbox" class="form-checkbox text-yellow-500">
+                            <span class="ml-2 text-sm">Parking Available</span>
+                        </label>
+                    </div>
+                </div>
+                
+                <button class="bg-yellow-500 text-white w-full py-2 rounded hover:bg-yellow-600 transition">Apply Filters</button>
+            </div>
+        </div>
+        
+        <!-- Listing Results -->
+        <div class="w-full md:w-3/4">
+            <div class="mb-6">
+                <h1 class="text-2xl font-bold">Restaurants in Bangalore (348)</h1>
+                <div class="flex flex-wrap items-center text-sm text-gray-600 mt-2">
+                    <span>Home</span>
+                    <span class="mx-2">›</span>
+                    <span>Bangalore</span>
+                    <span class="mx-2">›</span>
+                    <span>Restaurants</span>
+                </div>
+            </div>
+            
+            <!-- Sort Options -->
+            <div class="bg-white rounded-lg shadow-md p-4 mb-6 flex flex-wrap justify-between items-center">
+                <div class="font-semibold mb-2 md:mb-0">Sort By:</div>
+                <div class="flex flex-wrap gap-2">
+                    <button class="px-3 py-1 rounded border border-gray-300 text-sm hover:bg-gray-100 bg-gray-100">Relevance</button>
+                    <button class="px-3 py-1 rounded border border-gray-300 text-sm hover:bg-gray-100">Rating</button>
+                    <button class="px-3 py-1 rounded border border-gray-300 text-sm hover:bg-gray-100">Cost: Low to High</button>
+                    <button class="px-3 py-1 rounded border border-gray-300 text-sm hover:bg-gray-100">Cost: High to Low</button>
+                </div>
+            </div>
+            
+            <!-- Listings -->
+            <div class="space-y-4">
+                <!-- Listing Item -->
+                <div class="bg-white shadow-md rounded-lg overflow-hidden">
+                    <div class="md:flex">
+                        <div class="md:w-1/3">
+                            <img src="/api/placeholder/300/200" alt="Restaurant" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-4 md:w-2/3">
+                            <div class="flex justify-between<!-- Continuing from previous listing item in listings.blade.php -->
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="font-bold text-xl">Spice Garden Restaurant</h3>
+                                <div>
+                                    <span class="bg-green-100 text-green-800 text-sm font-semibold px-2 py-1 rounded">4.8 ★</span>
+                                    <span class="text-sm text-gray-500 ml-2">238 Reviews</span>
+                                </div>
+                            </div>
+                            <p class="text-gray-600 text-sm mb-2">Indian, Chinese, Continental • ₹₹</p>
+                            <p class="text-gray-500 text-sm mb-4"><i class="fas fa-map-marker-alt mr-1"></i> Koramangala, Bangalore</p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="bg-gray-100 text-xs px-2 py-1 rounded">Outdoor Seating</span>
+                                <span class="bg-gray-100 text-xs px-2 py-1 rounded">Home Delivery</span>
+                                <span class="bg-gray-100 text-xs px-2 py-1 rounded">Credit Cards</span>
+                            </div>
+                            <div class="flex justify-between items-center border-t pt-4">
+                                <span class="text-sm text-green-600"><i class="far fa-clock mr-1"></i> Open Now: 11 AM - 11 PM</span>
+                                <div class="flex space-x-3">
+                                    <button class="text-gray-500 hover:text-gray-700"><i class="far fa-heart"></i></button>
+                                    <button class="text-yellow-500 hover:text-yellow-600"><i class="fas fa-phone-alt mr-1"></i> Call Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Listing Item -->
+                <div class="bg-white shadow-md rounded-lg overflow-hidden">
+                    <div class="md:flex">
+                        <div class="md:w-1/3">
+                            <img src="/api/placeholder/300/200" alt="Restaurant" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-4 md:w-2/3">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="font-bold text-xl">Royal Biryani House</h3>
+                                <div>
+                                    <span class="bg-green-100 text-green-800 text-sm font-semibold px-2 py-1 rounded">4.6 ★</span>
+                                    <span class="text-sm text-gray-500 ml-2">187 Reviews</span>
+                                </div>
+                            </div>
+                            <p class="text-gray-600 text-sm mb-2">Biryani, North Indian, Mughlai • ₹₹</p>
+                            <p class="text-gray-500 text-sm mb-4"><i class="fas fa-map-marker-alt mr-1"></i> Indiranagar, Bangalore</p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="bg-gray-100 text-xs px-2 py-1 rounded">Home Delivery</span>
+                                <span class="bg-gray-100 text-xs px-2 py-1 rounded">Takeaway</span>
+                            </div>
+                            <div class="flex justify-between items-center border-t pt-4">
+                                <span class="text-sm text-green-600"><i class="far fa-clock mr-1"></i> Open Now: 12 PM - 10:30 PM</span>
+                                <div class="flex space-x-3">
+                                    <button class="text-gray-500 hover:text-gray-700"><i class="far fa-heart"></i></button>
+                                    <button class="text-yellow-500 hover:text-yellow-600"><i class="fas fa-phone-alt mr-1"></i> Call Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Listing Item -->
+                <div class="bg-white shadow-md rounded-lg overflow-hidden">
+                    <div class="md:flex">
+                        <div class="md:w-1/3">
+                            <img src="/api/placeholder/300/200" alt="Restaurant" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-4 md:w-2/3">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="font-bold text-xl">Cafe Coffee Day</h3>
+                                <div>
+                                    <span class="bg-green-100 text-green-800 text-sm font-semibold px-2 py-1 rounded">4.3 ★</span>
+                                    <span class="text-sm text-gray-500 ml-2">129 Reviews</span>
+                                </div>
+                            </div>
+                            <p class="text-gray-600 text-sm mb-2">Cafe, Beverages, Snacks • ₹</p>
+                            <p class="text-gray-500 text-sm mb-4"><i class="fas fa-map-marker-alt mr-1"></i> Jayanagar, Bangalore</p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="bg-gray-100 text-xs px-2 py-1 rounded">Wifi</span>
+                                <span class="bg-gray-100 text-xs px-2 py-1 rounded">Takeaway</span>
+                                <span class="bg-gray-100 text-xs px-2 py-1 rounded">Credit Cards</span>
+                            </div>
+                            <div class="flex justify-between items-center border-t pt-4">
+                                <span class="text-sm text-green-600"><i class="far fa-clock mr-1"></i> Open Now: 8 AM - 10 PM</span>
+                                <div class="flex space-x-3">
+                                    <button class="text-gray-500 hover:text-gray-700"><i class="far fa-heart"></i></button>
+                                    <button class="text-yellow-500 hover:text-yellow-600"><i class="fas fa-phone-alt mr-1"></i> Call Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Listing Item -->
+                <div class="bg-white shadow-md rounded-lg overflow-hidden">
+                    <div class="md:flex">
+                        <div class="md:w-1/3">
+                            <img src="/api/placeholder/300/200" alt="Restaurant" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-4 md:w-2/3">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="font-bold text-xl">Pizza Palace</h3>
+                                <div>
+                                    <span class="bg-green-100 text-green-800 text-sm font-semibold px-2 py-1 rounded">4.5 ★</span>
+                                    <span class="text-sm text-gray-500 ml-2">201 Reviews</span>
+                                </div>
+                            </div>
+                            <p class="text-gray-600 text-sm mb-2">Pizza, Italian, Fast Food • ₹₹</p>
+                            <p class="text-gray-500 text-sm mb-4"><i class="fas fa-map-marker-alt mr-1"></i> MG Road, Bangalore</p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="bg-gray-100 text-xs px-2 py-1 rounded">Home Delivery</span>
+                                <span class="bg-gray-100 text-xs px-2 py-1 rounded">Outdoor Seating</span>
+                                <span class="bg-gray-100 text-xs px-2 py-1 rounded">Parking</span>
+                            </div>
+                            <div class="flex justify-between items-center border-t pt-4">
+                                <span class="text-sm text-green-600"><i class="far fa-clock mr-1"></i> Open Now: 11 AM - 11 PM</span>
+                                <div class="flex space-x-3">
+                                    <button class="text-gray-500 hover:text-gray-700"><i class="far fa-heart"></i></button>
+                                    <button class="text-yellow-500 hover:text-yellow-600"><i class="fas fa-phone-alt mr-1"></i> Call Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Pagination -->
+                <div class="flex justify-center mt-8">
+                    <nav class="inline-flex rounded-md shadow">
+                        <a href="#" class="inline-flex items-center px-3 py-2 border border-gray-300 bg-white text-sm font-medium text-gray-500 hover:bg-gray-50">
+                            <i class="fas fa-chevron-left"></i>
+                        </a>
+                        <a href="#" class="inline-flex items-center px-3 py-2 border border-gray-300 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50">
+                            1
+                        </a>
+                        <a href="#" class="inline-flex items-center px-3 py-2 border border-gray-300 bg-yellow-500 text-sm font-medium text-white">
+                            2
+                        </a>
+                        <a href="#" class="inline-flex items-center px-3 py-2 border border-gray-300 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50">
+                            3
+                        </a>
+                        <a href="#" class="inline-flex items-center px-3 py-2 border border-gray-300 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50">
+                            4
+                        </a>
+                        <a href="#" class="inline-flex items-center px-3 py-2 border border-gray-300 bg-white text-sm font-medium text-gray-500 hover:bg-gray-50">
+                            <i class="fas fa-chevron-right"></i>
+                        </a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+@endsection
+
+<!-- Business Detail Page: resources/views/business-detail.blade.php -->
+@extends('layouts.app')
+
+@section('content')
+<section class="container mx-auto px-4 py-6">
+    <!-- Business Header -->
+    <div class="bg-white shadow-md rounded-lg overflow-hidden mb-6">
+        <div class="relative">
+            <img src="/api/placeholder/1200/400" alt="Restaurant Cover" class="w-full h-64 object-cover">
+            <div class="absolute top-4 right-4">
+                <button class="bg-white text-gray-800 rounded-full p-2 shadow hover:bg-gray-100">
+                    <i class="far fa-heart"></i>
+                </button>
+                <button class="bg-white text-gray-800 rounded-full p-2 shadow hover:bg-gray-100 ml-2">
+                    <i class="fas fa-share-alt"></i>
+                </button>
+            </div>
+        </div>
+        <div class="p-6">
+            <div class="flex flex-col md:flex-row justify-between mb-4">
+                <div>
+                    <h1 class="text-3xl font-bold mb-2">Spice Garden Restaurant</h1>
+                    <p class="text-gray-600 mb-2">Indian, Chinese, Continental • ₹₹</p>
+                    <p class="text-gray-500"><i class="fas fa-map-marker-alt mr-1"></i> 123 MG Road, Koramangala, Bangalore - 560034</p>
+                </div>
+                <div class="mt-4 md:mt-0 text-center md:text-right">
+                    <div class="inline-flex items-center bg-green-100 text-green-800 px-3 py-1 rounded mb-2">
+                        <span class="text-xl font-bold">4.8</span>
+                        <div class="ml-2">
+                            <div class="text-yellow-500">★★★★★</div>
+                            <span class="text-sm">238 Reviews</span>
+                        </div>
+                    </div>
+                    <div class="mt-3">
+                        <button class="bg-yellow-500 text-white px-4 py-2 rounded hover:bg-yellow-600">
+                            <i class="fas fa-phone-alt mr-1"></i> Call Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-wrap gap-3 mt-4 border-t pt-4">
+                <span class="bg-gray-100 text-sm px-3 py-1 rounded">Outdoor Seating</span>
+                <span class="bg-gray-100 text-sm px-3 py-1 rounded">Home Delivery</span>
+                <span class="bg-gray-100 text-sm px-3 py-1 rounded">Credit Cards</span>
+                <span class="bg-gray-100 text-sm px-3 py-1 rounded">Parking</span>
+                <span class="bg-gray-100 text-sm px-3 py-1 rounded">Air Conditioned</span>
+            </div>
+        </div>
+    </div>
+    
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <!-- Left Column -->
+        <div class="md:col-span-2">
+            <!-- Tabs -->
+            <div class="bg-white shadow-md rounded-lg overflow-hidden mb-6">
+                <div class="border-b">
+                    <div class="flex overflow-x-auto">
+                        <button class="px-6 py-3 text-yellow-500 border-b-2 border-yellow-500 font-semibold">Overview</button>
+                        <button class="px-6 py-3 text-gray-500 hover:text-gray-700">Photos</button>
+                        <button class="px-6 py-3 text-gray-500 hover:text-gray-700">Menu</button>
+                        <button class="px-6 py-3 text-gray-500 hover:text-gray-700">Reviews</button>
+                        <button class="px-6 py-3 text-gray-500 hover:text-gray-700">Contact</button>
+                    </div>
+                </div>
+                
+                <!-- Overview Content -->
+                <div class="p-6">
+                    <h2 class="text-xl font-bold mb-4">About Spice Garden Restaurant</h2>
+                    <p class="text-gray-600 mb-6">
+                        Spice Garden is a multi-cuisine restaurant serving authentic Indian, Chinese, and Continental dishes since 2005. Our chefs use the freshest ingredients and traditional cooking methods to prepare delicious meals that satisfy every palate.
+                    </p>
+                    
+                    <h3 class="text-lg font-semibold mb-3">Highlights</h3>
+                    <div class="grid grid-cols-2 gap-3 mb-6">
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                            <span>Outdoor Seating Available</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                            <span>Home Delivery</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                            <span>Free Wifi</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                            <span>Private Dining Available</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                            <span>Accepts Credit Cards</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                            <span>Valet Parking</span>
+                        </div>
+                    </div>
+                    
+                    <h3 class="text-lg font-semibold mb-3">Photos</h3>
+                    <div class="grid grid-cols-3 gap-3 mb-6">
+                        <img src="/api/placeholder/200/150" alt="Restaurant Photo" class="rounded-lg hover:opacity-80 cursor-pointer">
+                        <img src="/api/placeholder/200/150" alt="Restaurant Photo" class="rounded-lg hover:opacity-80 cursor-pointer">
+                        <img src="/api/placeholder/200/150" alt="Restaurant Photo" class="rounded-lg hover:opacity-80 cursor-pointer">
+                        <div class="relative">
+                            <img src="/api/placeholder/200/150" alt="Restaurant Photo" class="rounded-lg opacity-70">
+                            <div class="absolute inset-0 flex items-center justify-center">
+                                <span class="text-white font-semibold">+24 More</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Featured Reviews -->
+                    <h3 class="text-lg font-semibold mb-3">Featured Reviews</h3>
+                    <div class="space-y-4 mb-6">
+                        <div class="border-b pb-4">
+                            <div class="flex justify-between mb-2">
+                                <div class="flex items-center">
+                                    <img src="/api/placeholder/40/40" alt="User" class="w-10 h-10 rounded-full">
+                                    <div class="ml-3">
+                                        <h4 class="font-semibold">Amit Sharma</h4>
+                                        <div class="text-yellow-500 text-sm">★★★★★</div>
+                                    </div>
+                                </div>
+                                <span class="text-gray-500 text-sm">2 weeks ago</span>
+                            </div>
+                            <p class="text-gray-600">
+                                Absolutely loved the ambiance and food quality. The butter chicken and garlic naan were exceptional. Service was prompt and staff was very courteous. Will definitely visit again!
+                            </p>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <div class="flex items-center">
+                                    <img src="/api/placeholder/40/40" alt="User" class="w-10 h-10 rounded-full">
+                                    <div class="ml-3">
+                                        <h4 class="font-semibold">Sneha Patel</h4>
+                                        <div class="text-yellow-500 text-sm">★★★★<span class="text-gray-300">★</span></div>
+                                    </div>
+                                </div>
+                                <span class="text-gray-500 text-sm">1 month ago</span>
+                            </div>
+                            <p class="text-gray-600">
+                                Great food and excellent service. The only downside was the waiting time during peak hours. However, the pasta and chocolate mousse dessert were worth the wait. Recommended!
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="text-center">
+                        <a href="#" class="text-yellow-500 hover:text-yellow-600 font-semibold">View All 238 Reviews</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Right Column -->
+        <div>
+            <!-- Opening Hours -->
+            <div class="bg-white shadow-md rounded-lg overflow-hidden mb-6">
+                <div class="p-4 bg-gray-50 border-b">
+                    <h3 class="font-semibold">Opening Hours</h3>
+                </div>
+                <div class="p-4">
+                    <ul class="space-y-2">
+                        <li class="flex justify-between">
+                            <span>Monday</span>
+                            <span class="text-green-600">11:00 AM - 11:00 PM</span>
+                        </li>
+                        <li class="flex justify-between">
+                            <span>Tuesday</span>
+                            <span class="text-green-600">11:00 AM - 11:00 PM</span>
+                        </li>
+                        <li class="flex justify-between">
+                            <span>Wednesday</span>
+                            <span class="text-green-600">11:00 AM - 11:00 PM</span>
+                        </li>
+                        <li class="flex justify-between">
+                            <span>Thursday</span>
+                            <span class="text-green-600">11:00 AM - 11:00 PM</span>
+                        </li>
+                        <li class="flex justify-between font-semibold">
+                            <span>Friday</span>
+                            <span class="text-green-600">11:00 AM - 12:00 AM</span>
+                        </li>
+                        <li class="flex justify-between font-semibold">
+                            <span>Saturday</span>
+                            <span class="text-green-600">11:00 AM - 12:00 AM</span>
+                        </li>
+                        <li class="flex justify-between">
+                            <span>Sunday</span>
+                            <span class="text-green-600">11:00 AM - 11:00 PM</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Contact Information -->
+            <div class="bg-white shadow-md rounded-lg overflow-hidden mb-6">
+                <div class="p-4 bg-gray-50 border-b">
+                    <h3 class="font-semibold">Contact Information</h3>
+                </div>
+                <div class="p-4">
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 text-yellow-500 mr-3"></i>
+                            <span>123 MG Road, Koramangala, Bangalore - 560034</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone-alt text-yellow-500 mr-3"></i>
+                            <span>+91 9876543210</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-globe text-yellow-500 mr-3"></i>
+                            <a href="#" class="text-blue-500 hover:underline">www.spicegarden.com</a>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope text-yellow-500 mr-3"></i>
+                            <a href="#" class="text-blue-500 hover:underline">info@spicegarden.com</a>
+                        </li>
+                    </ul>
+                    <div class="mt-4">
+                        <a href="#" class="text-yellow-500 hover:text-yellow-600 font-medium flex items-center">
+                            <i class="fas fa-directions mr-2"></i>
+                            Get Directions
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Map -->
+            <div class="bg-white shadow-md rounded-lg overflow-hidden mb-6">
+                <div class="p-4 bg-gray-50 border-b">
+                    <h3 class="font-semibold">Map Location</h3>
+                </div>
+                <div class="p-4">
+                    <div class="h-64 bg-gray-200 rounded-lg flex items-center justify-center">
+                        <p class="text-gray-500">Map placeholder</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Similar Businesses -->
+            <div class="bg-white shadow-md rounded-lg overflow-hidden">
+                <div class="p-4 bg-gray-50 border-b">
+                    <h3 class="font-semibold">Similar Places Nearby</h3>
+                </div>
+                <div class="p-4">
+                    <ul class="space-y-4">
+                        <li class="flex">
+                            <img src="/api/placeholder/60/60" alt="Business" class="w-12 h-12 rounded-lg">
+                            <div class="ml-3">
+                                <h4 class="font-medium">Taj Restaurant</h4>
+                                <div class="text-yellow-500 text-xs">★★★★<span class="text-gray-300">★</span> <span class="text-gray-500">4.2</span></div>
+                                <p class="text-gray-500 text-xs">Indian • 1.2 km</p>
+                            </div>
+                        </li>
+                        <li class="flex">
+                            <img src="/api/placeholder/60/60" alt="Business" class="w-12 h-12 rounded-lg">
+                            <div class="ml-3">
+                                <h4 class="font-medium">China Town</h4>
+                                <div class="text-yellow-500 text-xs">★★★★<span class="text-gray-300">★</span> <span class="text-gray-500">4.0</span></div>
+                                <p class="text-gray-500 text-xs">Chinese • 0.8 km</p>
+                            </div>
+                        </li>
+                        <li class="flex">
+                            <img src="/api/placeholder/60/60" alt="Business" class="w-12 h-12 rounded-lg">
+                            <div class="ml-3">
+                                <h4 class="font-medium">Italian Delight</h4>
+                                <div class="text-yellow-500 text-xs">★★★★<span class="text-yellow-500">★</span> <span class="text-gray-500">4.7</span></div>
+                                <p class="text-gray-500 text-xs">Italian • 1.5 km</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+@endsection
+
+<!-- Add Listing page: resources/views/add-listing.blade.php -->
+@extends('layouts.app')
+
+@section('content')
+<section class="container mx-auto px-4 py-8">
+    <div class="max-w-4xl mx-auto">
+        <h1 class="text-2xl font-bold mb-6">Add Your Business Listing</h1>
+        
+        <div class="bg-white shadow-md rounded-lg overflow-hidden">
+            <div class="p-6">
+                <form>
+                    <!-- Basic Information -->
+                    <div class="mb-8">
+                        <h2 class="text-xl font-semibold mb-4">Basic Information</h2>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-gray-700 mb-2">Business Name <span class="text-red-500">*</span></label>
+                                <input type="text" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500" required>
+                            </div>
+                            <div>
+                                <label class="block text-gray-700 mb-2">Category <span class="text-red-500">*</span></label>
+                                <select class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500" required>
+                                    <option value="">Select Category</option>
+                                    <option>Restaurants</option>
+                                    <option>Hotels</option>
+                                    <option>Home Services</option>
+                                    <option>Doctors</option>
+                                    <option>Beauty & Spa</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-gray-700 mb-2">Phone Number <span class="text-red-500">*</span></label>
+                                <input type="tel" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500" required>
+                            </div>
+                            <div>
+                                <label class="block text-gray-700 mb-2">Email Address</label>
+                                <input type="email" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500">
+                            </div>
+                            <div>
+                                <label class="block text-gray-700 mb-2">Website</label>
+                                <input type="url" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500">
+                            </div>
+                            <div>
+                                <label class="block text-gray-700 mb-2">Established Year</label>
+                                <input type="number" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Location -->
+                    <div class="mb-8">
+                        <h2 class="text-xl font-semibold mb-4">Location</h2>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div class="md:col-span-2">
+                                <label class="block text-gray-700 mb-2">Address <span class="text-red-500">*</span></label>
+                                <input type="text" class="w-full px-4 py-2
