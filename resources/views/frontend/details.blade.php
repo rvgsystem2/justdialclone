@@ -7,14 +7,18 @@
 
     <!-- Breadcrumb -->
     <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-4">
-        <ol class="flex items-center space-x-2 text-sm">
+        <ol
+            class="flex flex-wrap items-center text-sm space-x-1 sm:space-x-2 overflow-x-auto whitespace-nowrap scrollbar-hide">
             @foreach (['Mumbai', 'Jewellery Showrooms in Navi Mumbai', 'Diamond Jewellery'] as $item)
-                <li><a href="#" class="text-blue-600 hover:underline">{{ $item }}</a></li>
-                <li class="text-gray-500">/</li>
+                <li class="flex items-center">
+                    <a href="#" class="text-blue-600 hover:underline">{{ $item }}</a>
+                    <span class="mx-1 text-gray-500">/</span>
+                </li>
             @endforeach
             <li class="text-gray-800 font-medium">Meghna Jewellers Pvt Ltd</li>
         </ol>
     </nav>
+
 
     <!-- Header Section -->
     <div class="max-w-7xl mx-auto bg-white p-6 shadow-sm rounded-xl mt-4 border border-gray-100">
