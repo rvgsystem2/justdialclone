@@ -51,28 +51,28 @@
                                 class="snap-start w-48 flex-shrink-0 bg-blue-500 text-white rounded-lg p-4 space-y-2 flex flex-col">
                                 <h3 class="font-bold text-xl">B2B</h3>
                                 <p class="text-sm">Quick Quotes</p>
-                                <img src="/api/placeholder/200/200" alt="Business person" class="object-cover rounded" />
+                                <img src="{{asset('asset/images/bussines.jpg')}}" alt="Business person" class="object-cover rounded" />
                             </div>
 
                             <div
                                 class="snap-start w-48 flex-shrink-0 bg-blue-700 text-white rounded-lg p-4 space-y-2 flex flex-col">
                                 <h3 class="font-bold text-xl">Repairs & Services</h3>
                                 <p class="text-sm">Get Nearest Vendor</p>
-                                <img src="/api/placeholder/200/200" alt="Repair person" class="object-cover rounded" />
+                                <img src="{{asset('asset/images/repair.jpg')}}" alt="Repair person" class="object-cover rounded" />
                             </div>
 
                             <div
                                 class="snap-start w-48 flex-shrink-0 bg-purple-500 text-white rounded-lg p-4 space-y-2 flex flex-col">
                                 <h3 class="font-bold text-xl">Real Estate</h3>
                                 <p class="text-sm">Finest Agents</p>
-                                <img src="/api/placeholder/200/200" alt="Building" class="object-cover rounded" />
+                                <img src="{{asset('asset/images/realstate.jpg')}}" alt="Building" class="object-cover rounded" />
                             </div>
 
                             <div
                                 class="snap-start w-48 flex-shrink-0 bg-green-500 text-white rounded-lg p-4 space-y-2 flex flex-col">
                                 <h3 class="font-bold text-xl">Doctors</h3>
                                 <p class="text-sm">Book Now</p>
-                                <img src="/api/placeholder/200/200" alt="Doctor" class="object-cover rounded" />
+                                <img src="{{asset('asset/images/clinic.jpg')}}" alt="Doctor" class="object-cover rounded" />
                             </div>
                         </div>
                     </div>
@@ -267,7 +267,7 @@
                     <!-- Card Template -->
                     <div
                         class="min-w-[250px] sm:min-w-[270px] bg-white rounded-3xl shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-300 overflow-hidden snap-start">
-                        <img src="https://via.placeholder.com/270x160" alt="Estate"
+                        <img src="{{asset('asset/images/realstate.jpg')}}" alt="Estate"
                             class="w-full h-[160px] object-cover" />
                         <div class="bg-blue-600 text-white text-center px-5 py-5">
                             <p class="text-base font-semibold leading-snug mb-3">
@@ -283,7 +283,7 @@
                     <!-- Repeat Cards -->
                     <div
                         class="min-w-[250px] sm:min-w-[270px] bg-white rounded-3xl shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-300 overflow-hidden snap-start">
-                        <img src="https://via.placeholder.com/270x160" alt="Estate"
+                        <img src="{{asset('asset/images/realstate.jpg')}}" alt="Estate"
                             class="w-full h-[160px] object-cover" />
                         <div class="bg-blue-600 text-white text-center px-5 py-5">
                             <p class="text-base font-semibold leading-snug mb-3">
@@ -298,7 +298,7 @@
 
                     <div
                         class="min-w-[250px] sm:min-w-[270px] bg-white rounded-3xl shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-300 overflow-hidden snap-start">
-                        <img src="https://via.placeholder.com/270x160" alt="Estate"
+                        <img src="{{asset('asset/images/realstate.jpg')}}" alt="Estate"
                             class="w-full h-[160px] object-cover" />
                         <div class="bg-blue-600 text-white text-center px-5 py-5">
                             <p class="text-base font-semibold leading-snug mb-3">
@@ -313,7 +313,7 @@
 
                     <div
                         class="min-w-[250px] sm:min-w-[270px] bg-white rounded-3xl shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-300 overflow-hidden snap-start">
-                        <img src="https://via.placeholder.com/270x160" alt="Interior"
+                        <img src="{{asset('asset/images/realstate.jpg')}}" alt="Interior"
                             class="w-full h-[160px] object-cover" />
                         <div class="bg-blue-600 text-white text-center px-5 py-5">
                             <p class="text-base font-semibold leading-snug mb-3">
@@ -328,7 +328,7 @@
 
                     <div
                         class="min-w-[250px] sm:min-w-[270px] bg-white rounded-3xl shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-300 overflow-hidden snap-start">
-                        <img src="https://via.placeholder.com/270x160" alt="Banquet"
+                        <img src="{{asset('asset/images/realstate.jpg')}}" alt="Banquet"
                             class="w-full h-[160px] object-cover" />
                         <div class="bg-blue-600 text-white text-center px-5 py-5">
                             <p class="text-base font-semibold leading-snug mb-3">
@@ -358,7 +358,7 @@
 
                     <!-- Card 1 -->
                     <div class="min-w-[280px] max-w-sm bg-white rounded-2xl shadow border snap-start overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1584466977773-63bca9f4f2b2" alt="Jiu Jitsu"
+                        <img src="{{asset('asset/images/realstate.jpg')}}" alt="Jiu Jitsu"
                             class="w-full h-[180px] object-cover" />
                         <div class="p-4">
                             <h3 class="text-sm font-semibold text-gray-800 mb-2 leading-snug">
@@ -370,7 +370,7 @@
 
                     <!-- Card 2 -->
                     <div class="min-w-[280px] max-w-sm bg-white rounded-2xl shadow border snap-start overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1601050690590-380d88b011d4" alt="Ballet"
+                        <img src="{{asset('asset/images/realstate.jpg')}}" alt="Ballet"
                             class="w-full h-[180px] object-cover" />
                         <div class="p-4">
                             <h3 class="text-sm font-semibold text-gray-800 mb-2 leading-snug">
@@ -382,7 +382,7 @@
 
                     <!-- Card 3 -->
                     <div class="min-w-[280px] max-w-sm bg-white rounded-2xl shadow border snap-start overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b" alt="Coolers"
+                        <img src="{{asset('asset/images/realstate.jpg')}}" alt="Coolers"
                             class="w-full h-[180px] object-cover" />
                         <div class="p-4">
                             <h3 class="text-sm font-semibold text-gray-800 mb-2 leading-snug">
@@ -416,7 +416,7 @@
 
                     <!-- Card -->
                     <div class="bg-white border rounded-xl shadow hover:shadow-md transition-all duration-300">
-                        <img src="https://images.unsplash.com/photo-1586190848861-99aa4a171e90" alt="AC"
+                        <img src="{{asset('asset/images/declan-sun--ROm7yw7PqI-unsplash.jpg')}}" alt="AC"
                             class="w-full h-32 object-cover rounded-t-xl">
                         <div class="p-4 space-y-1">
                             <span class="text-xs text-gray-400 uppercase">Appliances</span>
@@ -427,7 +427,7 @@
 
                     <!-- Card -->
                     <div class="bg-white border rounded-xl shadow hover:shadow-md transition-all duration-300">
-                        <img src="https://images.unsplash.com/photo-1590080876534-0603ff8425c7" alt="Ice Cream"
+                        <img src="{{asset('asset/images/harry-prabowo-hNmyXSH5g9Q-unsplash.jpg')}}" alt="Ice Cream"
                             class="w-full h-32 object-cover rounded-t-xl">
                         <div class="p-4 space-y-1">
                             <span class="text-xs text-gray-400 uppercase">Treats</span>
@@ -438,7 +438,7 @@
 
                     <!-- Card -->
                     <div class="bg-white border rounded-xl shadow hover:shadow-md transition-all duration-300">
-                        <img src="https://images.unsplash.com/photo-1604929193199-e2c3c6dd4f66" alt="Fan"
+                        <img src="{{asset('asset/images/ozkan-guner-n-mGwFb0u4s-unsplash.jpg')}}" alt="Fan"
                             class="w-full h-32 object-cover rounded-t-xl">
                         <div class="p-4 space-y-1">
                             <span class="text-xs text-gray-400 uppercase">Cooling</span>
@@ -449,7 +449,7 @@
 
                     <!-- Card -->
                     <div class="bg-white border rounded-xl shadow hover:shadow-md transition-all duration-300">
-                        <img src="https://images.unsplash.com/photo-1622519400703-545bee5788e9" alt="AC AMC"
+                        <img src="{{asset('asset/images/kevin-jiner-GNywSmJYu3c-unsplash.jpg')}}" alt="AC AMC"
                             class="w-full h-32 object-cover rounded-t-xl">
                         <div class="p-4 space-y-1">
                             <span class="text-xs text-gray-400 uppercase">Services</span>
@@ -477,7 +477,7 @@
                     <!-- Movie Card -->
                     <div
                         class="relative bg-white rounded-xl overflow-hidden shadow hover:shadow-md transition-all duration-300">
-                        <img src="https://i.imgur.com/dvM5YbD.jpg" alt="Jaat" class="w-full h-48 object-cover">
+                        <img src="{{asset('asset/images/robin-wersich-Q0IrpWQIMR4-unsplash.jpg')}}" alt="Jaat" class="w-full h-48 object-cover">
                         <div class="p-3">
                             <h3 class="font-semibold text-sm text-gray-800 leading-snug">Jaat (Hindi Movie)</h3>
                             <p class="text-xs text-gray-500 mb-2">Hindi &bull; 2D</p>
@@ -490,7 +490,7 @@
                     <!-- Movie Card -->
                     <div
                         class="relative bg-white rounded-xl overflow-hidden shadow hover:shadow-md transition-all duration-300">
-                        <img src="https://i.imgur.com/8UqEkpN.jpg" alt="Sikandar" class="w-full h-48 object-cover">
+                        <img src="{{asset('asset/images/samuel-regan-asante-WuYSPm4XcU0-unsplash.jpg')}}" alt="Sikandar" class="w-full h-48 object-cover">
                         <div class="absolute top-2 right-2 bg-white text-red-600 text-xs px-2 py-1 rounded-full shadow">
                             <i class="fa fa-thumbs-up mr-1"></i> 76%
                         </div>
@@ -507,7 +507,7 @@
                     <!-- Movie Card -->
                     <div
                         class="relative bg-white rounded-xl overflow-hidden shadow hover:shadow-md transition-all duration-300">
-                        <img src="https://i.imgur.com/1woIKS0.jpg" alt="Chhaava" class="w-full h-48 object-cover">
+                        <img src="{{asset('asset/images/shane-aldendorff-_jipKntR054-unsplash.jpg')}}" alt="Chhaava" class="w-full h-48 object-cover">
                         <div class="absolute top-2 right-2 bg-white text-red-600 text-xs px-2 py-1 rounded-full shadow">
                             <i class="fa fa-thumbs-up mr-1"></i> 90%
                         </div>
@@ -523,7 +523,7 @@
                     <!-- Movie Card -->
                     <div
                         class="relative bg-white rounded-xl overflow-hidden shadow hover:shadow-md transition-all duration-300">
-                        <img src="https://i.imgur.com/wzELHtF.jpg" alt="Minecraft" class="w-full h-48 object-cover">
+                        <img src="{{asset('asset/images/samuel-regan-asante-WuYSPm4XcU0-unsplash.jpg')}}" alt="Minecraft" class="w-full h-48 object-cover">
                         <div class="absolute top-2 right-2 bg-white text-red-600 text-xs px-2 py-1 rounded-full shadow">
                             <i class="fa fa-thumbs-up mr-1"></i> 20%
                         </div>
@@ -539,7 +539,7 @@
                     <!-- Movie Card -->
                     <div
                         class="relative bg-white rounded-xl overflow-hidden shadow hover:shadow-md transition-all duration-300">
-                        <img src="https://i.imgur.com/G2Mwhn7.jpg" alt="The Diplomat" class="w-full h-48 object-cover">
+                        <img src="{{asset('asset/images/bill-alexy-1vDN-XW6yow-unsplash.jpg')}}" alt="The Diplomat" class="w-full h-48 object-cover">
                         <div class="absolute top-2 right-2 bg-white text-red-600 text-xs px-2 py-1 rounded-full shadow">
                             <i class="fa fa-thumbs-up mr-1"></i> 60%
                         </div>
@@ -555,7 +555,7 @@
                     <!-- Movie Card -->
                     <div
                         class="relative bg-white rounded-xl overflow-hidden shadow hover:shadow-md transition-all duration-300">
-                        <img src="https://i.imgur.com/H3BjZj2.jpg" alt="L2 Empuraan" class="w-full h-48 object-cover">
+                        <img src="{{asset('asset/images/cdc-VRpjDw3WqqI-unsplash.jpg')}}" alt="L2 Empuraan" class="w-full h-48 object-cover">
                         <div class="absolute top-2 right-2 bg-white text-red-600 text-xs px-2 py-1 rounded-full shadow">
                             <i class="fa fa-thumbs-up mr-1"></i> 100%
                         </div>
@@ -581,7 +581,7 @@
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <!-- Business Card -->
                 <div class="bg-white shadow-md rounded-lg overflow-hidden hover:shadow-lg transition">
-                    <img src="/api/placeholder/400/200" alt="Business" class="w-full h-48 object-cover">
+                    <img src="{{asset('asset/images/realstate.jpg')}}" alt="Business" class="w-full h-48 object-cover">
                     <div class="p-4">
                         <div class="flex justify-between items-start mb-2">
                             <h3 class="font-bold text-lg">Spice Garden Restaurant</h3>
@@ -599,7 +599,7 @@
                     </div>
                 </div>
                 <div class="bg-white shadow-md rounded-lg overflow-hidden hover:shadow-lg transition">
-                    <img src="/api/placeholder/400/200" alt="Business" class="w-full h-48 object-cover">
+                    <img src="{{asset('asset/images/realstate.jpg')}}" alt="Business" class="w-full h-48 object-cover">
                     <div class="p-4">
                         <div class="flex justify-between items-start mb-2">
                             <h3 class="font-bold text-lg">Elite Home Services</h3>
@@ -616,7 +616,7 @@
                     </div>
                 </div>
                 <div class="bg-white shadow-md rounded-lg overflow-hidden hover:shadow-lg transition">
-                    <img src="/api/placeholder/400/200" alt="Business" class="w-full h-48 object-cover">
+                    <img src="{{asset('asset/images/realstate.jpg')}}" alt="Business" class="w-full h-48 object-cover">
                     <div class="p-4">
                         <div class="flex justify-between items-start mb-2">
                             <h3 class="font-bold text-lg">Dr. Sharma's Clinic</h3>
