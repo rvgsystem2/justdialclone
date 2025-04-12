@@ -16,3 +16,5 @@ Route::get('/details', [HomeController::class, 'details'])->name('details');
 Route::get('/login', [HomeController::class, 'login'])->name('login');
 
 Route::get('/signup', [HomeController::class, 'signup'])->name('signup');
+
+Route::get('/profile', [HomeController::class, 'profile'])->name('profile');

@@ -40,4 +40,9 @@ class HomeController extends Controller
     {
         return view('frontend.signup');
     }
+
+    public function profile()
+    {
+        return view('frontend.profile');
+    }
 }
