@@ -148,7 +148,7 @@
             <div class="flex-1 relative w-full h-64 sm:h-72 md:h-96 lg:h-auto">
                 <!-- Main Image -->
                 <div class="relative w-full max-w-md mx-auto">
-                    <img src="{{asset('asset/images/sample.jpeg')}}" alt="Business Dashboard"
+                    <img src="{{ asset('asset/images/sample.jpeg') }}" alt="Business Dashboard"
                         class="w-full h-auto rounded-lg shadow-xl animate-float" />
 
                     <!-- Floating Card 1 -->
@@ -209,7 +209,8 @@
                     </h3>
                     <div class="border rounded-lg shadow-md p-4 card-gradient">
                         <div class="relative mb-4">
-                            <img src="{{asset('asset/images/sample.jpeg')}}" class="rounded-lg w-full object-cover h-48" />
+                            <img src="{{ asset('asset/images/sample.jpeg') }}"
+                                class="rounded-lg w-full object-cover h-48" />
                             <div class="absolute top-3 right-3 bg-blue-600 text-white text-xs px-2 py-1 rounded-full">
                                 Premium
                             </div>
@@ -319,17 +320,17 @@
                                     <span class="text-gray-400 text-sm text-center px-2">Click to Upload</span>
                                 </label>
                                 <div class="w-32 h-32 rounded-lg overflow-hidden border border-gray-200">
-                                    <img id="previewImage" src="{{asset('asset/images/sample.jpeg')}}" alt="Preview"
+                                    <img id="previewImage" src="{{ asset('asset/images/sample.jpeg') }}" alt="Preview"
                                         class="object-cover w-full h-full" />
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <button
-                        class="mt-6 w-full bg-blue-600 hover:bg-blue-700 text-white px-4 py-3 rounded-lg transition-colors duration-300 shadow-md hover:shadow-lg font-medium">
+                    <a href="{{route('listingdetails')}}"
+                        class="mt-6 w-full bg-blue-600 hover:bg-blue-700 text-white px-4 py-3 rounded-lg transition-colors duration-300 shadow-md hover:shadow-lg font-medium inline-block text-center">
                         Save and Continue <i class="fas fa-arrow-right ml-1"></i>
-                    </button>
+                    </a>
                 </div>
             </div>
         </div>
