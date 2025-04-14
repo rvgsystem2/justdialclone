@@ -1,3 +1,5 @@
+<!-- resources/views/sitemap.blade.php -->
+
 @extends('components.main')
 
 @section('content')
@@ -28,9 +30,30 @@
                 </ul>
             </div>
 
-            <!-- User Pages -->
+            <!-- Business Categories -->
             <div class="bg-white shadow-md rounded-2xl p-6 hover:shadow-xl transition-all duration-300">
-                <h2 class="text-xl font-semibold text-gray-800 mb-4">User Pages</h2>
+                <h2 class="text-xl font-semibold text-gray-800 mb-4">Business Categories</h2>
+                <ul class="space-y-3">
+                    <li><a href="{{ route('listing') }}" class="text-blue-600 hover:text-blue-800 transition">🏢
+                            Showrooms</a></li>
+                    <li><a href="{{ route('listing') }}" class="text-blue-600 hover:text-blue-800 transition">🍴
+                            Restaurants</a></li>
+                    <li><a href="{{ route('listing') }}" class="text-blue-600 hover:text-blue-800 transition">💼
+                            Services</a></li>
+                    <li><a href="{{ route('listing') }}" class="text-blue-600 hover:text-blue-800 transition">🏥
+                            Hospitals</a></li>
+                    <li><a href="{{ route('listing') }}" class="text-blue-600 hover:text-blue-800 transition">🏨 Hotels</a>
+                    </li>
+                    <li><a href="{{ route('listing') }}" class="text-blue-600 hover:text-blue-800 transition">🏡 Real
+                            Estate</a></li>
+                    <li><a href="{{ route('listing') }}" class="text-blue-600 hover:text-blue-800 transition">🛍️
+                            Shopping</a></li>
+                </ul>
+            </div>
+
+            <!-- User & Account Pages -->
+            <div class="bg-white shadow-md rounded-2xl p-6 hover:shadow-xl transition-all duration-300">
+                <h2 class="text-xl font-semibold text-gray-800 mb-4">User & Account Pages</h2>
                 <ul class="space-y-3">
                     <li><a href="{{ route('login') }}" class="text-blue-600 hover:text-blue-800 transition">🔑 Login</a>
                     </li>
@@ -41,7 +64,7 @@
                 </ul>
             </div>
 
-            <!-- Legal & Info -->
+            <!-- Legal & Information -->
             <div class="bg-white shadow-md rounded-2xl p-6 hover:shadow-xl transition-all duration-300">
                 <h2 class="text-xl font-semibold text-gray-800 mb-4">Legal & Info</h2>
                 <ul class="space-y-3">
