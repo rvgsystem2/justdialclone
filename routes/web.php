@@ -13,6 +13,8 @@ Route::get('/jewellery', [HomeController::class, 'jewellery'])->name('jewellery'
 
 Route::get('/details', [HomeController::class, 'details'])->name('details');
 
+Route::get('/advertise', [HomeController::class, 'advertise'])->name('advertise');
+
 Route::get('/login', [HomeController::class, 'login'])->name('login');
 
 Route::get('/signup', [HomeController::class, 'signup'])->name('signup');

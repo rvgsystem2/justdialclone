@@ -31,6 +31,11 @@ class HomeController extends Controller
         return view('frontend.details');
     }
 
+    public function advertise()
+    {
+        return view('frontend.advertise');
+    }
+
     public function login()
     {
         return view('frontend.login');

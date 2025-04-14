@@ -1,6 +1,8 @@
 @extends('components.main')
 
 @section('content')
+
+@include('components.popup')
     <!-- Main Content -->
     <main class="container mx-auto px-4 py-10">
 
