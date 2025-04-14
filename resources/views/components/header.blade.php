@@ -79,7 +79,7 @@
             </a>
 
             <!-- Advertise -->
-            <a href="#"
+            <a href="{{route('advertise')}}"
                 class="flex items-center space-x-1 text-gray-600 hover:text-blue-600 transition-colors group">
                 <span
                     class="material-symbols-outlined text-xl group-hover:scale-110 transition-transform">campaign</span>
@@ -98,11 +98,13 @@
             </a>
 
             <!-- Notification -->
-            <button class="relative text-gray-600 hover:text-blue-600 transition-colors p-1">
+            <a href="{{route('notifications')}}" class="relative text-gray-600 hover:text-blue-600 transition-colors p-1">
                 <span class="material-symbols-outlined text-xl">notifications</span>
-                <span
-                    class="absolute -top-1 -right-1 bg-red-500 text-white text-xs h-4 w-4 flex items-center justify-center rounded-full">3</span>
-            </button>
+                <span class="absolute -top-1 -right-1 bg-red-500 text-white text-xs h-4 w-4 flex items-center justify-center rounded-full">
+                    3
+                </span>
+            </a>
+            
 
             <!-- User Dropdown -->
             <div class="relative" x-data="{ open: false }">
@@ -185,7 +187,7 @@
                         <span class="material-symbols-outlined text-gray-500">mail</span>
                         <span class="font-medium">Leads</span>
                     </a>
-                    <a href="#"
+                    <a href="{{route('advertise')}}"
                         class="flex items-center space-x-3 text-gray-700 hover:text-blue-600 hover:bg-gray-50 p-2 rounded-lg transition-colors">
                         <span class="material-symbols-outlined text-gray-500">campaign</span>
                         <span class="font-medium">Advertise</span>
@@ -197,7 +199,7 @@
                         <span
                             class="bg-red-600 text-white text-xs px-1.5 py-0.5 rounded font-bold ml-auto">BUSINESS</span>
                     </a>
-                    <a href="#"
+                    <a href="{{route('notifications')}}"
                         class="flex items-center space-x-3 text-gray-700 hover:text-blue-600 hover:bg-gray-50 p-2 rounded-lg transition-colors">
                         <span class="material-symbols-outlined text-gray-500">notifications</span>
                         <span class="font-medium">Notifications</span>
@@ -218,7 +220,7 @@
                             </button>
 
                             <div x-show="open" class="pl-12 space-y-2 mt-1">
-                                <a href="#"
+                                <a href="{{route('profile')}}"
                                     class="block px-3 py-1.5 text-sm text-gray-700 hover:bg-gray-50 rounded-lg">Your
                                     Profile</a>
                                 <a href="#"

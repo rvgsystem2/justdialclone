@@ -15,6 +15,8 @@ Route::get('/details', [HomeController::class, 'details'])->name('details');
 
 Route::get('/advertise', [HomeController::class, 'advertise'])->name('advertise');
 
+Route::get('/notifications', [HomeController::class, 'notifications'])->name('notifications');
+
 Route::get('/login', [HomeController::class, 'login'])->name('login');
 
 Route::get('/signup', [HomeController::class, 'signup'])->name('signup');
