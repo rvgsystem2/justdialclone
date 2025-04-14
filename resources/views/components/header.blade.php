@@ -68,7 +68,6 @@
             </div>
         </div>
 
-
         <!-- Right Navigation (Desktop) -->
         <nav class="hidden md:flex items-center space-x-6">
             <!-- Contact -->
