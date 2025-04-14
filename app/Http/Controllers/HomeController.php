@@ -11,6 +11,16 @@ class HomeController extends Controller
         return view('frontend.index');
     }
 
+    public function contact()
+    {
+        return view('frontend.contact');
+    }
+
+    public function about()
+    {
+        return view('frontend.about');
+    }
+
     public function listing()
     {
         return view('frontend.listing');
@@ -54,5 +64,36 @@ class HomeController extends Controller
     public function profile()
     {
         return view('frontend.profile');
+    }
+
+    // Footer Pages
+    public function support()
+    {
+        return view('frontend.support');
+    }
+
+    public function careers()
+    {
+        return view('frontend.careers');
+    }
+
+    public function privacy()
+    {
+        return view('frontend.privacy-policy');
+    }
+
+    public function terms()
+    {
+        return view('frontend.terms-of-service');
+    }
+
+    public function cookies()
+    {
+        return view('frontend.cookie-policy');
+    }
+
+    public function sitemap()
+    {
+        return view('frontend.sitemap');
     }
 }

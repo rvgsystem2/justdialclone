@@ -29,10 +29,10 @@
                 <!-- Location Dropdown -->
                 <div class="relative group">
                     <!-- Trigger/Input -->
-                    <div
-                        class="flex items-center bg-gray-50 border border-gray-200 rounded-l-lg px-3 h-12 w-48 min-w-[12rem] hover:border-blue-400 transition-colors cursor-pointer">
+                    <div class="flex items-center bg-gray-50 border border-gray-200 rounded-l-lg px-3 h-12 w-48 min-w-[12rem] hover:border-blue-400 transition-colors cursor-pointer"
+                        onclick="toggleLocationDropdown()">
                         <span class="material-symbols-outlined text-gray-500 text-lg mr-2">location_on</span>
-                        <input type="text" id="locationInput" value="Mumbai" readonly
+                        <input type="text" id="locationInputFull" value="Mumbai" readonly
                             class="bg-transparent outline-none text-sm w-full text-gray-800 font-medium placeholder-gray-500 truncate cursor-pointer"
                             placeholder="Select Location" />
                         <span
@@ -40,21 +40,20 @@
                     </div>
 
                     <!-- Dropdown Menu -->
-                    <ul
+                    <ul id="locationDropdown"
                         class="absolute z-10 hidden group-hover:block bg-white border border-gray-200 rounded-lg shadow-md mt-1 w-full max-h-60 overflow-y-auto">
                         <li class="px-4 py-2 hover:bg-blue-50 cursor-pointer text-sm text-gray-700"
-                            onclick="selectLocation('Mumbai')">Mumbai</li>
+                            onclick="selectLocationFull('Mumbai')">Mumbai</li>
                         <li class="px-4 py-2 hover:bg-blue-50 cursor-pointer text-sm text-gray-700"
-                            onclick="selectLocation('Delhi')">Delhi</li>
+                            onclick="selectLocationFull('Delhi')">Delhi</li>
                         <li class="px-4 py-2 hover:bg-blue-50 cursor-pointer text-sm text-gray-700"
-                            onclick="selectLocation('Bangalore')">Bangalore</li>
+                            onclick="selectLocationFull('Bangalore')">Bangalore</li>
                         <li class="px-4 py-2 hover:bg-blue-50 cursor-pointer text-sm text-gray-700"
-                            onclick="selectLocation('Hyderabad')">Hyderabad</li>
+                            onclick="selectLocationFull('Hyderabad')">Hyderabad</li>
                         <li class="px-4 py-2 hover:bg-blue-50 cursor-pointer text-sm text-gray-700"
-                            onclick="selectLocation('Pune')">Pune</li>
+                            onclick="selectLocationFull('Pune')">Pune</li>
                     </ul>
                 </div>
-
 
                 <!-- Search Input -->
                 <div
@@ -69,17 +68,25 @@
             </div>
         </div>
 
+
         <!-- Right Navigation (Desktop) -->
         <nav class="hidden md:flex items-center space-x-6">
-            <!-- Leads -->
-            <a href="#"
+            <!-- Contact -->
+            <a href="{{ route('contact') }}"
                 class="flex items-center space-x-1 text-gray-600 hover:text-blue-600 transition-colors group">
                 <span class="material-symbols-outlined text-xl group-hover:scale-110 transition-transform">mail</span>
-                <span class="text-sm font-medium">Leads</span>
+                <span class="text-sm font-medium">Contact</span>
             </a>
 
+            <a href="{{ route('about') }}"
+                class="flex items-center space-x-1 text-gray-600 hover:text-blue-600 transition-colors group">
+                <span class="material-symbols-outlined text-xl group-hover:scale-110 transition-transform">info</span>
+                <span class="text-sm font-medium">About Us</span>
+            </a>
+
+
             <!-- Advertise -->
-            <a href="{{route('advertise')}}"
+            <a href="{{ route('advertise') }}"
                 class="flex items-center space-x-1 text-gray-600 hover:text-blue-600 transition-colors group">
                 <span
                     class="material-symbols-outlined text-xl group-hover:scale-110 transition-transform">campaign</span>
@@ -98,13 +105,15 @@
             </a>
 
             <!-- Notification -->
-            <a href="{{route('notifications')}}" class="relative text-gray-600 hover:text-blue-600 transition-colors p-1">
+            <a href="{{ route('notifications') }}"
+                class="relative text-gray-600 hover:text-blue-600 transition-colors p-1">
                 <span class="material-symbols-outlined text-xl">notifications</span>
-                <span class="absolute -top-1 -right-1 bg-red-500 text-white text-xs h-4 w-4 flex items-center justify-center rounded-full">
+                <span
+                    class="absolute -top-1 -right-1 bg-red-500 text-white text-xs h-4 w-4 flex items-center justify-center rounded-full">
                     3
                 </span>
             </a>
-            
+
 
             <!-- User Dropdown -->
             <div class="relative" x-data="{ open: false }">
@@ -127,7 +136,8 @@
                         class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Login</a>
                     <a href="{{ route('signup') }}" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Sign
                         Up</a>
-                    <a href="{{route('profile')}}" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Your Profile</a>
+                    <a href="{{ route('profile') }}"
+                        class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Your Profile</a>
                     {{-- <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Settings</a>
                     <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Sign out</a> --}}
                 </div>
@@ -182,12 +192,13 @@
 
                 <!-- Mobile Navigation Links -->
                 <div class="space-y-2">
-                    <a href="#"
+                    <a href="{{ route('about') }}"
                         class="flex items-center space-x-3 text-gray-700 hover:text-blue-600 hover:bg-gray-50 p-2 rounded-lg transition-colors">
-                        <span class="material-symbols-outlined text-gray-500">mail</span>
-                        <span class="font-medium">Leads</span>
+                        <span class="material-symbols-outlined text-gray-500">info</span>
+                        <span class="font-medium">About Us</span>
                     </a>
-                    <a href="{{route('advertise')}}"
+
+                    <a href="{{ route('advertise') }}"
                         class="flex items-center space-x-3 text-gray-700 hover:text-blue-600 hover:bg-gray-50 p-2 rounded-lg transition-colors">
                         <span class="material-symbols-outlined text-gray-500">campaign</span>
                         <span class="font-medium">Advertise</span>
@@ -199,7 +210,7 @@
                         <span
                             class="bg-red-600 text-white text-xs px-1.5 py-0.5 rounded font-bold ml-auto">BUSINESS</span>
                     </a>
-                    <a href="{{route('notifications')}}"
+                    <a href="{{ route('notifications') }}"
                         class="flex items-center space-x-3 text-gray-700 hover:text-blue-600 hover:bg-gray-50 p-2 rounded-lg transition-colors">
                         <span class="material-symbols-outlined text-gray-500">notifications</span>
                         <span class="font-medium">Notifications</span>
@@ -220,7 +231,7 @@
                             </button>
 
                             <div x-show="open" class="pl-12 space-y-2 mt-1">
-                                <a href="{{route('profile')}}"
+                                <a href="{{ route('profile') }}"
                                     class="block px-3 py-1.5 text-sm text-gray-700 hover:bg-gray-50 rounded-lg">Your
                                     Profile</a>
                                 <a href="#"

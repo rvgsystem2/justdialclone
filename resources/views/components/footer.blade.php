@@ -1,9 +1,3 @@
-<!-- Add to your head -->
-<link
-    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
-    rel="stylesheet" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
 <footer class="bg-gray-900 text-gray-300 py-12 px-4">
     <div class="max-w-7xl mx-auto">
         <!-- Main Footer Content -->
@@ -24,28 +18,56 @@
             <div>
                 <h4 class="text-white font-semibold text-lg mb-5 pb-2 border-b border-gray-700">Quick Links</h4>
                 <ul class="space-y-3">
-                    <li><a href="#" class="text-gray-400 hover:text-white transition-colors flex items-center">
+                    <li>
+                        <a href="{{ route('advertise') }}"
+                            class="text-gray-400 hover:text-white transition-colors flex items-center">
                             <span class="material-symbols-outlined text-base mr-2">arrow_forward_ios</span>
                             Advertise With Us
-                        </a></li>
-                    <li><a href="#" class="text-gray-400 hover:text-white transition-colors flex items-center">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{{ route('support') }}"
+                            class="text-gray-400 hover:text-white transition-colors flex items-center">
                             <span class="material-symbols-outlined text-base mr-2">arrow_forward_ios</span>
                             Help & Support
-                        </a></li>
-                    <li><a href="#" class="text-gray-400 hover:text-white transition-colors flex items-center">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{{ route('careers') }}"
+                            class="text-gray-400 hover:text-white transition-colors flex items-center">
                             <span class="material-symbols-outlined text-base mr-2">arrow_forward_ios</span>
                             Careers
-                        </a></li>
-                    <li><a href="#" class="text-gray-400 hover:text-white transition-colors flex items-center">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{{ route('privacy') }}"
+                            class="text-gray-400 hover:text-white transition-colors flex items-center">
                             <span class="material-symbols-outlined text-base mr-2">arrow_forward_ios</span>
                             Privacy Policy
-                        </a></li>
-                    <li><a href="#" class="text-gray-400 hover:text-white transition-colors flex items-center">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{{ route('terms') }}"
+                            class="text-gray-400 hover:text-white transition-colors flex items-center">
                             <span class="material-symbols-outlined text-base mr-2">arrow_forward_ios</span>
                             Terms of Service
+                        </a>
+                    </li>
+                    <li><a href="{{ route('about') }}"
+                            class="text-gray-400 hover:text-white transition-colors flex items-center">
+                            <span class="material-symbols-outlined text-base mr-2">arrow_forward_ios</span>
+                            About Us
                         </a></li>
+                    <li>
+                        <a href="{{ route('contact') }}"
+                            class="text-gray-400 hover:text-white transition-colors flex items-center">
+                            <span class="material-symbols-outlined text-base mr-2">arrow_forward_ios</span>
+                            Contact Us
+                        </a>
+                    </li>
                 </ul>
             </div>
+
 
             <!-- Contact Info -->
             <div>
@@ -122,18 +144,21 @@
             </div>
         </div>
 
-        <!-- Copyright & Legal -->
+        <!-- Copyright -->
         <div class="mt-12 pt-6 border-t border-gray-800">
             <div class="flex flex-col md:flex-row justify-between items-center">
                 <p class="text-gray-500 text-sm mb-4 md:mb-0">
                     © 2025 Justdial Ltd. All rights reserved.
                 </p>
                 <div class="flex flex-wrap justify-center gap-x-6 gap-y-2">
-                    <a href="#" class="text-gray-500 hover:text-white text-sm transition-colors">Privacy
-                        Policy</a>
-                    <a href="#" class="text-gray-500 hover:text-white text-sm transition-colors">Terms of Use</a>
-                    <a href="#" class="text-gray-500 hover:text-white text-sm transition-colors">Cookie Policy</a>
-                    <a href="#" class="text-gray-500 hover:text-white text-sm transition-colors">Sitemap</a>
+                    <a href="{{ route('privacy') }}"
+                        class="text-gray-500 hover:text-white text-sm transition-colors">Privacy Policy</a>
+                    <a href="{{ route('terms') }}"
+                        class="text-gray-500 hover:text-white text-sm transition-colors">Terms of Use</a>
+                    <a href="{{ route('cookies') }}"
+                        class="text-gray-500 hover:text-white text-sm transition-colors">Cookie Policy</a>
+                    <a href="{{ route('sitemap') }}"
+                        class="text-gray-500 hover:text-white text-sm transition-colors">Sitemap</a>
                 </div>
             </div>
         </div>
