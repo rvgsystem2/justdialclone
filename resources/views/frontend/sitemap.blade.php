@@ -11,7 +11,7 @@
 
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
             <!-- Main Pages -->
-            <div class="bg-white shadow-md rounded-2xl p-6 hover:shadow-xl transition-all duration-300">
+            <div class="bg-white shadow-md rounded-xl p-6 hover:shadow-xl transition-all duration-300">
                 <h2 class="text-xl font-semibold text-gray-800 mb-4">Main Pages</h2>
                 <ul class="space-y-3">
                     <li><a href="{{ route('home') }}" class="text-blue-600 hover:text-blue-800 transition">🏠 Home</a></li>
@@ -31,7 +31,7 @@
             </div>
 
             <!-- Business Categories -->
-            <div class="bg-white shadow-md rounded-2xl p-6 hover:shadow-xl transition-all duration-300">
+            <div class="bg-white shadow-md rounded-xl p-6 hover:shadow-xl transition-all duration-300">
                 <h2 class="text-xl font-semibold text-gray-800 mb-4">Business Categories</h2>
                 <ul class="space-y-3">
                     <li><a href="{{ route('listing') }}" class="text-blue-600 hover:text-blue-800 transition">🏢
@@ -52,7 +52,7 @@
             </div>
 
             <!-- User & Account Pages -->
-            <div class="bg-white shadow-md rounded-2xl p-6 hover:shadow-xl transition-all duration-300">
+            <div class="bg-white shadow-md rounded-xl p-6 hover:shadow-xl transition-all duration-300">
                 <h2 class="text-xl font-semibold text-gray-800 mb-4">User & Account Pages</h2>
                 <ul class="space-y-3">
                     <li><a href="{{ route('login') }}" class="text-blue-600 hover:text-blue-800 transition">🔑 Login</a>
@@ -65,7 +65,7 @@
             </div>
 
             <!-- Legal & Information -->
-            <div class="bg-white shadow-md rounded-2xl p-6 hover:shadow-xl transition-all duration-300">
+            <div class="bg-white shadow-md rounded-xl p-6 hover:shadow-xl transition-all duration-300">
                 <h2 class="text-xl font-semibold text-gray-800 mb-4">Legal & Info</h2>
                 <ul class="space-y-3">
                     <li><a href="{{ route('support') }}" class="text-blue-600 hover:text-blue-800 transition">💬 Help &
@@ -82,7 +82,7 @@
             </div>
 
             <!-- Sitemap -->
-            <div class="bg-white shadow-md rounded-2xl p-6 hover:shadow-xl transition-all duration-300">
+            <div class="bg-white shadow-md rounded-xl p-6 hover:shadow-xl transition-all duration-300">
                 <h2 class="text-xl font-semibold text-gray-800 mb-4">Sitemap</h2>
                 <ul class="space-y-3">
                     <li><a href="{{ route('sitemap') }}" class="text-blue-600 hover:text-blue-800 transition">🗺️

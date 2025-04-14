@@ -416,310 +416,112 @@
         </div>
     </section>
 
-    <!-- Testimonials Style -->
-    <style>
-        .testimonial-container {
-            position: relative;
-            padding: 0 60px;
-        }
+    <!--Testimonial Section-->
+    <section class="bg-gray-50 py-16 px-4">
+        <div class="max-w-6xl mx-auto text-center">
+            <h2 class="text-3xl sm:text-4xl font-bold text-gray-800 mb-6">What Our Users Say</h2>
+            <p class="text-gray-600 mb-12 text-lg">Trusted by thousands of businesses and users across the country.</p>
 
-        @media (max-width: 768px) {
-            .testimonial-card {
-                min-width: 100%;
-            }
-        }
-
-        @media (min-width: 768px) and (max-width: 1024px) {
-            .testimonial-card {
-                min-width: 48%;
-            }
-        }
-
-        @media (min-width: 1024px) {
-            .testimonial-card {
-                min-width: 32%;
-            }
-        }
-
-        .nav-button {
-            z-index: 10;
-        }
-
-        .testimonial-track {
-            transition: transform 0.5s ease-out;
-        }
-    </style>
-
-    <!-- Testimonials Section -->
-    <section id="testimonials" class="py-20 bg-white">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="max-w-3xl mx-auto text-center mb-16">
-                <h2 class="text-3xl font-bold mb-4">What Our Customers Say</h2>
-                <p class="text-gray-600 text-lg">Success stories from businesses across India</p>
+            <!-- Slider Controls (visible on mobile/tablet) -->
+            <div class="flex justify-center mb-6 space-x-4 lg:hidden">
+                <button id="prev-btn" class="bg-gray-200 p-2 rounded-full hover:bg-gray-300">
+                    <span class="material-symbols-outlined">chevron_left</span>
+                </button>
+                <button id="next-btn" class="bg-gray-200 p-2 rounded-full hover:bg-gray-300">
+                    <span class="material-symbols-outlined">chevron_right</span>
+                </button>
             </div>
 
-            <div class="testimonial-container">
-                <!-- Previous Button -->
-                <button
-                    class="nav-button absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-200 hover:bg-gray-300 rounded-full p-2 shadow-lg focus:outline-none"
-                    id="prevBtn" aria-label="Previous testimonial">
-                    <span class="material-icons">chevron_left</span>
-                </button>
-
-                <!-- Testimonial Track -->
-                <div class="overflow-hidden">
-                    <div class="testimonial-track flex transition-transform duration-500" id="testimonialTrack">
-                        <!-- Testimonial 1 -->
-                        <div class="testimonial-card p-2">
-                            <div class="bg-gray-50 rounded-xl p-8 h-full shadow-sm hover:shadow-md transition-shadow">
-                                <div class="flex items-center mb-6">
-                                    <div class="w-14 h-14 rounded-full bg-blue-100 flex items-center justify-center mr-4">
-                                        <span class="material-icons text-blue-600">person</span>
-                                    </div>
-                                    <div>
-                                        <h4 class="text-lg font-semibold">Rajesh Sharma</h4>
-                                        <p class="text-gray-500">Delhi Electronics</p>
-                                    </div>
-                                </div>
-                                <p class="text-gray-600">"Since advertising with Justdial, our customer inquiries have
-                                    increased by 70%. The return on investment has been incredible, and the platform's
-                                    analytics help us track everything."</p>
-                            </div>
-                        </div>
-
-                        <!-- Testimonial 2 -->
-                        <div class="testimonial-card p-2">
-                            <div class="bg-gray-50 rounded-xl p-8 h-full shadow-sm hover:shadow-md transition-shadow">
-                                <div class="flex items-center mb-6">
-                                    <div class="w-14 h-14 rounded-full bg-blue-100 flex items-center justify-center mr-4">
-                                        <span class="material-icons text-blue-600">person</span>
-                                    </div>
-                                    <div>
-                                        <h4 class="text-lg font-semibold">Priya Patel</h4>
-                                        <p class="text-gray-500">Mumbai Beauty Salon</p>
-                                    </div>
-                                </div>
-                                <p class="text-gray-600">"The best marketing decision we ever made. Being featured at the
-                                    top of search results has brought us so many new clients. The ROI is amazing compared to
-                                    other advertising channels."</p>
-                            </div>
-                        </div>
-
-                        <!-- Testimonial 3 -->
-                        <div class="testimonial-card p-2">
-                            <div class="bg-gray-50 rounded-xl p-8 h-full shadow-sm hover:shadow-md transition-shadow">
-                                <div class="flex items-center mb-6">
-                                    <div class="w-14 h-14 rounded-full bg-blue-100 flex items-center justify-center mr-4">
-                                        <span class="material-icons text-blue-600">person</span>
-                                    </div>
-                                    <div>
-                                        <h4 class="text-lg font-semibold">Arun Mehta</h4>
-                                        <p class="text-gray-500">Jaipur Jewellers</p>
-                                    </div>
-                                </div>
-                                <p class="text-gray-600">"Justdial has helped us expand our local reach significantly. Our
-                                    online presence improved drastically, and we started getting quality leads within a week
-                                    of registration."</p>
-                            </div>
-                        </div>
-
-                        <!-- Testimonial 4 -->
-                        <div class="testimonial-card p-2">
-                            <div class="bg-gray-50 rounded-xl p-8 h-full shadow-sm hover:shadow-md transition-shadow">
-                                <div class="flex items-center mb-6">
-                                    <div class="w-14 h-14 rounded-full bg-blue-100 flex items-center justify-center mr-4">
-                                        <span class="material-icons text-blue-600">person</span>
-                                    </div>
-                                    <div>
-                                        <h4 class="text-lg font-semibold">Sunita Reddy</h4>
-                                        <p class="text-gray-500">Bangalore IT Solutions</p>
-                                    </div>
-                                </div>
-                                <p class="text-gray-600">"Our digital visibility has transformed since we joined Justdial.
-                                    The premium listing has been worth every rupee, bringing us consistent business growth
-                                    month after month."</p>
-                            </div>
-                        </div>
-
-                        <!-- Testimonial 5 -->
-                        <div class="testimonial-card p-2">
-                            <div class="bg-gray-50 rounded-xl p-8 h-full shadow-sm hover:shadow-md transition-shadow">
-                                <div class="flex items-center mb-6">
-                                    <div class="w-14 h-14 rounded-full bg-blue-100 flex items-center justify-center mr-4">
-                                        <span class="material-icons text-blue-600">person</span>
-                                    </div>
-                                    <div>
-                                        <h4 class="text-lg font-semibold">Vikram Singh</h4>
-                                        <p class="text-gray-500">Chandigarh Auto Services</p>
-                                    </div>
-                                </div>
-                                <p class="text-gray-600">"The verification badge on our Justdial listing has built immense
-                                    trust with customers. We've seen a 50% increase in walk-ins since upgrading our business
-                                    profile."</p>
-                            </div>
+            <!-- Slider Container -->
+            <div id="testimonial-slider" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                <!-- Testimonial 1 -->
+                <div
+                    class="testimonial-item bg-white rounded-2xl shadow-md p-6 text-left hover:shadow-xl transition-all duration-300">
+                    <p class="text-gray-700 mb-4">"This platform made it incredibly easy to find the perfect showroom for
+                        my wedding shopping. Highly recommended!"</p>
+                    <div class="flex items-center">
+                        <img src="https://i.pravatar.cc/50?img=1" alt="User" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="text-md font-semibold text-gray-800">Anjali Mehta</h4>
+                            <p class="text-sm text-gray-500">Verified User</p>
                         </div>
                     </div>
                 </div>
 
-                <!-- Next Button -->
-                <button
-                    class="nav-button absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-200 hover:bg-gray-300 rounded-full p-2 shadow-lg focus:outline-none"
-                    id="nextBtn" aria-label="Next testimonial">
-                    <span class="material-icons">chevron_right</span>
-                </button>
+                <!-- Testimonial 2 -->
+                <div
+                    class="testimonial-item bg-white rounded-2xl shadow-md p-6 text-left hover:shadow-xl transition-all duration-300">
+                    <p class="text-gray-700 mb-4">"Our business saw a major boost in visibility after getting listed.
+                        Excellent support and service!"</p>
+                    <div class="flex items-center">
+                        <img src="https://i.pravatar.cc/50?img=2" alt="User" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="text-md font-semibold text-gray-800">Rahul Sharma</h4>
+                            <p class="text-sm text-gray-500">Business Owner</p>
+                        </div>
+                    </div>
+                </div>
 
-                <!-- Indicator Dots -->
-                <div class="flex justify-center mt-8" id="indicators">
-                    <!-- Dots will be inserted by JavaScript -->
+                <!-- Testimonial 3 -->
+                <div
+                    class="testimonial-item bg-white rounded-2xl shadow-md p-6 text-left hover:shadow-xl transition-all duration-300">
+                    <p class="text-gray-700 mb-4">"I found reliable service providers in minutes. The site is fast,
+                        responsive, and user-friendly."</p>
+                    <div class="flex items-center">
+                        <img src="https://i.pravatar.cc/50?img=3" alt="User" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="text-md font-semibold text-gray-800">Sneha Reddy</h4>
+                            <p class="text-sm text-gray-500">Freelancer</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Testimonials JavaScript for the Slider -->
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const prevButton = document.getElementById('prevBtn');
-            const nextButton = document.getElementById('nextBtn');
-            const testimonialTrack = document.getElementById('testimonialTrack');
-            const testimonialCards = document.querySelectorAll('.testimonial-card');
-            const indicatorsContainer = document.getElementById('indicators');
-
+        document.addEventListener("DOMContentLoaded", function() {
+            const testimonials = document.querySelectorAll('.testimonial-item');
+            const prevBtn = document.querySelector('#prev-btn');
+            const nextBtn = document.querySelector('#next-btn');
             let currentIndex = 0;
-            let totalTestimonials = testimonialCards.length;
-            let visibleSlides = getVisibleSlides();
-            let maxIndex = totalTestimonials - visibleSlides;
 
-            // Create indicator dots
-            for (let i = 0; i <= maxIndex; i++) {
-                const dot = document.createElement('button');
-                dot.className = 'w-3 h-3 rounded-full mx-1 focus:outline-none';
-                dot.setAttribute('aria-label', `Go to testimonial ${i+1}`);
-                dot.dataset.index = i;
-                indicatorsContainer.appendChild(dot);
-
-                dot.addEventListener('click', function() {
-                    goToSlide(parseInt(this.dataset.index));
-                });
-            }
-
-            const indicators = indicatorsContainer.querySelectorAll('button');
-
-            // Initialize
-            updateSlider();
-            updateIndicators();
-
-            // Handle window resize
-            window.addEventListener('resize', function() {
-                visibleSlides = getVisibleSlides();
-                maxIndex = Math.max(0, totalTestimonials - visibleSlides);
-
-                // If current index is now out of bounds
-                if (currentIndex > maxIndex) {
-                    currentIndex = maxIndex;
-                }
-
-                updateSlider();
-
-                // Rebuild indicators if needed
-                while (indicatorsContainer.firstChild) {
-                    indicatorsContainer.removeChild(indicatorsContainer.firstChild);
-                }
-
-                for (let i = 0; i <= maxIndex; i++) {
-                    const dot = document.createElement('button');
-                    dot.className = 'w-3 h-3 rounded-full mx-1 focus:outline-none';
-                    dot.setAttribute('aria-label', `Go to testimonial ${i+1}`);
-                    dot.dataset.index = i;
-                    indicatorsContainer.appendChild(dot);
-
-                    dot.addEventListener('click', function() {
-                        goToSlide(parseInt(this.dataset.index));
-                    });
-                }
-
-                updateIndicators();
-            });
-
-            // Determine how many slides should be visible based on screen width
-            function getVisibleSlides() {
-                if (window.innerWidth < 768) {
-                    return 1; // Mobile: one card at a time
-                } else if (window.innerWidth < 1024) {
-                    return 2; // Tablet: two cards at a time
-                } else {
-                    return 3; // Desktop: three cards at a time
-                }
-            }
-
-            // Move to a specific slide
-            function goToSlide(index) {
-                currentIndex = index;
-                updateSlider();
-                updateIndicators();
-            }
-
-            // Move to the next slide
-            function nextSlide() {
-                if (currentIndex < maxIndex) {
-                    currentIndex++;
-                } else {
-                    currentIndex = 0; // Loop back to first slide
-                }
-                updateSlider();
-                updateIndicators();
-            }
-
-            // Move to the previous slide
-            function prevSlide() {
-                if (currentIndex > 0) {
-                    currentIndex--;
-                } else {
-                    currentIndex = maxIndex; // Loop to last slide
-                }
-                updateSlider();
-                updateIndicators();
-            }
-
-            // Update the slider position
             function updateSlider() {
-                // Get the current card width including its margins
-                const cardWidth = testimonialCards[0].offsetWidth;
-                const offset = -currentIndex * cardWidth;
-                testimonialTrack.style.transform = `translateX(${offset}px)`;
-            }
-
-            // Update indicator dots
-            function updateIndicators() {
-                indicators.forEach((dot, index) => {
-                    if (index === currentIndex) {
-                        dot.classList.remove('bg-gray-300');
-                        dot.classList.add('bg-blue-600');
+                testimonials.forEach((item, index) => {
+                    item.classList.add('hidden');
+                    if (window.innerWidth >= 1024) {
+                        item.classList.remove(
+                            'hidden'); // Show all testimonials on large screens (web view)
+                    } else if (window.innerWidth >= 768) {
+                        if (index === currentIndex || index === currentIndex + 1) {
+                            item.classList.remove('hidden'); // Show two testimonials on tablet
+                        }
                     } else {
-                        dot.classList.remove('bg-blue-600');
-                        dot.classList.add('bg-gray-300');
+                        if (index === currentIndex) {
+                            item.classList.remove('hidden'); // Show one testimonial at a time on mobile
+                        }
                     }
                 });
             }
 
-            // Event listeners for the buttons
-            nextButton.addEventListener('click', nextSlide);
-            prevButton.addEventListener('click', prevSlide);
-
-            // Auto slide every 5 seconds
-            let autoSlideInterval = setInterval(nextSlide, 5000);
-
-            // Pause auto-sliding when hovering over the slider
-            testimonialTrack.parentElement.addEventListener('mouseenter', function() {
-                clearInterval(autoSlideInterval);
+            prevBtn.addEventListener('click', () => {
+                if (currentIndex > 0) {
+                    currentIndex--;
+                    updateSlider();
+                }
             });
 
-            testimonialTrack.parentElement.addEventListener('mouseleave', function() {
-                autoSlideInterval = setInterval(nextSlide, 5000);
+            nextBtn.addEventListener('click', () => {
+                const maxIndex = window.innerWidth >= 768 ? testimonials.length - 2 : testimonials.length -
+                    1;
+                if (currentIndex < maxIndex) {
+                    currentIndex++;
+                    updateSlider();
+                }
             });
 
-            // Initialize indicator states
-            updateIndicators();
+            window.addEventListener('resize', updateSlider);
+            updateSlider();
         });
     </script>
 
