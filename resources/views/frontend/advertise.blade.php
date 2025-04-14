@@ -83,33 +83,35 @@
     <!-- Header Navigation -->
     <header class="bg-white shadow-md sticky top-0 z-50">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center py-4">
-                <div class="flex items-center">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Justdial_Logo.svg/2560px-Justdial_Logo.svg.png"
-                        alt="Justdial" class="h-8">
-                    <div class="hidden md:flex ml-10 space-x-8">
-                        <a href="#features" class="text-gray-600 hover:text-blue-600 font-medium">Features</a>
-                        <a href="#plans" class="text-gray-600 hover:text-blue-600 font-medium">Plans</a>
-                        <a href="#testimonials" class="text-gray-600 hover:text-blue-600 font-medium">Testimonials</a>
-                        <a href="#contact" class="text-gray-600 hover:text-blue-600 font-medium">Contact</a>
-                    </div>
-                </div>
-                <div class="flex items-center space-x-4">
-                    <a href="#contact"
-                        class="hidden md:inline-block px-4 py-2 border border-blue-600 text-blue-600 rounded-lg hover:bg-blue-50 transition-colors font-medium">Login</a>
-                    <a href="#contact"
-                        class="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors font-medium btn-pulse">Get
-                        Started</a>
+            <div class="flex flex-col md:flex-row md:justify-between md:items-center py-4 space-y-4 md:space-y-0">
 
-                    <!-- Mobile menu button -->
-                    <button class="md:hidden bg-gray-100 p-2 rounded-md focus:outline-none">
-                        <svg class="h-6 w-6 text-gray-600" xmlns="http://www.w3.org/2000/svg" fill="none"
-                            viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M4 6h16M4 12h16M4 18h16" />
-                        </svg>
-                    </button>
+                <!-- Mobile & Desktop Navigation -->
+                <nav class="overflow-x-auto no-scrollbar -mx-4 px-4 md:mx-0 md:px-0">
+                    <div
+                        class="flex space-x-6 md:space-x-8 text-sm md:text-base whitespace-nowrap justify-center md:justify-start">
+                        <a href="#features"
+                            class="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-200">Features</a>
+                        <a href="#plans"
+                            class="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-200">Plans</a>
+                        <a href="#testimonials"
+                            class="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-200">Testimonials</a>
+                        <a href="#contact"
+                            class="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-200">Contact</a>
+                    </div>
+                </nav>
+
+                <!-- Centered Buttons for Mobile, Right Aligned for Desktop -->
+                <div class="flex justify-center md:justify-end space-x-3 md:space-x-4">
+                    <a href="#contact"
+                        class="px-4 py-2 border border-blue-600 text-blue-600 rounded-md hover:bg-blue-50 focus:outline-none focus:ring-2 focus:ring-blue-300 font-medium text-sm md:text-base transition-all duration-200">
+                        Login
+                    </a>
+                    <a href="#contact"
+                        class="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 font-medium text-sm md:text-base transition-all duration-200">
+                        Get Started
+                    </a>
                 </div>
+
             </div>
         </div>
     </header>
