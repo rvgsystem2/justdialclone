@@ -417,7 +417,7 @@
     </section>
 
     <!--Testimonial Section-->
-    <section class="bg-gray-50 py-16 px-4">
+    <section id="testimonials" class="bg-gray-50 py-16 px-4">
         <div class="max-w-6xl mx-auto text-center">
             <h2 class="text-3xl sm:text-4xl font-bold text-gray-800 mb-6">What Our Users Say</h2>
             <p class="text-gray-600 mb-12 text-lg">Trusted by thousands of businesses and users across the country.</p>
@@ -486,42 +486,48 @@
             const nextBtn = document.querySelector('#next-btn');
             let currentIndex = 0;
 
+            function getVisibleCount() {
+                if (window.innerWidth >= 1024) return testimonials.length; // desktop - all
+                if (window.innerWidth >= 768) return 2; // tablet - two
+                return 1; // mobile - one
+            }
+
             function updateSlider() {
+                const visibleCount = getVisibleCount();
+                const maxIndex = testimonials.length - visibleCount;
+
+                // Fix index bounds
+                if (currentIndex > maxIndex) currentIndex = maxIndex;
+                if (currentIndex < 0) currentIndex = 0;
+
                 testimonials.forEach((item, index) => {
                     item.classList.add('hidden');
-                    if (window.innerWidth >= 1024) {
-                        item.classList.remove(
-                            'hidden'); // Show all testimonials on large screens (web view)
-                    } else if (window.innerWidth >= 768) {
-                        if (index === currentIndex || index === currentIndex + 1) {
-                            item.classList.remove('hidden'); // Show two testimonials on tablet
-                        }
-                    } else {
-                        if (index === currentIndex) {
-                            item.classList.remove('hidden'); // Show one testimonial at a time on mobile
-                        }
+                    if (index >= currentIndex && index < currentIndex + visibleCount) {
+                        item.classList.remove('hidden');
                     }
                 });
             }
 
-            prevBtn.addEventListener('click', () => {
-                if (currentIndex > 0) {
-                    currentIndex--;
-                    updateSlider();
-                }
+            prevBtn?.addEventListener('click', () => {
+                currentIndex--;
+                updateSlider();
             });
 
-            nextBtn.addEventListener('click', () => {
-                const maxIndex = window.innerWidth >= 768 ? testimonials.length - 2 : testimonials.length -
-                    1;
+            nextBtn?.addEventListener('click', () => {
+                const visibleCount = getVisibleCount();
+                const maxIndex = testimonials.length - visibleCount;
                 if (currentIndex < maxIndex) {
                     currentIndex++;
                     updateSlider();
                 }
             });
 
-            window.addEventListener('resize', updateSlider);
-            updateSlider();
+            // Recalculate on resize
+            window.addEventListener('resize', () => {
+                updateSlider();
+            });
+
+            updateSlider(); // Initial call
         });
     </script>
 
