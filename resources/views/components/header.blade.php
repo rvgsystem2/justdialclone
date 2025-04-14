@@ -127,8 +127,8 @@
                         class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Login</a>
                     <a href="{{ route('signup') }}" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Sign
                         Up</a>
-                    {{-- <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Your Profile</a>
-                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Settings</a>
+                    <a href="{{route('profile')}}" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Your Profile</a>
+                    {{-- <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Settings</a>
                     <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Sign out</a> --}}
                 </div>
             </div>
