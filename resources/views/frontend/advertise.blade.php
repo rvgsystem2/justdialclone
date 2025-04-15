@@ -102,7 +102,7 @@
 
                 <!-- Centered Buttons for Mobile, Right Aligned for Desktop -->
                 <div class="flex justify-center md:justify-end space-x-3 md:space-x-4">
-                    <a href="{{route('login')}}"
+                    <a href="{{ route('login') }}"
                         class="px-4 py-2 border border-blue-600 text-blue-600 rounded-md hover:bg-blue-50 focus:outline-none focus:ring-2 focus:ring-blue-300 font-medium text-sm md:text-base transition-all duration-200">
                         Login
                     </a>
@@ -178,25 +178,19 @@
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
             <p class="text-center text-gray-500 mb-8">TRUSTED BY BUSINESSES ACROSS INDIA</p>
             <div class="flex flex-wrap justify-center items-center gap-12">
-                <!-- Brand Logos -->
-                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/JustDial_Logo.png" alt="JustDial logo"
-                    class="h-8 opacity-60 hover:opacity-100 transition-opacity"
-                    onerror="this.onerror=null; this.src='https://via.placeholder.com/120x60?text=Logo';">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/9/9d/Flipkart_logo_2018.png" alt="Flipkart logo"
-                    class="h-8 opacity-60 hover:opacity-100 transition-opacity"
-                    onerror="this.onerror=null; this.src='https://via.placeholder.com/120x60?text=Logo';">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/0/0b/PhonePe_logo.png" alt="PhonePe logo"
-                    class="h-8 opacity-60 hover:opacity-100 transition-opacity"
-                    onerror="this.onerror=null; this.src='https://via.placeholder.com/120x60?text=Logo';">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/e/e3/Amazon_logo.svg" alt="Amazon logo"
-                    class="h-8 opacity-60 hover:opacity-100 transition-opacity"
-                    onerror="this.onerror=null; this.src='https://via.placeholder.com/120x60?text=Logo';">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Myntra_logo.png" alt="Myntra logo"
-                    class="h-8 opacity-60 hover:opacity-100 transition-opacity"
-                    onerror="this.onerror=null; this.src='https://via.placeholder.com/120x60?text=Logo';">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Paytm_Logo.svg" alt="Paytm logo"
-                    class="h-8 opacity-60 hover:opacity-100 transition-opacity"
-                    onerror="this.onerror=null; this.src='https://via.placeholder.com/120x60?text=Logo';">
+                <!-- Brand Logos using placeholder images -->
+                <img src="/api/placeholder/120/60?text=JustDial" alt="JustDial logo"
+                    class="h-8 opacity-60 hover:opacity-100 transition-opacity">
+                <img src="/api/placeholder/120/60?text=Flipkart" alt="Flipkart logo"
+                    class="h-8 opacity-60 hover:opacity-100 transition-opacity">
+                <img src="/api/placeholder/120/60?text=PhonePe" alt="PhonePe logo"
+                    class="h-8 opacity-60 hover:opacity-100 transition-opacity">
+                <img src="/api/placeholder/120/60?text=Amazon" alt="Amazon logo"
+                    class="h-8 opacity-60 hover:opacity-100 transition-opacity">
+                <img src="/api/placeholder/120/60?text=Myntra" alt="Myntra logo"
+                    class="h-8 opacity-60 hover:opacity-100 transition-opacity">
+                <img src="/api/placeholder/120/60?text=Paytm" alt="Paytm logo"
+                    class="h-8 opacity-60 hover:opacity-100 transition-opacity">
             </div>
         </div>
     </section>
