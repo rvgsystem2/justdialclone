@@ -27,12 +27,11 @@
         <div class="hidden md:flex items-center flex-1 max-w-2xl mx-4">
             <div class="relative flex-1 flex items-center">
                 <!-- Location Dropdown -->
-                <div class="relative group">
-                    <!-- Trigger/Input -->
+                <div class="relative">
                     <div class="flex items-center bg-gray-50 border border-gray-200 rounded-l-lg px-3 h-12 w-48 min-w-[12rem] hover:border-blue-400 transition-colors cursor-pointer"
-                        onclick="toggleLocationDropdown()">
+                        onclick="toggleDesktopLocationDropdown()">
                         <span class="material-symbols-outlined text-gray-500 text-lg mr-2">location_on</span>
-                        <input type="text" id="locationInputFull" value="Mumbai" readonly
+                        <input type="text" id="desktopLocationInput" value="Mumbai" readonly
                             class="bg-transparent outline-none text-sm w-full text-gray-800 font-medium placeholder-gray-500 truncate cursor-pointer"
                             placeholder="Select Location" />
                         <span
@@ -40,20 +39,21 @@
                     </div>
 
                     <!-- Dropdown Menu -->
-                    <ul id="locationDropdown"
-                        class="absolute z-10 hidden group-hover:block bg-white border border-gray-200 rounded-lg shadow-md mt-1 w-full max-h-60 overflow-y-auto">
+                    <ul id="desktopLocationDropdown"
+                        class="absolute z-10 hidden bg-white border border-gray-200 rounded-lg shadow-md mt-1 w-full max-h-60 overflow-y-auto">
                         <li class="px-4 py-2 hover:bg-blue-50 cursor-pointer text-sm text-gray-700"
-                            onclick="selectLocationFull('Mumbai')">Mumbai</li>
+                            onclick="selectDesktopLocation('Mumbai')">Mumbai</li>
                         <li class="px-4 py-2 hover:bg-blue-50 cursor-pointer text-sm text-gray-700"
-                            onclick="selectLocationFull('Delhi')">Delhi</li>
+                            onclick="selectDesktopLocation('Delhi')">Delhi</li>
                         <li class="px-4 py-2 hover:bg-blue-50 cursor-pointer text-sm text-gray-700"
-                            onclick="selectLocationFull('Bangalore')">Bangalore</li>
+                            onclick="selectDesktopLocation('Bangalore')">Bangalore</li>
                         <li class="px-4 py-2 hover:bg-blue-50 cursor-pointer text-sm text-gray-700"
-                            onclick="selectLocationFull('Hyderabad')">Hyderabad</li>
+                            onclick="selectDesktopLocation('Hyderabad')">Hyderabad</li>
                         <li class="px-4 py-2 hover:bg-blue-50 cursor-pointer text-sm text-gray-700"
-                            onclick="selectLocationFull('Pune')">Pune</li>
+                            onclick="selectDesktopLocation('Pune')">Pune</li>
                     </ul>
                 </div>
+
 
                 <!-- Search Input -->
                 <div
@@ -150,33 +150,29 @@
                 <div class="space-y-3">
                     <!-- Location Input with Dropdown -->
                     <div class="relative w-full">
-                        <!-- Input Container -->
-                        <div onclick="toggleLocationDropdown()"
+                        <div onclick="toggleMobileLocationDropdown()"
                             class="flex items-center bg-gray-50 border border-gray-200 rounded-lg px-3 h-12 w-full hover:border-blue-400 transition-colors cursor-pointer">
                             <span class="material-symbols-outlined text-gray-500 text-lg mr-2">location_on</span>
-                            <input type="text" id="locationInputFull" value="Mumbai" readonly
+                            <input type="text" id="mobileLocationInput" value="Mumbai" readonly
                                 class="bg-transparent outline-none text-sm w-full text-gray-800 font-medium placeholder-gray-500 cursor-pointer"
                                 placeholder="Select Location" />
                             <span class="material-symbols-outlined text-gray-400 text-lg ml-1">expand_more</span>
                         </div>
 
-                        <!-- Dropdown -->
-                        <ul id="locationDropdown"
+                        <ul id="mobileLocationDropdown"
                             class="absolute z-10 hidden bg-white border border-gray-200 rounded-lg shadow-md mt-1 w-full max-h-60 overflow-y-auto">
                             <li class="px-4 py-2 hover:bg-blue-50 cursor-pointer text-sm text-gray-700"
-                                onclick="selectLocationFull('Mumbai')">Mumbai</li>
+                                onclick="selectMobileLocation('Mumbai')">Mumbai</li>
                             <li class="px-4 py-2 hover:bg-blue-50 cursor-pointer text-sm text-gray-700"
-                                onclick="selectLocationFull('Delhi')">Delhi</li>
+                                onclick="selectMobileLocation('Delhi')">Delhi</li>
                             <li class="px-4 py-2 hover:bg-blue-50 cursor-pointer text-sm text-gray-700"
-                                onclick="selectLocationFull('Bangalore')">Bangalore</li>
+                                onclick="selectMobileLocation('Bangalore')">Bangalore</li>
                             <li class="px-4 py-2 hover:bg-blue-50 cursor-pointer text-sm text-gray-700"
-                                onclick="selectLocationFull('Hyderabad')">Hyderabad</li>
+                                onclick="selectMobileLocation('Hyderabad')">Hyderabad</li>
                             <li class="px-4 py-2 hover:bg-blue-50 cursor-pointer text-sm text-gray-700"
-                                onclick="selectLocationFull('Pune')">Pune</li>
+                                onclick="selectMobileLocation('Pune')">Pune</li>
                         </ul>
                     </div>
-
-
                     <!-- Search Input -->
                     <div
                         class="flex items-center bg-gray-50 border border-gray-200 rounded-lg px-3 h-12 w-full hover:border-blue-400 transition-colors">
@@ -265,24 +261,43 @@
 <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
 
 
+<!-- Custom JS for Location Dropdowns -->
 <script>
-    function toggleLocationDropdown() {
-        const dropdown = document.getElementById('locationDropdown');
+    // Desktop Dropdown
+    function toggleDesktopLocationDropdown() {
+        const dropdown = document.getElementById('desktopLocationDropdown');
         dropdown.classList.toggle('hidden');
     }
 
-    function selectLocationFull(location) {
-        document.getElementById('locationInputFull').value = location;
-        document.getElementById('locationDropdown').classList.add('hidden');
+    function selectDesktopLocation(city) {
+        document.getElementById('desktopLocationInput').value = city;
+        document.getElementById('desktopLocationDropdown').classList.add('hidden');
     }
 
-    // Close dropdown if clicked outside
+    // Mobile Dropdown
+    function toggleMobileLocationDropdown() {
+        const dropdown = document.getElementById('mobileLocationDropdown');
+        dropdown.classList.toggle('hidden');
+    }
+
+    function selectMobileLocation(city) {
+        document.getElementById('mobileLocationInput').value = city;
+        document.getElementById('mobileLocationDropdown').classList.add('hidden');
+    }
+
+    // Hide dropdown if clicked outside
     document.addEventListener('click', function(e) {
-        const target = e.target;
-        const dropdown = document.getElementById('locationDropdown');
-        const inputContainer = target.closest('.relative');
-        if (!inputContainer || !inputContainer.contains(target)) {
-            dropdown?.classList.add('hidden');
+        const desktopTrigger = document.getElementById('desktopLocationInput');
+        const mobileTrigger = document.getElementById('mobileLocationInput');
+
+        if (!e.target.closest('#desktopLocationDropdown') && !e.target.closest(
+                '[onclick*="toggleDesktopLocationDropdown"]')) {
+            document.getElementById('desktopLocationDropdown').classList.add('hidden');
+        }
+
+        if (!e.target.closest('#mobileLocationDropdown') && !e.target.closest(
+                '[onclick*="toggleMobileLocationDropdown"]')) {
+            document.getElementById('mobileLocationDropdown').classList.add('hidden');
         }
     });
 </script>
