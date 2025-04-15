@@ -71,7 +71,7 @@
                             </div>
                         </li>
                     </ul>
-    
+
 
                     <!-- Social Media Section -->
                     <div class="mt-12 pt-8 border-t border-gray-200">
