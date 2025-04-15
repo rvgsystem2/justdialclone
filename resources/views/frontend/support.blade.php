@@ -8,48 +8,17 @@
             need further help.
         </p>
 
+        <!-- FAQ Section -->
         <div class="space-y-8">
-            <!-- FAQ Section -->
             <div>
                 <h2 class="text-2xl font-semibold text-gray-800 mb-4">Frequently Asked Questions (FAQs)</h2>
                 <div class="space-y-6">
-                    <!-- FAQ Item 1 -->
-                    <div class="border-t border-gray-300 pt-4">
-                        <h3 class="text-xl font-semibold text-gray-800">How can I create an account?</h3>
-                        <p class="text-gray-600 mt-2">
-                            To create an account, click on the "Sign Up" button at the top right of the page. Fill in your
-                            details and click "Submit" to complete the registration process.
-                        </p>
-                    </div>
-
-                    <!-- FAQ Item 2 -->
-                    <div class="border-t border-gray-300 pt-4">
-                        <h3 class="text-xl font-semibold text-gray-800">How do I reset my password?</h3>
-                        <p class="text-gray-600 mt-2">
-                            To reset your password, click on the "Forgot Password" link on the login page. Enter your
-                            email address, and we'll send you instructions to reset your password.
-                        </p>
-                    </div>
-
-                    <!-- FAQ Item 3 -->
-                    <div class="border-t border-gray-300 pt-4">
-                        <h3 class="text-xl font-semibold text-gray-800">How can I contact customer support?</h3>
-                        <p class="text-gray-600 mt-2">
-                            You can contact customer support by visiting our "Contact Us" page. Alternatively, you can
-                            email us at <a href="mailto:support@justdial.com"
-                                class="text-blue-500 hover:underline">support@justdial.com</a>.
-                        </p>
-                    </div>
-
-                    <!-- FAQ Item 4 -->
-                    <div class="border-t border-gray-300 pt-4">
-                        <h3 class="text-xl font-semibold text-gray-800">What is the return policy?</h3>
-                        <p class="text-gray-600 mt-2">
-                            Our return policy allows you to return items within 30 days of purchase. For more details,
-                            please refer to our <a href="" class="text-blue-500 hover:underline">Return Policy</a>
-                            page.
-                        </p>
-                    </div>
+                    @foreach ([['title' => 'How can I create an account?', 'desc' => 'Click on the "Sign Up" button at the top right of the page. Fill in your details and click "Submit" to register.'], ['title' => 'How do I reset my password?', 'desc' => 'Click on "Forgot Password" on the login page. Enter your email address, and follow the instructions sent to your inbox.'], ['title' => 'How can I contact customer support?', 'desc' => 'Visit our "Contact Us" page or email us at <a href="mailto:support@justdial.com" class="text-blue-500 hover:underline">support@justdial.com</a>.'], ['title' => 'What is the return policy?', 'desc' => 'You may return items within 30 days of purchase. For full details, visit our <a href="#" class="text-blue-500 hover:underline">Return Policy</a> page.']] as $faq)
+                        <div class="border-t border-gray-300 pt-4">
+                            <h3 class="text-xl font-semibold text-gray-800">{{ $faq['title'] }}</h3>
+                            <p class="text-gray-600 mt-2">{!! $faq['desc'] !!}</p>
+                        </div>
+                    @endforeach
                 </div>
             </div>
 
@@ -61,32 +30,30 @@
                     support team directly. We are here to help!
                 </p>
 
-                <div class="space-y-4">
-                    <!-- Contact Option 1: Phone -->
+                <div class="space-y-6">
                     <div class="flex items-start space-x-4">
-                        <span class="material-symbols-outlined text-blue-400 mt-0.5">call</span>
+                        <span class="material-symbols-outlined text-blue-500 text-2xl">call</span>
                         <div>
                             <p class="text-gray-600 text-sm">Customer Care</p>
-                            <a href="tel:+918888888888" class="text-blue-500 hover:underline text-lg">+91 8888888888</a>
+                            <a href="tel:+918888888888" class="text-blue-500 hover:underline text-lg font-medium">+91
+                                8888888888</a>
                         </div>
                     </div>
 
-                    <!-- Contact Option 2: Email -->
                     <div class="flex items-start space-x-4">
-                        <span class="material-symbols-outlined text-blue-400 mt-0.5">mail</span>
+                        <span class="material-symbols-outlined text-blue-500 text-2xl">mail</span>
                         <div>
                             <p class="text-gray-600 text-sm">Email Support</p>
                             <a href="mailto:support@justdial.com"
-                                class="text-blue-500 hover:underline text-lg">support@justdial.com</a>
+                                class="text-blue-500 hover:underline text-lg font-medium">support@justdial.com</a>
                         </div>
                     </div>
 
-                    <!-- Contact Option 3: Office Address -->
                     <div class="flex items-start space-x-4">
-                        <span class="material-symbols-outlined text-blue-400 mt-0.5">location_on</span>
+                        <span class="material-symbols-outlined text-blue-500 text-2xl">location_on</span>
                         <div>
                             <p class="text-gray-600 text-sm">Corporate Office</p>
-                            <p class="text-gray-800">Mumbai, Maharashtra, India</p>
+                            <p class="text-gray-800 font-medium">Mumbai, Maharashtra, India</p>
                         </div>
                     </div>
                 </div>
