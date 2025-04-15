@@ -309,25 +309,32 @@
                                 <option value="GJ">Gujarat</option>
                             </select>
                         </div>
-
                         <!-- Image Upload -->
                         <div class="col-span-2 mt-4">
-                            <label class="block text-xs text-gray-600 mb-1 ml-1">Upload Business Photo</label>
-                            <div class="flex items-center gap-4">
+                            <label class="block text-xs text-gray-600 mb-1 ml-1">Upload Business Photos</label>
+                            <div class="flex flex-wrap items-start gap-4">
+                                <!-- Upload Button -->
                                 <label
                                     class="flex items-center justify-center w-32 h-32 border-2 border-dashed border-gray-300 rounded-lg cursor-pointer hover:border-blue-400 transition">
-                                    <input type="file" accept="image/*" class="hidden" id="businessImage" />
+                                    <input type="file" accept="image/*" multiple class="hidden"
+                                        id="businessImages" />
                                     <span class="text-gray-400 text-sm text-center px-2">Click to Upload</span>
                                 </label>
-                                <div class="w-32 h-32 rounded-lg overflow-hidden border border-gray-200">
-                                    <img id="previewImage" src="{{ asset('asset/images/sample.jpeg') }}" alt="Preview"
-                                        class="object-cover w-full h-full" />
+
+                                <!-- Preview Container -->
+                                <div id="previewContainer" class="flex flex-wrap gap-4">
+                                    <!-- Existing preview or default -->
+                                    <div class="w-32 h-32 rounded-lg overflow-hidden border border-gray-200">
+                                        <img src="{{ asset('asset/images/sample.jpeg') }}" alt="Preview"
+                                            class="object-cover w-full h-full" />
+                                    </div>
                                 </div>
                             </div>
                         </div>
+
                     </div>
 
-                    <a href="{{route('listingdetails')}}"
+                    <a href="{{ route('listingdetails') }}"
                         class="mt-6 w-full bg-blue-600 hover:bg-blue-700 text-white px-4 py-3 rounded-lg transition-colors duration-300 shadow-md hover:shadow-lg font-medium inline-block text-center">
                         Save and Continue <i class="fas fa-arrow-right ml-1"></i>
                     </a>
