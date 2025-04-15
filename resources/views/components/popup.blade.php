@@ -40,12 +40,12 @@
 </style>
 
 <!-- Trigger button (for demo purposes) -->
-<div class="fixed bottom-4 right-4">
+{{-- <div class="fixed bottom-4 right-4">
     <button onclick="showModal()"
         class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg shadow-lg transition-all">
         Show Login Modal
     </button>
-</div>
+</div> --}}
 
 <!-- Improved Modal -->
 <div id="popupModal"
