@@ -1,6 +1,15 @@
 @extends('components.main')
 
 @section('content')
+    <style>
+        .tab-link.active-tab {
+            border-color: #3b82f6;
+            /* blue-500 */
+            color: #2563eb;
+            /* blue-600 */
+        }
+    </style>
+
     <link
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
         rel="stylesheet" />
@@ -84,10 +93,12 @@
     <!-- Navigation Tabs -->
     <div class="max-w-7xl mx-auto mt-6">
         <div class="border-b border-gray-200">
-            <nav class="-mb-px flex space-x-8 overflow-x-auto px-4 sm:px-6 lg:px-8">
+            <nav class="-mb-px flex space-x-8 overflow-x-auto px-4 sm:px-6 lg:px-8" id="tabs-nav">
                 @foreach (['Overview', 'Photos', 'Quick Info', 'Services', 'Reviews', 'Catalog'] as $tab)
-                    <a href="#"
-                        class="{{ $tab === 'Overview' ? 'border-b-2 border-blue-500 text-blue-600' : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300' }} whitespace-nowrap py-4 px-1 font-medium text-sm">{{ $tab }}</a>
+                    <a href="javascript:void(0);" data-tab="{{ strtolower(str_replace(' ', '-', $tab)) }}"
+                        class="tab-link {{ $tab === 'Overview' ? 'active-tab' : '' }} whitespace-nowrap py-4 px-1 font-medium text-sm border-b-2 border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300">
+                        {{ $tab }}
+                    </a>
                 @endforeach
             </nav>
         </div>
@@ -96,155 +107,221 @@
     <!-- Main Content Grid -->
     <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-6 px-4 sm:px-6 lg:px-8 mt-6">
         <div class="lg:col-span-2 space-y-6">
-            <!-- Photo Gallery -->
-            <div>
-                <h2 class="text-lg font-semibold text-gray-900 mb-3">Gallery</h2>
-                <div class="grid grid-cols-2 md:grid-cols-3 gap-3">
-                    @foreach (['https://i.imgur.com/ELRz65C.jpg', 'https://i.imgur.com/w1tQTfW.jpg', 'https://i.imgur.com/tYFlXlw.jpg', 'https://i.imgur.com/I0ONZ6N.jpg', 'https://i.imgur.com/zUFThhU.jpg'] as $img)
-                        <div class="aspect-square rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
-                            <img src="{{ $img }}" class="w-full h-full object-cover" alt="Jewellery">
-                        </div>
-                    @endforeach
-                </div>
-            </div>
+            <!-- Overview Tab Content -->
+            <div id="overview" class="tab-section">
+                <!-- About Section -->
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+                    <h2 class="text-lg font-semibold text-gray-900 mb-3">About Meghna Jewellers Pvt Ltd</h2>
+                    <div class="prose prose-sm text-gray-600">
+                        <p>Established in 1988, Meghna Jewellers has been a trusted name in the jewellery industry for over
+                            three decades. We specialize in exquisite diamond and gold jewellery crafted with precision and
+                            passion.</p>
 
-            <!-- About Section -->
-            <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
-                <h2 class="text-lg font-semibold text-gray-900 mb-3">About Meghna Jewellers Pvt Ltd</h2>
-                <div class="prose prose-sm text-gray-600">
-                    <p>Established in 1988, Meghna Jewellers has been a trusted name in the jewellery industry for over
-                        three decades. We specialize in exquisite diamond and gold jewellery crafted with precision and
-                        passion.</p>
-
-                    <div class="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-4">
-                        @foreach ([['Services', 'Same Day Delivery, Custom Designs, Repair Services, Delivery Available'], ['Specializations', 'Diamond Jewellery, Gold Jewellery, Bridal Sets, Antique Collections'], ['Payment Options', 'Cash, Credit/Debit Cards, EMI Options, Digital Payments'], ['Certifications', 'BIS Hallmark Certified, IGI Certified Diamonds']] as $item)
-                            <div class="flex items-start gap-2">
-                                <span class="material-symbols-outlined text-blue-500 mt-0.5">check_circle</span>
-                                <div>
-                                    <h4 class="font-medium text-gray-900">{{ $item[0] }}</h4>
-                                    <p class="text-sm text-gray-600">{{ $item[1] }}</p>
-                                </div>
-                            </div>
-                        @endforeach
-                    </div>
-                </div>
-            </div>
-
-            <!-- Catalog Section -->
-            <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
-                <div class="flex items-center justify-between mb-4">
-                    <h2 class="text-lg font-semibold text-gray-900">Our Collection</h2>
-                    <a href="#" class="text-sm font-medium text-blue-600 hover:text-blue-700 flex items-center gap-1">
-                        View All <span class="material-symbols-outlined text-base">chevron_right</span>
-                    </a>
-                </div>
-
-                <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
-                    @foreach ([['Kundan Necklace', 'Traditional gold-plated necklace', 'https://i.imgur.com/tYFlXlw.jpg', '₹25,000'], ['Diamond Ring', 'Elegant solitaire ring', 'https://i.imgur.com/zUFThhU.jpg', '₹45,000'], ['Bridal Set', 'Complete wedding jewellery set', 'https://i.imgur.com/ELRz65C.jpg', '₹1,25,000'], ['Pearl Earrings', 'Luxury south sea pearls', 'https://i.imgur.com/I0ONZ6N.jpg', '₹18,500'], ['Gold Bangle', '22K pure gold bangle', 'https://i.imgur.com/w1tQTfW.jpg', '₹32,000'], ['Antique Pendant', 'Victorian style pendant', 'https://i.imgur.com/ELRz65C.jpg', '₹28,750']] as $item)
-                        <div class="group">
-                            <div class="aspect-square rounded-lg overflow-hidden bg-gray-100 mb-2">
-                                <img src="{{ $item[2] }}"
-                                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                                    alt="{{ $item[0] }}">
-                            </div>
-                            <h3 class="text-sm font-medium text-gray-900">{{ $item[0] }}</h3>
-                            <p class="text-xs text-gray-500">{{ $item[1] }}</p>
-                            <p class="text-sm font-medium text-gray-900 mt-1">{{ $item[3] }}</p>
-                        </div>
-                    @endforeach
-                </div>
-
-                <div class="mt-6">
-                    <a href="https://yourwebsite.com/full-catalog" target="_blank"
-                        class="w-full flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2.5 rounded-lg font-medium transition-colors">
-                        See Our Catalogs <span class="material-symbols-outlined text-base">chevron_right</span>
-                    </a>
-                </div>
-
-
-                <div class="mt-6">
-                    <button
-                        class="w-full flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2.5 rounded-lg font-medium transition-colors">
-                        <span class="material-symbols-outlined text-lg">download</span>
-                        Download Full Catalog
-                    </button>
-                </div>
-            </div>
-
-            <!-- Reviews Section -->
-            <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
-                <h2 class="text-lg font-semibold text-gray-900 mb-4">Customer Reviews</h2>
-
-                <div class="flex flex-col sm:flex-row items-center gap-6 mb-6">
-                    <div class="flex flex-col items-center">
-                        <div
-                            class="bg-gradient-to-br from-yellow-400 to-yellow-500 text-white text-4xl font-bold w-24 h-24 flex items-center justify-center rounded-full">
-                            3.8</div>
-                        <p class="text-sm text-gray-600 mt-2">88 Ratings</p>
-                    </div>
-
-                    <div class="flex-1 w-full">
-                        <div class="space-y-2">
-                            @foreach (range(5, 1) as $rating)
-                                <div class="flex items-center gap-2">
-                                    <span class="text-sm font-medium w-8">{{ $rating }} Star</span>
-                                    <div class="flex-1 h-2 bg-gray-200 rounded-full overflow-hidden">
-                                        <div class="h-full bg-yellow-400 rounded-full" style="width: {{ rand(30, 100) }}%">
-                                        </div>
+                        <div class="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            @foreach ([['Services', 'Same Day Delivery, Custom Designs, Repair Services, Delivery Available'], ['Specializations', 'Diamond Jewellery, Gold Jewellery, Bridal Sets, Antique Collections'], ['Payment Options', 'Cash, Credit/Debit Cards, EMI Options, Digital Payments'], ['Certifications', 'BIS Hallmark Certified, IGI Certified Diamonds']] as $item)
+                                <div class="flex items-start gap-2">
+                                    <span class="material-symbols-outlined text-blue-500 mt-0.5">check_circle</span>
+                                    <div>
+                                        <h4 class="font-medium text-gray-900">{{ $item[0] }}</h4>
+                                        <p class="text-sm text-gray-600">{{ $item[1] }}</p>
                                     </div>
-                                    <span class="text-xs text-gray-500 w-8 text-right">{{ rand(5, 30) }}%</span>
                                 </div>
                             @endforeach
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <!-- Review Form -->
-                <div class="border-t border-gray-200 pt-4">
-                    <h3 class="text-sm font-medium text-gray-900 mb-3">Share your experience</h3>
-                    <div class="flex items-center gap-1 mb-3">
-                        @foreach (range(1, 5) as $star)
-                            <button type="button" class="text-gray-300 hover:text-yellow-400 focus:outline-none">
-                                <span class="material-symbols-outlined text-2xl">star</span>
-                            </button>
+            <!-- Photos Tab Content -->
+            <div id="photos" class="tab-section hidden">
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+                    <h2 class="text-lg font-semibold text-gray-900 mb-3">Gallery</h2>
+                    <div class="grid grid-cols-2 md:grid-cols-3 gap-3">
+                        @foreach (['https://i.imgur.com/ELRz65C.jpg', 'https://i.imgur.com/w1tQTfW.jpg', 'https://i.imgur.com/tYFlXlw.jpg', 'https://i.imgur.com/I0ONZ6N.jpg', 'https://i.imgur.com/zUFThhU.jpg'] as $img)
+                            <div
+                                class="aspect-square rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                                <img src="{{ $img }}" class="w-full h-full object-cover" alt="Jewellery">
+                            </div>
                         @endforeach
                     </div>
-                    <form>
-                        <textarea rows="3"
-                            class="w-full border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
-                            placeholder="Write your review..."></textarea>
-                        <div class="mt-2 flex justify-end">
-                            <button type="submit"
-                                class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg font-medium">Submit
-                                Review</button>
-                        </div>
-                    </form>
                 </div>
+            </div>
 
-                <!-- Recent Reviews -->
-                <div class="mt-6 space-y-6">
-                    @foreach ([['Rahul Sharma', 5, '2 weeks ago', 'Excellent service and quality products. The staff was very helpful in selecting my wedding ring.'], ['Priya Patel', 4, '1 month ago', 'Beautiful designs and reasonable prices. Delivery was prompt.'], ['Vikram Joshi', 3, '2 months ago', 'Good collection but could improve on customer service.']] as $review)
-                        <div class="border-b border-gray-200 pb-6 last:border-0 last:pb-0">
-                            <div class="flex items-center justify-between mb-2">
-                                <h4 class="font-medium text-gray-900">{{ $review[0] }}</h4>
-                                <span class="text-xs text-gray-500">{{ $review[2] }}</span>
+            <!-- Quick Info Tab Content -->
+            <div id="quick-info" class="tab-section hidden">
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+                    <h2 class="text-lg font-semibold text-gray-900 mb-3">Quick Information</h2>
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-3 pb-3 border-b border-gray-100">
+                            <span class="material-symbols-outlined text-blue-500">store</span>
+                            <div>
+                                <h3 class="font-medium text-gray-900">Business Type</h3>
+                                <p class="text-sm text-gray-600">Diamond Jewellery Showroom, Gold Retailer</p>
                             </div>
-                            <div class="flex items-center gap-1 mb-2">
-                                @foreach (range(1, 5) as $star)
-                                    <span
-                                        class="material-symbols-outlined text-sm {{ $star <= $review[1] ? 'text-yellow-400' : 'text-gray-300' }}">star</span>
+                        </div>
+                        <div class="flex items-center gap-3 pb-3 border-b border-gray-100">
+                            <span class="material-symbols-outlined text-blue-500">paid</span>
+                            <div>
+                                <h3 class="font-medium text-gray-900">Price Range</h3>
+                                <p class="text-sm text-gray-600">₹15,000 - ₹15,00,000</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-3 pb-3 border-b border-gray-100">
+                            <span class="material-symbols-outlined text-blue-500">language</span>
+                            <div>
+                                <h3 class="font-medium text-gray-900">Languages</h3>
+                                <p class="text-sm text-gray-600">English, Hindi, Marathi, Gujarati</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <span class="material-symbols-outlined text-blue-500">payments</span>
+                            <div>
+                                <h3 class="font-medium text-gray-900">Payment Methods</h3>
+                                <p class="text-sm text-gray-600">Cash, Cards, UPI, EMI Available</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Services Tab Content -->
+            <div id="services" class="tab-section hidden">
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+                    <h2 class="text-lg font-semibold text-gray-900 mb-3">Our Services</h2>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        @foreach ([['design', 'Custom Design', 'Get your dream jewellery designed by our experts'], ['diamond', 'Diamond Setting', 'Expert diamond setting for all types of jewellery'], ['autorenew', 'Exchange', 'Easy exchange of old jewellery for new designs'], ['build', 'Jewellery Repair', 'Professional repair and restoration services'], ['cleaning_services', 'Cleaning', 'Free cleaning for all jewellery purchased from us'], ['inventory_2', 'Valuation', 'Professional jewellery valuation for insurance']] as $service)
+                            <div class="flex items-start gap-3 p-3 border border-gray-100 rounded-lg hover:bg-gray-50">
+                                <span class="material-symbols-outlined text-blue-500 mt-0.5">{{ $service[0] }}</span>
+                                <div>
+                                    <h3 class="font-medium text-gray-900">{{ $service[1] }}</h3>
+                                    <p class="text-sm text-gray-600">{{ $service[2] }}</p>
+                                </div>
+                            </div>
+                        @endforeach
+                    </div>
+                </div>
+            </div>
+
+            <!-- Reviews Tab Content -->
+            <div id="reviews" class="tab-section hidden">
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+                    <h2 class="text-lg font-semibold text-gray-900 mb-4">Customer Reviews</h2>
+
+                    <div class="flex flex-col sm:flex-row items-center gap-6 mb-6">
+                        <div class="flex flex-col items-center">
+                            <div
+                                class="bg-gradient-to-br from-yellow-400 to-yellow-500 text-white text-4xl font-bold w-24 h-24 flex items-center justify-center rounded-full">
+                                3.8</div>
+                            <p class="text-sm text-gray-600 mt-2">88 Ratings</p>
+                        </div>
+
+                        <div class="flex-1 w-full">
+                            <div class="space-y-2">
+                                @foreach (range(5, 1) as $rating)
+                                    <div class="flex items-center gap-2">
+                                        <span class="text-sm font-medium w-8">{{ $rating }} Star</span>
+                                        <div class="flex-1 h-2 bg-gray-200 rounded-full overflow-hidden">
+                                            <div class="h-full bg-yellow-400 rounded-full"
+                                                style="width: {{ rand(30, 100) }}%">
+                                            </div>
+                                        </div>
+                                        <span class="text-xs text-gray-500 w-8 text-right">{{ rand(5, 30) }}%</span>
+                                    </div>
                                 @endforeach
                             </div>
-                            <p class="text-sm text-gray-600">{{ $review[3] }}</p>
                         </div>
-                    @endforeach
-                </div>
+                    </div>
 
-                <div class="mt-4">
-                    <a href="#"
-                        class="text-sm font-medium text-blue-600 hover:text-blue-700 flex items-center gap-1 justify-center">
-                        View All Reviews <span class="material-symbols-outlined text-base">chevron_right</span>
-                    </a>
+                    <!-- Review Form -->
+                    <div class="border-t border-gray-200 pt-4">
+                        <h3 class="text-sm font-medium text-gray-900 mb-3">Share your experience</h3>
+                        <div class="flex items-center gap-1 mb-3">
+                            @foreach (range(1, 5) as $star)
+                                <button type="button" class="text-gray-300 hover:text-yellow-400 focus:outline-none">
+                                    <span class="material-symbols-outlined text-2xl">star</span>
+                                </button>
+                            @endforeach
+                        </div>
+                        <form>
+                            <textarea rows="3"
+                                class="w-full border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                                placeholder="Write your review..."></textarea>
+                            <div class="mt-2 flex justify-end">
+                                <button type="submit"
+                                    class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg font-medium">Submit
+                                    Review</button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- Recent Reviews -->
+                    <div class="mt-6 space-y-6">
+                        @foreach ([['Rahul Sharma', 5, '2 weeks ago', 'Excellent service and quality products. The staff was very helpful in selecting my wedding ring.'], ['Priya Patel', 4, '1 month ago', 'Beautiful designs and reasonable prices. Delivery was prompt.'], ['Vikram Joshi', 3, '2 months ago', 'Good collection but could improve on customer service.']] as $review)
+                            <div class="border-b border-gray-200 pb-6 last:border-0 last:pb-0">
+                                <div class="flex items-center justify-between mb-2">
+                                    <h4 class="font-medium text-gray-900">{{ $review[0] }}</h4>
+                                    <span class="text-xs text-gray-500">{{ $review[2] }}</span>
+                                </div>
+                                <div class="flex items-center gap-1 mb-2">
+                                    @foreach (range(1, 5) as $star)
+                                        <span
+                                            class="material-symbols-outlined text-sm {{ $star <= $review[1] ? 'text-yellow-400' : 'text-gray-300' }}">star</span>
+                                    @endforeach
+                                </div>
+                                <p class="text-sm text-gray-600">{{ $review[3] }}</p>
+                            </div>
+                        @endforeach
+                    </div>
+
+                    <div class="mt-4">
+                        <a href="#"
+                            class="text-sm font-medium text-blue-600 hover:text-blue-700 flex items-center gap-1 justify-center">
+                            View All Reviews <span class="material-symbols-outlined text-base">chevron_right</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Catalog Tab Content -->
+            <div id="catalog" class="tab-section hidden">
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+                    <div class="flex items-center justify-between mb-4">
+                        <h2 class="text-lg font-semibold text-gray-900">Our Collection</h2>
+                        <a href="#"
+                            class="text-sm font-medium text-blue-600 hover:text-blue-700 flex items-center gap-1">
+                            View All <span class="material-symbols-outlined text-base">chevron_right</span>
+                        </a>
+                    </div>
+
+                    <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
+                        @foreach ([['Kundan Necklace', 'Traditional gold-plated necklace', 'https://i.imgur.com/tYFlXlw.jpg', '₹25,000'], ['Diamond Ring', 'Elegant solitaire ring', 'https://i.imgur.com/zUFThhU.jpg', '₹45,000'], ['Bridal Set', 'Complete wedding jewellery set', 'https://i.imgur.com/ELRz65C.jpg', '₹1,25,000'], ['Pearl Earrings', 'Luxury south sea pearls', 'https://i.imgur.com/I0ONZ6N.jpg', '₹18,500'], ['Gold Bangle', '22K pure gold bangle', 'https://i.imgur.com/w1tQTfW.jpg', '₹32,000'], ['Antique Pendant', 'Victorian style pendant', 'https://i.imgur.com/ELRz65C.jpg', '₹28,750']] as $item)
+                            <div class="group">
+                                <div class="aspect-square rounded-lg overflow-hidden bg-gray-100 mb-2">
+                                    <img src="{{ $item[2] }}"
+                                        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                                        alt="{{ $item[0] }}">
+                                </div>
+                                <h3 class="text-sm font-medium text-gray-900">{{ $item[0] }}</h3>
+                                <p class="text-xs text-gray-500">{{ $item[1] }}</p>
+                                <p class="text-sm font-medium text-gray-900 mt-1">{{ $item[3] }}</p>
+                            </div>
+                        @endforeach
+                    </div>
+
+                    <div class="mt-6">
+                        <a href="https://yourwebsite.com/full-catalog" target="_blank"
+                            class="w-full flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2.5 rounded-lg font-medium transition-colors">
+                            See Our Catalogs <span class="material-symbols-outlined text-base">chevron_right</span>
+                        </a>
+                    </div>
+
+                    <div class="mt-6">
+                        <button
+                            class="w-full flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2.5 rounded-lg font-medium transition-colors">
+                            <span class="material-symbols-outlined text-lg">download</span>
+                            Download Full Catalog
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -299,7 +376,7 @@
                         <div class="flex flex-col gap-2">
                             @foreach ([['chat', 'WhatsApp', 'bg-green-600 hover:bg-green-700'], ['mail', 'Email', 'bg-gray-100 hover:bg-gray-200 text-gray-800']] as $msg)
                                 <button
-                                    class="flex items-center justify-center gap-2 {{ $msg[2] }} text-white px-4 py-2 rounded-lg font-medium transition-colors">
+                                    class="flex items-center justify-center gap-2 {{ $msg[2] }} {{ $msg[0] === 'chat' ? 'text-white' : '' }} px-4 py-2 rounded-lg font-medium transition-colors">
                                     <span class="material-symbols-outlined">{{ $msg[0] }}</span>
                                     {{ $msg[1] }}
                                 </button>
@@ -373,4 +450,48 @@
             <span class="material-symbols-outlined text-2xl">chat</span>
         </a>
     </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Get all tabs and tab content sections
+            const tabs = document.querySelectorAll(".tab-link");
+            const tabSections = document.querySelectorAll(".tab-section");
+
+            // Function to show a specific tab
+            function showTab(tabId) {
+                // Hide all tab sections
+                tabSections.forEach(section => {
+                    section.classList.add("hidden");
+                });
+
+                // Remove active class from all tabs
+                tabs.forEach(tab => {
+                    tab.classList.remove("active-tab");
+                });
+
+                // Show the selected tab section
+                const targetSection = document.getElementById(tabId);
+                if (targetSection) {
+                    targetSection.classList.remove("hidden");
+                }
+
+                // Add active class to the clicked tab
+                const activeTab = document.querySelector(`[data-tab="${tabId}"]`);
+                if (activeTab) {
+                    activeTab.classList.add("active-tab");
+                }
+            }
+
+            // Add click event listeners to all tabs
+            tabs.forEach(tab => {
+                tab.addEventListener("click", function() {
+                    const tabId = this.getAttribute("data-tab");
+                    showTab(tabId);
+                });
+            });
+
+            // Show the default tab (overview) on page load
+            showTab("overview");
+        });
+    </script>
 @endsection
