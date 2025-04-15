@@ -20,30 +20,33 @@
             </h1>
 
             <!-- Filters Row -->
-            <div class="flex flex-wrap items-center gap-2 text-sm mb-6">
-                <button class="bg-gray-100 px-3 py-1 rounded shadow-sm">Sort by</button>
-                <button class="bg-gray-100 px-3 py-1 rounded shadow-sm flex items-center gap-1">
-                    <span class="material-symbols-outlined text-base">star</span> Top Rated
-                </button>
-                <button class="bg-gray-100 px-3 py-1 rounded shadow-sm flex items-center gap-1">
-                    <span class="material-symbols-outlined text-base">bolt</span> Quick Response
-                </button>
-                <button class="bg-gray-100 px-3 py-1 rounded shadow-sm">Jewellery Type</button>
-                <button class="bg-gray-100 px-3 py-1 rounded shadow-sm flex items-center gap-1">
-                    <span class="material-symbols-outlined text-base">verified</span> Jd Verified
-                </button>
-                <button class="bg-gray-100 px-3 py-1 rounded shadow-sm flex items-center gap-1">
-                    <span class="material-symbols-outlined text-base">sell</span> Deals
-                </button>
-                <button class="bg-gray-100 px-3 py-1 rounded shadow-sm flex items-center gap-1">
-                    <span class="material-symbols-outlined text-base">workspace_premium</span> Jd Trust
-                </button>
-                <button class="bg-gray-100 px-3 py-1 rounded shadow-sm">Brand</button>
-                <button class="bg-gray-100 px-3 py-1 rounded shadow-sm">Ratings</button>
-                <button class="bg-gray-100 px-3 py-1 rounded shadow-sm flex items-center gap-1">
-                    <span class="material-symbols-outlined text-base">tune</span> All Filters
-                </button>
+            <div class="overflow-x-auto whitespace-nowrap mb-6">
+                <div class="inline-flex items-center gap-2 text-sm px-1">
+                    <button class="bg-gray-100 px-3 py-1 rounded shadow-sm whitespace-nowrap">Sort by</button>
+                    <button class="bg-gray-100 px-3 py-1 rounded shadow-sm flex items-center gap-1 whitespace-nowrap">
+                        <span class="material-symbols-outlined text-base">star</span> Top Rated
+                    </button>
+                    <button class="bg-gray-100 px-3 py-1 rounded shadow-sm flex items-center gap-1 whitespace-nowrap">
+                        <span class="material-symbols-outlined text-base">bolt</span> Quick Response
+                    </button>
+                    <button class="bg-gray-100 px-3 py-1 rounded shadow-sm whitespace-nowrap">Jewellery Type</button>
+                    <button class="bg-gray-100 px-3 py-1 rounded shadow-sm flex items-center gap-1 whitespace-nowrap">
+                        <span class="material-symbols-outlined text-base">verified</span> Jd Verified
+                    </button>
+                    <button class="bg-gray-100 px-3 py-1 rounded shadow-sm flex items-center gap-1 whitespace-nowrap">
+                        <span class="material-symbols-outlined text-base">sell</span> Deals
+                    </button>
+                    <button class="bg-gray-100 px-3 py-1 rounded shadow-sm flex items-center gap-1 whitespace-nowrap">
+                        <span class="material-symbols-outlined text-base">workspace_premium</span> Jd Trust
+                    </button>
+                    <button class="bg-gray-100 px-3 py-1 rounded shadow-sm whitespace-nowrap">Brand</button>
+                    <button class="bg-gray-100 px-3 py-1 rounded shadow-sm whitespace-nowrap">Ratings</button>
+                    <button class="bg-gray-100 px-3 py-1 rounded shadow-sm flex items-center gap-1 whitespace-nowrap">
+                        <span class="material-symbols-outlined text-base">tune</span> All Filters
+                    </button>
+                </div>
             </div>
+
 
             <!-- Content Area -->
             <div class="grid lg:grid-cols-3 gap-6">
