@@ -4,9 +4,7 @@
     <section class="max-w-7xl mx-auto py-20 px-4 sm:px-6 lg:px-8">
         <!-- Hero Section -->
         <div class="text-center mb-20">
-            <h1 class="text-5xl font-bold text-blue-600 mb-6 leading-tight underline underline-offset-4 decoration-blue-600">
-                About Us
-            </h1>
+            <h1 class="text-5xl font-bold text-gray-900 mb-6 leading-tight">About Us</h1>
             <h2 class="text-5xl font-bold text-gray-900 mb-6 leading-tight">Connecting Businesses <br> & Communities</h2>
             <p class="text-xl text-gray-600 max-w-3xl mx-auto">At [Company Name], we're revolutionizing how local businesses
                 thrive in the digital world while helping customers discover the best services around them.</p>
