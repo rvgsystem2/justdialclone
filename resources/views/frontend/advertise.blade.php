@@ -102,7 +102,7 @@
 
                 <!-- Centered Buttons for Mobile, Right Aligned for Desktop -->
                 <div class="flex justify-center md:justify-end space-x-3 md:space-x-4">
-                    <a href="#contact"
+                    <a href="{{route('login')}}"
                         class="px-4 py-2 border border-blue-600 text-blue-600 rounded-md hover:bg-blue-50 focus:outline-none focus:ring-2 focus:ring-blue-300 font-medium text-sm md:text-base transition-all duration-200">
                         Login
                     </a>
