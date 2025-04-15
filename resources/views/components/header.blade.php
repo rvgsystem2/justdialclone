@@ -74,7 +74,7 @@
             <a href="{{ route('contact') }}"
                 class="flex items-center space-x-1 text-gray-600 hover:text-blue-600 transition-colors group">
                 <span class="material-symbols-outlined text-xl group-hover:scale-110 transition-transform">mail</span>
-                <span class="text-sm font-medium">Contact</span>
+                <span class="text-sm font-medium">Contact Us</span>
             </a>
 
             <a href="{{ route('about') }}"
@@ -187,6 +187,11 @@
 
                 <!-- Mobile Navigation Links -->
                 <div class="space-y-2">
+                    <a href="{{ route('contact') }}"
+                        class="flex items-center space-x-3 text-gray-700 hover:text-blue-600 hover:bg-gray-50 p-2 rounded-lg transition-colors">
+                        <span class="material-symbols-outlined text-gray-500">mail</span>
+                        <span class="font-medium">Contact Us</span>
+                    </a>
                     <a href="{{ route('about') }}"
                         class="flex items-center space-x-3 text-gray-700 hover:text-blue-600 hover:bg-gray-50 p-2 rounded-lg transition-colors">
                         <span class="material-symbols-outlined text-gray-500">info</span>
