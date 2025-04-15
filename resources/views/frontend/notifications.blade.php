@@ -1,79 +1,158 @@
 @extends('components.main')
 
 @section('content')
+    <!-- Notification Page -->
+    <section class="bg-gray-50 min-h-screen py-12">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-4xl mx-auto">
+                <!-- Page Heading with Filter Options -->
+                <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-8 gap-4">
+                    <div>
+                        <h2 class="text-2xl sm:text-3xl font-bold text-gray-800">Notifications</h2>
+                        <p class="text-sm text-gray-500 mt-1">Manage your alerts and updates</p>
+                    </div>
 
-<!-- Notification Page -->
-<section class="bg-gray-50 min-h-screen py-12">
-    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="max-w-4xl mx-auto">
-            <!-- Page Heading -->
-            <div class="flex justify-between items-center mb-8">
-                <h2 class="text-3xl font-bold text-gray-800">Notifications</h2>
-                <button class="text-sm text-blue-600 hover:underline">Mark all as read</button>
+                    <div class="flex items-center gap-3">
+                        <div class="relative">
+                            <select
+                                class="appearance-none bg-white border border-gray-300 rounded-lg py-2 pl-3 pr-8 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                                <option>All Notifications</option>
+                                <option>Unread Only</option>
+                                <option>System</option>
+                                <option>Reviews</option>
+                                <option>Payments</option>
+                            </select>
+                            <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                                <i class="material-icons text-gray-700">arrow_drop_down</i>
+                            </div>
+                        </div>
+                        <button
+                            class="text-sm bg-blue-600 hover:bg-blue-700 text-white px-3 py-2 rounded-lg transition-colors">
+                            Mark all as read
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Notification List -->
+                <div class="space-y-3">
+                    <!-- Unread Notification with Icon -->
+                    <div
+                        class="relative flex items-start bg-white p-5 rounded-xl shadow-xs hover:shadow-sm transition-all border-l-4 border-blue-600 group">
+                        <div class="flex-shrink-0 mr-4">
+                            <div class="h-10 w-10 rounded-full bg-blue-100 flex items-center justify-center">
+                                <i class="material-icons h-5 w-5 text-blue-600">check_circle</i>
+                            </div>
+                        </div>
+                        <div class="flex-1 min-w-0">
+                            <p class="text-sm font-semibold text-gray-900 truncate">Your business profile has been approved!
+                            </p>
+                            <p class="text-sm text-gray-500 mt-1">Your profile is now visible to customers. Start getting
+                                discovered!</p>
+                            <p class="text-xs text-gray-400 mt-2">Just now</p>
+                        </div>
+                        <div class="ml-4 flex flex-col items-end">
+                            <button class="text-sm text-blue-600 hover:text-blue-800 font-medium mb-2">View</button>
+                            <button
+                                class="text-gray-400 hover:text-gray-600 opacity-0 group-hover:opacity-100 transition-opacity">
+                                <i class="material-icons h-4 w-4 text-gray-400">close</i>
+                            </button>
+                        </div>
+                        <div class="absolute top-3 left-3 w-2 h-2 rounded-full bg-blue-600"></div>
+                    </div>
+
+                    <!-- Unread Notification with Warning -->
+                    <div
+                        class="relative flex items-start bg-white p-5 rounded-xl shadow-xs hover:shadow-sm transition-all border-l-4 border-yellow-500 group">
+                        <div class="flex-shrink-0 mr-4">
+                            <div class="h-10 w-10 rounded-full bg-yellow-100 flex items-center justify-center">
+                                <i class="material-icons h-5 w-5 text-yellow-600">warning</i>
+                            </div>
+                        </div>
+                        <div class="flex-1 min-w-0">
+                            <p class="text-sm font-semibold text-gray-900 truncate">You received a new review on "Café
+                                Delight"</p>
+                            <p class="text-sm text-gray-500 mt-1">Customer left a 4-star rating with comments about your
+                                service</p>
+                            <p class="text-xs text-gray-400 mt-2">15 minutes ago</p>
+                        </div>
+                        <div class="ml-4 flex flex-col items-end">
+                            <button class="text-sm text-blue-600 hover:text-blue-800 font-medium mb-2">Respond</button>
+                            <button
+                                class="text-gray-400 hover:text-gray-600 opacity-0 group-hover:opacity-100 transition-opacity">
+                                <i class="material-icons h-4 w-4 text-gray-400">close</i>
+                            </button>
+                        </div>
+                        <div class="absolute top-3 left-3 w-2 h-2 rounded-full bg-yellow-500"></div>
+                    </div>
+
+                    <!-- Read Notification -->
+                    <div class="relative flex items-start bg-gray-50 p-5 rounded-xl border-l-4 border-gray-300 group">
+                        <div class="flex-shrink-0 mr-4">
+                            <div class="h-10 w-10 rounded-full bg-gray-200 flex items-center justify-center">
+                                <i class="material-icons h-5 w-5 text-gray-500">notifications</i>
+                            </div>
+                        </div>
+                        <div class="flex-1 min-w-0">
+                            <p class="text-sm font-medium text-gray-700 truncate">Subscription plan has been successfully
+                                updated</p>
+                            <p class="text-sm text-gray-500 mt-1">You've been upgraded to the Business Plan with all
+                                features</p>
+                            <p class="text-xs text-gray-400 mt-2">2 hours ago</p>
+                        </div>
+                        <div class="ml-4 flex flex-col items-end">
+                            <button class="text-sm text-blue-600 hover:text-blue-800 font-medium mb-2">Details</button>
+                            <button
+                                class="text-gray-400 hover:text-gray-600 opacity-0 group-hover:opacity-100 transition-opacity">
+                                <i class="material-icons h-4 w-4 text-gray-400">close</i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Read Notification with Action Button -->
+                    <div class="relative flex items-start bg-gray-50 p-5 rounded-xl border-l-4 border-gray-300 group">
+                        <div class="flex-shrink-0 mr-4">
+                            <div class="h-10 w-10 rounded-full bg-green-100 flex items-center justify-center">
+                                <i class="material-icons h-5 w-5 text-green-600">payment</i>
+                            </div>
+                        </div>
+                        <div class="flex-1 min-w-0">
+                            <p class="text-sm font-medium text-gray-700 truncate">Payment for Premium Plan was successful
+                            </p>
+                            <p class="text-sm text-gray-500 mt-1">Transaction ID: INV-2023-05678 • Amount: $29.99</p>
+                            <p class="text-xs text-gray-400 mt-2">1 day ago</p>
+                        </div>
+                        <div class="ml-4 flex flex-col items-end">
+                            <button
+                                class="text-sm bg-blue-600 hover:bg-blue-700 text-white px-3 py-1 rounded-md text-xs font-medium mb-2 transition-colors">
+                                Download Receipt
+                            </button>
+                            <button
+                                class="text-gray-400 hover:text-gray-600 opacity-0 group-hover:opacity-100 transition-opacity">
+                                <i class="material-icons h-4 w-4 text-gray-400">close</i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pagination -->
+                <div class="mt-8 flex items-center justify-between">
+                    <div class="text-sm text-gray-500">
+                        Showing <span class="font-medium">1</span> to <span class="font-medium">8</span> of <span
+                            class="font-medium">24</span> notifications
+                    </div>
+                    <div class="flex space-x-2">
+                        <button
+                            class="px-3 py-1 rounded-md border border-gray-300 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50">
+                            Previous
+                        </button>
+                        <button
+                            class="px-3 py-1 rounded-md border border-gray-300 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50">
+                            Next
+                        </button>
+                    </div>
+                </div>
+
             </div>
-
-            <!-- Notification List -->
-            <div class="space-y-4">
-                <!-- Unread Notification -->
-                <div class="flex items-start bg-white p-5 rounded-xl shadow-sm hover:shadow-md transition-shadow border-l-4 border-blue-600">
-                    <div class="flex-shrink-0 mt-1">
-                        <div class="w-3 h-3 rounded-full bg-blue-600"></div>
-                    </div>
-                    <div class="ml-4 flex-1">
-                        <p class="text-gray-800 font-medium">Your business profile has been approved!</p>
-                        <p class="text-sm text-gray-500">Just now</p>
-                    </div>
-                    <a href="#" class="text-sm text-blue-600 hover:underline font-medium">View</a>
-                </div>
-
-                <!-- Another Unread -->
-                <div class="flex items-start bg-white p-5 rounded-xl shadow-sm hover:shadow-md transition-shadow border-l-4 border-yellow-500">
-                    <div class="flex-shrink-0 mt-1">
-                        <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
-                    </div>
-                    <div class="ml-4 flex-1">
-                        <p class="text-gray-800 font-medium">You received a new review on your listing.</p>
-                        <p class="text-sm text-gray-500">15 minutes ago</p>
-                    </div>
-                    <a href="#" class="text-sm text-blue-600 hover:underline font-medium">Check</a>
-                </div>
-
-                <!-- Read Notification -->
-                <div class="flex items-start bg-gray-100 p-5 rounded-xl shadow-sm border-l-4 border-gray-400">
-                    <div class="flex-shrink-0 mt-1">
-                        <div class="w-3 h-3 rounded-full bg-gray-400"></div>
-                    </div>
-                    <div class="ml-4 flex-1">
-                        <p class="text-gray-700">Subscription plan has been successfully updated.</p>
-                        <p class="text-sm text-gray-500">2 hours ago</p>
-                    </div>
-                    <a href="#" class="text-sm text-blue-600 hover:underline font-medium">Details</a>
-                </div>
-
-                <!-- Read Notification -->
-                <div class="flex items-start bg-gray-100 p-5 rounded-xl shadow-sm border-l-4 border-gray-400">
-                    <div class="flex-shrink-0 mt-1">
-                        <div class="w-3 h-3 rounded-full bg-gray-400"></div>
-                    </div>
-                    <div class="ml-4 flex-1">
-                        <p class="text-gray-700">Your payment for Premium Plan was successful.</p>
-                        <p class="text-sm text-gray-500">1 day ago</p>
-                    </div>
-                    <a href="#" class="text-sm text-blue-600 hover:underline font-medium">Receipt</a>
-                </div>
-            </div>
-
-            <!-- No Notifications Example -->
-
-            <div class="text-center py-20">
-                <img src="https://www.svgrepo.com/show/13656/notification.svg" alt="No notifications"
-                     class="h-32 mx-auto mb-6 opacity-50">
-                <p class="text-gray-500 text-lg">You're all caught up!</p>
-            </div>
-           
-
         </div>
-    </div>
-</section>
-
+    </section>
 @endsection
