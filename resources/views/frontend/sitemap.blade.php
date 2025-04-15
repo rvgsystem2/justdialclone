@@ -1,5 +1,3 @@
-<!-- resources/views/sitemap.blade.php -->
-
 @extends('components.main')
 
 @section('content')
@@ -15,6 +13,10 @@
                 <h2 class="text-xl font-semibold text-gray-800 mb-4">Main Pages</h2>
                 <ul class="space-y-3">
                     <li><a href="{{ route('home') }}" class="text-blue-600 hover:text-blue-800 transition">🏠 Home</a></li>
+                    <li><a href="{{ route('contact') }}" class="text-blue-600 hover:text-blue-800 transition">📞 Contact</a>
+                    </li>
+                    <li><a href="{{ route('about') }}" class="text-blue-600 hover:text-blue-800 transition">ℹ️ About Us</a>
+                    </li>
                     <li><a href="{{ route('listing') }}" class="text-blue-600 hover:text-blue-800 transition">📄 All
                             Listings</a></li>
                     <li><a href="{{ route('listingdetails') }}" class="text-blue-600 hover:text-blue-800 transition">📌
