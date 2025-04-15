@@ -28,7 +28,6 @@
         </ol>
     </nav>
 
-
     <!-- Header Section -->
     <div class="max-w-7xl mx-auto bg-white p-6 shadow-sm rounded-xl mt-4 border border-gray-100">
         <div class="flex flex-col md:flex-row gap-6">
