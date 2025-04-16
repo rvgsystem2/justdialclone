@@ -11,7 +11,8 @@
                 <!-- Cover Photo -->
                 <div class="h-40 bg-gradient-to-r from-blue-500 to-indigo-600 relative">
                     <div class="absolute right-4 top-4">
-                        <button class="bg-white bg-opacity-20 hover:bg-opacity-30 text-white p-2 rounded-full">
+                        <button
+                            class="bg-white bg-opacity-20 hover:bg-opacity-30 text-blue-500 w-10 h-10 rounded-full flex items-center justify-center">
                             <span class="material-symbols-outlined">photo_camera</span>
                         </button>
                     </div>
@@ -21,7 +22,8 @@
                     <!-- Profile Photo -->
                     <div
                         class="absolute -top-16 left-8 w-28 h-28 rounded-full overflow-hidden border-4 border-white shadow-md">
-                        <img src="https://via.placeholder.com/150" alt="User Profile" class="w-full h-full object-cover">
+                        <img src="{{ asset('asset/images/bussines.jpg') }}" alt="User Profile"
+                            class="w-full h-full object-cover">
                     </div>
 
                     <div class="mt-12 md:mt-0 md:ml-36 flex flex-col md:flex-row md:items-center md:justify-between">
