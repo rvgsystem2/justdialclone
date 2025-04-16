@@ -34,3 +34,5 @@ Route::get('/privacy-policy', [HomeController::class, 'privacy'])->name('privacy
 Route::get('/terms-of-service', [HomeController::class, 'terms'])->name('terms');
 Route::get('/cookie-policy', [HomeController::class, 'cookies'])->name('cookies');
 Route::get('/sitemap', [HomeController::class, 'sitemap'])->name('sitemap');
+
+Route::get('/404', [HomeController::class, 'error404'])->name('404');

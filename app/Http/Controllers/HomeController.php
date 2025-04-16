@@ -96,4 +96,9 @@ class HomeController extends Controller
     {
         return view('frontend.sitemap');
     }
+
+    public function error404()
+    {
+        return view('frontend.errors404'); // points to resources/views/frontend/errors404.blade.php
+    }
 }
