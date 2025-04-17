@@ -15,6 +15,8 @@ Route::get('/listing-details', [HomeController::class, 'listingdetails'])->name(
 
 Route::get('/jewellery', [HomeController::class, 'jewellery'])->name('jewellery');
 
+Route::get('/landingpage', [HomeController::class, 'landingpage'])->name('page.landing');
+
 Route::get('/details', [HomeController::class, 'details'])->name('details');
 
 Route::get('/advertise', [HomeController::class, 'advertise'])->name('advertise');
