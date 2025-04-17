@@ -1,5 +1,5 @@
 <!-- Header -->
-<header class="fixed w-full bg-white shadow-md z-50">
+{{-- <header class="fixed w-full bg-white shadow-md z-50">
     <div class="container mx-auto px-4 md:px-6 lg:px-8">
         <div class="flex justify-between items-center py-4">
             <div class="flex items-center">
@@ -54,28 +54,36 @@
 
         </div>
     </div>
-</header>
+</header> --}}
 
 <!-- Top Jeweller Profile Banner -->
-{{-- <section class="bg-gradient-to-r from-amber-900 to-amber-700 py-4 shadow-md">
-        <div class="container mx-auto px-4">
-            <div class="flex flex-col md:flex-row items-center justify-between">
-                <div class="flex items-center space-x-4 mb-4 md:mb-0">
-                    <div class="relative">
-                        <img src="/api/placeholder/120/120" alt="Master Jeweler" class="w-16 h-16 rounded-full border-4 border-amber-200 object-cover">
-                        <div class="absolute -bottom-1 -right-1 bg-green-500 w-4 h-4 rounded-full border-2 border-white"></div>
-                    </div>
-                    <div>
-                        <h3 class="text-white font-serif text-lg font-bold">Alessandro Vittorio</h3>
-                        <p class="text-amber-200 text-sm">Master Jeweler · Since 1992</p>
-                    </div>
+<section class="bg-gradient-to-r from-yellow-900 to-yellow-700 py-6 shadow-lg">
+    <div class="container mx-auto px-4">
+        <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+            <!-- Logo and Info -->
+            <div class="flex items-center gap-4">
+                <div class="relative">
+                    <img src="{{ asset('asset/images/bussines.jpg') }}" alt="Elegance Jewellers"
+                        class="w-20 h-20 rounded-full border-4 border-yellow-300 shadow-lg object-cover">
                 </div>
-                <div class="flex items-center space-x-2">
-                    <span class="text-amber-200 text-sm hidden md:inline">Available for Private Consultation</span>
-                    <a href="#consultation" class="bg-amber-200 hover:bg-amber-100 text-amber-900 text-sm px-4 py-2 rounded-full transition duration-300">
-                        Book Now
-                    </a>
+                <div>
+                    <h1 class="text-white font-serif text-2xl font-bold leading-tight">Elegance Jewellers</h1>
+                    <p class="text-yellow-200 text-sm md:text-base italic">Crafting Luxury Since 1985</p>
                 </div>
             </div>
+
+            <!-- CTA Button with Google Icons -->
+            <div>
+                <a href="#consultation"
+                    class="bg-yellow-200 hover:bg-yellow-100 text-yellow-900 font-medium text-sm md:text-base px-5 py-2.5 rounded-full shadow-md flex items-center space-x-2 transition duration-300 ease-in-out">
+                    <!-- Using Material Icon for Calendar -->
+                    <span class="material-icons">calendar_today</span>
+                    <span>Book Appointment</span>
+                </a>
+            </div>
         </div>
-    </section> --}}
+    </div>
+</section>
+
+<!-- Include Google Material Icons -->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">

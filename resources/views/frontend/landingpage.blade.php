@@ -18,7 +18,7 @@
     <section class="relative pt-20 md:pt-0">
         <div class="bg-gradient-to-r from-amber-900/30 to-amber-700/30 absolute inset-0 z-10"></div>
         <div class="relative h-screen flex items-center justify-center"
-            style="background: url('/api/placeholder/1920/1080') center/cover no-repeat;">
+            style="background: url('{{ asset('asset/landingimg/sample (1).jpg') }}') center/cover no-repeat;">
             <div class="container mx-auto px-4 z-20 text-center">
                 <h1 class="text-4xl md:text-6xl lg:text-7xl font-serif font-bold text-white mb-6 leading-tight">Timeless
                     Elegance<br>Exquisite Craftsmanship</h1>
