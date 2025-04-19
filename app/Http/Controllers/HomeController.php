@@ -51,6 +51,21 @@ class HomeController extends Controller
         return view('frontend.landingpage3');
     }
 
+    public function landingpage4()
+    {
+        return view('frontend.landingpage4');
+    }
+
+    public function landingpage5()
+    {
+        return view('frontend.landingpage5');
+    }
+
+    public function landingpage6()
+    {
+        return view('frontend.landingpage6');
+    }
+
     public function details()
     {
         return view('frontend.details');

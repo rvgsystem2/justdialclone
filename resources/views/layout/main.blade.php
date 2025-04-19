@@ -22,7 +22,7 @@
     <!-- Swiper CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
-    <style>
+    {{-- <style>
         body {
             font-family: 'Josefin Sans', sans-serif;
             background-image: url('{{ asset('asset/landingimg/landing.jpg') }}');
@@ -31,7 +31,7 @@
             background-position: center;
             background-attachment: fixed;
         }
-    </style>
+    </style> --}}
 
     <style>
         body {
