@@ -248,7 +248,7 @@
 
     <!-- Trusts -->
     <section class="py-12 text-center bg-white">
-        <div class="container mx-auto px-4 flex flex-wrap justify-around items-center gap-6">
+        <div class="container mx-auto px-4 flex flex-col sm:flex-row sm:justify-around sm:items-center gap-6">
 
             <div>
                 <span class="material-symbols-outlined text-4xl text-amber-800 mb-2">credit_card</span>
@@ -274,83 +274,159 @@
     </section>
 
     <!-- Testimonials -->
-    <section class="py-16 md:py-24 bg-gray-100">
-        <div class="container mx-auto px-4">
+    <section class="py-16 md:py-24 bg-gray-100 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4">
             <div class="text-center mb-16">
                 <h2 class="text-3xl md:text-5xl font-serif font-bold text-amber-800 mb-4">Client Stories</h2>
                 <p class="text-gray-600 max-w-2xl mx-auto">See what our clients have to say about their experience with
                     Elegance Jewels.</p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <!-- Testimonial 1 -->
-                <div class="bg-white p-8 rounded-lg shadow-md">
-                    <div class="flex items-center mb-4">
-                        <div class="text-amber-500">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
+            <div class="relative overflow-hidden">
+                <div id="testimonial-wrapper" class="w-full overflow-hidden">
+                    <div id="testimonial-track" class="flex transition-transform duration-700 ease-in-out">
+                        <!-- Testimonial 1 -->
+                        <div class="w-full sm:w-1/2 md:w-1/3 flex-shrink-0 px-4 box-border">
+                            <div class="bg-white p-8 rounded-lg shadow-md h-full">
+                                <div class="flex items-center mb-4 text-amber-500">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                        class="fas fa-star"></i><i class="fas fa-star"></i>
+                                </div>
+                                <p class="text-gray-700 mb-6">"I purchased an engagement ring from Elegance Jewels and was
+                                    blown away by the quality and craftsmanship. My fiancée absolutely loves it!"</p>
+                                <div class="flex items-center">
+                                    <img src="/api/placeholder/60/60" alt="Client"
+                                        class="w-12 h-12 rounded-full object-cover">
+                                    <div class="ml-4">
+                                        <h4 class="font-semibold text-gray-800">Michael Thomas</h4>
+                                        <p class="text-gray-500 text-sm">New York, NY</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <p class="text-gray-700 mb-6">"I purchased an engagement ring from Elegance Jewels and was blown away
-                        by the quality and craftsmanship. My fiancée absolutely loves it!"</p>
-                    <div class="flex items-center">
-                        <img src="/api/placeholder/60/60" alt="Client" class="w-12 h-12 rounded-full object-cover">
-                        <div class="ml-4">
-                            <h4 class="font-semibold text-gray-800">Michael Thomas</h4>
-                            <p class="text-gray-500 text-sm">New York, NY</p>
+
+                        <!-- Testimonial 2 -->
+                        <div class="w-full sm:w-1/2 md:w-1/3 flex-shrink-0 px-4 box-border">
+                            <div class="bg-white p-8 rounded-lg shadow-md h-full">
+                                <div class="flex items-center mb-4 text-amber-500">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                        class="fas fa-star"></i><i class="fas fa-star"></i>
+                                </div>
+                                <p class="text-gray-700 mb-6">"The custom anniversary bracelet I ordered exceeded all
+                                    expectations. The attention to detail and personal service made all the difference."</p>
+                                <div class="flex items-center">
+                                    <img src="/api/placeholder/60/60" alt="Client"
+                                        class="w-12 h-12 rounded-full object-cover">
+                                    <div class="ml-4">
+                                        <h4 class="font-semibold text-gray-800">Jennifer Rodriguez</h4>
+                                        <p class="text-gray-500 text-sm">Los Angeles, CA</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Testimonial 3 -->
+                        <div class="w-full sm:w-1/2 md:w-1/3 flex-shrink-0 px-4 box-border">
+                            <div class="bg-white p-8 rounded-lg shadow-md h-full">
+                                <div class="flex items-center mb-4 text-amber-500">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                        class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <p class="text-gray-700 mb-6">"I've been a loyal customer for years. Their pieces are
+                                    timeless and the quality is unmatched. The compliments I receive are endless!"</p>
+                                <div class="flex items-center">
+                                    <img src="/api/placeholder/60/60" alt="Client"
+                                        class="w-12 h-12 rounded-full object-cover">
+                                    <div class="ml-4">
+                                        <h4 class="font-semibold text-gray-800">Sarah Johnson</h4>
+                                        <p class="text-gray-500 text-sm">Chicago, IL</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Testimonial 4 -->
+                        <div class="w-full sm:w-1/2 md:w-1/3 flex-shrink-0 px-4 box-border">
+                            <div class="bg-white p-8 rounded-lg shadow-md h-full">
+                                <div class="flex items-center mb-4 text-amber-500">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                        class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <p class="text-gray-700 mb-6">"Their support team helped me design a custom necklace. The
+                                    result was breathtaking!"</p>
+                                <div class="flex items-center">
+                                    <img src="/api/placeholder/60/60" alt="Client"
+                                        class="w-12 h-12 rounded-full object-cover">
+                                    <div class="ml-4">
+                                        <h4 class="font-semibold text-gray-800">Emily Davis</h4>
+                                        <p class="text-gray-500 text-sm">Houston, TX</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Testimonial 2 -->
-                <div class="bg-white p-8 rounded-lg shadow-md">
-                    <div class="flex items-center mb-4">
-                        <div class="text-amber-500">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                    </div>
-                    <p class="text-gray-700 mb-6">"The custom anniversary bracelet I ordered exceeded all expectations. The
-                        attention to detail and personal service made all the difference."</p>
-                    <div class="flex items-center">
-                        <img src="/api/placeholder/60/60" alt="Client" class="w-12 h-12 rounded-full object-cover">
-                        <div class="ml-4">
-                            <h4 class="font-semibold text-gray-800">Jennifer Rodriguez</h4>
-                            <p class="text-gray-500 text-sm">Los Angeles, CA</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Testimonial 3 -->
-                <div class="bg-white p-8 rounded-lg shadow-md">
-                    <div class="flex items-center mb-4">
-                        <div class="text-amber-500">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star-half-alt"></i>
-                        </div>
-                    </div>
-                    <p class="text-gray-700 mb-6">"I've been a loyal customer for years. Their pieces are timeless and the
-                        quality is unmatched. The compliments I receive are endless!"</p>
-                    <div class="flex items-center">
-                        <img src="/api/placeholder/60/60" alt="Client" class="w-12 h-12 rounded-full object-cover">
-                        <div class="ml-4">
-                            <h4 class="font-semibold text-gray-800">Sarah Johnson</h4>
-                            <p class="text-gray-500 text-sm">Chicago, IL</p>
-                        </div>
-                    </div>
+                <!-- Navigation Dots -->
+                <div class="flex justify-center space-x-2 mt-6">
+                    <button onclick="prevTestimonial()"
+                        class="w-3 h-3 rounded-full bg-gray-400 hover:bg-amber-500"></button>
+                    <button onclick="nextTestimonial()"
+                        class="w-3 h-3 rounded-full bg-gray-400 hover:bg-amber-500"></button>
                 </div>
             </div>
         </div>
     </section>
+
+    <script>
+        const track = document.getElementById("testimonial-track");
+        let testimonialsPerSlide = 1; // Default to 1 per slide on mobile
+        let totalSlides = Math.ceil(track.children.length / testimonialsPerSlide);
+        let currentSlide = 0;
+
+        // Dynamically set width of track and each testimonial item
+        function updateSlideWidth() {
+            if (window.innerWidth >= 768) {
+                testimonialsPerSlide = 3; // 3 testimonials per slide on larger screens
+            } else {
+                testimonialsPerSlide = 1; // 1 testimonial per slide on mobile
+            }
+
+            totalSlides = Math.ceil(track.children.length / testimonialsPerSlide);
+            track.style.width = `${(100 / testimonialsPerSlide) * track.children.length}%`;
+
+            // Adjust the width of each testimonial item
+            for (const child of track.children) {
+                child.style.width = `${100 / track.children.length}%`;
+            }
+            showTestimonial(currentSlide); // Update the displayed slide
+        }
+
+        // Function to show a specific testimonial slide
+        function showTestimonial(slideIndex) {
+            currentSlide = (slideIndex + totalSlides) % totalSlides;
+            const shift = currentSlide * (100 / totalSlides);
+            track.style.transform = `translateX(-${shift}%)`;
+        }
+
+        function nextTestimonial() {
+            showTestimonial(currentSlide + 1);
+        }
+
+        function prevTestimonial() {
+            showTestimonial(currentSlide - 1);
+        }
+
+        // Auto Slide every 5 seconds
+        setInterval(() => {
+            nextTestimonial();
+        }, 5000);
+
+        // Adjust the layout when the window is resized
+        window.addEventListener('resize', updateSlideWidth);
+        // Initial call to set up the layout
+        updateSlideWidth();
+    </script>
 
     <!-- FAQ Section -->
     <section class="py-16 bg-gray-100">

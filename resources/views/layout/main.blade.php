@@ -19,17 +19,20 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
     <style>
         body {
             font-family: 'Josefin Sans', sans-serif;
-            background-image: url('{{asset('asset/landingimg/landing.jpg')}}'); /* Example image path */
+            background-image: url('{{ asset('asset/landingimg/landing.jpg') }}');
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
             background-attachment: fixed;
         }
     </style>
-    
+
     <style>
         body {
             font-family: 'Josefin Sans', sans-serif;
@@ -40,7 +43,7 @@
 <body class="bg-white relative" data-aos-easing="ease-in-out" data-aos-duration="1000" data-aos-delay="0">
 
     {{-- Header --}}
-    @include('layout.header') {{-- Make this dynamic with search, category links, login/register --}}
+    @include('layout.header')
 
     {{-- Main Content --}}
     <main class="min-h-[70vh]">
@@ -56,6 +59,8 @@
         AOS.init();
     </script>
 
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
 </body>
 
