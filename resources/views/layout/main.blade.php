@@ -22,7 +22,7 @@
     <style>
         body {
             font-family: 'Josefin Sans', sans-serif;
-            background-image: url('/images/bg-landing.jpg'); /* Example image path */
+            background-image: url('{{asset('asset/landingimg/landing.jpg')}}'); /* Example image path */
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center;

@@ -37,7 +37,7 @@
     </section>
 
     <!-- Featured Collection -->
-    <section id="collection" class="py-16 md:py-24 bg-gray-50">
+    <section id="collection" class="py-16 md:py-24 bg-gray-100">
         <div class="container mx-auto px-4">
             <div class="text-center mb-16">
                 <h2 class="text-3xl md:text-5xl font-serif font-bold text-amber-800 mb-4">Featured Collection</h2>
@@ -246,8 +246,8 @@
         </div>
     </section>
 
-    <!-- trusts -->
-    <section class="py-12 text-center">
+    <!-- Trusts -->
+    <section class="py-12 text-center bg-white">
         <div class="container mx-auto px-4 flex flex-wrap justify-around items-center gap-6">
 
             <div>

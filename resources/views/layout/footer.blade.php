@@ -5,21 +5,34 @@
         <p class="text-sm">123 Fifth Avenue, New York, NY 10160</p>
         <p class="text-sm mt-2">&copy; 2025 Elegance Jewels. All rights reserved.</p>
 
+        <!-- Follow Us Heading -->
+        <h3 class="text-lg text-white font-medium mt-6 mb-4">Follow us on</h3>
+
         <!-- Social Media Icons -->
-        <div class="flex justify-center items-center space-x-4 mt-6">
-            <a href="#" class="w-12 h-12 flex items-center justify-center bg-blue-500 text-white rounded-full hover:bg-blue-600 transition duration-300" aria-label="Facebook">
+        <div class="flex justify-center items-center space-x-4">
+            <a href="#"
+                class="w-12 h-12 flex items-center justify-center bg-blue-500 text-white rounded-full hover:bg-blue-600 transition duration-300"
+                aria-label="Facebook">
                 <i class="fab fa-facebook-f text-xl"></i>
             </a>
-            <a href="#" class="w-12 h-12 flex items-center justify-center bg-green-500 text-white rounded-full hover:bg-green-600 transition duration-300" aria-label="WhatsApp">
+            <a href="#"
+                class="w-12 h-12 flex items-center justify-center bg-green-500 text-white rounded-full hover:bg-green-600 transition duration-300"
+                aria-label="WhatsApp">
                 <i class="fab fa-whatsapp text-xl"></i>
             </a>
-            <a href="#" class="w-12 h-12 flex items-center justify-center bg-sky-400 text-white rounded-full hover:bg-sky-500 transition duration-300" aria-label="Twitter">
+            <a href="#"
+                class="w-12 h-12 flex items-center justify-center bg-sky-400 text-white rounded-full hover:bg-sky-500 transition duration-300"
+                aria-label="Twitter">
                 <i class="fab fa-twitter text-xl"></i>
             </a>
-            <a href="#" class="w-12 h-12 flex items-center justify-center bg-pink-500 text-white rounded-full hover:bg-pink-600 transition duration-300" aria-label="Instagram">
+            <a href="#"
+                class="w-12 h-12 flex items-center justify-center bg-pink-500 text-white rounded-full hover:bg-pink-600 transition duration-300"
+                aria-label="Instagram">
                 <i class="fab fa-instagram text-xl"></i>
             </a>
-            <a href="#" class="w-12 h-12 flex items-center justify-center bg-red-600 text-white rounded-full hover:bg-red-700 transition duration-300" aria-label="YouTube">
+            <a href="#"
+                class="w-12 h-12 flex items-center justify-center bg-red-600 text-white rounded-full hover:bg-red-700 transition duration-300"
+                aria-label="YouTube">
                 <i class="fab fa-youtube text-xl"></i>
             </a>
         </div>
