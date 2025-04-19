@@ -52,7 +52,7 @@
                                 class="snap-start w-48 flex-shrink-0 bg-[#d5a35c] text-white rounded-lg p-4 space-y-2 flex flex-col">
                                 <h3 class="font-bold text-xl">Gold Jewelry</h3>
                                 <p class="text-sm">Handcrafted Rings</p>
-                                <img src="{{ asset('asset/images/gold-jewelry.jpg') }}" alt="Gold Jewelry"
+                                <img src="{{ asset('asset/landingimg/sample (1).jpg') }}" alt="Gold Jewelry"
                                     class="object-cover rounded" />
                             </div>
 
@@ -60,7 +60,7 @@
                                 class="snap-start w-48 flex-shrink-0 bg-[#9e7a4f] text-white rounded-lg p-4 space-y-2 flex flex-col">
                                 <h3 class="font-bold text-xl">Diamond Jewelry</h3>
                                 <p class="text-sm">Engagement Rings</p>
-                                <img src="{{ asset('asset/images/diamond-engagement.jpg') }}" alt="Diamond Jewelry"
+                                <img src="{{ asset('asset/landingimg/sample (2).jpg') }}" alt="Diamond Jewelry"
                                     class="object-cover rounded" />
                             </div>
 
@@ -68,7 +68,7 @@
                                 class="snap-start w-48 flex-shrink-0 bg-[#c88d4d] text-white rounded-lg p-4 space-y-2 flex flex-col">
                                 <h3 class="font-bold text-xl">Pearl Collection</h3>
                                 <p class="text-sm">Necklaces & Earrings</p>
-                                <img src="{{ asset('asset/images/pearl-necklace.jpg') }}" alt="Pearl Collection"
+                                <img src="{{ asset('asset/landingimg/sample (3).jpg') }}" alt="Pearl Collection"
                                     class="object-cover rounded" />
                             </div>
 
@@ -76,7 +76,7 @@
                                 class="snap-start w-48 flex-shrink-0 bg-[#a77d4b] text-white rounded-lg p-4 space-y-2 flex flex-col">
                                 <h3 class="font-bold text-xl">Silver Collection</h3>
                                 <p class="text-sm">Exquisite Bracelets</p>
-                                <img src="{{ asset('asset/images/silver-bracelet.jpg') }}" alt="Silver Collection"
+                                <img src="{{ asset('asset/landingimg/sample (4).jpg') }}" alt="Silver Collection"
                                     class="object-cover rounded" />
                             </div>
                         </div>
@@ -215,7 +215,7 @@
                     <!-- Jeweller Card 1 -->
                     <div
                         class="min-w-[250px] sm:min-w-[270px] bg-white rounded-3xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-200 snap-start">
-                        <img src="{{ asset('asset/images/jeweller1.jpg') }}" alt="Jeweller"
+                        <img src="{{ asset('asset/landingimg/sample (1).jpg') }}" alt="Jeweller"
                             class="w-full h-[170px] object-cover" />
                         <div class="bg-[#fff7ec] text-gray-800 text-center px-5 py-6">
                             <p class="text-lg font-semibold leading-snug mb-3">Tanishq Jewellery</p>
@@ -229,7 +229,7 @@
                     <!-- Jeweller Card 2 -->
                     <div
                         class="min-w-[250px] sm:min-w-[270px] bg-white rounded-3xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-200 snap-start">
-                        <img src="{{ asset('asset/images/jeweller2.jpg') }}" alt="Jeweller"
+                        <img src="{{ asset('asset/landingimg/sample (2).jpg') }}" alt="Jeweller"
                             class="w-full h-[170px] object-cover" />
                         <div class="bg-[#fff7ec] text-gray-800 text-center px-5 py-6">
                             <p class="text-lg font-semibold leading-snug mb-3">Kalyan Jewellers</p>
@@ -243,7 +243,7 @@
                     <!-- Jeweller Card 3 -->
                     <div
                         class="min-w-[250px] sm:min-w-[270px] bg-white rounded-3xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-200 snap-start">
-                        <img src="{{ asset('asset/images/jeweller3.jpg') }}" alt="Jeweller"
+                        <img src="{{ asset('asset/landingimg/sample (3).jpg') }}" alt="Jeweller"
                             class="w-full h-[170px] object-cover" />
                         <div class="bg-[#fff7ec] text-gray-800 text-center px-5 py-6">
                             <p class="text-lg font-semibold leading-snug mb-3">Malabar Gold & Diamonds</p>
@@ -257,7 +257,7 @@
                     <!-- Jeweller Card 4 -->
                     <div
                         class="min-w-[250px] sm:min-w-[270px] bg-white rounded-3xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-200 snap-start">
-                        <img src="{{ asset('asset/images/jeweller4.jpg') }}" alt="Jeweller"
+                        <img src="{{ asset('asset/landingimg/sample (4).jpg') }}" alt="Jeweller"
                             class="w-full h-[170px] object-cover" />
                         <div class="bg-[#fff7ec] text-gray-800 text-center px-5 py-6">
                             <p class="text-lg font-semibold leading-snug mb-3">PNG Jewellers</p>
@@ -271,7 +271,7 @@
                     <!-- Jeweller Card 5 -->
                     <div
                         class="min-w-[250px] sm:min-w-[270px] bg-white rounded-3xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-200 snap-start">
-                        <img src="{{ asset('asset/images/jeweller5.jpg') }}" alt="Jeweller"
+                        <img src="{{ asset('asset/landingimg/sample (5).jpg') }}" alt="Jeweller"
                             class="w-full h-[170px] object-cover" />
                         <div class="bg-[#fff7ec] text-gray-800 text-center px-5 py-6">
                             <p class="text-lg font-semibold leading-snug mb-3">Tribhovandas Bhimji Zaveri</p>
@@ -300,7 +300,7 @@
                     <!-- Article Card 1 -->
                     <div
                         class="min-w-[280px] max-w-sm bg-white rounded-2xl shadow-lg border border-[#f1e9dc] snap-start overflow-hidden">
-                        <img src="{{ asset('asset/images/jewellery_article1.jpg') }}" alt="Jewellery Trends"
+                        <img src="{{ asset('asset/landingimg/sample (1).jpg') }}" alt="Jewellery Trends"
                             class="w-full h-[180px] object-cover" />
                         <div class="p-4">
                             <h3 class="text-sm font-semibold text-[#3e2d18] mb-2 leading-snug">
@@ -313,7 +313,7 @@
                     <!-- Article Card 2 -->
                     <div
                         class="min-w-[280px] max-w-sm bg-white rounded-2xl shadow-lg border border-[#f1e9dc] snap-start overflow-hidden">
-                        <img src="{{ asset('asset/images/jewellery_article2.jpg') }}" alt="Gold Care"
+                        <img src="{{ asset('asset/landingimg/sample (2).jpg') }}" alt="Gold Care"
                             class="w-full h-[180px] object-cover" />
                         <div class="p-4">
                             <h3 class="text-sm font-semibold text-[#3e2d18] mb-2 leading-snug">
@@ -326,7 +326,7 @@
                     <!-- Article Card 3 -->
                     <div
                         class="min-w-[280px] max-w-sm bg-white rounded-2xl shadow-lg border border-[#f1e9dc] snap-start overflow-hidden">
-                        <img src="{{ asset('asset/images/jewellery_article3.jpg') }}" alt="Diamond Guide"
+                        <img src="{{ asset('asset/landingimg/sample (3).jpg') }}" alt="Diamond Guide"
                             class="w-full h-[180px] object-cover" />
                         <div class="p-4">
                             <h3 class="text-sm font-semibold text-[#3e2d18] mb-2 leading-snug">
@@ -339,7 +339,7 @@
                     <!-- Article Card 4 -->
                     <div
                         class="min-w-[280px] max-w-sm bg-white rounded-2xl shadow-lg border border-[#f1e9dc] snap-start overflow-hidden">
-                        <img src="{{ asset('asset/images/jewellery_article4.jpg') }}" alt="Custom Design"
+                        <img src="{{ asset('asset/landingimg/sample (4).jpg') }}" alt="Custom Design"
                             class="w-full h-[180px] object-cover" />
                         <div class="p-4">
                             <h3 class="text-sm font-semibold text-[#3e2d18] mb-2 leading-snug">
@@ -371,7 +371,7 @@
 
                     <!-- Jewellery Card -->
                     <div class="bg-white border rounded-xl shadow hover:shadow-md transition-all duration-300">
-                        <img src="{{ asset('asset/images/diamond-ring.jpg') }}" alt="Diamond Ring"
+                        <img src="{{ asset('asset/landingimg/sample (1).jpg') }}" alt="Diamond Ring"
                             class="w-full h-32 object-cover rounded-t-xl">
                         <div class="p-4 space-y-1">
                             <span class="text-xs text-gray-400 uppercase">Rings</span>
@@ -383,7 +383,7 @@
 
                     <!-- Jewellery Card -->
                     <div class="bg-white border rounded-xl shadow hover:shadow-md transition-all duration-300">
-                        <img src="{{ asset('asset/images/gold-necklace.jpg') }}" alt="Gold Necklace"
+                        <img src="{{ asset('asset/landingimg/sample (2).jpg') }}" alt="Gold Necklace"
                             class="w-full h-32 object-cover rounded-t-xl">
                         <div class="p-4 space-y-1">
                             <span class="text-xs text-gray-400 uppercase">Necklaces</span>
@@ -395,7 +395,7 @@
 
                     <!-- Jewellery Card -->
                     <div class="bg-white border rounded-xl shadow hover:shadow-md transition-all duration-300">
-                        <img src="{{ asset('asset/images/emerald-earrings.jpg') }}" alt="Emerald Earrings"
+                        <img src="{{ asset('asset/landingimg/sample (4).jpg') }}" alt="Emerald Earrings"
                             class="w-full h-32 object-cover rounded-t-xl">
                         <div class="p-4 space-y-1">
                             <span class="text-xs text-gray-400 uppercase">Earrings</span>
@@ -407,7 +407,7 @@
 
                     <!-- Jewellery Card -->
                     <div class="bg-white border rounded-xl shadow hover:shadow-md transition-all duration-300">
-                        <img src="{{ asset('asset/images/silver-bracelet.jpg') }}" alt="Silver Bracelet"
+                        <img src="{{ asset('asset/landingimg/sample (3).jpg') }}" alt="Silver Bracelet"
                             class="w-full h-32 object-cover rounded-t-xl">
                         <div class="p-4 space-y-1">
                             <span class="text-xs text-gray-400 uppercase">Bracelets</span>
@@ -434,11 +434,22 @@
                 <div class="grid gap-6 grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6">
 
                     <!-- Jewellery Card -->
-                    @foreach ([['image' => 'ring.jpg', 'title' => 'Rose Gold Diamond Ring', 'rating' => '96%'], ['image' => 'necklace.jpg', 'title' => 'Kundan Bridal Necklace', 'rating' => '89%'], ['image' => 'earrings.jpg', 'title' => 'Emerald Drop Earrings', 'rating' => '91%'], ['image' => 'bracelet.jpg', 'title' => 'Platinum Chain Bracelet', 'rating' => '88%'], ['image' => 'mangalsutra.jpg', 'title' => 'Traditional Mangalsutra', 'rating' => '94%'], ['image' => 'pendant.jpg', 'title' => 'Minimalist Diamond Pendant', 'rating' => '99%']] as $item)
+                    @php
+                        $items = [
+                            ['title' => 'Rose Gold Diamond Ring', 'rating' => '96%'],
+                            ['title' => 'Kundan Bridal Necklace', 'rating' => '89%'],
+                            ['title' => 'Emerald Drop Earrings', 'rating' => '91%'],
+                            ['title' => 'Platinum Chain Bracelet', 'rating' => '88%'],
+                            ['title' => 'Traditional Mangalsutra', 'rating' => '94%'],
+                            ['title' => 'Minimalist Diamond Pendant', 'rating' => '99%'],
+                        ];
+                    @endphp
+
+                    @foreach ($items as $index => $item)
                         <div
                             class="relative bg-white rounded-xl overflow-hidden shadow hover:shadow-md transition-all duration-300">
-                            <img src="{{ asset('asset/images/' . $item['image']) }}" alt="{{ $item['title'] }}"
-                                class="w-full h-48 object-cover">
+                            <img src="{{ asset('asset/landingimg/sample (' . ($index + 1) . ').jpg') }}"
+                                alt="{{ $item['title'] }}" class="w-full h-48 object-cover">
                             <div
                                 class="absolute top-2 right-2 bg-white text-yellow-600 text-xs px-2 py-1 rounded-full shadow">
                                 <i class="fa fa-star mr-1"></i> {{ $item['rating'] }}
@@ -468,7 +479,7 @@
                 <!-- Jeweller Card 1 -->
                 <div
                     class="bg-white shadow-lg border border-[#f1e9dc] rounded-2xl overflow-hidden hover:shadow-xl transition">
-                    <img src="{{ asset('asset/images/jeweller1.jpg') }}" alt="Jeweller"
+                    <img src="{{ asset('asset/landingimg/sample (1).jpg') }}" alt="Jeweller"
                         class="w-full h-48 object-cover">
                     <div class="p-5">
                         <div class="flex justify-between items-start mb-2">
@@ -489,7 +500,7 @@
                 <!-- Jeweller Card 2 -->
                 <div
                     class="bg-white shadow-lg border border-[#f1e9dc] rounded-2xl overflow-hidden hover:shadow-xl transition">
-                    <img src="{{ asset('asset/images/jeweller2.jpg') }}" alt="Jeweller"
+                    <img src="{{ asset('asset/landingimg/sample (2).jpg') }}" alt="Jeweller"
                         class="w-full h-48 object-cover">
                     <div class="p-5">
                         <div class="flex justify-between items-start mb-2">
@@ -510,7 +521,7 @@
                 <!-- Jeweller Card 3 -->
                 <div
                     class="bg-white shadow-lg border border-[#f1e9dc] rounded-2xl overflow-hidden hover:shadow-xl transition">
-                    <img src="{{ asset('asset/images/jeweller3.jpg') }}" alt="Jeweller"
+                    <img src="{{ asset('asset/landingimg/sample (3).jpg') }}" alt="Jeweller"
                         class="w-full h-48 object-cover">
                     <div class="p-5">
                         <div class="flex justify-between items-start mb-2">
