@@ -15,7 +15,7 @@
     </style>
 
     <!-- Hero Section -->
-    <section class="relative pt-20 md:pt-0">
+    <section class="relative">
         <div class="bg-gradient-to-r from-amber-900/30 to-amber-700/30 absolute inset-0 z-10"></div>
         <div class="relative h-screen flex items-center justify-center"
             style="background: url('{{ asset('asset/landingimg/sample (1).jpg') }}') center/cover no-repeat;">
@@ -28,20 +28,121 @@
                     <a href="#collection"
                         class="bg-amber-700 hover:bg-amber-800 text-white px-8 py-3 rounded-full transition duration-300 transform hover:-translate-y-1">Shop
                         Collection</a>
-                    <a href="#about"
-                        class="bg-transparent border-2 border-white text-white px-8 py-3 rounded-full hover:bg-white hover:text-amber-800 transition duration-300 transform hover:-translate-y-1">Learn
-                        More</a>
+                    <a href="https://wa.me/919876543210" target="_blank"
+                        class="bg-transparent border-2 border-white text-white px-8 py-3 rounded-full hover:bg-white hover:text-amber-800 transition duration-300 transform hover:-translate-y-1">
+                        Contact Us
+                    </a>
                 </div>
             </div>
         </div>
     </section>
+
+    <!--Always Be On Trend Section -->
+    <div class="bg-white">
+        <div class="container mx-auto px-4 py-8 max-w-6xl">
+            <!-- Heading -->
+            <div class="text-center mb-12">
+                <h1 class="text-4xl md:text-5xl font-light text-gray-600 leading-tight">Always Be On Trend</h1>
+                <h2 class="text-3xl md:text-4xl font-light text-gray-600 mt-2">With Unique Pieces</h2>
+            </div>
+
+            <!-- Image Gallery Grid -->
+            <div class="grid grid-cols-12 gap-4">
+                <!-- Left Column -->
+                <div class="col-span-12 md:col-span-4 space-y-4">
+                    <!-- Gold spatter design -->
+                    <div class="relative h-32">
+                        <div class="absolute right-0 top-0">
+                            <svg class="h-32 w-32" viewBox="0 0 100 100">
+                                <circle cx="70" cy="30" r="2" fill="#d4af37" />
+                                <circle cx="60" cy="40" r="1" fill="#d4af37" />
+                                <circle cx="80" cy="35" r="1.5" fill="#d4af37" />
+                                <circle cx="75" cy="20" r="1" fill="#d4af37" />
+                                <circle cx="65" cy="25" r="0.8" fill="#d4af37" />
+                                <path d="M60,30 Q70,10 80,40" stroke="#d4af37" fill="none" stroke-width="0.5" />
+                                <path d="M65,25 Q75,45 85,30" stroke="#d4af37" fill="none" stroke-width="0.5" />
+                            </svg>
+                        </div>
+                    </div>
+
+                    <!-- White embroidered jewelry -->
+                    <div class="h-48 bg-gray-100 rounded overflow-hidden">
+                        <img src="{{ asset('asset/landingimg/sample (1).jpg') }}" alt="White embroidered jewelry"
+                            class="w-full h-full object-cover" />
+                    </div>
+
+                    <!-- Person with layered necklaces -->
+                    <div class="h-64 bg-gray-100 rounded overflow-hidden">
+                        <img src="{{ asset('asset/landingimg/sample (2).jpg') }}" alt="Person wearing layered necklaces"
+                            class="w-full h-full object-cover" />
+                    </div>
+                </div>
+
+                <!-- Center Column -->
+                <div class="col-span-12 md:col-span-5 space-y-4">
+                    <!-- Main image: Hand holding rings -->
+                    <div class="h-80 bg-gray-100 rounded overflow-hidden">
+                        <img src="{{ asset('asset/landingimg/sample (3).jpg') }}" alt="Hand holding gold rings in sunlight"
+                            class="w-full h-full object-cover" />
+                    </div>
+
+                    <!-- Bottom two smaller images -->
+                    <div class="grid grid-cols-2 gap-4">
+                        <!-- Person with star necklace -->
+                        <div class="h-36 bg-gray-100 rounded overflow-hidden">
+                            <img src="{{ asset('asset/landingimg/sample (4).jpg') }}" alt="Person wearing star necklace"
+                                class="w-full h-full object-cover" />
+                        </div>
+                        <!-- Marble cube with earrings -->
+                        <div class="h-36 bg-gray-100 rounded overflow-hidden">
+                            <img src="{{ asset('asset/landingimg/sample (5).jpg') }}" alt="Marble display with earrings"
+                                class="w-full h-full object-cover" />
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column -->
+                <div class="col-span-12 md:col-span-3 space-y-4">
+                    <!-- Book with gold ring -->
+                    <div class="h-48 bg-gray-100 rounded overflow-hidden">
+                        <img src="{{ asset('asset/landingimg/sample (6).jpg') }}" alt="Gold ring on an open book"
+                            class="w-full h-full object-cover" />
+                    </div>
+
+                    <!-- Gold chain bracelet -->
+                    <div class="h-36 bg-gray-100 rounded overflow-hidden">
+                        <img src="{{ asset('asset/landingimg/sample (1).jpg') }}" alt="Gold chain bracelet"
+                            class="w-full h-full object-cover" />
+                    </div>
+
+                    <!-- Gold design element -->
+                    <div class="relative h-48">
+                        <div class="absolute bottom-0 right-0">
+                            <svg class="h-48 w-48" viewBox="0 0 100 100">
+                                <circle cx="80" cy="70" r="2" fill="#d4af37" />
+                                <circle cx="70" cy="80" r="1" fill="#d4af37" />
+                                <circle cx="65" cy="65" r="1.5" fill="#d4af37" />
+                                <circle cx="85" cy="75" r="1" fill="#d4af37" />
+                                <circle cx="75" cy="60" r="0.8" fill="#d4af37" />
+                                <path d="M70,60 Q90,70 60,80" stroke="#d4af37" fill="none" stroke-width="0.5" />
+                                <path d="M80,70 Q60,80 90,90" stroke="#d4af37" fill="none" stroke-width="0.5" />
+                                <circle cx="90" cy="85" r="1" fill="#d4af37" />
+                                <circle cx="60" cy="75" r="1.2" fill="#d4af37" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Featured Collection -->
     <section id="collection" class="py-16 md:py-24 bg-gray-100">
         <div class="container mx-auto px-4">
             <div class="text-center mb-16">
                 <h2 class="text-3xl md:text-5xl font-serif font-bold text-amber-800 mb-4">Featured Collection</h2>
-                <p class="text-gray-600 max-w-2xl mx-auto">Explore our curated selection of exquisite jewelry pieces crafted
+                <p class="text-gray-600 max-w-2xl mx-auto">Explore our curated selection of exquisite jewelry pieces
+                    crafted
                     with the finest materials and unparalleled attention to detail.</p>
             </div>
 
@@ -129,6 +230,85 @@
             </div>
         </div>
     </section>
+
+    <div class="bg-white font-sans">
+        <div class="container mx-auto px-4 py-12">
+            <div class="flex flex-col md:flex-row gap-12">
+                <!-- Left Side - Hero Image with Text Overlay -->
+                <div class="md:w-1/2 relative rounded-xl overflow-hidden shadow-lg h-96 md:h-auto">
+                    <img src="{{ asset('asset/landingimg/bg-landing.jpg') }}" alt="Hand wearing elegant jewelry"
+                        class="w-full h-full object-cover" />
+                    <div
+                        class="absolute inset-0 bg-opacity-40 flex flex-col justify-center items-center text-white text-center px-6">
+                        <h2 class="text-2xl md:text-3xl font-light leading-snug mb-4">
+                            A collection of<br>
+                            <span class="font-semibold">signature styles</span> for a<br>
+                            timeless finish
+                        </h2>
+                        <button
+                            class="mt-3 px-6 py-2 text-sm border border-white text-white rounded-full hover:bg-white hover:text-black transition-all duration-300 shadow-md">
+                            Explore
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Right Side - Product Grid -->
+                <div class="md:w-1/2 grid grid-cols-1 sm:grid-cols-2 gap-8">
+                    <!-- Product 1 -->
+                    <div
+                        class="bg-gray-50 rounded-xl shadow-md p-4 hover:shadow-lg transition-all duration-300 flex flex-col items-center text-center">
+                        <img src="{{ asset('asset/landingimg/sample (1).jpg') }}" alt="Gold pendant necklace"
+                            class="w-full h-60 object-contain rounded-md" />
+                        <h3 class="text-gray-700 font-light text-lg mt-4">Duis viverra</h3>
+                        <p class="text-black font-semibold mt-1">₹4,11,348</p>
+                        <button
+                            class="mt-3 px-5 py-2 text-sm border border-gray-400 text-gray-700 rounded-full hover:bg-gray-200 transition-all">
+                            See Details
+                        </button>
+                    </div>
+
+                    <!-- Product 2 -->
+                    <div
+                        class="bg-gray-50 rounded-xl shadow-md p-4 hover:shadow-lg transition-all duration-300 flex flex-col items-center text-center">
+                        <img src="{{ asset('asset/landingimg/sample (1).jpg') }}" alt="Gold earrings"
+                            class="w-full h-60 object-contain rounded-md" />
+                        <h3 class="text-gray-700 font-light text-lg mt-4">Duis viverra</h3>
+                        <p class="text-black font-semibold mt-1">₹4,11,348</p>
+                        <button
+                            class="mt-3 px-5 py-2 text-sm border border-gray-400 text-gray-700 rounded-full hover:bg-gray-200 transition-all">
+                            See Details
+                        </button>
+                    </div>
+
+                    <!-- Product 3 -->
+                    <div
+                        class="bg-gray-50 rounded-xl shadow-md p-4 hover:shadow-lg transition-all duration-300 flex flex-col items-center text-center">
+                        <img src="{{ asset('asset/landingimg/sample (1).jpg') }}" alt="Gold bracelet"
+                            class="w-full h-60 object-contain rounded-md" />
+                        <h3 class="text-gray-700 font-light text-lg mt-4">Duis viverra</h3>
+                        <p class="text-black font-semibold mt-1">₹4,11,348</p>
+                        <button
+                            class="mt-3 px-5 py-2 text-sm border border-gray-400 text-gray-700 rounded-full hover:bg-gray-200 transition-all">
+                            See Details
+                        </button>
+                    </div>
+
+                    <!-- Product 4 -->
+                    <div
+                        class="bg-gray-50 rounded-xl shadow-md p-4 hover:shadow-lg transition-all duration-300 flex flex-col items-center text-center">
+                        <img src="{{ asset('asset/landingimg/sample (1).jpg') }}" alt="Gold hoops"
+                            class="w-full h-60 object-contain rounded-md" />
+                        <h3 class="text-gray-700 font-light text-lg mt-4">Duis viverra</h3>
+                        <p class="text-black font-semibold mt-1">₹4,11,348</p>
+                        <button
+                            class="mt-3 px-5 py-2 text-sm border border-gray-400 text-gray-700 rounded-full hover:bg-gray-200 transition-all">
+                            See Details
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Luxury Experience -->
     <section class="py-16 md:py-24 bg-amber-50">
@@ -502,6 +682,13 @@
                     <div>
                         <label for="email" class="block text-sm font-medium text-gray-600 mb-1">Email Address</label>
                         <input type="email" id="email" name="email" required
+                            class="w-full px-4 py-3 border border-gray-300 rounded-xl shadow-sm focus:outline-none focus:ring-2 focus:ring-amber-800 transition">
+                    </div>
+
+                    <!-- Phone Number -->
+                    <div>
+                        <label for="phone" class="block text-sm font-medium text-gray-600 mb-1">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" required
                             class="w-full px-4 py-3 border border-gray-300 rounded-xl shadow-sm focus:outline-none focus:ring-2 focus:ring-amber-800 transition">
                     </div>
 

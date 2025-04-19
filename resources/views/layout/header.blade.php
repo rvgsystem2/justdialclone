@@ -57,25 +57,25 @@
 </header> --}}
 
 <!-- Top Jeweller Profile Banner -->
-<section class="bg-gradient-to-r from-yellow-900 to-yellow-700 py-6 shadow-lg">
-    <div class="container mx-auto px-4">
-        <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+<section class="bg-gradient-to-r from-yellow-900 to-yellow-700 py-8 shadow-lg">
+    <div class="container mx-auto px-6">
+        <div class="flex flex-col md:flex-row items-center justify-between gap-8">
             <!-- Logo and Info -->
-            <div class="flex items-center gap-4">
+            <div class="flex items-center gap-6">
                 <div class="relative">
                     <img src="{{ asset('asset/images/bussines.jpg') }}" alt="Elegance Jewellers"
-                        class="w-20 h-20 rounded-full border-4 border-yellow-300 shadow-lg object-cover">
+                        class="w-24 h-24 rounded-full border-4 border-yellow-300 shadow-xl object-cover transition-transform transform hover:scale-105">
                 </div>
                 <div>
-                    <h1 class="text-white font-serif text-2xl font-bold leading-tight">Elegance Jewellers</h1>
-                    <p class="text-yellow-200 text-sm md:text-base italic">Crafting Luxury Since 1985</p>
+                    <h1 class="text-white font-serif text-3xl font-semibold leading-tight">Elegance Jewellers</h1>
+                    <p class="text-yellow-200 text-base italic md:text-lg">Crafting Luxury Since 1985</p>
                 </div>
             </div>
 
             <!-- CTA Button with Google Icons -->
             <div>
                 <a href="#consultation"
-                    class="bg-yellow-200 hover:bg-yellow-100 text-yellow-900 font-medium text-sm md:text-base px-5 py-2.5 rounded-full shadow-md flex items-center space-x-2 transition duration-300 ease-in-out">
+                    class="bg-yellow-200 hover:bg-yellow-100 text-yellow-900 font-medium text-base px-6 py-3 rounded-full shadow-lg flex items-center space-x-3 transition duration-300 ease-in-out transform hover:scale-105">
                     <!-- Using Material Icon for Calendar -->
                     <span class="material-icons">calendar_today</span>
                     <span>Book Appointment</span>
