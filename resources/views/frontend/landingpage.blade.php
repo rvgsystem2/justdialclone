@@ -608,6 +608,73 @@
         updateSlideWidth();
     </script>
 
+    <!-- contact form -->
+    <section class="py-16 bg-white">
+        <div class="w-full px-4 md:px-16 lg:px-32">
+            <div class="bg-gray-50 p-8 rounded-2xl shadow-xl">
+                <h2 class="text-3xl font-semibold text-amber-800 mb-6 text-center">Get in Touch</h2>
+
+                <form action="#" method="POST" class="space-y-6">
+
+                    <!-- Name -->
+                    <div>
+                        <label for="name" class="block text-sm font-medium text-gray-600 mb-1">Full Name</label>
+                        <input type="text" id="name" name="name" required
+                            class="w-full px-4 py-3 border border-gray-300 rounded-xl shadow-sm focus:outline-none focus:ring-2 focus:ring-amber-800 transition">
+                    </div>
+
+                    <!-- Email -->
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-gray-600 mb-1">Email Address</label>
+                        <input type="email" id="email" name="email" required
+                            class="w-full px-4 py-3 border border-gray-300 rounded-xl shadow-sm focus:outline-none focus:ring-2 focus:ring-amber-800 transition">
+                    </div>
+
+                    <!-- Phone Number -->
+                    <div>
+                        <label for="phone" class="block text-sm font-medium text-gray-600 mb-1">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" required
+                            class="w-full px-4 py-3 border border-gray-300 rounded-xl shadow-sm focus:outline-none focus:ring-2 focus:ring-amber-800 transition">
+                    </div>
+
+                    <!-- Message -->
+                    <div>
+                        <label for="message" class="block text-sm font-medium text-gray-600 mb-1">Your Message</label>
+                        <textarea id="message" name="message" rows="5" required
+                            class="w-full px-4 py-3 border border-gray-300 rounded-xl shadow-sm focus:outline-none focus:ring-2 focus:ring-amber-800 transition resize-none"></textarea>
+                    </div>
+
+                    <!-- Button -->
+                    <div class="text-center">
+                        <button type="submit"
+                            class="bg-amber-800 text-white px-8 py-3 rounded-full font-medium hover:bg-amber-700 transition duration-300 shadow-md">
+                            Send Message
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    {{-- <section class="py-16 bg-amber-800 text-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-3xl mx-auto text-center">
+                <h2 class="text-3xl md:text-4xl font-serif font-bold mb-6">Join Our Exclusive List</h2>
+                <p class="mb-8">Subscribe to receive updates on new collections, special offers, and jewelry care tips.
+                </p>
+                <form class="flex flex-col md:flex-row gap-4 justify-center">
+                    <input type="email" placeholder="Your email address"
+                        class="px-6 py-3 rounded-full text-white bg-amber-800 placeholder-white focus:outline-none focus:ring-2 focus:ring-white flex-grow max-w-md">
+                    <button type="submit"
+                        class="bg-amber-600 hover:bg-amber-700 px-8 py-3 rounded-full transition duration-300 whitespace-nowrap">
+                        Subscribe Now
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section> --}}
+
     <!-- FAQ Section -->
     <section class="py-16 bg-gray-100">
         <div class="max-w-4xl mx-auto px-4">
@@ -659,73 +726,6 @@
                     </div>
                 </div>
 
-            </div>
-        </div>
-    </section>
-
-    <!-- contact form -->
-    <section class="py-16 bg-white">
-        <div class="w-full px-4 md:px-16 lg:px-32">
-            <div class="bg-gray-50 p-8 rounded-2xl shadow-xl">
-                <h2 class="text-3xl font-semibold text-amber-800 mb-6 text-center">Get in Touch</h2>
-
-                <form action="#" method="POST" class="space-y-6">
-
-                    <!-- Name -->
-                    <div>
-                        <label for="name" class="block text-sm font-medium text-gray-600 mb-1">Full Name</label>
-                        <input type="text" id="name" name="name" required
-                            class="w-full px-4 py-3 border border-gray-300 rounded-xl shadow-sm focus:outline-none focus:ring-2 focus:ring-amber-800 transition">
-                    </div>
-
-                    <!-- Email -->
-                    <div>
-                        <label for="email" class="block text-sm font-medium text-gray-600 mb-1">Email Address</label>
-                        <input type="email" id="email" name="email" required
-                            class="w-full px-4 py-3 border border-gray-300 rounded-xl shadow-sm focus:outline-none focus:ring-2 focus:ring-amber-800 transition">
-                    </div>
-
-                    <!-- Phone Number -->
-                    <div>
-                        <label for="phone" class="block text-sm font-medium text-gray-600 mb-1">Phone Number</label>
-                        <input type="tel" id="phone" name="phone" required
-                            class="w-full px-4 py-3 border border-gray-300 rounded-xl shadow-sm focus:outline-none focus:ring-2 focus:ring-amber-800 transition">
-                    </div>
-
-                    <!-- Message -->
-                    <div>
-                        <label for="message" class="block text-sm font-medium text-gray-600 mb-1">Your Message</label>
-                        <textarea id="message" name="message" rows="5" required
-                            class="w-full px-4 py-3 border border-gray-300 rounded-xl shadow-sm focus:outline-none focus:ring-2 focus:ring-amber-800 transition resize-none"></textarea>
-                    </div>
-
-                    <!-- Button -->
-                    <div class="text-center">
-                        <button type="submit"
-                            class="bg-amber-800 text-white px-8 py-3 rounded-full font-medium hover:bg-amber-700 transition duration-300 shadow-md">
-                            Send Message
-                        </button>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </section>
-
-    <!-- Newsletter -->
-    <section class="py-16 bg-amber-800 text-white">
-        <div class="container mx-auto px-4">
-            <div class="max-w-3xl mx-auto text-center">
-                <h2 class="text-3xl md:text-4xl font-serif font-bold mb-6">Join Our Exclusive List</h2>
-                <p class="mb-8">Subscribe to receive updates on new collections, special offers, and jewelry care tips.
-                </p>
-                <form class="flex flex-col md:flex-row gap-4 justify-center">
-                    <input type="email" placeholder="Your email address"
-                        class="px-6 py-3 rounded-full text-white bg-amber-800 placeholder-white focus:outline-none focus:ring-2 focus:ring-white flex-grow max-w-md">
-                    <button type="submit"
-                        class="bg-amber-600 hover:bg-amber-700 px-8 py-3 rounded-full transition duration-300 whitespace-nowrap">
-                        Subscribe Now
-                    </button>
-                </form>
             </div>
         </div>
     </section>
