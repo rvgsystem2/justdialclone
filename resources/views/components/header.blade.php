@@ -2,17 +2,18 @@
 <link
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
     rel="stylesheet" />
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-<header class="bg-white shadow-sm py-3 px-4 sticky top-0 z-50 border-b border-gray-100">
+<header class="bg-white shadow-md py-4 px-6 sticky top-0 z-50 border-b border-gray-100">
     <div class="max-w-screen-xl mx-auto flex flex-wrap items-center justify-between gap-4">
-
         <!-- Logo & Mobile Menu Toggle -->
         <div class="flex items-center justify-between w-full md:w-auto">
             <!-- Logo -->
             <a href="/" class="flex items-center space-x-2">
-                <span class="text-2xl font-bold text-gray-900 font-[Poppins]">
-                    <span class="text-blue-600">Just</span><span class="text-orange-500">Dial</span>
+                <span class="text-2xl font-bold text-gray-900 font-[Montserrat]">
+                    <span class="text-amber-700">RVG</span><span class="text-amber-500">Groups</span>
+                    <span class="text-xs text-gray-500 block -mt-1 font-normal tracking-wider">EXCELLENCE
+                        DELIVERED</span>
                 </span>
             </a>
 
@@ -28,9 +29,9 @@
             <div class="relative flex-1 flex items-center">
                 <!-- Location Dropdown -->
                 <div class="relative">
-                    <div class="flex items-center bg-gray-50 border border-gray-200 rounded-l-lg px-3 h-12 w-48 min-w-[12rem] hover:border-blue-400 transition-colors cursor-pointer"
+                    <div class="flex items-center bg-gray-50 border border-gray-200 rounded-l-lg px-3 h-12 w-48 min-w-[12rem] hover:border-amber-400 transition-colors cursor-pointer shadow-sm"
                         onclick="toggleDesktopLocationDropdown()">
-                        <span class="material-symbols-outlined text-gray-500 text-lg mr-2">location_on</span>
+                        <span class="material-symbols-outlined text-amber-600 text-lg mr-2">location_on</span>
                         <input type="text" id="desktopLocationInput" value="Mumbai" readonly
                             class="bg-transparent outline-none text-sm w-full text-gray-800 font-medium placeholder-gray-500 truncate cursor-pointer"
                             placeholder="Select Location" />
@@ -40,86 +41,104 @@
 
                     <!-- Dropdown Menu -->
                     <ul id="desktopLocationDropdown"
-                        class="absolute z-10 hidden bg-white border border-gray-200 rounded-lg shadow-md mt-1 w-full max-h-60 overflow-y-auto">
-                        <li class="px-4 py-2 hover:bg-blue-50 cursor-pointer text-sm text-gray-700"
+                        class="absolute z-10 hidden bg-white border border-gray-200 rounded-lg shadow-lg mt-1 w-full max-h-60 overflow-y-auto">
+                        <li class="px-4 py-2.5 hover:bg-amber-50 cursor-pointer text-sm text-gray-700 border-l-2 border-transparent hover:border-amber-500"
                             onclick="selectDesktopLocation('Mumbai')">Mumbai</li>
-                        <li class="px-4 py-2 hover:bg-blue-50 cursor-pointer text-sm text-gray-700"
+                        <li class="px-4 py-2.5 hover:bg-amber-50 cursor-pointer text-sm text-gray-700 border-l-2 border-transparent hover:border-amber-500"
                             onclick="selectDesktopLocation('Delhi')">Delhi</li>
-                        <li class="px-4 py-2 hover:bg-blue-50 cursor-pointer text-sm text-gray-700"
+                        <li class="px-4 py-2.5 hover:bg-amber-50 cursor-pointer text-sm text-gray-700 border-l-2 border-transparent hover:border-amber-500"
                             onclick="selectDesktopLocation('Bangalore')">Bangalore</li>
-                        <li class="px-4 py-2 hover:bg-blue-50 cursor-pointer text-sm text-gray-700"
+                        <li class="px-4 py-2.5 hover:bg-amber-50 cursor-pointer text-sm text-gray-700 border-l-2 border-transparent hover:border-amber-500"
                             onclick="selectDesktopLocation('Hyderabad')">Hyderabad</li>
-                        <li class="px-4 py-2 hover:bg-blue-50 cursor-pointer text-sm text-gray-700"
+                        <li class="px-4 py-2.5 hover:bg-amber-50 cursor-pointer text-sm text-gray-700 border-l-2 border-transparent hover:border-amber-500"
                             onclick="selectDesktopLocation('Pune')">Pune</li>
                     </ul>
                 </div>
 
-
                 <!-- Search Input -->
                 <div
-                    class="relative flex-1 flex items-center bg-gray-50 border border-gray-200 border-l-0 rounded-r-lg px-3 h-12 hover:border-blue-400 transition-colors">
-                    <input type="text" placeholder="Search for restaurants, shops, services..."
-                        class="bg-transparent outline-none text-sm w-full text-gray-800 placeholder-gray-500" />
+                    class="relative flex-1 flex items-center bg-gray-50 border border-gray-200 border-l-0 rounded-r-lg px-4 h-12 hover:border-amber-400 transition-colors shadow-sm">
+                    <input type="text" placeholder="Search for businesses, services or products..."
+                        class="bg-transparent outline-none text-xs w-full text-gray-800 placeholder-gray-500" />
                     <button
-                        class="text-white bg-orange-500 hover:bg-orange-600 h-8 w-10 rounded-md flex items-center justify-center ml-2 transition-all">
-                        <span class="material-symbols-outlined text-lg">search</span>
+                        class="text-white bg-gradient-to-r from-amber-500 to-amber-600 h-9 px-2 rounded-md flex items-center justify-center ml-2 transition-all hover:shadow-md">
+                        <span class="material-symbols-outlined text-lg mr-1">search</span>
                     </button>
                 </div>
             </div>
         </div>
 
         <!-- Right Navigation (Desktop) -->
-        <nav class="hidden md:flex items-center space-x-6">
-            <!-- Contact -->
-            <a href="{{ route('contact') }}"
-                class="flex items-center space-x-1 text-gray-600 hover:text-blue-600 transition-colors group">
-                <span class="material-symbols-outlined text-xl group-hover:scale-110 transition-transform">mail</span>
-                <span class="text-sm font-medium">Contact Us</span>
-            </a>
+        <nav class="hidden md:flex items-center space-x-5">
+            <!-- Services Dropdown -->
+            <div class="relative" x-data="{ open: false }">
+                <button @click="open = !open"
+                    class="flex items-center space-x-1 text-gray-600 hover:text-amber-600 transition-colors px-2 py-1">
+                    <span class="text-sm font-medium">Services</span>
+                    <span class="material-symbols-outlined text-gray-500 text-sm">expand_more</span>
+                </button>
 
+                <!-- Dropdown Menu -->
+                <div x-show="open" @click.away="open = false" x-transition:enter="transition ease-out duration-100"
+                    x-transition:enter-start="opacity-0 scale-95" x-transition:enter-end="opacity-100 scale-100"
+                    x-transition:leave="transition ease-in duration-75" x-transition:leave-start="opacity-100 scale-100"
+                    x-transition:leave-end="opacity-0 scale-95"
+                    class="absolute right-0 mt-2 w-56 bg-white rounded-md shadow-lg py-1 z-50 border border-gray-100">
+                    <a href=""
+                        class="flex items-center px-4 py-2.5 text-sm text-gray-700 hover:bg-amber-50 border-l-2 border-transparent hover:border-amber-500">
+                        <span class="material-symbols-outlined text-amber-500 mr-3 text-lg">business</span>
+                        <span>Business Services</span>
+                    </a>
+                    <a href=""
+                        class="flex items-center px-4 py-2.5 text-sm text-gray-700 hover:bg-amber-50 border-l-2 border-transparent hover:border-amber-500">
+                        <span class="material-symbols-outlined text-amber-500 mr-3 text-lg">groups</span>
+                        <span>Consulting</span>
+                    </a>
+                    <a href=""
+                        class="flex items-center px-4 py-2.5 text-sm text-gray-700 hover:bg-amber-50 border-l-2 border-transparent hover:border-amber-500">
+                        <span class="material-symbols-outlined text-amber-500 mr-3 text-lg">lightbulb</span>
+                        <span>Enterprise Solutions</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- About Us Link -->
             <a href="{{ route('about') }}"
-                class="flex items-center space-x-1 text-gray-600 hover:text-blue-600 transition-colors group">
-                <span class="material-symbols-outlined text-xl group-hover:scale-110 transition-transform">info</span>
+                class="flex items-center space-x-1 text-gray-600 hover:text-amber-600 transition-colors px-2 py-1">
                 <span class="text-sm font-medium">About Us</span>
             </a>
 
-
-            <!-- Advertise -->
-            <a href="{{ route('advertise') }}"
-                class="flex items-center space-x-1 text-gray-600 hover:text-blue-600 transition-colors group">
-                <span
-                    class="material-symbols-outlined text-xl group-hover:scale-110 transition-transform">campaign</span>
-                <span class="text-sm font-medium">Advertise</span>
+            <!-- Contact -->
+            <a href="{{ route('contact') }}"
+                class="flex items-center space-x-1 text-gray-600 hover:text-amber-600 transition-colors px-2 py-1">
+                <span class="text-sm font-medium">Contact</span>
             </a>
 
             <!-- Free Listing -->
             <a href="{{ route('listing') }}" class="relative group">
-                <div class="flex flex-col items-start leading-tight">
-                    <span
-                        class="bg-red-600 text-white text-[10px] px-1.5 py-0.5 rounded font-bold tracking-wide">BUSINESS</span>
-                    <span
-                        class="text-gray-600 hover:text-blue-600 text-sm font-medium mt-0.5 group-hover:underline">Free
-                        Listing</span>
+                <div
+                    class="flex items-center space-x-1.5 px-3 py-1.5 bg-amber-50 border border-amber-200 rounded-full hover:bg-amber-100 transition-colors">
+                    <span class="material-symbols-outlined text-amber-600 text-sm">add_business</span>
+                    <span class="text-amber-800 text-sm font-medium whitespace-nowrap">Free Listing</span>
                 </div>
             </a>
 
             <!-- Notification -->
             <a href="{{ route('notifications') }}"
-                class="relative text-gray-600 hover:text-blue-600 transition-colors p-1">
+                class="relative text-gray-600 hover:text-amber-600 transition-colors p-1">
                 <span class="material-symbols-outlined text-xl">notifications</span>
                 <span
-                    class="absolute -top-1 -right-1 bg-red-500 text-white text-xs h-4 w-4 flex items-center justify-center rounded-full">
+                    class="absolute -top-1 -right-1 bg-amber-500 text-white text-xs h-4 w-4 flex items-center justify-center rounded-full">
                     3
                 </span>
             </a>
 
-
             <!-- User Dropdown -->
             <div class="relative" x-data="{ open: false }">
                 <button @click="open = !open"
-                    class="flex items-center space-x-1 text-gray-600 hover:text-blue-600 transition-colors">
+                    class="flex items-center space-x-1 text-gray-600 hover:text-amber-600 transition-colors">
                     <div
-                        class="h-8 w-8 rounded-full bg-gray-100 flex items-center justify-center overflow-hidden border border-gray-200">
+                        class="h-9 w-9 rounded-full bg-gray-100 flex items-center justify-center overflow-hidden border border-gray-200 hover:border-amber-300 transition-colors">
                         <span class="material-symbols-outlined text-gray-500">person</span>
                     </div>
                     <span class="material-symbols-outlined text-gray-500 text-lg">expand_more</span>
@@ -130,15 +149,26 @@
                     x-transition:enter-start="opacity-0 scale-95" x-transition:enter-end="opacity-100 scale-100"
                     x-transition:leave="transition ease-in duration-75" x-transition:leave-start="opacity-100 scale-100"
                     x-transition:leave-end="opacity-0 scale-95"
-                    class="absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg py-1 z-50 border border-gray-200">
+                    class="absolute right-0 mt-2 w-56 bg-white rounded-md shadow-lg py-1 z-50 border border-gray-100">
+                    <div class="px-4 py-3 border-b border-gray-100">
+                        <p class="text-xs font-medium text-gray-400">WELCOME</p>
+                        <p class="text-sm font-medium text-gray-700 mt-0.5">Guest User</p>
+                    </div>
                     <a href="{{ route('login') }}"
-                        class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Login</a>
-                    <a href="{{ route('signup') }}" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Sign
-                        Up</a>
+                        class="flex items-center px-4 py-2.5 text-sm text-gray-700 hover:bg-amber-50 border-l-2 border-transparent hover:border-amber-500">
+                        <span class="material-symbols-outlined text-amber-500 mr-3 text-lg">login</span>
+                        <span>Login</span>
+                    </a>
+                    <a href="{{ route('signup') }}"
+                        class="flex items-center px-4 py-2.5 text-sm text-gray-700 hover:bg-amber-50 border-l-2 border-transparent hover:border-amber-500">
+                        <span class="material-symbols-outlined text-amber-500 mr-3 text-lg">person_add</span>
+                        <span>Sign Up</span>
+                    </a>
                     <a href="{{ route('profile') }}"
-                        class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Your Profile</a>
-                    {{-- <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Settings</a>
-                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Sign out</a> --}}
+                        class="flex items-center px-4 py-2.5 text-sm text-gray-700 hover:bg-amber-50 border-l-2 border-transparent hover:border-amber-500">
+                        <span class="material-symbols-outlined text-amber-500 mr-3 text-lg">account_circle</span>
+                        <span>My Profile</span>
+                    </a>
                 </div>
             </div>
         </nav>
@@ -151,8 +181,8 @@
                     <!-- Location Input with Dropdown -->
                     <div class="relative w-full">
                         <div onclick="toggleMobileLocationDropdown()"
-                            class="flex items-center bg-gray-50 border border-gray-200 rounded-lg px-3 h-12 w-full hover:border-blue-400 transition-colors cursor-pointer">
-                            <span class="material-symbols-outlined text-gray-500 text-lg mr-2">location_on</span>
+                            class="flex items-center bg-gray-50 border border-gray-200 rounded-lg px-3 h-12 w-full hover:border-amber-400 transition-colors cursor-pointer shadow-sm">
+                            <span class="material-symbols-outlined text-amber-600 text-lg mr-2">location_on</span>
                             <input type="text" id="mobileLocationInput" value="Mumbai" readonly
                                 class="bg-transparent outline-none text-sm w-full text-gray-800 font-medium placeholder-gray-500 cursor-pointer"
                                 placeholder="Select Location" />
@@ -161,100 +191,136 @@
 
                         <ul id="mobileLocationDropdown"
                             class="absolute z-10 hidden bg-white border border-gray-200 rounded-lg shadow-md mt-1 w-full max-h-60 overflow-y-auto">
-                            <li class="px-4 py-2 hover:bg-blue-50 cursor-pointer text-sm text-gray-700"
+                            <li class="px-4 py-2.5 hover:bg-amber-50 cursor-pointer text-sm text-gray-700 border-l-2 border-transparent hover:border-amber-500"
                                 onclick="selectMobileLocation('Mumbai')">Mumbai</li>
-                            <li class="px-4 py-2 hover:bg-blue-50 cursor-pointer text-sm text-gray-700"
+                            <li class="px-4 py-2.5 hover:bg-amber-50 cursor-pointer text-sm text-gray-700 border-l-2 border-transparent hover:border-amber-500"
                                 onclick="selectMobileLocation('Delhi')">Delhi</li>
-                            <li class="px-4 py-2 hover:bg-blue-50 cursor-pointer text-sm text-gray-700"
+                            <li class="px-4 py-2.5 hover:bg-amber-50 cursor-pointer text-sm text-gray-700 border-l-2 border-transparent hover:border-amber-500"
                                 onclick="selectMobileLocation('Bangalore')">Bangalore</li>
-                            <li class="px-4 py-2 hover:bg-blue-50 cursor-pointer text-sm text-gray-700"
+                            <li class="px-4 py-2.5 hover:bg-amber-50 cursor-pointer text-sm text-gray-700 border-l-2 border-transparent hover:border-amber-500"
                                 onclick="selectMobileLocation('Hyderabad')">Hyderabad</li>
-                            <li class="px-4 py-2 hover:bg-blue-50 cursor-pointer text-sm text-gray-700"
+                            <li class="px-4 py-2.5 hover:bg-amber-50 cursor-pointer text-sm text-gray-700 border-l-2 border-transparent hover:border-amber-500"
                                 onclick="selectMobileLocation('Pune')">Pune</li>
                         </ul>
                     </div>
                     <!-- Search Input -->
                     <div
-                        class="flex items-center bg-gray-50 border border-gray-200 rounded-lg px-3 h-12 w-full hover:border-blue-400 transition-colors">
-                        <input type="text" placeholder="Search for restaurants, shops..."
+                        class="flex items-center bg-gray-50 border border-gray-200 rounded-lg px-3 h-12 w-full hover:border-amber-400 transition-colors shadow-sm">
+                        <input type="text" placeholder="Search for businesses, services..."
                             class="bg-transparent outline-none text-sm w-full text-gray-800 placeholder-gray-500" />
                         <button
-                            class="text-white bg-orange-500 hover:bg-orange-600 h-8 w-10 rounded-md flex items-center justify-center ml-2 transition-all">
+                            class="text-white bg-gradient-to-r from-amber-500 to-amber-600 h-9 px-3 rounded-md flex items-center justify-center ml-2 transition-all hover:shadow-md">
                             <span class="material-symbols-outlined text-lg">search</span>
                         </button>
                     </div>
                 </div>
 
                 <!-- Mobile Navigation Links -->
-                <div class="space-y-2">
-                    <a href="{{ route('contact') }}"
-                        class="flex items-center space-x-3 text-gray-700 hover:text-blue-600 hover:bg-gray-50 p-2 rounded-lg transition-colors">
-                        <span class="material-symbols-outlined text-gray-500">mail</span>
-                        <span class="font-medium">Contact Us</span>
-                    </a>
+                <div class="space-y-1">
+                    <!-- Services Dropdown -->
+                    <div x-data="{ open: false }" class="relative">
+                        <button @click="open = !open"
+                            class="flex items-center justify-between text-gray-700 hover:text-amber-600 hover:bg-amber-50 p-3 rounded-lg transition-colors w-full">
+                            <div class="flex items-center space-x-3">
+                                <span class="material-symbols-outlined text-amber-500">category</span>
+                                <span class="font-medium">Services</span>
+                            </div>
+                            <span class="material-symbols-outlined text-gray-500 transform transition-transform"
+                                :class="{ 'rotate-180': open }">expand_more</span>
+                        </button>
+
+                        <div x-show="open" class="pl-12 space-y-1 mt-1">
+                            <a href=""
+                                class="flex items-center px-3 py-2 text-sm text-gray-700 hover:bg-amber-50 hover:text-amber-700 rounded-lg">
+                                <span class="material-symbols-outlined text-amber-500 mr-3 text-lg">business</span>
+                                Business Services
+                            </a>
+                            <a href=""
+                                class="flex items-center px-3 py-2 text-sm text-gray-700 hover:bg-amber-50 hover:text-amber-700 rounded-lg">
+                                <span class="material-symbols-outlined text-amber-500 mr-3 text-lg">groups</span>
+                                Consulting
+                            </a>
+                            <a href=""
+                                class="flex items-center px-3 py-2 text-sm text-gray-700 hover:bg-amber-50 hover:text-amber-700 rounded-lg">
+                                <span class="material-symbols-outlined text-amber-500 mr-3 text-lg">lightbulb</span>
+                                Enterprise Solutions
+                            </a>
+                        </div>
+                    </div>
+
                     <a href="{{ route('about') }}"
-                        class="flex items-center space-x-3 text-gray-700 hover:text-blue-600 hover:bg-gray-50 p-2 rounded-lg transition-colors">
-                        <span class="material-symbols-outlined text-gray-500">info</span>
+                        class="flex items-center space-x-3 text-gray-700 hover:text-amber-600 hover:bg-amber-50 p-3 rounded-lg transition-colors">
+                        <span class="material-symbols-outlined text-amber-500">info</span>
                         <span class="font-medium">About Us</span>
                     </a>
 
-                    <a href="{{ route('advertise') }}"
-                        class="flex items-center space-x-3 text-gray-700 hover:text-blue-600 hover:bg-gray-50 p-2 rounded-lg transition-colors">
-                        <span class="material-symbols-outlined text-gray-500">campaign</span>
-                        <span class="font-medium">Advertise</span>
-                    </a>
-                    <a href="{{ route('listing') }}"
-                        class="flex items-center space-x-3 text-gray-700 hover:text-blue-600 hover:bg-gray-50 p-2 rounded-lg transition-colors">
-                        <span class="material-symbols-outlined text-gray-500">add_business</span>
-                        <span class="font-medium">Free Listing</span>
-                        <span
-                            class="bg-red-600 text-white text-xs px-1.5 py-0.5 rounded font-bold ml-auto">BUSINESS</span>
-                    </a>
-                    <a href="{{ route('notifications') }}"
-                        class="flex items-center space-x-3 text-gray-700 hover:text-blue-600 hover:bg-gray-50 p-2 rounded-lg transition-colors">
-                        <span class="material-symbols-outlined text-gray-500">notifications</span>
-                        <span class="font-medium">Notifications</span>
-                        <span
-                            class="bg-red-500 text-white text-xs h-5 w-5 flex items-center justify-center rounded-full ml-auto">3</span>
+                    <a href="{{ route('contact') }}"
+                        class="flex items-center space-x-3 text-gray-700 hover:text-amber-600 hover:bg-amber-50 p-3 rounded-lg transition-colors">
+                        <span class="material-symbols-outlined text-amber-500">mail</span>
+                        <span class="font-medium">Contact</span>
                     </a>
 
-                    <!-- Mobile User Dropdown -->
-                    <div class="pt-2 border-t border-gray-200">
+                    <a href="{{ route('listing') }}"
+                        class="flex items-center space-x-3 text-gray-700 hover:text-amber-600 hover:bg-amber-50 p-3 rounded-lg transition-colors">
+                        <span class="material-symbols-outlined text-amber-500">add_business</span>
+                        <span class="font-medium">Free Listing</span>
+                        <span
+                            class="bg-amber-100 text-amber-800 text-xs px-2 py-0.5 rounded font-bold ml-auto">BUSINESS</span>
+                    </a>
+
+                    <a href="{{ route('notifications') }}"
+                        class="flex items-center space-x-3 text-gray-700 hover:text-amber-600 hover:bg-amber-50 p-3 rounded-lg transition-colors">
+                        <span class="material-symbols-outlined text-amber-500">notifications</span>
+                        <span class="font-medium">Notifications</span>
+                        <span
+                            class="bg-amber-500 text-white text-xs h-5 w-5 flex items-center justify-center rounded-full ml-auto">3</span>
+                    </a>
+
+                    <!-- Mobile User Menu -->
+                    <div class="pt-2 border-t border-gray-200 mt-2">
                         <div x-data="{ open: false }" class="relative">
                             <button @click="open = !open"
-                                class="flex items-center space-x-3 text-gray-700 hover:text-blue-600 hover:bg-gray-50 p-2 rounded-lg transition-colors w-full">
-                                <span class="material-symbols-outlined text-gray-500">person</span>
-                                <span class="font-medium">Account</span>
-                                <span
-                                    class="material-symbols-outlined text-gray-500 ml-auto transform transition-transform"
+                                class="flex items-center justify-between text-gray-700 hover:text-amber-600 hover:bg-amber-50 p-3 rounded-lg transition-colors w-full">
+                                <div class="flex items-center space-x-3">
+                                    <span class="material-symbols-outlined text-amber-500">person</span>
+                                    <span class="font-medium">Account</span>
+                                </div>
+                                <span class="material-symbols-outlined text-gray-500 transform transition-transform"
                                     :class="{ 'rotate-180': open }">expand_more</span>
                             </button>
 
-                            <div x-show="open" class="pl-12 space-y-2 mt-1">
+                            <div x-show="open" class="space-y-1 mt-1">
+                                <a href="{{ route('login') }}"
+                                    class="flex items-center px-10 py-2 text-sm text-gray-700 hover:bg-amber-50 hover:text-amber-700 rounded-lg">
+                                    <span class="material-symbols-outlined text-amber-500 mr-3 text-lg">login</span>
+                                    Login
+                                </a>
+                                <a href="{{ route('signup') }}"
+                                    class="flex items-center px-10 py-2 text-sm text-gray-700 hover:bg-amber-50 hover:text-amber-700 rounded-lg">
+                                    <span
+                                        class="material-symbols-outlined text-amber-500 mr-3 text-lg">person_add</span>
+                                    Sign Up
+                                </a>
                                 <a href="{{ route('profile') }}"
-                                    class="block px-3 py-1.5 text-sm text-gray-700 hover:bg-gray-50 rounded-lg">Your
-                                    Profile</a>
-                                <a href="#"
-                                    class="block px-3 py-1.5 text-sm text-gray-700 hover:bg-gray-50 rounded-lg">Settings</a>
-                                <a href="#"
-                                    class="block px-3 py-1.5 text-sm text-gray-700 hover:bg-gray-50 rounded-lg">Sign
-                                    out</a>
+                                    class="flex items-center px-10 py-2 text-sm text-gray-700 hover:bg-amber-50 hover:text-amber-700 rounded-lg">
+                                    <span
+                                        class="material-symbols-outlined text-amber-500 mr-3 text-lg">account_circle</span>
+                                    My Profile
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- Auth Buttons -->
-                <div class="flex flex-col space-y-2 pt-2">
+                <div class="flex flex-col space-y-2 pt-3 border-t border-gray-200">
                     <a href="{{ route('login') }}"
-                        class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2.5 rounded-lg font-medium text-center transition-colors">
+                        class="bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-white px-4 py-3 rounded-lg font-medium text-center transition-colors shadow-sm">
                         Login
                     </a>
                     <a href="{{ route('signup') }}"
-                        class="bg-white hover:bg-gray-50
-                        text-gray-800 border border-gray-300 px-4 py-2.5 rounded-lg font-medium text-center
-                        transition-colors">
-                        Sign Up
+                        class="bg-white hover:bg-gray-50 text-gray-800 border border-gray-300 px-4 py-3 rounded-lg font-medium text-center transition-colors shadow-sm">
+                        Create Account
                     </a>
                 </div>
             </div>
@@ -264,7 +330,6 @@
 
 <!-- Include Alpine.js for dropdown functionality -->
 <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
-
 
 <!-- Custom JS for Location Dropdowns -->
 <script>
