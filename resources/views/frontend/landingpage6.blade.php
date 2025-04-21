@@ -2,192 +2,199 @@
 
 @section('landingcontent')
     <!-- Hero Section -->
-    <section class="relative bg-gradient-to-br from-rose-900 to-rose-700 text-white overflow-hidden">
-        <!-- Hero Background Image -->
-        <div class="absolute inset-0 z-0">
-            <img src="/api/placeholder/1920/1080" alt="Luxury Jewelry Collection"
-                class="w-full h-full object-cover opacity-20">
+    <section class="relative bg-gradient-to-r from-rose-900 to-amber-800 text-white overflow-hidden">
+        <!-- Hero Background -->
+        <div class="absolute inset-0 z-0 overflow-hidden">
+            <div class="w-full h-full bg-black/30 backdrop-blur-sm"></div>
+            <img src="https://images.unsplash.com/photo-1617038260897-43759a9dd5c0" alt="Luxury Jewelry"
+                class="w-full h-full object-cover opacity-30">
         </div>
 
         <!-- Hero Content -->
-        <div class="container mx-auto px-4 py-32 relative z-10">
-            <div class="max-w-2xl text-center mx-auto">
-                <div class="flex items-center justify-center mb-4">
-                    <span class="material-icons text-4xl mr-2">diamond</span>
-                    <h1 class="text-5xl md:text-6xl font-serif font-light">Timeless Elegance</h1>
+        <div class="container mx-auto px-4 py-36 relative z-10">
+            <div class="max-w-2xl mx-auto">
+                <div class="flex flex-col items-start mb-8">
+                    <span class="material-icons text-4xl mb-4 text-amber-300">diamond</span>
+                    <h1 class="text-5xl md:text-7xl font-serif font-light tracking-tight mb-3">Elegant Artistry</h1>
+                    <p class="text-xl md:text-2xl font-light text-amber-100">Handcrafted jewelry for life's precious moments
+                    </p>
                 </div>
-                <p class="text-xl md:text-2xl mb-8 font-light flex items-center justify-center">
-                    <span class="material-icons mr-2">star</span>
-                    Handcrafted jewelry for life's precious moments
-                </p>
-                <div class="flex flex-wrap gap-4 justify-center">
+                <div class="flex flex-wrap gap-4">
                     <a href="#collections"
-                        class="flex items-center px-8 py-3 bg-white text-rose-800 hover:bg-rose-50 transition duration-300 text-sm uppercase tracking-wider font-medium rounded-full">
-                        <span class="material-icons mr-2">collections</span>
-                        Explore Collection
+                        class="flex items-center px-8 py-3 bg-amber-400 text-rose-900 hover:bg-amber-300 transition duration-300 text-sm uppercase tracking-widest font-bold rounded shadow-lg hover:shadow-xl">
+                        <span class="material-icons mr-2">diamond</span>
+                        Browse Collection
                     </a>
                     <a href="#contact"
-                        class="flex items-center px-8 py-3 border border-white hover:bg-white hover:text-rose-800 transition duration-300 text-sm uppercase tracking-wider font-medium rounded-full">
-                        <span class="material-icons mr-2">schedule</span>
-                        Book Appointment
+                        class="flex items-center px-8 py-3 border-2 border-amber-400 text-amber-400 hover:bg-amber-400/10 transition duration-300 text-sm uppercase tracking-widest font-bold rounded shadow-lg hover:shadow-xl">
+                        <span class="material-icons mr-2">calendar_today</span>
+                        Schedule Consultation
                     </a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Jewelry Product Templates Section -->
-    <section class="py-20 bg-white">
+    <!-- Product Display Templates -->
+    <section class="py-24 bg-stone-100">
         <div class="container mx-auto px-4">
             <div class="text-center mb-16">
-                <h2 class="text-3xl font-serif inline-flex items-center">
-                    <span class="material-icons mr-3 text-4xl text-rose-600">grid_view</span>
-                    Jewelry Display Templates
-                </h2>
-                <p class="text-rose-800/70 mt-3">Select from elegant layouts to showcase your jewelry collection</p>
+                <span
+                    class="inline-block px-4 py-1 bg-rose-100 text-rose-800 rounded-full text-sm font-semibold mb-4">SHOWCASE
+                    OPTIONS</span>
+                <h2 class="text-4xl font-serif text-stone-800 mb-3">Display Your Collection</h2>
+                <p class="text-stone-600 max-w-2xl mx-auto">Choose an elegant presentation style that highlights the beauty
+                    of your jewelry pieces</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                <!-- Classic Gallery -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300">
+                    <div class="relative h-72">
+                        <img src="https://images.unsplash.com/photo-1603974374379-c5cf2d47450f" alt="Classic Gallery"
+                            class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end p-6">
+                            <h3 class="text-2xl font-medium text-white">Classic Gallery</h3>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-stone-700 mb-6">Elegant grid layout with large image previews to showcase your
+                            jewelry collection in detail.</p>
+                        <div class="flex justify-between items-center">
+                            <a href="#" class="text-rose-700 hover:text-rose-900 font-medium flex items-center">
+                                Preview Template
+                                <span class="material-icons ml-1">visibility</span>
+                            </a>
+                            <button
+                                class="px-5 py-2 bg-rose-700 text-white rounded text-sm hover:bg-rose-800 transition shadow-md">
+                                Select
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Showcase Carousel -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300">
+                    <div class="relative h-72">
+                        <img src="https://images.unsplash.com/photo-1602173574767-37ac01994b2a" alt="Showcase Carousel"
+                            class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end p-6">
+                            <h3 class="text-2xl font-medium text-white">Showcase Carousel</h3>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-stone-700 mb-6">Dynamic slider presentation that brings focus to each individual
+                            piece with smooth transitions.</p>
+                        <div class="flex justify-between items-center">
+                            <a href="#" class="text-rose-700 hover:text-rose-900 font-medium flex items-center">
+                                Preview Template
+                                <span class="material-icons ml-1">visibility</span>
+                            </a>
+                            <button
+                                class="px-5 py-2 bg-rose-700 text-white rounded text-sm hover:bg-rose-800 transition shadow-md">
+                                Select
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Detail View -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300">
+                    <div class="relative h-72">
+                        <img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e" alt="Detail View"
+                            class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end p-6">
+                            <h3 class="text-2xl font-medium text-white">Detail View</h3>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-stone-700 mb-6">Enhanced zoom functionality allowing customers to appreciate the
+                            intricate details of your jewelry.</p>
+                        <div class="flex justify-between items-center">
+                            <a href="#" class="text-rose-700 hover:text-rose-900 font-medium flex items-center">
+                                Preview Template
+                                <span class="material-icons ml-1">visibility</span>
+                            </a>
+                            <button
+                                class="px-5 py-2 bg-rose-700 text-white rounded text-sm hover:bg-rose-800 transition shadow-md">
+                                Select
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Collections -->
+    <section id="collections" class="py-24 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <span
+                    class="inline-block px-4 py-1 bg-amber-100 text-amber-800 rounded-full text-sm font-semibold mb-4">EXQUISITE
+                    PIECES</span>
+                <h2 class="text-4xl font-serif text-stone-800 mb-3">Our Signature Collections</h2>
+                <p class="text-stone-600 max-w-2xl mx-auto">Discover our carefully curated selection of handcrafted jewelry
+                </p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Classic Gallery -->
-                <div class="group bg-rose-50 rounded-xl overflow-hidden hover:shadow-lg transition duration-300">
-                    <div class="relative h-64">
-                        <img src="/api/placeholder/600/400" alt="Classic Gallery"
-                            class="w-full h-full object-cover transition duration-500 group-hover:scale-105">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent flex items-end p-6">
-                            <span class="material-icons text-white text-4xl">collections</span>
-                        </div>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-medium text-rose-900 mb-2">Classic Gallery</h3>
-                        <p class="text-rose-700/80 mb-4">Grid layout with large image previews</p>
-                        <div class="flex justify-between items-center">
-                            <a href="#" class="text-rose-600 hover:text-rose-800 font-medium flex items-center">
-                                Preview
-                                <span class="material-icons ml-1">visibility</span>
-                            </a>
-                            <button class="px-4 py-2 bg-rose-600 text-white rounded-full text-sm hover:bg-rose-700 transition">
-                                Select Template
-                            </button>
+                <!-- Collection 1 -->
+                <div class="group">
+                    <div class="relative overflow-hidden rounded-lg shadow-lg">
+                        <img src="https://images.unsplash.com/photo-1603974374379-c5cf2d47450f" alt="Rings Collection"
+                            class="w-full h-80 object-cover transition duration-700 group-hover:scale-105">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-rose-900/80 to-transparent opacity-90 group-hover:opacity-100 transition duration-300">
+                            <div class="absolute bottom-0 left-0 right-0 p-6">
+                                <h3 class="text-2xl font-serif text-white mb-2">Timeless Rings</h3>
+                                <p class="text-amber-200 mb-4">Symbols of eternal commitment and style</p>
+                                <a href="#"
+                                    class="inline-flex items-center text-white border-b border-amber-300 pb-1 hover:text-amber-300 transition">
+                                    Explore Collection
+                                    <span class="material-icons ml-2">east</span>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Modern Carousel -->
-                <div class="group bg-rose-50 rounded-xl overflow-hidden hover:shadow-lg transition duration-300">
-                    <div class="relative h-64">
-                        <img src="/api/placeholder/600/400" alt="Modern Carousel"
-                            class="w-full h-full object-cover transition duration-500 group-hover:scale-105">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent flex items-end p-6">
-                            <span class="material-icons text-white text-4xl">slideshow</span>
-                        </div>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-medium text-rose-900 mb-2">Modern Carousel</h3>
-                        <p class="text-rose-700/80 mb-4">Slider-based product highlights</p>
-                        <div class="flex justify-between items-center">
-                            <a href="#" class="text-rose-600 hover:text-rose-800 font-medium flex items-center">
-                                Preview
-                                <span class="material-icons ml-1">visibility</span>
-                            </a>
-                            <button class="px-4 py-2 bg-rose-600 text-white rounded-full text-sm hover:bg-rose-700 transition">
-                                Select Template
-                            </button>
+                <!-- Collection 2 -->
+                <div class="group">
+                    <div class="relative overflow-hidden rounded-lg shadow-lg">
+                        <img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e" alt="Necklaces Collection"
+                            class="w-full h-80 object-cover transition duration-700 group-hover:scale-105">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-rose-900/80 to-transparent opacity-90 group-hover:opacity-100 transition duration-300">
+                            <div class="absolute bottom-0 left-0 right-0 p-6">
+                                <h3 class="text-2xl font-serif text-white mb-2">Luxurious Necklaces</h3>
+                                <p class="text-amber-200 mb-4">Statement pieces crafted for unforgettable moments</p>
+                                <a href="#"
+                                    class="inline-flex items-center text-white border-b border-amber-300 pb-1 hover:text-amber-300 transition">
+                                    Explore Collection
+                                    <span class="material-icons ml-2">east</span>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Zoom Focus -->
-                <div class="group bg-rose-50 rounded-xl overflow-hidden hover:shadow-lg transition duration-300">
-                    <div class="relative h-64">
-                        <img src="/api/placeholder/600/400" alt="Zoom Focus"
-                            class="w-full h-full object-cover transition duration-500 group-hover:scale-105">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent flex items-end p-6">
-                            <span class="material-icons text-white text-4xl">zoom_in</span>
-                        </div>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-medium text-rose-900 mb-2">Zoom Focus</h3>
-                        <p class="text-rose-700/80 mb-4">Detailed zoom for product clarity</p>
-                        <div class="flex justify-between items-center">
-                            <a href="#" class="text-rose-600 hover:text-rose-800 font-medium flex items-center">
-                                Preview
-                                <span class="material-icons ml-1">visibility</span>
-                            </a>
-                            <button class="px-4 py-2 bg-rose-600 text-white rounded-full text-sm hover:bg-rose-700 transition">
-                                Select Template
-                            </button>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Feature Grid -->
-                <div class="group bg-rose-50 rounded-xl overflow-hidden hover:shadow-lg transition duration-300">
-                    <div class="relative h-64">
-                        <img src="/api/placeholder/600/400" alt="Feature Grid"
-                            class="w-full h-full object-cover transition duration-500 group-hover:scale-105">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent flex items-end p-6">
-                            <span class="material-icons text-white text-4xl">view_module</span>
-                        </div>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-medium text-rose-900 mb-2">Feature Grid</h3>
-                        <p class="text-rose-700/80 mb-4">Showcase bestsellers & offers</p>
-                        <div class="flex justify-between items-center">
-                            <a href="#" class="text-rose-600 hover:text-rose-800 font-medium flex items-center">
-                                Preview
-                                <span class="material-icons ml-1">visibility</span>
-                            </a>
-                            <button class="px-4 py-2 bg-rose-600 text-white rounded-full text-sm hover:bg-rose-700 transition">
-                                Select Template
-                            </button>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Catalog Scroll -->
-                <div class="group bg-rose-50 rounded-xl overflow-hidden hover:shadow-lg transition duration-300">
-                    <div class="relative h-64">
-                        <img src="/api/placeholder/600/400" alt="Catalog Scroll"
-                            class="w-full h-full object-cover transition duration-500 group-hover:scale-105">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent flex items-end p-6">
-                            <span class="material-icons text-white text-4xl">horizontal_rule</span>
-                        </div>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-medium text-rose-900 mb-2">Catalog Scroll</h3>
-                        <p class="text-rose-700/80 mb-4">Horizontal scroll for product sets</p>
-                        <div class="flex justify-between items-center">
-                            <a href="#" class="text-rose-600 hover:text-rose-800 font-medium flex items-center">
-                                Preview
-                                <span class="material-icons ml-1">visibility</span>
-                            </a>
-                            <button class="px-4 py-2 bg-rose-600 text-white rounded-full text-sm hover:bg-rose-700 transition">
-                                Select Template
-                            </button>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Full Showcase -->
-                <div class="group bg-rose-50 rounded-xl overflow-hidden hover:shadow-lg transition duration-300">
-                    <div class="relative h-64">
-                        <img src="/api/placeholder/600/400" alt="Full Showcase"
-                            class="w-full h-full object-cover transition duration-500 group-hover:scale-105">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent flex items-end p-6">
-                            <span class="material-icons text-white text-4xl">inventory_2</span>
-                        </div>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-medium text-rose-900 mb-2">Full Showcase</h3>
-                        <p class="text-rose-700/80 mb-4">Best for ecommerce jewelry display</p>
-                        <div class="flex justify-between items-center">
-                            <a href="#" class="text-rose-600 hover:text-rose-800 font-medium flex items-center">
-                                Preview
-                                <span class="material-icons ml-1">visibility</span>
-                            </a>
-                            <button class="px-4 py-2 bg-rose-600 text-white rounded-full text-sm hover:bg-rose-700 transition">
-                                Select Template
-                            </button>
+                <!-- Collection 3 -->
+                <div class="group">
+                    <div class="relative overflow-hidden rounded-lg shadow-lg">
+                        <img src="https://images.unsplash.com/photo-1602173574767-37ac01994b2a" alt="Earrings Collection"
+                            class="w-full h-80 object-cover transition duration-700 group-hover:scale-105">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-rose-900/80 to-transparent opacity-90 group-hover:opacity-100 transition duration-300">
+                            <div class="absolute bottom-0 left-0 right-0 p-6">
+                                <h3 class="text-2xl font-serif text-white mb-2">Elegant Earrings</h3>
+                                <p class="text-amber-200 mb-4">From subtle sparkle to bold statements</p>
+                                <a href="#"
+                                    class="inline-flex items-center text-white border-b border-amber-300 pb-1 hover:text-amber-300 transition">
+                                    Explore Collection
+                                    <span class="material-icons ml-2">east</span>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -195,162 +202,65 @@
         </div>
     </section>
 
-    <!-- Featured Categories -->
-    <section class="py-20 bg-rose-50">
-        <div class="container mx-auto px-4">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl font-serif inline-flex items-center justify-center">
-                    <span class="material-icons mr-3 text-4xl text-rose-600">category</span>
-                    Our Collections
-                </h2>
-                <p class="text-rose-800/70 mt-3">Discover our carefully curated jewelry categories</p>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8" id="collections">
-                <!-- Category 1 -->
-                <div class="group relative overflow-hidden cursor-pointer rounded-xl shadow-lg hover:shadow-xl transition duration-300">
-                    <img src="/api/placeholder/600/800" alt="Rings Collection"
-                        class="w-full h-96 object-cover transition duration-700 group-hover:scale-105">
-                    <div class="absolute inset-0 bg-gradient-to-t from-rose-900/70 via-rose-900/30 to-transparent flex items-end p-6">
-                        <div class="w-full">
-                            <div class="flex items-center mb-2">
-                                <span class="material-icons mr-2 text-white">ring_volume</span>
-                                <h3 class="text-xl font-medium text-white">Rings</h3>
-                            </div>
-                            <p class="text-rose-100 mb-4">Symbols of love and commitment</p>
-                            <a href="#" class="inline-flex items-center text-white font-medium">
-                                View Collection
-                                <span class="material-icons ml-1">arrow_forward</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Category 2 -->
-                <div class="group relative overflow-hidden cursor-pointer rounded-xl shadow-lg hover:shadow-xl transition duration-300">
-                    <img src="/api/placeholder/600/800" alt="Necklaces Collection"
-                        class="w-full h-96 object-cover transition duration-700 group-hover:scale-105">
-                    <div class="absolute inset-0 bg-gradient-to-t from-rose-900/70 via-rose-900/30 to-transparent flex items-end p-6">
-                        <div class="w-full">
-                            <div class="flex items-center mb-2">
-                                <span class="material-icons mr-2 text-white">checkroom</span>
-                                <h3 class="text-xl font-medium text-white">Necklaces</h3>
-                            </div>
-                            <p class="text-rose-100 mb-4">Elegant pieces for every occasion</p>
-                            <a href="#" class="inline-flex items-center text-white font-medium">
-                                View Collection
-                                <span class="material-icons ml-1">arrow_forward</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Category 3 -->
-                <div class="group relative overflow-hidden cursor-pointer rounded-xl shadow-lg hover:shadow-xl transition duration-300">
-                    <img src="/api/placeholder/600/800" alt="Earrings Collection"
-                        class="w-full h-96 object-cover transition duration-700 group-hover:scale-105">
-                    <div class="absolute inset-0 bg-gradient-to-t from-rose-900/70 via-rose-900/30 to-transparent flex items-end p-6">
-                        <div class="w-full">
-                            <div class="flex items-center mb-2">
-                                <span class="material-icons mr-2 text-white">hearing</span>
-                                <h3 class="text-xl font-medium text-white">Earrings</h3>
-                            </div>
-                            <p class="text-rose-100 mb-4">Subtle sparkle or bold statements</p>
-                            <a href="#" class="inline-flex items-center text-white font-medium">
-                                View Collection
-                                <span class="material-icons ml-1">arrow_forward</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Product Gallery -->
-    <section class="py-20 bg-white">
+    <!-- Featured Products -->
+    <section class="py-24 bg-stone-100">
         <div class="container mx-auto px-4">
             <div class="flex flex-col md:flex-row justify-between items-center mb-12">
-                <div class="flex items-center">
-                    <span class="material-icons text-4xl mr-3 text-rose-600">featured_play_list</span>
-                    <h2 class="text-3xl font-serif">Featured Pieces</h2>
+                <div>
+                    <span
+                        class="inline-block px-4 py-1 bg-rose-100 text-rose-800 rounded-full text-sm font-semibold mb-4">BEST
+                        SELLERS</span>
+                    <h2 class="text-4xl font-serif text-stone-800">Featured Creations</h2>
                 </div>
-                <div class="mt-4 md:mt-0">
-                    <ul class="flex flex-wrap gap-4 md:gap-6">
-                        <li>
-                            <button class="flex items-center px-4 py-2 rounded-full bg-rose-600 text-white text-sm uppercase tracking-wider font-medium gallery-filter active"
-                                data-filter="all">
-                                <span class="material-icons mr-1 text-sm">apps</span>
-                                All
-                            </button>
-                        </li>
-                        <li>
-                            <button class="flex items-center px-4 py-2 rounded-full hover:bg-rose-50 text-rose-800 text-sm uppercase tracking-wider font-medium gallery-filter"
-                                data-filter="rings">
-                                <span class="material-icons mr-1 text-sm">ring_volume</span>
-                                Rings
-                            </button>
-                        </li>
-                        <li>
-                            <button class="flex items-center px-4 py-2 rounded-full hover:bg-rose-50 text-rose-800 text-sm uppercase tracking-wider font-medium gallery-filter"
-                                data-filter="necklaces">
-                                <span class="material-icons mr-1 text-sm">checkroom</span>
-                                Necklaces
-                            </button>
-                        </li>
-                        <li>
-                            <button class="flex items-center px-4 py-2 rounded-full hover:bg-rose-50 text-rose-800 text-sm uppercase tracking-wider font-medium gallery-filter"
-                                data-filter="earrings">
-                                <span class="material-icons mr-1 text-sm">hearing</span>
-                                Earrings
-                            </button>
-                        </li>
-                        <li>
-                            <button class="flex items-center px-4 py-2 rounded-full hover:bg-rose-50 text-rose-800 text-sm uppercase tracking-wider font-medium gallery-filter"
-                                data-filter="bracelets">
-                                <span class="material-icons mr-1 text-sm">watch</span>
-                                Bracelets
-                            </button>
-                        </li>
-                    </ul>
+                <div class="mt-6 md:mt-0">
+                    <div class="inline-flex flex-wrap gap-3 p-1 bg-stone-200 rounded-lg">
+                        <button class="px-5 py-2 bg-rose-700 text-white rounded text-sm font-medium transition shadow-sm"
+                            data-filter="all">All</button>
+                        <button class="px-5 py-2 hover:bg-stone-300 text-stone-700 rounded text-sm font-medium transition"
+                            data-filter="rings">Rings</button>
+                        <button class="px-5 py-2 hover:bg-stone-300 text-stone-700 rounded text-sm font-medium transition"
+                            data-filter="necklaces">Necklaces</button>
+                        <button class="px-5 py-2 hover:bg-stone-300 text-stone-700 rounded text-sm font-medium transition"
+                            data-filter="earrings">Earrings</button>
+                    </div>
                 </div>
             </div>
 
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8" id="product-gallery">
                 <!-- Product 1 -->
-                <div class="group product-item bg-rose-50 rounded-xl overflow-hidden hover:shadow-lg transition duration-300"
+                <div class="group bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300"
                     data-category="rings">
-                    <div class="relative overflow-hidden">
-                        <img src="/api/placeholder/600/600" alt="Diamond Engagement Ring"
-                            class="w-full aspect-square object-cover">
-                        <div class="absolute inset-0 bg-black/10 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
-                            <div class="flex gap-2">
-                                <button class="w-10 h-10 rounded-full bg-white flex items-center justify-center hover:bg-rose-100 shadow-md">
-                                    <span class="material-icons text-rose-700">favorite</span>
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1603974374379-c5cf2d47450f"
+                            alt="Diamond Engagement Ring" class="w-full aspect-square object-cover">
+                        <div class="absolute top-4 left-4">
+                            <span
+                                class="bg-amber-400 text-rose-900 px-3 py-1 rounded text-xs font-bold uppercase tracking-wider">Featured</span>
+                        </div>
+                        <div
+                            class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+                            <div class="flex gap-3">
+                                <button
+                                    class="w-10 h-10 rounded-full bg-white flex items-center justify-center hover:bg-rose-100 shadow-md">
+                                    <span class="material-icons text-rose-700">favorite_border</span>
                                 </button>
-                                <button class="w-10 h-10 rounded-full bg-white flex items-center justify-center hover:bg-rose-100 shadow-md">
-                                    <span class="material-icons text-rose-700">search</span>
+                                <button
+                                    class="w-10 h-10 rounded-full bg-white flex items-center justify-center hover:bg-rose-100 shadow-md">
+                                    <span class="material-icons text-rose-700">visibility</span>
                                 </button>
-                                <button class="w-10 h-10 rounded-full bg-white flex items-center justify-center hover:bg-rose-100 shadow-md">
-                                    <span class="material-icons text-rose-700">shopping_cart</span>
+                                <button
+                                    class="w-10 h-10 rounded-full bg-white flex items-center justify-center hover:bg-rose-100 shadow-md">
+                                    <span class="material-icons text-rose-700">shopping_bag</span>
                                 </button>
                             </div>
-                        </div>
-                        <div class="absolute top-4 right-4 bg-white rounded-full w-10 h-10 flex items-center justify-center shadow-md">
-                            <span class="material-icons text-rose-500">star</span>
                         </div>
                     </div>
-                    <div class="p-4">
-                        <div class="flex justify-between items-start">
-                            <div>
-                                <h3 class="text-lg font-medium text-rose-900">Radiant Solitaire</h3>
-                                <p class="text-rose-700/80">Diamond Engagement Ring</p>
-                            </div>
-                            <span class="material-icons text-rose-400 hover:text-rose-600">compare_arrows</span>
-                        </div>
-                        <div class="mt-3 flex justify-between items-center">
-                            <p class="text-lg font-bold text-rose-900">$3,499</p>
-                            <div class="flex items-center text-rose-500">
+                    <div class="p-5">
+                        <h3 class="text-xl font-serif text-stone-800 mb-1">Lumière Diamond Ring</h3>
+                        <p class="text-stone-600 mb-3">Platinum setting with 1.5ct brilliant cut</p>
+                        <div class="flex justify-between items-center">
+                            <p class="text-xl font-bold text-rose-700">$4,850</p>
+                            <div class="flex items-center text-amber-500">
                                 <span class="material-icons text-sm">star</span>
                                 <span class="material-icons text-sm">star</span>
                                 <span class="material-icons text-sm">star</span>
@@ -362,279 +272,382 @@
                 </div>
 
                 <!-- Product 2 -->
-                <div class="group product-item bg-rose-50 rounded-xl overflow-hidden hover:shadow-lg transition duration-300"
+                <div class="group bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300"
                     data-category="necklaces">
-                    <div class="relative overflow-hidden">
-                        <img src="/api/placeholder/600/600" alt="Sapphire Pendant"
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e" alt="Sapphire Pendant"
                             class="w-full aspect-square object-cover">
-                        <div class="absolute inset-0 bg-black/10 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
-                            <div class="flex gap-2">
-                                <button class="w-10 h-10 rounded-full bg-white flex items-center justify-center hover:bg-rose-100 shadow-md">
-                                    <span class="material-icons text-rose-700">favorite</span>
+                        <div
+                            class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+                            <div class="flex gap-3">
+                                <button
+                                    class="w-10 h-10 rounded-full bg-white flex items-center justify-center hover:bg-rose-100 shadow-md">
+                                    <span class="material-icons text-rose-700">favorite_border</span>
                                 </button>
-                                <button class="w-10 h-10 rounded-full bg-white flex items-center justify-center hover:bg-rose-100 shadow-md">
-                                    <span class="material-icons text-rose-700">search</span>
+                                <button
+                                    class="w-10 h-10 rounded-full bg-white flex items-center justify-center hover:bg-rose-100 shadow-md">
+                                    <span class="material-icons text-rose-700">visibility</span>
                                 </button>
-                                <button class="w-10 h-10 rounded-full bg-white flex items-center justify-center hover:bg-rose-100 shadow-md">
-                                    <span class="material-icons text-rose-700">shopping_cart</span>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="p-4">
-                        <div class="flex justify-between items-start">
-                            <div>
-                                <h3 class="text-lg font-medium text-rose-900">Ocean Blue</h3>
-                                <p class="text-rose-700/80">Sapphire Pendant Necklace</p>
-                            </div>
-                            <span class="material-icons text-rose-400 hover:text-rose-600">compare_arrows</span>
-                        </div>
-                        <div class="mt-3 flex justify-between items-center">
-                            <p class="text-lg font-bold text-rose-900">$2,799</p>
-                            <div class="flex items-center text-rose-500">
-                                <span class="material-icons text-sm">star</span>
-                                <span class="material-icons text-sm">star</span>
-                                <span class="material-icons text-sm">star</span>
-                                <span class="material-icons text-sm">star</span>
-                                <span class="material-icons text-sm">star</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Product 3 -->
-                <div class="group product-item bg-rose-50 rounded-xl overflow-hidden hover:shadow-lg transition duration-300"
-                    data-category="earrings">
-                    <div class="relative overflow-hidden">
-                        <img src="/api/placeholder/600/600" alt="Pearl Drop Earrings"
-                            class="w-full aspect-square object-cover">
-                        <div class="absolute inset-0 bg-black/10 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
-                            <div class="flex gap-2">
-                                <button class="w-10 h-10 rounded-full bg-white flex items-center justify-center hover:bg-rose-100 shadow-md">
-                                    <span class="material-icons text-rose-700">favorite</span>
-                                </button>
-                                <button class="w-10 h-10 rounded-full bg-white flex items-center justify-center hover:bg-rose-100 shadow-md">
-                                    <span class="material-icons text-rose-700">search</span>
-                                </button>
-                                <button class="w-10 h-10 rounded-full bg-white flex items-center justify-center hover:bg-rose-100 shadow-md">
-                                    <span class="material-icons text-rose-700">shopping_cart</span>
-                                </button>
-                            </div>
-                        </div>
-                        <div class="absolute top-4 left-4 bg-rose-600 text-white text-xs px-2 py-1 rounded">SALE</div>
-                    </div>
-                    <div class="p-4">
-                        <div class="flex justify-between items-start">
-                            <div>
-                                <h3 class="text-lg font-medium text-rose-900">Lunar Pearl</h3>
-                                <p class="text-rose-700/80">Pearl Drop Earrings</p>
-                            </div>
-                            <span class="material-icons text-rose-400 hover:text-rose-600">compare_arrows</span>
-                        </div>
-                        <div class="mt-3 flex justify-between items-center">
-                            <div>
-                                <p class="text-lg font-bold text-rose-900">$1,299</p>
-                                <p class="text-sm text-rose-600 line-through">$1,599</p>
-                            </div>
-                            <div class="flex items-center text-rose-500">
-                                <span class="material-icons text-sm">star</span>
-                                <span class="material-icons text-sm">star</span>
-                                <span class="material-icons text-sm">star</span>
-                                <span class="material-icons text-sm">star</span>
-                                <span class="material-icons text-sm">star_border</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Product 4 -->
-                <div class="group product-item bg-rose-50 rounded-xl overflow-hidden hover:shadow-lg transition duration-300"
-                    data-category="bracelets">
-                    <div class="relative overflow-hidden">
-                        <img src="/api/placeholder/600/600" alt="Gold Tennis Bracelet"
-                            class="w-full aspect-square object-cover">
-                        <div class="absolute inset-0 bg-black/10 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
-                            <div class="flex gap-2">
-                                <button class="w-10 h-10 rounded-full bg-white flex items-center justify-center hover:bg-rose-100 shadow-md">
-                                    <span class="material-icons text-rose-700">favorite</span>
-                                </button>
-                                <button class="w-10 h-10 rounded-full bg-white flex items-center justify-center hover:bg-rose-100 shadow-md">
-                                    <span class="material-icons text-rose-700">search</span>
-                                </button>
-                                <button class="w-10 h-10 rounded-full bg-white flex items-center justify-center hover:bg-rose-100 shadow-md">
-                                    <span class="material-icons text-rose-700">shopping_cart</span>
+                                <button
+                                    class="w-10 h-10 rounded-full bg-white flex items-center justify-center hover:bg-rose-100 shadow-md">
+                                    <span class="material-icons text-rose-700">shopping_bag</span>
                                 </button>
                             </div>
                         </div>
                     </div>
-                    <div class="p-4">
-                        <div class="flex justify-between items-start">
-                            <div>
-                                <h3 class="text-lg font-medium text-rose-900">Golden Cascade</h3>
-                                <p class="text-rose-700/80">18K Gold Tennis Bracelet</p>
-                            </div>
-                            <span class="material-icons text-rose-400 hover:text-rose-600">compare_arrows</span>
-                        </div>
-                        <div class="mt-3 flex justify-between items-center">
-                            <p class="text-lg font-bold text-rose-900">$4,199</p>
-                            <div class="flex items-center text-rose-500">
+                    <div class="p-5">
+                        <h3 class="text-xl font-serif text-stone-800 mb-1">Azure Teardrop Pendant</h3>
+                        <p class="text-stone-600 mb-3">18K gold with natural sapphire and diamonds</p>
+                        <div class="flex justify-between items-center">
+                            <p class="text-xl font-bold text-rose-700">$3,295</p>
+                            <div class="flex items-center text-amber-500">
                                 <span class="material-icons text-sm">star</span>
                                 <span class="material-icons text-sm">star</span>
                                 <span class="material-icons text-sm">star</span>
-                                <span class="material-icons text-sm">star_half</span>
-                                <span class="material-icons text-sm">star_border</span>
+                                <span class="material-icons text-sm">star</span>
+                                <span class="material-icons text-sm">star</span>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="text-center mt-12">
+            <div class="text-center mt-16">
                 <a href="#"
-                    class="inline-flex items-center px-6 py-3 border border-rose-800 text-rose-800 rounded-full hover:bg-rose-800 hover:text-white transition duration-300 font-medium">
-                    View All Products
+                    class="inline-flex items-center px-8 py-3 bg-rose-700 text-white rounded hover:bg-rose-800 transition duration-300 font-medium shadow-md">
+                    View Complete Collection
                     <span class="material-icons ml-2">arrow_forward</span>
                 </a>
             </div>
         </div>
     </section>
 
-    <!-- Craftsmanship Section -->
-    <section class="py-20 bg-rose-100">
+    <!-- Artisan Craftsmanship -->
+    <section class="py-24 bg-white">
         <div class="container mx-auto px-4">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-                <div class="order-2 md:order-1">
-                    <div class="flex items-center mb-6">
-                        <span class="material-icons text-4xl mr-3 text-rose-600">handyman</span>
-                        <h2 class="text-3xl font-serif">Artisan Craftsmanship</h2>
-                    </div>
-                    <div class="space-y-4">
-                        <div class="flex">
-                            <span class="material-icons text-rose-600 mr-3">check_circle</span>
-                            <p class="text-rose-900/80">Each piece is meticulously crafted by master jewelers with decades of experience.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+                <div>
+                    <div class="relative">
+                        <div class="grid grid-cols-2 gap-6">
+                            <img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e" alt="Jewelry Crafting"
+                                class="w-full rounded-lg shadow-lg">
+                            <img src="https://images.unsplash.com/photo-1602173574767-37ac01994b2a" alt="Jewelry Design"
+                                class="w-full mt-12 rounded-lg shadow-lg">
                         </div>
-                        <div class="flex">
-                            <span class="material-icons text-rose-600 mr-3">check_circle</span>
-                            <p class="text-rose-900/80">We use only ethically sourced gemstones and recycled precious metals.</p>
+                        <div class="absolute -bottom-10 -right-10 bg-rose-700 p-6 rounded-lg shadow-lg hidden md:block">
+                            <p class="text-white text-lg font-serif">25+ years of expertise</p>
                         </div>
-                        <div class="flex">
-                            <span class="material-icons text-rose-600 mr-3">check_circle</span>
-                            <p class="text-rose-900/80">Traditional techniques meet modern innovation in our design process.</p>
-                        </div>
-                    </div>
-                    <div class="mt-8 flex flex-wrap gap-4">
-                        <a href="#"
-                            class="inline-flex items-center px-6 py-3 bg-rose-700 text-white hover:bg-rose-800 transition duration-300 rounded-full text-sm uppercase tracking-wider font-medium">
-                            <span class="material-icons mr-2">precision_manufacturing</span>
-                            Our Process
-                        </a>
-                        <a href="#"
-                            class="inline-flex items-center px-6 py-3 border border-rose-700 text-rose-700 hover:bg-rose-700 hover:text-white transition duration-300 rounded-full text-sm uppercase tracking-wider font-medium">
-                            <span class="material-icons mr-2">groups</span>
-                            Meet Our Artisans
-                        </a>
                     </div>
                 </div>
-                <div class="order-1 md:order-2 grid grid-cols-2 gap-4">
-                    <div class="bg-white p-4 rounded-xl shadow-md">
-                        <img src="/api/placeholder/500/600" alt="Jewelry Crafting"
-                            class="w-full h-full object-cover rounded-lg">
-                        <div class="mt-4 flex items-center">
-                            <span class="material-icons text-rose-500 mr-2">workspace_premium</span>
-                            <p class="text-sm font-medium text-rose-800">Award-winning craftsmanship</p>
+                <div>
+                    <span
+                        class="inline-block px-4 py-1 bg-amber-100 text-amber-800 rounded-full text-sm font-semibold mb-4">OUR
+                        CRAFT</span>
+                    <h2 class="text-4xl font-serif text-stone-800 mb-6">The Art of Fine Jewelry</h2>
+                    <p class="text-stone-600 mb-8">Each piece in our collection represents the culmination of traditional
+                        craftsmanship and contemporary design. Our master jewelers bring decades of expertise to every
+                        creation.</p>
+
+                    <div class="space-y-5 mb-10">
+                        <div class="flex items-start">
+                            <span class="material-icons text-amber-500 mr-4 mt-1">diamond</span>
+                            <div>
+                                <h3 class="text-lg font-medium text-stone-800 mb-1">Ethically Sourced Materials</h3>
+                                <p class="text-stone-600">We use only conflict-free diamonds and gemstones, alongside
+                                    recycled precious metals.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <span class="material-icons text-amber-500 mr-4 mt-1">design_services</span>
+                            <div>
+                                <h3 class="text-lg font-medium text-stone-800 mb-1">Custom Design Process</h3>
+                                <p class="text-stone-600">Our specialized design team works closely with you to bring your
+                                    vision to life.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <span class="material-icons text-amber-500 mr-4 mt-1">verified</span>
+                            <div>
+                                <h3 class="text-lg font-medium text-stone-800 mb-1">Lifetime Guarantee</h3>
+                                <p class="text-stone-600">Each piece comes with our commitment to quality and
+                                    craftsmanship.</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="bg-white p-4 rounded-xl shadow-md mt-8">
-                        <img src="/api/placeholder/500/600" alt="Jewelry Design"
-                            class="w-full h-full object-cover rounded-lg">
-                        <div class="mt-4 flex items-center">
-                            <span class="material-icons text-rose-500 mr-2">eco</span>
-                            <p class="text-sm font-medium text-rose-800">Sustainable materials</p>
-                        </div>
-                    </div>
+
+                    <a href="#"
+                        class="inline-flex items-center px-8 py-3 bg-amber-400 text-rose-900 hover:bg-amber-300 transition duration-300 rounded font-medium shadow-md">
+                        Our Craftsmanship Story
+                        <span class="material-icons ml-2">arrow_forward</span>
+                    </a>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Testimonials -->
-    <section class="py-20 bg-white">
+    <section class="py-24 bg-rose-50">
         <div class="container mx-auto px-4">
             <div class="text-center mb-16">
-                <h2 class="text-3xl font-serif inline-flex items-center justify-center">
-                    <span class="material-icons mr-3 text-4xl text-rose-600">format_quote</span>
-                    Client Testimonials
-                </h2>
-                <p class="text-rose-800/70 mt-3">What our customers say about their experience</p>
+                <span
+                    class="inline-block px-4 py-1 bg-rose-100 text-rose-800 rounded-full text-sm font-semibold mb-4">CUSTOMER
+                    EXPERIENCES</span>
+                <h2 class="text-4xl font-serif text-stone-800 mb-3">Stories from Our Clients</h2>
+                <p class="text-stone-600 max-w-2xl mx-auto">Hear what our customers have to say about their experiences
+                    with our jewelry</p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <!-- Testimonial 1 -->
-                <div class="bg-rose-50 p-8 rounded-xl hover:shadow-lg transition duration-300">
-                    <div class="flex items-center mb-4">
-                        <div class="flex items-center text-rose-500 mr-2">
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                        </div>
+                <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <div class="flex items-center text-amber-500 mb-6">
+                        <span class="material-icons">star</span>
+                        <span class="material-icons">star</span>
+                        <span class="material-icons">star</span>
+                        <span class="material-icons">star</span>
+                        <span class="material-icons">star</span>
                     </div>
-                    <p class="text-rose-900/80 mb-6">"The craftsmanship of my engagement ring is beyond anything I've seen. It's truly a work of art that I'll cherish forever."</p>
+                    <p class="text-stone-700 mb-6 italic">"My fiancée was absolutely speechless when I proposed with the
+                        Lumière ring. The quality and brilliance of the diamond is unmatched. Worth every penny."</p>
                     <div class="flex items-center">
-                        <img src="/api/placeholder/100/100" alt="Sarah J."
-                            class="w-12 h-12 rounded-full object-cover mr-4">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="James R."
+                            class="w-14 h-14 rounded-full object-cover mr-4 border-2 border-amber-400">
                         <div>
-                            <h4 class="font-medium text-rose-900">Sarah J.</h4>
-                            <p class="text-rose-700/70 text-sm">Purchased: Radiant Solitaire Ring</p>
+                            <h4 class="font-medium text-stone-800">James R.</h4>
+                            <p class="text-stone-500 text-sm">New York, NY</p>
                         </div>
                     </div>
                 </div>
 
                 <!-- Testimonial 2 -->
-                <div class="bg-rose-50 p-8 rounded-xl hover:shadow-lg transition duration-300">
-                    <div class="flex items-center mb-4">
-                        <div class="flex items-center text-rose-500 mr-2">
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star_half</span>
-                        </div>
+                <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <div class="flex items-center text-amber-500 mb-6">
+                        <span class="material-icons">star</span>
+                        <span class="material-icons">star</span>
+                        <span class="material-icons">star</span>
+                        <span class="material-icons">star</span>
+                        <span class="material-icons">star</span>
                     </div>
-                    <p class="text-rose-900/80 mb-6">"The attention to detail in their jewelry is remarkable. My sapphire necklace gets compliments every time I wear it."</p>
+                    <p class="text-stone-700 mb-6 italic">"The craftsmanship of the Azure pendant is exquisite. I've
+                        received countless compliments, and the customer service experience was exceptional from start to
+                        finish."</p>
                     <div class="flex items-center">
-                        <img src="/api/placeholder/100/100" alt="Michael T."
-                            class="w-12 h-12 rounded-full object-cover mr-4">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Amelia S."
+                            class="w-14 h-14 rounded-full object-cover mr-4 border-2 border-amber-400">
                         <div>
-                            <h4 class="font-medium text-rose-900">Michael T.</h4>
-                            <p class="text-rose-700/70 text-sm">Purchased: Ocean Blue Necklace</p>
+                            <h4 class="font-medium text-stone-800">Amelia S.</h4>
+                            <p class="text-stone-500 text-sm">Chicago, IL</p>
                         </div>
                     </div>
                 </div>
 
                 <!-- Testimonial 3 -->
-                <div class="bg-rose-50 p-8 rounded-xl hover:shadow-lg transition duration-300">
-                    <div class="flex items-center mb-4">
-                        <div class="flex items-center text-rose-500 mr-2">
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                            <span class="material-icons">star</span>
-                        </div>
+                <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <div class="flex items-center text-amber-500 mb-6">
+                        <span class="material-icons">star</span>
+                        <span class="material-icons">star</span>
+                        <span class="material-icons">star</span>
+                        <span class="material-icons">star</span>
+                        <span class="material-icons">star_half</span>
                     </div>
-                    <p class="text-rose-900/80 mb-6">"Exceptional quality and service. The pearl earrings I bought for my wife were beautifully packaged and arrived faster than expected."</p>
+                    <p class="text-stone-700 mb-6 italic">"I ordered custom earrings for my anniversary, and the team went
+                        above and beyond to create exactly what I envisioned. The packaging was beautiful and delivery was
+                        prompt."</p>
                     <div class="flex items-center">
-                        <img src="/api/placeholder/100/100" alt="David L."
-                            class="w-12 h-12 rounded-full object-cover mr-4">
+                        <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="Robert M."
+                            class="w-14 h-14 rounded-full object-cover mr-4 border-2 border-amber-400">
                         <div>
-                            <h4 class="font-medium text-rose-900">David L.</h4>
-                            <p class="text-rose-700/70 text-sm">Purchased: Lunar Pearl Earrings</p>
+                            <h4 class="font-medium text-stone-800">Robert M.</h4>
+                            <p class="text-stone-500 text-sm">Austin, TX</p>
                         </div>
                     </div>
                 </div>
             </div>
+
+            <div class="text-center mt-12">
+                <a href="#" class="inline-flex items-center text-rose-700 hover:text-rose-900 font-medium">
+                    Read More Testimonials
+                    <span class="material-icons ml-1">arrow_forward</span>
+                </a>
+            </div>
         </div>
     </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 bg-stone-900 text-white">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-16">
+                <div>
+                    <span
+                        class="inline-block px-4 py-1 bg-amber-400 text-rose-900 rounded-full text-sm font-semibold mb-4">GET
+                        IN TOUCH</span>
+                    <h2 class="text-4xl font-serif text-white mb-6">Schedule Your Private Consultation</h2>
+                    <p class="text-stone-300 mb-8">Our jewelry experts are available to guide you through our collections
+                        or help you create a custom piece that tells your unique story.</p>
+
+                    <div class="space-y-6 mb-10">
+                        <div class="flex items-start">
+                            <span class="material-icons text-amber-400 mr-4">location_on</span>
+                            <div>
+                                <h3 class="text-lg font-medium text-white mb-1">Our Showroom</h3>
+                                <p class="text-stone-300">123 Luxury Lane, Suite 400<br>New York, NY 10001</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <span class="material-icons text-amber-400 mr-4">schedule</span>
+                            <div>
+                                <h3 class="text-lg font-medium text-white mb-1">Hours</h3>
+                                <p class="text-stone-300">Monday - Friday: 10am - 7pm<br>Saturday: 11am - 5pm<br>Sunday: By
+                                    appointment only</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <span class="material-icons text-amber-400 mr-4">call</span>
+                            <div>
+                                <h3 class="text-lg font-medium text-white mb-1">Contact</h3>
+                                <p class="text-stone-300">Phone: (212) 555-7890<br>Email: appointments@timelessluxury.com
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-stone-800 p-8 rounded-lg">
+                    <h3 class="text-2xl font-serif text-white mb-6">Request an Appointment</h3>
+                    <form>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                            <div>
+                                <label class="block text-stone-300 mb-2 text-sm">First Name</label>
+                                <input type="text"
+                                    class="w-full bg-stone-700 border border-stone-600 rounded p-3 text-white focus:outline-none focus:border-amber-400">
+                            </div>
+                            <div>
+                                <label class="block text-stone-300 mb-2 text-sm">Last Name</label>
+                                <input type="text"
+                                    class="w-full bg-stone-700 border border-stone-600 rounded p-3 text-white focus:outline-none focus:border-amber-400">
+                            </div>
+                        </div>
+                        <div class="mb-6">
+                            <label class="block text-stone-300 mb-2 text-sm">Email Address</label>
+                            <input type="email"
+                                class="w-full bg-stone-700 border border-stone-600 rounded p-3 text-white focus:outline-none focus:border-amber-400">
+                        </div>
+                        <div class="mb-6">
+                            <label class="block text-stone-300 mb-2 text-sm">Phone Number</label>
+                            <input type="tel"
+                                class="w-full bg-stone-700 border border-stone-600 rounded p-3 text-white focus:outline-none focus:border-amber-400">
+                        </div>
+                        <div class="mb-6">
+                            <label class="block text-stone-300 mb-2 text-sm">Interested In</label>
+                            <select
+                                class="w-full bg-stone-700 border border-stone-600 rounded p-3 text-white focus:outline-none focus:border-amber-400">
+                                <option>Engagement Rings</option>
+                                <option>Wedding Bands</option>
+                                <option>Necklaces & Pendants</option>
+                                <option>Earrings</option>
+                                <option>Custom Design</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
+                        <div class="mb-6">
+                            <label class="block text-stone-300 mb-2 text-sm">Preferred Date</label>
+                            <input type="date"
+                                class="w-full bg-stone-700 border border-stone-600 rounded p-3 text-white focus:outline-none focus:border-amber-400">
+                        </div>
+                        <div class="mb-8">
+                            <label class="block text-stone-300 mb-2 text-sm">Additional Information</label>
+                            <textarea rows="4"
+                                class="w-full bg-stone-700 border border-stone-600 rounded p-3 text-white focus:outline-none focus:border-amber-400"></textarea>
+                        </div>
+                        <button type="submit"
+                            class="w-full bg-amber-400 text-rose-900 font-bold py-3 px-6 rounded hover:bg-amber-300 transition duration-300">
+                            Schedule Consultation
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="py-16 bg-rose-900">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center justify-between">
+                <div class="mb-6 md:mb-0">
+                    <h3 class="text-2xl font-serif text-white mb-2">Join Our Exclusive List</h3>
+                    <p class="text-rose-200">Be the first to know about new collections and special events</p>
+                </div>
+                <div class="w-full md:w-auto flex flex-col sm:flex-row gap-3">
+                    <input type="email" placeholder="Your email address"
+                        class="px-6 py-3 rounded bg-rose-800 border border-rose-700 text-white placeholder-rose-300 focus:outline-none focus:border-amber-400">
+                    <button
+                        class="px-6 py-3 bg-amber-400 text-rose-900 font-bold rounded hover:bg-amber-300 transition duration-300">
+                        Subscribe
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-stone-900 text-stone-400 py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+                <div>
+                    <h4 class="text-xl font-serif text-white mb-6">Timeless Luxury</h4>
+                    <p class="mb-6">Crafting exceptional jewelry for life's most precious moments since 1998.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-stone-400 hover:text-amber-400">
+                            <span class="material-icons">facebook</span>
+                        </a>
+                        <a href="#" class="text-stone-400 hover:text-amber-400">
+                            <span class="material-icons">photo_camera</span>
+                        </a>
+                        <a href="#" class="text-stone-400 hover:text-amber-400">
+                            <span class="material-icons">pinterest</span>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-lg font-medium text-white mb-6">Our Collections</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="hover:text-amber-400 transition">Engagement Rings</a></li>
+                        <li><a href="#" class="hover:text-amber-400 transition">Wedding Bands</a></li>
+                        <li><a href="#" class="hover:text-amber-400 transition">Necklaces & Pendants</a></li>
+                        <li><a href="#" class="hover:text-amber-400 transition">Earrings</a></li>
+                        <li><a href="#" class="hover:text-amber-400 transition">Bracelets</a></li>
+                        <li><a href="#" class="hover:text-amber-400 transition">Custom Designs</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-medium text-white mb-6">Customer Service</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="hover:text-amber-400 transition">Contact Us</a></li>
+                        <li><a href="#" class="hover:text-amber-400 transition">Shipping & Returns</a></li>
+                        <li><a href="#" class="hover:text-amber-400 transition">Care Instructions</a></li>
+                        <li><a href="#" class="hover:text-amber-400 transition">Sizing Guide</a></li>
+                        <li><a href="#" class="hover:text-amber-400 transition">FAQ</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-medium text-white mb-6">About Us</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="hover:text-amber-400 transition">Our Story</a></li>
+                        <li><a href="#" class="hover:text-amber-400 transition">Artisan Craftsmanship</a></li>
+                        <li><a href="#" class="hover:text-amber-400 transition">Ethical Sourcing</a></li>
+                        <li><a href="#" class="hover:text-amber-400 transition">Testimonials</a></li>
+                        <li><a href="#" class="hover:text-amber-400 transition">Press</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="pt-8 border-t border-stone-800 flex flex-col md:flex-row justify-between items-center">
+                <p>&copy; 2025 Timeless Luxury Jewelry. All rights reserved.</p>
+                <div class="flex space-x-6 mt-4 md:mt-0">
+                    <a href="#" class="text-sm hover:text-amber-400 transition">Privacy Policy</a>
+                    <a href="#" class="text-sm hover:text-amber-400 transition">Terms of Service</a>
+                    <a href="#" class="text-sm hover:text-amber-400 transition">Accessibility</a>
+                </div>
+            </div>
+        </div>
+    </footer>
 @endsection

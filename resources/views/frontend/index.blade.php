@@ -152,7 +152,7 @@
 
         <!-- Jewelry Product Website Templates -->
         <section class="w-full px-4 sm:px-6 lg:px-12 py-12 bg-[#fefaf5]">
-            <div class="bg-white border border-[#f3e8da] rounded-2xl shadow p-6">
+            <div class="bg-white border border-[#f3e8da] rounded-2xl shadow-lg p-6">
 
                 <!-- Heading -->
                 <div class="mb-6 text-center">
@@ -166,92 +166,62 @@
 
                     <!-- Template 1 -->
                     <a href="{{ route('page.landing') }}" target="_blank"
-                        class="bg-[#fffdfa] rounded-xl shadow hover:shadow-md transition p-6 flex flex-col items-center text-center group">
+                        class="bg-amber-50 rounded-xl shadow hover:shadow-md transition transform group hover:scale-105 p-6 flex flex-col items-center text-center">
                         <span
-                            class="material-symbols-outlined text-5xl text-yellow-700 mb-4 group-hover:rotate-6 transition">
+                            class="material-symbols-outlined text-5xl text-amber-700 mb-3 group-hover:rotate-6 transition">
                             collections
                         </span>
-                        <h3 class="text-lg font-semibold text-[#4b3621]">Classic Gallery</h3>
-                        <p class="text-sm text-gray-500 mb-2">Grid layout with large image previews</p>
-                        <span
-                            class="mt-auto px-4 py-1 text-sm bg-yellow-100 text-yellow-700 rounded hover:bg-yellow-200 transition">
-                            Preview
-                        </span>
+                        <h3 class="text-lg font-semibold text-amber-800">Template 1</h3>
                     </a>
 
                     <!-- Template 2 -->
                     <a href="{{ route('page.landing2') }}" target="_blank"
-                        class="bg-[#fffdfa] rounded-xl shadow hover:shadow-md transition p-6 flex flex-col items-center text-center group">
+                        class="bg-amber-50 rounded-xl shadow hover:shadow-md transition transform group hover:scale-105 p-6 flex flex-col items-center text-center">
                         <span
-                            class="material-symbols-outlined text-5xl text-yellow-700 mb-4 group-hover:rotate-6 transition">
+                            class="material-symbols-outlined text-5xl text-amber-700 mb-3 group-hover:rotate-6 transition">
                             slideshow
                         </span>
-                        <h3 class="text-lg font-semibold text-[#4b3621]">Modern Carousel</h3>
-                        <p class="text-sm text-gray-500 mb-2">Slider-based product highlights</p>
-                        <span
-                            class="mt-auto px-4 py-1 text-sm bg-yellow-100 text-yellow-700 rounded hover:bg-yellow-200 transition">
-                            Preview
-                        </span>
+                        <h3 class="text-lg font-semibold text-amber-800">Template 2</h3>
                     </a>
 
                     <!-- Template 3 -->
                     <a href="{{ route('page.landing3') }}" target="_blank"
-                        class="bg-[#fffdfa] rounded-xl shadow hover:shadow-md transition p-6 flex flex-col items-center text-center group">
+                        class="bg-amber-50 rounded-xl shadow hover:shadow-md transition transform group hover:scale-105 p-6 flex flex-col items-center text-center">
                         <span
-                            class="material-symbols-outlined text-5xl text-yellow-700 mb-4 group-hover:rotate-6 transition">
+                            class="material-symbols-outlined text-5xl text-amber-700 mb-3 group-hover:rotate-6 transition">
                             zoom_in
                         </span>
-                        <h3 class="text-lg font-semibold text-[#4b3621]">Zoom Focus</h3>
-                        <p class="text-sm text-gray-500 mb-2">Detailed zoom for product clarity</p>
-                        <span
-                            class="mt-auto px-4 py-1 text-sm bg-yellow-100 text-yellow-700 rounded hover:bg-yellow-200 transition">
-                            Preview
-                        </span>
+                        <h3 class="text-lg font-semibold text-amber-800">Template 3</h3>
                     </a>
 
                     <!-- Template 4 -->
-                    <a href="{{ route('page.landing') }}" target="_blank"
-                        class="bg-[#fffdfa] rounded-xl shadow hover:shadow-md transition p-6 flex flex-col items-center text-center group">
+                    <a href="{{ route('page.landing4') }}" target="_blank"
+                        class="bg-amber-50 rounded-xl shadow hover:shadow-md transition transform group hover:scale-105 p-6 flex flex-col items-center text-center">
                         <span
-                            class="material-symbols-outlined text-5xl text-yellow-700 mb-4 group-hover:rotate-6 transition">
+                            class="material-symbols-outlined text-5xl text-amber-700 mb-3 group-hover:rotate-6 transition">
                             view_module
                         </span>
-                        <h3 class="text-lg font-semibold text-[#4b3621]">Feature Grid</h3>
-                        <p class="text-sm text-gray-500 mb-2">Showcase bestsellers & offers</p>
-                        <span
-                            class="mt-auto px-4 py-1 text-sm bg-yellow-100 text-yellow-700 rounded hover:bg-yellow-200 transition">
-                            Preview
-                        </span>
+                        <h3 class="text-lg font-semibold text-amber-800">Template 4</h3>
                     </a>
 
                     <!-- Template 5 -->
-                    <a href="{{ route('page.landing') }}" target="_blank"
-                        class="bg-[#fffdfa] rounded-xl shadow hover:shadow-md transition p-6 flex flex-col items-center text-center group">
+                    <a href="{{ route('page.landing5') }}" target="_blank"
+                        class="bg-amber-50 rounded-xl shadow hover:shadow-md transition transform group hover:scale-105 p-6 flex flex-col items-center text-center">
                         <span
-                            class="material-symbols-outlined text-5xl text-yellow-700 mb-4 group-hover:rotate-6 transition">
+                            class="material-symbols-outlined text-5xl text-amber-700 mb-3 group-hover:rotate-6 transition">
                             horizontal_rule
                         </span>
-                        <h3 class="text-lg font-semibold text-[#4b3621]">Catalog Scroll</h3>
-                        <p class="text-sm text-gray-500 mb-2">Horizontal scroll for product sets</p>
-                        <span
-                            class="mt-auto px-4 py-1 text-sm bg-yellow-100 text-yellow-700 rounded hover:bg-yellow-200 transition">
-                            Preview
-                        </span>
+                        <h3 class="text-lg font-semibold text-amber-800">Template 5</h3>
                     </a>
 
                     <!-- Template 6 -->
-                    <a href="{{ route('page.landing') }}" target="_blank"
-                        class="bg-[#fffdfa] rounded-xl shadow hover:shadow-md transition p-6 flex flex-col items-center text-center group">
+                    <a href="{{ route('page.landing6') }}" target="_blank"
+                        class="bg-amber-50 rounded-xl shadow hover:shadow-md transition transform group hover:scale-105 p-6 flex flex-col items-center text-center">
                         <span
-                            class="material-symbols-outlined text-5xl text-yellow-700 mb-4 group-hover:rotate-6 transition">
+                            class="material-symbols-outlined text-5xl text-amber-700 mb-3 group-hover:rotate-6 transition">
                             inventory_2
                         </span>
-                        <h3 class="text-lg font-semibold text-[#4b3621]">Full Showcase</h3>
-                        <p class="text-sm text-gray-500 mb-2">Best for ecommerce jewelry display</p>
-                        <span
-                            class="mt-auto px-4 py-1 text-sm bg-yellow-100 text-yellow-700 rounded hover:bg-yellow-200 transition">
-                            Preview
-                        </span>
+                        <h3 class="text-lg font-semibold text-amber-800">Template 6</h3>
                     </a>
 
                 </div>

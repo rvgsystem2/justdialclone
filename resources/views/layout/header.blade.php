@@ -57,8 +57,14 @@
 </header> --}}
 
 <!-- Top Jeweller Profile Banner -->
-<section class="bg-gradient-to-r from-yellow-900 to-yellow-700 py-8 shadow-lg">
-    <div class="container mx-auto px-6">
+<section class="relative bg-gradient-to-r from-gray-800 to-gray-700 py-16 shadow-lg overflow-hidden">
+    <!-- Background Large Text -->
+    <h2
+        class="absolute text-gray-400 font-extrabold text-9xl opacity-10 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 pointer-events-none select-none whitespace-nowrap z-0">
+        ELEGANCE
+    </h2>
+
+    <div class="relative z-10 container mx-auto px-6">
         <div class="flex flex-col md:flex-row items-center justify-between gap-8">
             <!-- Logo and Info -->
             <div class="flex items-center gap-6">
@@ -68,7 +74,7 @@
                 </div>
                 <div>
                     <h1 class="text-white font-serif text-3xl font-semibold leading-tight">Elegance Jewellers</h1>
-                    <p class="text-yellow-200 text-base italic md:text-lg">Crafting Luxury Since 1985</p>
+                    <p class="text-gray-300 text-base italic md:text-lg">Crafting Luxury Since 1985</p>
                 </div>
             </div>
 
@@ -76,7 +82,6 @@
             <div>
                 <a href="#consultation"
                     class="bg-yellow-200 hover:bg-yellow-100 text-yellow-900 font-medium text-base px-6 py-3 rounded-full shadow-lg flex items-center space-x-3 transition duration-300 ease-in-out transform hover:scale-105">
-                    <!-- Using Material Icon for Calendar -->
                     <span class="material-icons">calendar_today</span>
                     <span>Book Appointment</span>
                 </a>
