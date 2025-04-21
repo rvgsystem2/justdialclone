@@ -214,7 +214,7 @@
         </div>
 
         <!-- CTA Section -->
-        <div class="bg-gradient-to-r from-amber-600 to-indigo-700 rounded-2xl p-12 text-center text-white shadow-xl">
+        <div class="bg-gradient-to-r from-amber-600 to-amber-700 rounded-2xl p-12 text-center text-white shadow-xl">
             <h2 class="text-3xl font-bold mb-4">Ready to Grow With Us?</h2>
             <p class="text-xl opacity-90 mb-8 max-w-2xl mx-auto">Join thousands of businesses already thriving on our
                 platform and discover new opportunities today.</p>
