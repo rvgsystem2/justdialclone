@@ -556,7 +556,6 @@
         </a>
     </div>
 
-
     <script>
         document.addEventListener("DOMContentLoaded", function() {
             // Get all tabs and tab content sections
