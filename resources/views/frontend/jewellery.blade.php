@@ -16,7 +16,7 @@
 
             <!-- Heading -->
             <h1 class="text-2xl sm:text-3xl font-bold text-gray-800 mb-4">
-                Popular <span class="text-amber-600">Jewellery</span> Showrooms in Mumbai
+                Popular <span class="text-amber-600">Jewellery</span> Showrooms
             </h1>
 
             <!-- Filters Row -->
