@@ -32,25 +32,25 @@
 
                 <div class="space-y-6">
                     <div class="flex items-start space-x-4">
-                        <span class="material-symbols-outlined text-blue-500 text-2xl">call</span>
+                        <span class="material-symbols-outlined text-amber-500 text-2xl">call</span>
                         <div>
                             <p class="text-gray-600 text-sm">Customer Care</p>
-                            <a href="tel:+918888888888" class="text-blue-500 hover:underline text-lg font-medium">+91
+                            <a href="tel:+918888888888" class="text-amber-500 hover:underline text-lg font-medium">+91
                                 8888888888</a>
                         </div>
                     </div>
 
                     <div class="flex items-start space-x-4">
-                        <span class="material-symbols-outlined text-blue-500 text-2xl">mail</span>
+                        <span class="material-symbols-outlined text-amber-500 text-2xl">mail</span>
                         <div>
                             <p class="text-gray-600 text-sm">Email Support</p>
                             <a href="mailto:support@justdial.com"
-                                class="text-blue-500 hover:underline text-lg font-medium">support@justdial.com</a>
+                                class="text-amber-500 hover:underline text-lg font-medium">support@justdial.com</a>
                         </div>
                     </div>
 
                     <div class="flex items-start space-x-4">
-                        <span class="material-symbols-outlined text-blue-500 text-2xl">location_on</span>
+                        <span class="material-symbols-outlined text-amber-500 text-2xl">location_on</span>
                         <div>
                             <p class="text-gray-600 text-sm">Corporate Office</p>
                             <p class="text-gray-800 font-medium">Mumbai, Maharashtra, India</p>
