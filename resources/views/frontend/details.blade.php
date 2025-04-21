@@ -68,11 +68,11 @@
             @foreach (['Mumbai', 'Jewellery Showrooms in Navi Mumbai', 'Diamond Jewellery'] as $item)
                 <li class="flex items-center">
                     <a href="#"
-                        class="text-amber-700 hover:text-amber-800 hover:underline transition-colors">{{ $item }}</a>
+                        class="text-gray-700 hover:text-gray-800 hover:underline transition-colors">{{ $item }}</a>
                     <span class="mx-1 text-gray-400">/</span>
                 </li>
             @endforeach
-            <li class="text-gray-900 font-medium">Meghna Jewellers Pvt Ltd</li>
+            <li class="text-amber-700 font-medium">Meghna Jewellers Pvt Ltd</li>
         </ol>
     </nav>
 
