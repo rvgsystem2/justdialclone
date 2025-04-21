@@ -539,10 +539,11 @@
     <!-- WhatsApp Floating Button -->
     <div class="fixed bottom-6 right-6 z-10">
         <a href="https://wa.me/918105909723"
-            class="bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg flex items-center justify-center transition-colors hover-scale animate-bounce">
-            <span class="material-symbols-outlined text-2xl">chat</span>
+            class="bg-green-500 hover:bg-green-600 text-white w-16 h-16 rounded-full shadow-lg flex items-center justify-center transition-colors hover:scale-105 animate-bounce">
+            <i class="fab fa-whatsapp text-2xl"></i>
         </a>
     </div>
+
 
     <script>
         document.addEventListener("DOMContentLoaded", function() {
