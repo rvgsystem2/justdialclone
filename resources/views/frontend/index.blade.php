@@ -292,10 +292,10 @@
                             class="w-full sm:flex-1 px-4 py-2 rounded-full border border-gray-300 text-gray-700 focus:outline-none">
 
                         <!-- Search Button -->
-                        <button
-                            class="w-full sm:w-auto bg-yellow-500 hover:bg-yellow-600 text-white font-medium px-6 py-2 rounded-full transition">
+                        <a href="{{ route('jewellery') }}"
+                            class="w-full sm:w-auto bg-yellow-500 hover:bg-yellow-600 text-white font-medium px-6 py-2 rounded-full transition inline-block text-center">
                             Search
-                        </button>
+                        </a>
                     </div>
                 </div>
             </div>
