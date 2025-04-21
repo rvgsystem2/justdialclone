@@ -124,14 +124,6 @@
 
                 <div class="flex flex-col items-center">
                     <div
-                        class="w-16 h-16 rounded-full border-2 border-[#d5a35c] flex items-center justify-center mb-2 bg-[#f7d59f]">
-                        <i class="fas fa-pearl text-[#d5a35c] text-2xl"></i>
-                    </div>
-                    <span class="text-sm text-center text-[#9e7a4f]">Pearl Jewelry</span>
-                </div>
-
-                <div class="flex flex-col items-center">
-                    <div
                         class="w-16 h-16 rounded-full border-2 border-[#9e7a4f] flex items-center justify-center mb-2 bg-[#e0cda9]">
                         <i class="fas fa-ring text-[#9e7a4f] text-2xl"></i>
                     </div>

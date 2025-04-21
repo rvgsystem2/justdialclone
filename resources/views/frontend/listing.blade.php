@@ -30,11 +30,11 @@
 
             0%,
             100% {
-                box-shadow: 0 10px 25px rgba(59, 130, 246, 0.1);
+                box-shadow: 0 10px 25px rgba(245, 158, 11, 0.1);
             }
 
             50% {
-                box-shadow: 0 15px 30px rgba(59, 130, 246, 0.2);
+                box-shadow: 0 15px 30px rgba(245, 158, 11, 0.2);
             }
         }
 
@@ -51,7 +51,7 @@
         }
 
         .card-gradient {
-            background: linear-gradient(135deg, #ffffff 0%, #f0f7ff 100%);
+            background: linear-gradient(135deg, #ffffff 0%, #fff7ed 100%);
         }
 
         .focus-ring {
@@ -59,8 +59,8 @@
         }
 
         .focus-ring:focus {
-            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.3);
-            border-color: #3b82f6;
+            box-shadow: 0 0 0 3px rgba(245, 158, 11, 0.3);
+            border-color: #f59e0b;
         }
     </style>
 
@@ -71,14 +71,14 @@
                 <nav class="text-sm text-gray-500 mb-4">
                     <a href="/" class="hover:underline transition-colors">Home</a>
                     <span class="mx-1 text-gray-400">›</span>
-                    <span class="text-gray-700">Free Business Listing</span>
+                    <span class="text-gray-700">Jewellery Business Listing</span>
                 </nav>
 
                 <div class="relative inline-block mb-2">
-                    <div class="absolute -inset-1 bg-gradient-to-r from-blue-600 to-blue-400 rounded-lg blur opacity-25">
+                    <div class="absolute -inset-1 bg-gradient-to-r from-amber-600 to-amber-400 rounded-lg blur opacity-25">
                     </div>
                     <h1 class="relative text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
-                        List Your Business <span class="text-blue-600">for FREE</span>
+                        List Your Jewellery Business <span class="text-amber-600">for FREE</span>
                     </h1>
                 </div>
                 <p class="text-gray-700 text-base md:text-lg mb-8">with India's No. 1 Local Search Engine</p>
@@ -91,7 +91,7 @@
                     <input type="tel" placeholder="Enter Mobile No"
                         class="flex-1 border border-gray-300 rounded-lg px-4 py-2.5 text-sm focus-ring" />
                     <button id="openModalBtn"
-                        class="bg-blue-600 hover:bg-blue-700 text-white font-medium px-5 py-2.5 rounded-lg transition-all duration-300 flex items-center gap-2 shadow-md hover:shadow-lg group">
+                        class="bg-amber-600 hover:bg-amber-700 text-white font-medium px-5 py-2.5 rounded-lg transition-all duration-300 flex items-center gap-2 shadow-md hover:shadow-lg group">
                         Start Now
                         <i class="fas fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
                     </button>
@@ -103,7 +103,7 @@
                         <div class="bg-green-100 text-green-600 rounded-full p-1 flex-shrink-0">
                             <i class="fas fa-check text-sm"></i>
                         </div>
-                        <span>Get Discovered & Create Your Online Business</span>
+                        <span>Get Discovered & Create Your Online Jewellery Store</span>
                     </li>
                     <li class="flex items-center gap-3">
                         <div class="bg-green-100 text-green-600 rounded-full p-1 flex-shrink-0">
@@ -115,22 +115,22 @@
                         <div class="bg-green-100 text-green-600 rounded-full p-1 flex-shrink-0">
                             <i class="fas fa-check text-sm"></i>
                         </div>
-                        <span>Showcase Your Product & Service Offerings</span>
+                        <span>Showcase Your Jewellery Collections</span>
                     </li>
                 </ul>
 
                 <!-- Stats -->
                 <div class="flex flex-wrap gap-8 mb-10">
                     <div class="flex flex-col">
-                        <span class="text-2xl font-bold text-blue-600">2.5 Cr+</span>
+                        <span class="text-2xl font-bold text-amber-600">2.5 Cr+</span>
                         <span class="text-xs text-gray-600">Businesses Listed</span>
                     </div>
                     <div class="flex flex-col">
-                        <span class="text-2xl font-bold text-blue-600">8.3 Cr+</span>
+                        <span class="text-2xl font-bold text-amber-600">8.3 Cr+</span>
                         <span class="text-xs text-gray-600">Monthly Users</span>
                     </div>
                     <div class="flex flex-col">
-                        <span class="text-2xl font-bold text-blue-600">90%</span>
+                        <span class="text-2xl font-bold text-amber-600">90%</span>
                         <span class="text-xs text-gray-600">Customer Satisfaction</span>
                     </div>
                 </div>
@@ -138,9 +138,9 @@
                 <!-- Legal Note -->
                 <p class="text-xs text-gray-500 leading-relaxed">
                     By continuing, you agree to our
-                    <a href="#" class="underline hover:text-blue-600 transition-colors">Terms of Use</a>,
-                    <a href="#" class="underline hover:text-blue-600 transition-colors">Privacy</a> &
-                    <a href="#" class="underline hover:text-blue-600 transition-colors">Infringement Policy</a>.
+                    <a href="#" class="underline hover:text-amber-600 transition-colors">Terms of Use</a>,
+                    <a href="#" class="underline hover:text-amber-600 transition-colors">Privacy</a> &
+                    <a href="#" class="underline hover:text-amber-600 transition-colors">Infringement Policy</a>.
                 </p>
             </div>
 
@@ -148,21 +148,21 @@
             <div class="flex-1 relative w-full h-64 sm:h-72 md:h-96 lg:h-auto">
                 <!-- Main Image -->
                 <div class="relative w-full max-w-md mx-auto">
-                    <img src="{{ asset('asset/images/sample.jpeg') }}" alt="Business Dashboard"
+                    <img src="{{ asset('asset/images/jewellery-sample.jpeg') }}" alt="Jewellery Business Dashboard"
                         class="w-full h-auto rounded-lg shadow-xl animate-float" />
 
                     <!-- Floating Card 1 -->
                     <div
                         class="absolute left-6 -bottom-6 bg-white border shadow-2xl rounded-xl p-5 w-72 animate-fade-in-up animate-pulse-slow card-gradient">
                         <div class="flex items-center gap-2 mb-3 flex-wrap">
-                            <span class="text-xs bg-blue-100 text-blue-600 px-2 py-0.5 rounded-full font-medium">✓
+                            <span class="text-xs bg-amber-100 text-amber-600 px-2 py-0.5 rounded-full font-medium">✓
                                 Verified</span>
                             <span class="text-xs bg-yellow-100 text-yellow-600 px-2 py-0.5 rounded-full font-medium">★
                                 Trusted</span>
                             <span class="text-xs bg-gray-100 text-gray-600 px-2 py-0.5 rounded-full font-medium">24h
                                 Responsive</span>
                         </div>
-                        <h4 class="font-semibold text-gray-800 text-sm mb-1">My Business Name</h4>
+                        <h4 class="font-semibold text-gray-800 text-sm mb-1">Royal Jewellers</h4>
                         <div class="flex items-center text-xs text-green-600 font-medium mb-2">
                             <div class="flex items-center gap-0.5 text-yellow-500 mr-2">
                                 <i class="fas fa-star"></i>
@@ -197,33 +197,33 @@
         <div
             class="bg-white rounded-xl shadow-2xl w-full max-w-4xl mx-auto relative p-4 animate-fade-in-up max-h-[90vh] overflow-y-auto">
             <!-- Close Button -->
-            <button id="closeModalBtn" class="absolute top-4 right-4 text-gray-400 hover:text-red-600 transition-colors">
+            <button id="closeModalBtn" class="absolute top-4 right-4 text-gray-400 hover:text-amber-600 transition-colors">
                 <i class="fas fa-times text-xl"></i>
             </button>
 
             <div class="flex flex-col lg:flex-row gap-8">
                 <!-- Left Preview Card -->
                 <div class="flex-1">
-                    <h3 class="text-lg font-semibold mb-4 flex items-center gap-2 text-blue-600">
+                    <h3 class="text-lg font-semibold mb-4 flex items-center gap-2 text-amber-600">
                         <i class="fas fa-eye"></i> Preview
                     </h3>
                     <div class="border rounded-lg shadow-md p-4 card-gradient">
                         <div class="relative mb-4">
-                            <img src="{{ asset('asset/images/sample.jpeg') }}"
+                            <img src="{{ asset('asset/images/jewellery-sample.jpeg') }}"
                                 class="rounded-lg w-full object-cover h-48" />
-                            <div class="absolute top-3 right-3 bg-blue-600 text-white text-xs px-2 py-1 rounded-full">
+                            <div class="absolute top-3 right-3 bg-amber-600 text-white text-xs px-2 py-1 rounded-full">
                                 Premium
                             </div>
                         </div>
-                        <h2 class="text-lg font-bold">Nevada H&B Salon</h2>
+                        <h2 class="text-lg font-bold">Royal Gold & Diamonds</h2>
                         <div class="flex items-center gap-2 mt-2 text-green-600">
                             <div class="bg-green-500 text-white text-xs px-2 py-0.5 rounded-full font-medium">4.5★</div>
                             <span class="text-sm">3,532 ratings</span>
                         </div>
-                        <p class="text-xs text-gray-600 mt-2">8 yrs in business • Verified • Top Rated</p>
+                        <p class="text-xs text-gray-600 mt-2">15 yrs in business • Verified • Top Rated</p>
                         <div class="mt-4 space-x-2">
                             <button
-                                class="bg-blue-500 hover:bg-blue-600 text-white text-sm px-4 py-1.5 rounded-lg transition-colors">
+                                class="bg-amber-500 hover:bg-amber-600 text-white text-sm px-4 py-1.5 rounded-lg transition-colors">
                                 <i class="fas fa-phone-alt mr-1"></i> Call
                             </button>
                             <button
@@ -236,10 +236,10 @@
                             </button>
                         </div>
                     </div>
-                    <div class="mt-4 bg-blue-50 border border-blue-100 rounded-lg p-3 text-xs text-blue-800">
+                    <div class="mt-4 bg-amber-50 border border-amber-100 rounded-lg p-3 text-xs text-amber-800">
                         <div class="flex items-start gap-2">
-                            <i class="fas fa-info-circle mt-0.5 text-blue-500"></i>
-                            <p>This is how your business will appear to customers on our platform. Complete your profile for
+                            <i class="fas fa-info-circle mt-0.5 text-amber-500"></i>
+                            <p>This is how your jewellery business will appear to customers on our platform. Complete your profile for
                                 better visibility.</p>
                         </div>
                     </div>
@@ -248,7 +248,7 @@
                 <!-- Right Form -->
                 <div class="flex-1">
                     <h3 class="text-lg font-semibold mb-4 flex items-center gap-2 text-gray-800">
-                        <i class="fas fa-building"></i> Enter Your Business Details
+                        <i class="fas fa-gem"></i> Enter Your Jewellery Business Details
                     </h3>
                     <div class="grid grid-cols-2 gap-4 text-sm">
                         <div class="col-span-2 sm:col-span-1">
@@ -311,11 +311,11 @@
                         </div>
                         <!-- Image Upload -->
                         <div class="col-span-2 mt-4">
-                            <label class="block text-xs text-gray-600 mb-1 ml-1">Upload Business Photos</label>
+                            <label class="block text-xs text-gray-600 mb-1 ml-1">Upload Jewellery Photos</label>
                             <div class="flex flex-wrap items-start gap-4">
                                 <!-- Upload Button -->
                                 <label
-                                    class="flex items-center justify-center w-32 h-32 border-2 border-dashed border-gray-300 rounded-lg cursor-pointer hover:border-blue-400 transition">
+                                    class="flex items-center justify-center w-32 h-32 border-2 border-dashed border-gray-300 rounded-lg cursor-pointer hover:border-amber-400 transition">
                                     <input type="file" accept="image/*" multiple class="hidden"
                                         id="businessImages" />
                                     <span class="text-gray-400 text-sm text-center px-2">Click to Upload</span>
@@ -325,7 +325,7 @@
                                 <div id="previewContainer" class="flex flex-wrap gap-4">
                                     <!-- Existing preview or default -->
                                     <div class="w-32 h-32 rounded-lg overflow-hidden border border-gray-200">
-                                        <img src="{{ asset('asset/images/sample.jpeg') }}" alt="Preview"
+                                        <img src="{{ asset('asset/images/jewellery-sample.jpeg') }}" alt="Preview"
                                             class="object-cover w-full h-full" />
                                     </div>
                                 </div>
@@ -335,7 +335,7 @@
                     </div>
 
                     <a href="{{ route('listingdetails') }}"
-                        class="mt-6 w-full bg-blue-600 hover:bg-blue-700 text-white px-4 py-3 rounded-lg transition-colors duration-300 shadow-md hover:shadow-lg font-medium inline-block text-center">
+                        class="mt-6 w-full bg-amber-600 hover:bg-amber-700 text-white px-4 py-3 rounded-lg transition-colors duration-300 shadow-md hover:shadow-lg font-medium inline-block text-center">
                         Save and Continue <i class="fas fa-arrow-right ml-1"></i>
                     </a>
                 </div>
