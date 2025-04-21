@@ -210,8 +210,7 @@
                     </h3>
                     <div class="border rounded-lg shadow-md p-4 card-gradient">
                         <div class="relative mb-4">
-                            <img src="{{ asset('asset/images/jewellery-sample.jpeg') }}"
-                                class="rounded-lg w-full object-cover h-48" />
+                            <img src="https://picsum.photos/400/300?random=2" class="rounded-lg w-full object-cover h-48" />
                             <div class="absolute top-3 right-3 bg-amber-600 text-white text-xs px-2 py-1 rounded-full">
                                 Premium
                             </div>
