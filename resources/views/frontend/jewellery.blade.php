@@ -16,7 +16,7 @@
 
             <!-- Heading -->
             <h1 class="text-2xl sm:text-3xl font-bold text-gray-800 mb-4">
-                Popular <span class="text-blue-600">Jewellery</span> Showrooms in Mumbai
+                Popular <span class="text-amber-600">Jewellery</span> Showrooms in Mumbai
             </h1>
 
             <!-- Filters Row -->
@@ -64,7 +64,7 @@
                                     <span class="material-symbols-outlined text-yellow-500">star</span> 3.8★
                                 </div>
                                 <span>88 Ratings</span>
-                                <span class="text-blue-600 flex items-center gap-1">
+                                <span class="text-amber-600 flex items-center gap-1">
                                     <span class="material-symbols-outlined">verified</span> Verified
                                 </span>
                                 <span class="flex items-center gap-1">
@@ -87,12 +87,12 @@
                                     <span class="material-symbols-outlined">chat</span> WhatsApp
                                 </a>
                                 <a href="#"
-                                    class="bg-blue-600 text-white px-4 py-1 rounded text-sm flex items-center gap-1">
+                                    class="bg-amber-600 text-white px-4 py-1 rounded text-sm flex items-center gap-1">
                                     <span class="material-symbols-outlined">rocket_launch</span> Get Best Deal
                                 </a>
                             </div>
                             <a href="{{ route('details') }}"
-                                class="inline-block bg-blue-50 text-blue-600 text-sm font-medium px-4 py-2 rounded-md hover:bg-blue-100 hover:underline transition-colors duration-200">
+                                class="inline-block bg-blue-50 text-amber-600 text-sm font-medium px-4 py-2 rounded-md hover:bg-blue-100 hover:underline transition-colors duration-200">
                                 See Details
                             </a>
 
@@ -110,7 +110,7 @@
                                     <span class="material-symbols-outlined text-yellow-500">star</span> 4.3★
                                 </div>
                                 <span>112 Ratings</span>
-                                <span class="text-blue-600 flex items-center gap-1">
+                                <span class="text-amber-600 flex items-center gap-1">
                                     <span class="material-symbols-outlined">verified</span> Verified
                                 </span>
                                 <span class="flex items-center gap-1">
@@ -132,12 +132,12 @@
                                     <span class="material-symbols-outlined">chat</span> WhatsApp
                                 </a>
                                 <a href="#"
-                                    class="bg-blue-600 text-white px-4 py-1 rounded text-sm flex items-center gap-1">
+                                    class="bg-amber-600 text-white px-4 py-1 rounded text-sm flex items-center gap-1">
                                     <span class="material-symbols-outlined">rocket_launch</span> Get Best Deal
                                 </a>
                             </div>
                             <a href="{{ route('details') }}"
-                                class="inline-block bg-blue-50 text-blue-600 text-sm font-medium px-4 py-2 rounded-md hover:bg-blue-100 hover:underline transition-colors duration-200">
+                                class="inline-block bg-blue-50 text-amber-600 text-sm font-medium px-4 py-2 rounded-md hover:bg-blue-100 hover:underline transition-colors duration-200">
                                 See Details
                             </a>
                         </div>
@@ -148,23 +148,23 @@
                 <!-- Right: Lead Form -->
                 <div class="bg-white border shadow-md p-5 rounded-xl">
                     <h3 class="font-semibold text-gray-800 mb-2 text-lg">Get the List of Top <span
-                            class="text-blue-600">Jewellery Showrooms</span></h3>
+                            class="text-amber-600">Jewellery Showrooms</span></h3>
                     <p class="text-sm text-gray-600 mb-3">We’ll send you contact details in seconds for free</p>
                     <p class="text-sm font-medium mb-2">What jewellery are you looking for?</p>
                     <div class="flex gap-4 mb-4">
                         <label class="flex items-center gap-2 text-sm">
-                            <input type="radio" name="jtype" class="accent-blue-600" checked>
+                            <input type="radio" name="jtype" class="accent-amber-600" checked>
                             Diamond
                         </label>
                         <label class="flex items-center gap-2 text-sm">
-                            <input type="radio" name="jtype" class="accent-blue-600">
+                            <input type="radio" name="jtype" class="accent-amber-600">
                             Gold
                         </label>
                     </div>
                     <input type="text" placeholder="Name" class="w-full border px-3 py-2 rounded mb-3 text-sm" />
                     <input type="text" placeholder="Mobile Number"
                         class="w-full border px-3 py-2 rounded mb-4 text-sm" />
-                    <button class="bg-blue-600 hover:bg-blue-700 text-white w-full py-2 rounded text-sm">
+                    <button class="bg-amber-600 hover:bg-amber-700 text-white w-full py-2 rounded text-sm">
                         Get Best Deal <span class="material-symbols-outlined text-base align-middle">chevron_right</span>
                     </button>
                 </div>

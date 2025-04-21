@@ -1,14 +1,13 @@
 @extends('components.main')
 
 @section('content')
-    <style>
-        .tab-link.active-tab {
-            border-color: #3b82f6;
-            /* blue-500 */
-            color: #2563eb;
-            /* blue-600 */
-        }
-    </style>
+<style>
+    .tab-link.active-tab {
+        border-color: #d97706; /* amber-600 */
+        color: #d97706;         /* amber-600 */
+    }
+</style>
+
 
     <link
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
@@ -20,7 +19,7 @@
             class="flex flex-wrap items-center text-sm space-x-1 sm:space-x-2 overflow-x-auto whitespace-nowrap scrollbar-hide">
             @foreach (['Mumbai', 'Jewellery Showrooms in Navi Mumbai', 'Diamond Jewellery'] as $item)
                 <li class="flex items-center">
-                    <a href="#" class="text-blue-600 hover:underline">{{ $item }}</a>
+                    <a href="#" class="text-amber-600 hover:underline">{{ $item }}</a>
                     <span class="mx-1 text-gray-500">/</span>
                 </li>
             @endforeach
@@ -76,7 +75,7 @@
                 </div>
 
                 <div class="mt-6 flex flex-wrap gap-3">
-                    @foreach ([['call', 'Call Now', 'bg-green-600 hover:bg-green-700'], ['local_offer', 'Get Best Deal', 'bg-blue-600 hover:bg-blue-700'], ['chat', 'WhatsApp', 'bg-white border border-gray-300 hover:bg-gray-50 text-gray-700', 'text-green-500']] as $btn)
+                    @foreach ([['call', 'Call Now', 'bg-green-600 hover:bg-green-700'], ['local_offer', 'Get Best Deal', 'bg-amber-600 hover:bg-amber-700'], ['chat', 'WhatsApp', 'bg-white border border-gray-300 hover:bg-gray-50 text-gray-700', 'text-green-500']] as $btn)
                         <a href="{{ $btn[0] === 'call' ? 'tel:08105909723' : '#' }}"
                             class="flex items-center gap-2 {{ $btn[2] }} {{ $btn[0] !== 'chat' ? 'text-white' : '' }} px-4 py-2.5 rounded-lg font-medium transition-colors">
                             <span class="material-symbols-outlined text-lg {{ $btn[3] ?? '' }}">{{ $btn[0] }}</span>
@@ -119,7 +118,7 @@
                         <div class="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-4">
                             @foreach ([['Services', 'Same Day Delivery, Custom Designs, Repair Services, Delivery Available'], ['Specializations', 'Diamond Jewellery, Gold Jewellery, Bridal Sets, Antique Collections'], ['Payment Options', 'Cash, Credit/Debit Cards, EMI Options, Digital Payments'], ['Certifications', 'BIS Hallmark Certified, IGI Certified Diamonds']] as $item)
                                 <div class="flex items-start gap-2">
-                                    <span class="material-symbols-outlined text-blue-500 mt-0.5">check_circle</span>
+                                    <span class="material-symbols-outlined text-amber-600 mt-0.5">check_circle</span>
                                     <div>
                                         <h4 class="font-medium text-gray-900">{{ $item[0] }}</h4>
                                         <p class="text-sm text-gray-600">{{ $item[1] }}</p>
@@ -152,28 +151,28 @@
                     <h2 class="text-lg font-semibold text-gray-900 mb-3">Quick Information</h2>
                     <div class="space-y-4">
                         <div class="flex items-center gap-3 pb-3 border-b border-gray-100">
-                            <span class="material-symbols-outlined text-blue-500">store</span>
+                            <span class="material-symbols-outlined text-amber-600">store</span>
                             <div>
                                 <h3 class="font-medium text-gray-900">Business Type</h3>
                                 <p class="text-sm text-gray-600">Diamond Jewellery Showroom, Gold Retailer</p>
                             </div>
                         </div>
                         <div class="flex items-center gap-3 pb-3 border-b border-gray-100">
-                            <span class="material-symbols-outlined text-blue-500">paid</span>
+                            <span class="material-symbols-outlined text-amber-600">paid</span>
                             <div>
                                 <h3 class="font-medium text-gray-900">Price Range</h3>
                                 <p class="text-sm text-gray-600">₹15,000 - ₹15,00,000</p>
                             </div>
                         </div>
                         <div class="flex items-center gap-3 pb-3 border-b border-gray-100">
-                            <span class="material-symbols-outlined text-blue-500">language</span>
+                            <span class="material-symbols-outlined text-amber-600">language</span>
                             <div>
                                 <h3 class="font-medium text-gray-900">Languages</h3>
                                 <p class="text-sm text-gray-600">English, Hindi, Marathi, Gujarati</p>
                             </div>
                         </div>
                         <div class="flex items-center gap-3">
-                            <span class="material-symbols-outlined text-blue-500">payments</span>
+                            <span class="material-symbols-outlined text-amber-600">payments</span>
                             <div>
                                 <h3 class="font-medium text-gray-900">Payment Methods</h3>
                                 <p class="text-sm text-gray-600">Cash, Cards, UPI, EMI Available</p>
@@ -190,7 +189,7 @@
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                         @foreach ([['design', 'Custom Design', 'Get your dream jewellery designed by our experts'], ['diamond', 'Diamond Setting', 'Expert diamond setting for all types of jewellery'], ['autorenew', 'Exchange', 'Easy exchange of old jewellery for new designs'], ['build', 'Jewellery Repair', 'Professional repair and restoration services'], ['cleaning_services', 'Cleaning', 'Free cleaning for all jewellery purchased from us'], ['inventory_2', 'Valuation', 'Professional jewellery valuation for insurance']] as $service)
                             <div class="flex items-start gap-3 p-3 border border-gray-100 rounded-lg hover:bg-gray-50">
-                                <span class="material-symbols-outlined text-blue-500 mt-0.5">{{ $service[0] }}</span>
+                                <span class="material-symbols-outlined text-amber-600 mt-0.5">{{ $service[0] }}</span>
                                 <div>
                                     <h3 class="font-medium text-gray-900">{{ $service[1] }}</h3>
                                     <p class="text-sm text-gray-600">{{ $service[2] }}</p>
@@ -243,11 +242,11 @@
                         </div>
                         <form>
                             <textarea rows="3"
-                                class="w-full border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                                class="w-full border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-amber-600 focus:border-amber-600"
                                 placeholder="Write your review..."></textarea>
                             <div class="mt-2 flex justify-end">
                                 <button type="submit"
-                                    class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg font-medium">Submit
+                                    class="bg-amber-600 hover:bg-amber-700 text-white px-4 py-2 rounded-lg font-medium">Submit
                                     Review</button>
                             </div>
                         </form>
@@ -274,7 +273,7 @@
 
                     <div class="mt-4">
                         <a href="#"
-                            class="text-sm font-medium text-blue-600 hover:text-blue-700 flex items-center gap-1 justify-center">
+                            class="text-sm font-medium text-amber-600 hover:text-amber-700 flex items-center gap-1 justify-center">
                             View All Reviews <span class="material-symbols-outlined text-base">chevron_right</span>
                         </a>
                     </div>
@@ -287,7 +286,7 @@
                     <div class="flex items-center justify-between mb-4">
                         <h2 class="text-lg font-semibold text-gray-900">Our Collection</h2>
                         <a href="#"
-                            class="text-sm font-medium text-blue-600 hover:text-blue-700 flex items-center gap-1">
+                            class="text-sm font-medium text-amber-600 hover:text-amber-700 flex items-center gap-1">
                             View All <span class="material-symbols-outlined text-base">chevron_right</span>
                         </a>
                     </div>
@@ -309,14 +308,14 @@
 
                     <div class="mt-6">
                         <a href="https://yourwebsite.com/full-catalog" target="_blank"
-                            class="w-full flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2.5 rounded-lg font-medium transition-colors">
+                            class="w-full flex items-center justify-center gap-2 bg-amber-600 hover:bg-amber-700 text-white px-4 py-2.5 rounded-lg font-medium transition-colors">
                             See Our Catalogs <span class="material-symbols-outlined text-base">chevron_right</span>
                         </a>
                     </div>
 
                     <div class="mt-6">
                         <button
-                            class="w-full flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2.5 rounded-lg font-medium transition-colors">
+                            class="w-full flex items-center justify-center gap-2 bg-amber-600 hover:bg-amber-700 text-white px-4 py-2.5 rounded-lg font-medium transition-colors">
                             <span class="material-symbols-outlined text-lg">download</span>
                             Download Full Catalog
                         </button>
@@ -337,7 +336,7 @@
                             <h3 class="text-sm font-medium text-gray-500 mb-1">{{ $contact[1] }}</h3>
                             @if ($contact[3])
                                 <a href="{{ $contact[3] }}"
-                                    class="text-blue-600 hover:text-blue-700 font-medium flex items-center gap-2">
+                                    class="text-amber-600 hover:text-amber-700 font-medium flex items-center gap-2">
                                     <span class="material-symbols-outlined">{{ $contact[0] }}</span>
                                     {{ $contact[2] }}
                                 </a>
@@ -351,7 +350,7 @@
                             @if ($contact[1] === 'Address')
                                 <div class="flex items-center gap-3 mt-2">
                                     <a href="#"
-                                        class="text-sm text-blue-600 hover:text-blue-700 flex items-center gap-1">
+                                        class="text-sm text-amber-600 hover:text-amber-700 flex items-center gap-1">
                                         <span class="material-symbols-outlined text-base">directions</span>
                                         Directions
                                     </a>
@@ -362,7 +361,7 @@
                                     </a>
                                 </div>
                             @elseif($contact[1] === 'Business Hours')
-                                <button class="mt-1 text-sm text-blue-600 hover:text-blue-700 flex items-center gap-1">
+                                <button class="mt-1 text-sm text-amber-600 hover:text-amber-700 flex items-center gap-1">
                                     <span class="material-symbols-outlined text-base">expand_more</span>
                                     See all hours
                                 </button>
@@ -394,17 +393,17 @@
                             <label for="{{ $field[0] }}"
                                 class="block text-sm font-medium text-gray-700 mb-1">{{ $field[1] }}</label>
                             <input type="{{ $field[2] }}" id="{{ $field[0] }}"
-                                class="w-full border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                                class="w-full border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-amber-600 focus:border-amber-600">
                         </div>
                     @endforeach
                     <div>
                         <label for="requirement" class="block text-sm font-medium text-gray-700 mb-1">Requirement</label>
                         <textarea id="requirement" rows="3"
-                            class="w-full border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                            class="w-full border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-amber-600 focus:border-amber-600"
                             placeholder="Describe your jewellery requirement..."></textarea>
                     </div>
                     <button type="submit"
-                        class="w-full bg-blue-600 hover:bg-blue-700 text-white px-4 py-2.5 rounded-lg font-medium transition-colors">
+                        class="w-full bg-amber-600 hover:bg-amber-700 text-white px-4 py-2.5 rounded-lg font-medium transition-colors">
                         Submit Enquiry
                     </button>
                 </form>
@@ -435,7 +434,7 @@
                     @endforeach
                 </div>
                 <a href="#"
-                    class="mt-4 text-sm font-medium text-blue-600 hover:text-blue-700 flex items-center gap-1 justify-center">
+                    class="mt-4 text-sm font-medium text-amber-600 hover:text-amber-700 flex items-center gap-1 justify-center">
                     View More <span class="material-symbols-outlined text-base">chevron_right</span>
                 </a>
             </div>
