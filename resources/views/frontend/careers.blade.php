@@ -12,8 +12,10 @@
             <div>
                 <h2 class="text-2xl font-semibold text-amber-600 mb-4">Why Work with Us?</h2>
                 <p class="text-gray-600">
-                    At JustDial, we value innovation, collaboration, and growth. As part of our team, you’ll be at the forefront of
-                    technological innovation, contributing to the success of our platform that serves millions of users across the country.
+                    At JustDial, we value innovation, collaboration, and growth. As part of our team, you’ll be at the
+                    forefront of
+                    technological innovation, contributing to the success of our platform that serves millions of users
+                    across the country.
                 </p>
                 <ul class="list-inside list-disc text-gray-600">
                     <li>Work with cutting-edge technologies and be part of a diverse, dynamic team.</li>
@@ -32,9 +34,12 @@
                         <h3 class="text-xl font-semibold text-amber-400">Software Engineer</h3>
                         <p class="text-gray-400 text-sm mb-4">Location: Mumbai, Maharashtra</p>
                         <p class="text-gray-300 mb-4">
-                            As a Software Engineer at JustDial, you’ll work on designing and developing scalable solutions that drive the success of our platform. You’ll be part of an agile team working with cutting-edge technologies.
+                            As a Software Engineer at JustDial, you’ll work on designing and developing scalable solutions
+                            that drive the success of our platform. You’ll be part of an agile team working with
+                            cutting-edge technologies.
                         </p>
-                        <a href="#" class="text-amber-400 hover:text-amber-300 font-medium text-sm">View Job Details</a>
+                        <a href="#" class="text-amber-400 hover:text-amber-300 font-medium text-sm">View Job
+                            Details</a>
                     </div>
 
                     <!-- Job Listing 2 -->
@@ -42,9 +47,12 @@
                         <h3 class="text-xl font-semibold text-amber-400">Marketing Manager</h3>
                         <p class="text-gray-400 text-sm mb-4">Location: Bangalore, Karnataka</p>
                         <p class="text-gray-300 mb-4">
-                            We are looking for a Marketing Manager to drive our brand initiatives and digital marketing campaigns. You will work closely with cross-functional teams to enhance our platform’s reach and user engagement.
+                            We are looking for a Marketing Manager to drive our brand initiatives and digital marketing
+                            campaigns. You will work closely with cross-functional teams to enhance our platform’s reach and
+                            user engagement.
                         </p>
-                        <a href="#" class="text-amber-400 hover:text-amber-300 font-medium text-sm">View Job Details</a>
+                        <a href="#" class="text-amber-400 hover:text-amber-300 font-medium text-sm">View Job
+                            Details</a>
                     </div>
 
                     <!-- Job Listing 3 -->
@@ -52,9 +60,11 @@
                         <h3 class="text-xl font-semibold text-amber-400">Customer Support Executive</h3>
                         <p class="text-gray-400 text-sm mb-4">Location: Remote</p>
                         <p class="text-gray-300 mb-4">
-                            Join our customer support team and help users navigate our platform. This role requires excellent communication skills, patience, and a passion for helping others.
+                            Join our customer support team and help users navigate our platform. This role requires
+                            excellent communication skills, patience, and a passion for helping others.
                         </p>
-                        <a href="#" class="text-amber-400 hover:text-amber-300 font-medium text-sm">View Job Details</a>
+                        <a href="#" class="text-amber-400 hover:text-amber-300 font-medium text-sm">View Job
+                            Details</a>
                     </div>
                 </div>
             </div>
@@ -75,10 +85,12 @@
             <div>
                 <h2 class="text-2xl font-semibold text-amber-600 mb-4">How to Apply</h2>
                 <p class="text-gray-600 mb-4">
-                    To apply for any of the listed positions, please send your resume and a cover letter to our HR department at:
+                    To apply for any of the listed positions, please send your resume and a cover letter to our HR
+                    department at:
                 </p>
                 <p class="text-gray-600 mb-4">
-                    <strong>Email:</strong> <a href="mailto:careers@justdial.com" class="text-amber-500 hover:underline">careers@justdial.com</a>
+                    <strong>Email:</strong> <a href="mailto:careers@justdial.com"
+                        class="text-amber-500 hover:underline">careers@justdial.com</a>
                 </p>
                 <p class="text-gray-600">
                     We look forward to hearing from you and welcoming passionate individuals to our team!

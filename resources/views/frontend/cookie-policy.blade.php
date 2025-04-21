@@ -41,7 +41,7 @@
 
         <h2 class="text-2xl font-semibold mt-10 mb-4 text-amber-600">6. Contact us</h2>
         <p>
-            If you have any questions about our use of cookies, you can contact us at: 
+            If you have any questions about our use of cookies, you can contact us at:
             <a href="{{ route('contact') }}" class="text-amber-500 hover:underline">Contact Page</a>.
         </p>
     </section>
