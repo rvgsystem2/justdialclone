@@ -210,10 +210,11 @@
                         </a>
                     </div>
                     <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
-                        @foreach (['https://i.imgur.com/ELRz65C.jpg', 'https://i.imgur.com/w1tQTfW.jpg', 'https://i.imgur.com/tYFlXlw.jpg', 'https://i.imgur.com/I0ONZ6N.jpg', 'https://i.imgur.com/zUFThhU.jpg'] as $img)
+                        @foreach (range(1, 6) as $i)
                             <div
                                 class="aspect-square rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow hover-scale">
-                                <img src="{{ $img }}" class="w-full h-full object-cover" alt="Jewellery"
+                                <img src="https://picsum.photos/400?random={{ $i }}"
+                                    class="w-full h-full object-cover" alt="Gallery Image {{ $i }}"
                                     loading="lazy">
                             </div>
                         @endforeach
@@ -392,16 +393,16 @@
                     </div>
 
                     <div class="grid grid-cols-2 sm:grid-cols-3 gap-6">
-                        @foreach ([['Kundan Necklace', 'Traditional gold-plated necklace', 'https://i.imgur.com/tYFlXlw.jpg', '₹25,000'], ['Diamond Ring', 'Elegant solitaire ring', 'https://i.imgur.com/zUFThhU.jpg', '₹45,000'], ['Bridal Set', 'Complete wedding jewellery set', 'https://i.imgur.com/ELRz65C.jpg', '₹1,25,000'], ['Pearl Earrings', 'Luxury south sea pearls', 'https://i.imgur.com/I0ONZ6N.jpg', '₹18,500'], ['Gold Bangle', '22K pure gold bangle', 'https://i.imgur.com/w1tQTfW.jpg', '₹32,000'], ['Antique Pendant', 'Victorian style pendant', 'https://i.imgur.com/ELRz65C.jpg', '₹28,750']] as $item)
+                        @foreach ([['Kundan Necklace', 'Traditional gold-plated necklace', '₹25,000'], ['Diamond Ring', 'Elegant solitaire ring', '₹45,000'], ['Bridal Set', 'Complete wedding jewellery set', '₹1,25,000'], ['Pearl Earrings', 'Luxury south sea pearls', '₹18,500'], ['Gold Bangle', '22K pure gold bangle', '₹32,000'], ['Antique Pendant', 'Victorian style pendant', '₹28,750']] as $index => $item)
                             <div class="group">
                                 <div class="aspect-square rounded-lg overflow-hidden bg-gray-100 mb-3 shadow-sm">
-                                    <img src="{{ $item[2] }}"
+                                    <img src="https://picsum.photos/400?random={{ $index + 10 }}"
                                         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                                         alt="{{ $item[0] }}" loading="lazy">
                                 </div>
                                 <h3 class="text-md font-medium text-gray-900">{{ $item[0] }}</h3>
                                 <p class="text-xs text-gray-500 mt-1">{{ $item[1] }}</p>
-                                <p class="text-md font-semibold text-amber-700 mt-2">{{ $item[3] }}</p>
+                                <p class="text-md font-semibold text-amber-700 mt-2">{{ $item[2] }}</p>
                             </div>
                         @endforeach
                     </div>
@@ -419,6 +420,7 @@
                     </div>
                 </div>
             </div>
+
         </div>
 
         <!-- Right Column -->
