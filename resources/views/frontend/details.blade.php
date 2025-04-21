@@ -257,6 +257,18 @@
                                 <p class="text-sm text-gray-600 mt-1">Cash, Cards, UPI, EMI Available</p>
                             </div>
                         </div>
+
+                        <!-- Add the Embedded Map Section here -->
+                        <div class="p-3 bg-gray-50 rounded-lg">
+                            <h3 class="font-medium text-gray-900">Location</h3>
+                            <div class="mt-2">
+                                <!-- Google Maps Embedded iframe -->
+                                <iframe
+                                    src="https://www.google.com/maps/embed/v1/place?key=YOUR_API_KEY&q=Diamond+Jewellery+Showroom, +Mumbai, +India"
+                                    width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen=""
+                                    aria-hidden="false" tabindex="0"></iframe>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
