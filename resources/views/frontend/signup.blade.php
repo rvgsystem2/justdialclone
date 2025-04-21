@@ -31,7 +31,7 @@
             </form>
 
             <p class="text-center text-sm text-gray-600 mt-6">Already have an account?
-                <a href="/login" class="text-blue-600 font-medium hover:underline">Login</a>
+                <a href="/login" class="text-amber-600 font-medium hover:underline">Login</a>
             </p>
         </div>
     </section>

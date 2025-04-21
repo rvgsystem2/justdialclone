@@ -9,10 +9,10 @@
             <!-- Profile Header Card -->
             <div class="bg-white rounded-xl shadow-md overflow-hidden mb-6">
                 <!-- Cover Photo -->
-                <div class="h-40 bg-gradient-to-r from-blue-500 to-indigo-600 relative">
+                <div class="h-40 bg-gradient-to-r from-amber-600 to-amber-700 relative">
                     <div class="absolute right-4 top-4">
                         <button
-                            class="bg-white bg-opacity-20 hover:bg-opacity-30 text-blue-500 w-10 h-10 rounded-full flex items-center justify-center">
+                            class="bg-white bg-opacity-20 hover:bg-opacity-30 text-amber-600 w-10 h-10 rounded-full flex items-center justify-center">
                             <span class="material-symbols-outlined">photo_camera</span>
                         </button>
                     </div>
@@ -40,7 +40,7 @@
 
                         <div class="mt-4 md:mt-0 flex gap-3">
                             <a href="#"
-                                class="inline-flex items-center px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 text-sm transition-colors">
+                                class="inline-flex items-center px-4 py-2 bg-amber-600 text-white rounded-lg hover:bg-amber-700 text-sm transition-colors">
                                 <span class="material-symbols-outlined text-base mr-1">edit</span> Edit Profile
                             </a>
                             <a href="#change-password"
@@ -56,7 +56,7 @@
             <div class="bg-white rounded-xl shadow-md overflow-hidden">
                 <!-- Tabs -->
                 <div class="flex border-b border-gray-200">
-                    <button class="tab-btn px-6 py-4 text-blue-600 border-b-2 border-blue-600 font-medium"
+                    <button class="tab-btn px-6 py-4 text-amber-600 border-b-2 border-amber-600 font-medium"
                         onclick="openTab(event, 'personal')">
                         <span class="material-symbols-outlined align-middle mr-1">person</span> Personal Info
                     </button>
@@ -150,7 +150,7 @@
                 <div id="activity" class="tab-content hidden p-6 md:p-8">
                     <h3 class="text-lg font-semibold text-gray-800 mb-4">Recent Activity</h3>
                     <div class="space-y-4">
-                        <div class="border-l-2 border-blue-500 pl-4 py-2">
+                        <div class="border-l-2 border-amber-600 pl-4 py-2">
                             <div class="flex justify-between">
                                 <p class="font-medium text-gray-800">Profile Updated</p>
                                 <p class="text-sm text-gray-500">Today, 10:30 AM</p>
@@ -159,7 +159,7 @@
                     </div>
 
                     <div class="mt-6 text-center">
-                        <button class="text-blue-600 hover:text-blue-800 font-medium">
+                        <button class="text-amber-600 hover:text-amber-700 font-medium">
                             View All Activity
                         </button>
                     </div>
@@ -176,7 +176,7 @@
                             <label class="relative inline-block w-12 h-6">
                                 <input type="checkbox" class="opacity-0 w-0 h-0" checked>
                                 <span
-                                    class="slider absolute cursor-pointer top-0 left-0 right-0 bottom-0 bg-blue-600 rounded-full">
+                                    class="slider absolute cursor-pointer top-0 left-0 right-0 bottom-0 bg-amber-600 rounded-full">
                                     <span
                                         class="absolute left-1 top-1 bg-white w-4 h-4 rounded-full transition-transform duration-200 ease-in-out transform translate-x-6"></span>
                                 </span>
@@ -218,7 +218,7 @@
                                 placeholder="Confirm new password" required>
                         </div>
                         <button type="submit"
-                            class="w-full md:w-auto px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors">
+                            class="w-full md:w-auto px-6 py-3 bg-amber-600 text-white rounded-lg hover:bg-amber-700 transition-colors">
                             Save Changes
                         </button>
                     </form>
@@ -252,13 +252,13 @@
 
             tabbuttons = document.getElementsByClassName("tab-btn");
             for (i = 0; i < tabbuttons.length; i++) {
-                tabbuttons[i].classList.remove("text-blue-600", "border-b-2", "border-blue-600");
+                tabbuttons[i].classList.remove("text-amber-600", "border-b-2", "border-amber-600");
                 tabbuttons[i].classList.add("text-gray-500");
             }
 
             document.getElementById(tabName).classList.remove("hidden");
             document.getElementById(tabName).classList.add("block");
-            evt.currentTarget.classList.add("text-blue-600", "border-b-2", "border-blue-600");
+            evt.currentTarget.classList.add("text-amber-600", "border-b-2", "border-amber-600");
             evt.currentTarget.classList.remove("text-gray-500");
         }
     </script>

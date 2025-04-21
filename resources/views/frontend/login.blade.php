@@ -20,14 +20,14 @@
 
             <div class="flex justify-between text-sm">
                 <label class="flex items-center gap-2">
-                    <input type="checkbox" class="accent-blue-600">
+                    <input type="checkbox" class="accent-amber-600">
                     Remember me
                 </label>
-                <a href="#" class="text-blue-600 hover:underline">Forgot password?</a>
+                <a href="#" class="text-amber-600 hover:underline">Forgot password?</a>
             </div>
 
             <button type="submit"
-                class="w-full bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 rounded-lg transition-all">
+                class="w-full bg-amber-600 hover:bg-amber-700 text-white font-medium py-3 rounded-lg transition-all">
                 Login
             </button>
         </form>
