@@ -12,11 +12,10 @@
                 <div class="snap-start w-full flex-shrink-0">
                     <div class="flex flex-col md:flex-row p-6 gap-4 items-center">
                         <!-- Left Content -->
-                        <div class="relative w-full md:w-2/5 space-y-4">
+                        <div class="relative w-full md:w-2/5 space-y-3">
                             <!-- Dots pattern -->
                             <div class="absolute top-0 left-0 opacity-30 -z-10">
                                 <div class="grid grid-cols-6 gap-1">
-                                    <!-- Repeat 36 dots -->
                                     <template x-for="i in 36">
                                         <div class="w-1 h-1 bg-[#d3a15c] rounded-full"></div>
                                     </template>
@@ -24,23 +23,23 @@
                             </div>
 
                             <!-- Logo -->
-                            <div class="bg-[#f7d59f] rounded-full w-16 h-16 flex items-center justify-center">
-                                <span class="text-[#c88d4d] font-bold">Jewels</span>
+                            <div class="bg-[#f7d59f] rounded-full w-14 h-14 flex items-center justify-center">
+                                <span class="text-[#c88d4d] font-bold text-sm">Jewels</span>
                             </div>
 
                             <!-- Texts -->
-                            <h2 class="text-2xl font-bold text-[#9e7a4f]">Exclusive Diamond Collection</h2>
-                            <p class="text-[#8b6a43]">
+                            <h2 class="text-xl font-semibold text-[#9e7a4f]">Exclusive Diamond Collection</h2>
+                            <p class="text-sm text-[#8b6a43] leading-relaxed">
                                 Discover timeless elegance with our diamond jewelry, starting from
-                                <span class="text-[#d4a35c] font-bold text-xl">$599</span>
+                                <span class="text-[#d4a35c] font-bold text-base">$599</span>
                             </p>
-                            <p class="text-[#8b6a43]">Curated by expert jewelers</p>
+                            <p class="text-sm text-[#8b6a43]">Curated by expert jewelers</p>
 
                             <!-- Button -->
                             <button
-                                class="bg-[#c88d4d] hover:bg-[#a77d4b] text-white px-6 py-2 rounded mt-2 flex items-center transition">
+                                class="bg-[#c88d4d] hover:bg-[#a77d4b] text-white px-5 py-1.5 rounded mt-1.5 text-sm flex items-center transition">
                                 Shop Now
-                                <i class="fa fa-arrow-right ml-2"></i>
+                                <i class="fa fa-arrow-right ml-2 text-xs"></i>
                             </button>
                         </div>
 
@@ -49,33 +48,33 @@
                             class="w-full md:w-3/5 flex gap-4 overflow-x-auto snap-x snap-mandatory scrollbar-hide pt-4 md:pt-0">
                             <!-- Category Cards -->
                             <div
-                                class="snap-start w-48 flex-shrink-0 bg-[#d5a35c] text-white rounded-lg p-4 space-y-2 flex flex-col">
-                                <h3 class="font-bold text-xl">Gold Jewelry</h3>
-                                <p class="text-sm">Handcrafted Rings</p>
+                                class="snap-start w-48 flex-shrink-0 bg-[#d5a35c] text-white rounded-lg p-3 space-y-1.5 flex flex-col">
+                                <h3 class="font-semibold text-lg">Gold Jewelry</h3>
+                                <p class="text-xs">Handcrafted Rings</p>
                                 <img src="{{ asset('asset/landingimg/sample (1).jpg') }}" alt="Gold Jewelry"
                                     class="object-cover rounded h-40 w-full" />
                             </div>
 
                             <div
-                                class="snap-start w-48 flex-shrink-0 bg-[#9e7a4f] text-white rounded-lg p-4 space-y-2 flex flex-col">
-                                <h3 class="font-bold text-xl">Diamond Jewelry</h3>
-                                <p class="text-sm">Engagement Rings</p>
+                                class="snap-start w-48 flex-shrink-0 bg-[#9e7a4f] text-white rounded-lg p-3 space-y-1.5 flex flex-col">
+                                <h3 class="font-semibold text-lg">Diamond Jewelry</h3>
+                                <p class="text-xs">Engagement Rings</p>
                                 <img src="{{ asset('asset/landingimg/sample (2).jpg') }}" alt="Diamond Jewelry"
                                     class="object-cover rounded h-40 w-full" />
                             </div>
 
                             <div
-                                class="snap-start w-48 flex-shrink-0 bg-[#c88d4d] text-white rounded-lg p-4 space-y-2 flex flex-col">
-                                <h3 class="font-bold text-xl">Pearl Collection</h3>
-                                <p class="text-sm">Necklaces & Earrings</p>
+                                class="snap-start w-48 flex-shrink-0 bg-[#c88d4d] text-white rounded-lg p-3 space-y-1.5 flex flex-col">
+                                <h3 class="font-semibold text-lg">Pearl Collection</h3>
+                                <p class="text-xs">Necklaces & Earrings</p>
                                 <img src="{{ asset('asset/landingimg/sample (3).jpg') }}" alt="Pearl Collection"
                                     class="object-cover rounded h-40 w-full" />
                             </div>
 
                             <div
-                                class="snap-start w-48 flex-shrink-0 bg-[#a77d4b] text-white rounded-lg p-4 space-y-2 flex flex-col">
-                                <h3 class="font-bold text-xl">Silver Collection</h3>
-                                <p class="text-sm">Exquisite Bracelets</p>
+                                class="snap-start w-48 flex-shrink-0 bg-[#a77d4b] text-white rounded-lg p-3 space-y-1.5 flex flex-col">
+                                <h3 class="font-semibold text-lg">Silver Collection</h3>
+                                <p class="text-xs">Exquisite Bracelets</p>
                                 <img src="{{ asset('asset/landingimg/sample (4).jpg') }}" alt="Silver Collection"
                                     class="object-cover rounded h-40 w-full" />
                             </div>
@@ -87,11 +86,11 @@
             <!-- Optional Slider Controls -->
             <button
                 class="hidden lg:flex absolute left-2 top-1/2 transform -translate-y-1/2 bg-white shadow-md hover:bg-gray-100 transition p-2 rounded-full z-10">
-                <i class="fas fa-chevron-left text-gray-700"></i>
+                <i class="fas fa-chevron-left text-gray-700 text-sm"></i>
             </button>
             <button
                 class="hidden lg:flex absolute right-2 top-1/2 transform -translate-y-1/2 bg-white shadow-md hover:bg-gray-100 transition p-2 rounded-full z-10">
-                <i class="fas fa-chevron-right text-gray-700"></i>
+                <i class="fas fa-chevron-right text-gray-700 text-sm"></i>
             </button>
         </div>
 
