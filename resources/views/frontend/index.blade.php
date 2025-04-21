@@ -53,7 +53,7 @@
                                 <h3 class="font-bold text-xl">Gold Jewelry</h3>
                                 <p class="text-sm">Handcrafted Rings</p>
                                 <img src="{{ asset('asset/landingimg/sample (1).jpg') }}" alt="Gold Jewelry"
-                                    class="object-cover rounded" />
+                                    class="object-cover rounded h-40 w-full" />
                             </div>
 
                             <div
@@ -61,7 +61,7 @@
                                 <h3 class="font-bold text-xl">Diamond Jewelry</h3>
                                 <p class="text-sm">Engagement Rings</p>
                                 <img src="{{ asset('asset/landingimg/sample (2).jpg') }}" alt="Diamond Jewelry"
-                                    class="object-cover rounded" />
+                                    class="object-cover rounded h-40 w-full" />
                             </div>
 
                             <div
@@ -69,7 +69,7 @@
                                 <h3 class="font-bold text-xl">Pearl Collection</h3>
                                 <p class="text-sm">Necklaces & Earrings</p>
                                 <img src="{{ asset('asset/landingimg/sample (3).jpg') }}" alt="Pearl Collection"
-                                    class="object-cover rounded" />
+                                    class="object-cover rounded h-40 w-full" />
                             </div>
 
                             <div
@@ -77,7 +77,7 @@
                                 <h3 class="font-bold text-xl">Silver Collection</h3>
                                 <p class="text-sm">Exquisite Bracelets</p>
                                 <img src="{{ asset('asset/landingimg/sample (4).jpg') }}" alt="Silver Collection"
-                                    class="object-cover rounded" />
+                                    class="object-cover rounded h-40 w-full" />
                             </div>
                         </div>
                     </div>
