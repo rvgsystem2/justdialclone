@@ -148,7 +148,7 @@
             <div class="flex-1 relative w-full h-64 sm:h-72 md:h-96 lg:h-auto">
                 <!-- Main Image -->
                 <div class="relative w-full max-w-md mx-auto">
-                    <img src="{{ asset('asset/images/jewellery-sample.jpeg') }}" alt="Jewellery Business Dashboard"
+                    <img src="https://picsum.photos/600/400?random=1" alt="Jewellery Business Dashboard"
                         class="w-full h-auto rounded-lg shadow-xl animate-float" />
 
                     <!-- Floating Card 1 -->
@@ -189,6 +189,7 @@
                     </div>
                 </div>
             </div>
+
         </div>
     </section>
 
@@ -239,7 +240,8 @@
                     <div class="mt-4 bg-amber-50 border border-amber-100 rounded-lg p-3 text-xs text-amber-800">
                         <div class="flex items-start gap-2">
                             <i class="fas fa-info-circle mt-0.5 text-amber-500"></i>
-                            <p>This is how your jewellery business will appear to customers on our platform. Complete your profile for
+                            <p>This is how your jewellery business will appear to customers on our platform. Complete your
+                                profile for
                                 better visibility.</p>
                         </div>
                     </div>
