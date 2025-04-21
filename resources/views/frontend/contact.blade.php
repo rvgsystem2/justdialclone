@@ -9,7 +9,7 @@
                 look forward to hearing from you.</p>
             <div class="mt-6">
                 <div
-                    class="inline-flex items-center px-4 py-2 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-full shadow-lg">
+                    class="inline-flex items-center px-4 py-2 bg-gradient-to-r from-amber-600 to-amber-600 rounded-full shadow-lg">
                     <span class="material-icons text-white mr-2">mail</span>
                     <span class="font-medium text-white">Contact Our Team</span>
                 </div>
@@ -22,7 +22,7 @@
             <div class="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100">
                 <div class="bg-gradient-to-r from-blue-50 to-indigo-50 p-6 border-b border-gray-200">
                     <h2 class="text-2xl font-semibold text-gray-800 flex items-center">
-                        <span class="material-icons text-blue-500 mr-3">contact_support</span>
+                        <span class="material-icons text-amber-600 mr-3">contact_support</span>
                         Contact Information
                     </h2>
                 </div>
@@ -31,12 +31,12 @@
                         <!-- Phone -->
                         <li class="flex items-start">
                             <div class="bg-blue-100 p-3 rounded-lg mr-4">
-                                <span class="material-icons text-blue-600">call</span>
+                                <span class="material-icons text-amber-600">call</span>
                             </div>
                             <div>
                                 <h3 class="text-sm font-medium text-gray-500">Phone Support</h3>
                                 <a href="tel:+918888888888"
-                                    class="text-xl font-medium text-gray-900 hover:text-blue-600 transition">+91
+                                    class="text-xl font-medium text-gray-900 hover:text-amber-600 transition">+91
                                     8888888888</a>
                                 <p class="text-sm text-gray-500 mt-1">Monday-Friday, 9am-6pm IST</p>
                             </div>
@@ -64,7 +64,7 @@
                                 <h3 class="text-sm font-medium text-gray-500">Corporate Office</h3>
                                 <p class="text-xl font-medium text-gray-900">Mumbai, Maharashtra, India</p>
                                 <a href="#"
-                                    class="text-sm text-blue-600 hover:underline mt-1 inline-flex items-center">
+                                    class="text-sm text-amber-600 hover:underline mt-1 inline-flex items-center">
                                     <span class="material-icons text-sm mr-1">map</span>
                                     View on map
                                 </a>
@@ -79,7 +79,7 @@
                         <div class="flex space-x-4">
                             <!-- Facebook -->
                             <a href="#"
-                                class="w-12 h-12 rounded-full bg-blue-100 text-blue-600 hover:bg-blue-600 hover:text-white flex items-center justify-center transition-all duration-300">
+                                class="w-12 h-12 rounded-full bg-blue-100 text-amber-600 hover:bg-amber-600 hover:text-white flex items-center justify-center transition-all duration-300">
                                 <i class="fab fa-facebook-f text-lg"></i>
                             </a>
                             <!-- Twitter -->
@@ -107,7 +107,7 @@
             <div class="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100">
                 <div class="bg-gradient-to-r from-indigo-50 to-purple-50 p-6 border-b border-gray-200">
                     <h2 class="text-2xl font-semibold text-gray-800 flex items-center">
-                        <span class="material-icons text-indigo-500 mr-3">send</span>
+                        <span class="material-icons text-amber-600 mr-3">send</span>
                         Send Us a Message
                     </h2>
                 </div>
@@ -121,7 +121,7 @@
                                     <span class="material-icons text-gray-400">person</span>
                                 </div>
                                 <input type="text" id="name" name="name"
-                                    class="pl-10 block w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500"
+                                    class="pl-10 block w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-amber-600 focus:border-amber-600"
                                     placeholder="John Doe" required>
                             </div>
                         </div>
@@ -134,7 +134,7 @@
                                     <span class="material-icons text-gray-400">email</span>
                                 </div>
                                 <input type="email" id="email" name="email"
-                                    class="pl-10 block w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500"
+                                    class="pl-10 block w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-amber-600 focus:border-amber-600"
                                     placeholder="your@email.com" required>
                             </div>
                         </div>
@@ -147,7 +147,7 @@
                                     <span class="material-icons text-gray-400">phone</span>
                                 </div>
                                 <input type="tel" id="phone" name="phone"
-                                    class="pl-10 block w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500"
+                                    class="pl-10 block w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-amber-600 focus:border-amber-600"
                                     pattern="^\+?[0-9]{1,4}?[0-9]{7,}$" placeholder="+91 8888888888" required>
                             </div>
                         </div>
@@ -160,7 +160,7 @@
                                     <span class="material-icons text-gray-400">subject</span>
                                 </div>
                                 <select id="subject" name="subject"
-                                    class="pl-10 block w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500"
+                                    class="pl-10 block w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-amber-600 focus:border-amber-600"
                                     required>
                                     <option value="" disabled selected>Select a subject</option>
                                     <option value="support">Support</option>
@@ -180,7 +180,7 @@
                                     <span class="material-icons text-gray-400">message</span>
                                 </div>
                                 <textarea id="message" name="message" rows="5"
-                                    class="pl-10 block w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500"
+                                    class="pl-10 block w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-amber-600 focus:border-amber-600"
                                     placeholder="How can we help you?" required></textarea>
                             </div>
                         </div>
@@ -188,7 +188,7 @@
                         <!-- Submit Button -->
                         <div class="pt-2">
                             <button type="submit"
-                                class="w-full bg-gradient-to-r from-indigo-600 to-purple-600 text-white py-4 px-6 rounded-lg hover:from-indigo-700 hover:to-purple-700 transition-all duration-300 shadow-md hover:shadow-lg flex items-center justify-center">
+                                class="w-full bg-gradient-to-r from-amber-600 to-purple-600 text-white py-4 px-6 rounded-lg hover:from-amber-700 hover:to-purple-700 transition-all duration-300 shadow-md hover:shadow-lg flex items-center justify-center">
                                 <span class="material-icons mr-2">send</span>
                                 Send Message
                             </button>

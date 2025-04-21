@@ -15,7 +15,7 @@
                     <div class="flex items-center gap-3">
                         <div class="relative">
                             <select
-                                class="appearance-none bg-white border border-gray-300 rounded-lg py-2 pl-3 pr-8 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                                class="appearance-none bg-white border border-gray-300 rounded-lg py-2 pl-3 pr-8 text-sm focus:outline-none focus:ring-2 focus:ring-amber-600 focus:border-amber-600">
                                 <option>All Notifications</option>
                                 <option>Unread Only</option>
                                 <option>System</option>
@@ -27,7 +27,7 @@
                             </div>
                         </div>
                         <button
-                            class="text-sm bg-blue-600 hover:bg-blue-700 text-white px-3 py-2 rounded-lg transition-colors">
+                            class="text-sm bg-amber-600 hover:bg-amber-700 text-white px-3 py-2 rounded-lg transition-colors">
                             Mark all as read
                         </button>
                     </div>
@@ -37,10 +37,10 @@
                 <div class="space-y-3">
                     <!-- Unread Notification with Icon -->
                     <div
-                        class="relative flex items-start bg-white p-5 rounded-xl shadow-xs hover:shadow-sm transition-all border-l-4 border-blue-600 group">
+                        class="relative flex items-start bg-white p-5 rounded-xl shadow-xs hover:shadow-sm transition-all border-l-4 border-amber-600 group">
                         <div class="flex-shrink-0 mr-4">
                             <div class="h-10 w-10 rounded-full bg-blue-100 flex items-center justify-center">
-                                <i class="material-icons h-5 w-5 text-blue-600">check_circle</i>
+                                <i class="material-icons h-5 w-5 text-amber-600">check_circle</i>
                             </div>
                         </div>
                         <div class="flex-1 min-w-0">
@@ -51,13 +51,13 @@
                             <p class="text-xs text-gray-400 mt-2">Just now</p>
                         </div>
                         <div class="ml-4 flex flex-col items-end">
-                            <button class="text-sm text-blue-600 hover:text-blue-800 font-medium mb-2">View</button>
+                            <button class="text-sm text-amber-600 hover:text-blue-800 font-medium mb-2">View</button>
                             <button
                                 class="text-gray-400 hover:text-gray-600 opacity-0 group-hover:opacity-100 transition-opacity">
                                 <i class="material-icons h-4 w-4 text-gray-400">close</i>
                             </button>
                         </div>
-                        <div class="absolute top-3 left-3 w-2 h-2 rounded-full bg-blue-600"></div>
+                        <div class="absolute top-3 left-3 w-2 h-2 rounded-full bg-amber-600"></div>
                     </div>
 
                     <!-- Unread Notification with Warning -->
@@ -76,7 +76,7 @@
                             <p class="text-xs text-gray-400 mt-2">15 minutes ago</p>
                         </div>
                         <div class="ml-4 flex flex-col items-end">
-                            <button class="text-sm text-blue-600 hover:text-blue-800 font-medium mb-2">Respond</button>
+                            <button class="text-sm text-amber-600 hover:text-blue-800 font-medium mb-2">Respond</button>
                             <button
                                 class="text-gray-400 hover:text-gray-600 opacity-0 group-hover:opacity-100 transition-opacity">
                                 <i class="material-icons h-4 w-4 text-gray-400">close</i>
@@ -100,7 +100,7 @@
                             <p class="text-xs text-gray-400 mt-2">2 hours ago</p>
                         </div>
                         <div class="ml-4 flex flex-col items-end">
-                            <button class="text-sm text-blue-600 hover:text-blue-800 font-medium mb-2">Details</button>
+                            <button class="text-sm text-amber-600 hover:text-blue-800 font-medium mb-2">Details</button>
                             <button
                                 class="text-gray-400 hover:text-gray-600 opacity-0 group-hover:opacity-100 transition-opacity">
                                 <i class="material-icons h-4 w-4 text-gray-400">close</i>
@@ -123,7 +123,7 @@
                         </div>
                         <div class="ml-4 flex flex-col items-end">
                             <button
-                                class="text-sm bg-blue-600 hover:bg-blue-700 text-white px-3 py-1 rounded-md text-xs font-medium mb-2 transition-colors">
+                                class="text-sm bg-amber-600 hover:bg-amber-700 text-white px-3 py-1 rounded-md text-xs font-medium mb-2 transition-colors">
                                 Download Receipt
                             </button>
                             <button

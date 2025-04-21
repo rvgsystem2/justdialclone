@@ -10,12 +10,12 @@
                 thrive in the digital world while helping customers discover the best services around them.</p>
             <div class="mt-8 flex justify-center space-x-4">
                 <a href="{{ route('signup') }}"
-                    class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-all flex items-center shadow-md hover:shadow-lg">
+                    class="bg-amber-600 text-white px-6 py-3 rounded-lg hover:bg-amber-700 transition-all flex items-center shadow-md hover:shadow-lg">
                     <span class="material-icons mr-2">person_add</span>
                     Join Our Community
                 </a>
                 <a href="{{ route('contact') }}"
-                    class="border border-blue-600 text-blue-600 px-6 py-3 rounded-lg hover:bg-blue-50 transition-all flex items-center">
+                    class="border border-amber-600 text-amber-600 px-6 py-3 rounded-lg hover:bg-blue-50 transition-all flex items-center">
                     <span class="material-icons mr-2">chat</span>
                     Contact Us
                 </a>
@@ -43,7 +43,7 @@
                     <ul class="space-y-6">
                         <li class="flex items-start">
                             <div class="bg-blue-100 p-2 rounded-lg mr-4">
-                                <span class="material-icons text-blue-600">groups</span>
+                                <span class="material-icons text-amber-600">groups</span>
                             </div>
                             <div>
                                 <h4 class="font-semibold text-lg text-gray-900 mb-1">Dedicated Team</h4>
@@ -79,7 +79,7 @@
                 <!-- Mission -->
                 <div class="bg-gradient-to-br from-blue-50 to-indigo-50 p-8 rounded-xl shadow-sm border border-gray-100">
                     <div class="flex items-start mb-6">
-                        <span class="material-icons text-blue-600 text-4xl mr-4">flag</span>
+                        <span class="material-icons text-amber-600 text-4xl mr-4">flag</span>
                         <div>
                             <h2 class="text-3xl font-bold text-gray-900">Our Mission</h2>
                         </div>
@@ -120,7 +120,7 @@
                 <div
                     class="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition-all border border-gray-100 text-center">
                     <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
-                        <span class="material-icons text-blue-600 text-3xl">shield</span>
+                        <span class="material-icons text-amber-600 text-3xl">shield</span>
                     </div>
                     <h3 class="text-2xl font-semibold text-gray-900 mb-3">Integrity</h3>
                     <p class="text-gray-600">We build trust through transparency, honesty, and ethical business practices in
@@ -167,7 +167,7 @@
                     </div>
                     <div class="p-6">
                         <h3 class="text-xl font-bold text-gray-900 mb-1">John Doe</h3>
-                        <p class="text-blue-600 font-medium mb-4">Founder & CEO</p>
+                        <p class="text-amber-600 font-medium mb-4">Founder & CEO</p>
                         <p class="text-gray-600 text-sm">Visionary leader with 15+ years in digital transformation</p>
                     </div>
                 </div>
@@ -180,7 +180,7 @@
                     </div>
                     <div class="p-6">
                         <h3 class="text-xl font-bold text-gray-900 mb-1">Jane Smith</h3>
-                        <p class="text-blue-600 font-medium mb-4">Chief Technology Officer</p>
+                        <p class="text-amber-600 font-medium mb-4">Chief Technology Officer</p>
                         <p class="text-gray-600 text-sm">Tech innovator building scalable solutions</p>
                     </div>
                 </div>
@@ -193,7 +193,7 @@
                     </div>
                     <div class="p-6">
                         <h3 class="text-xl font-bold text-gray-900 mb-1">Robert Johnson</h3>
-                        <p class="text-blue-600 font-medium mb-4">Head of Product</p>
+                        <p class="text-amber-600 font-medium mb-4">Head of Product</p>
                         <p class="text-gray-600 text-sm">Customer-centric product strategist</p>
                     </div>
                 </div>
@@ -206,7 +206,7 @@
                     </div>
                     <div class="p-6">
                         <h3 class="text-xl font-bold text-gray-900 mb-1">Sarah Williams</h3>
-                        <p class="text-blue-600 font-medium mb-4">Marketing Director</p>
+                        <p class="text-amber-600 font-medium mb-4">Marketing Director</p>
                         <p class="text-gray-600 text-sm">Growth hacker and brand builder</p>
                     </div>
                 </div>
@@ -214,18 +214,18 @@
         </div>
 
         <!-- CTA Section -->
-        <div class="bg-gradient-to-r from-blue-600 to-indigo-700 rounded-2xl p-12 text-center text-white shadow-xl">
+        <div class="bg-gradient-to-r from-amber-600 to-indigo-700 rounded-2xl p-12 text-center text-white shadow-xl">
             <h2 class="text-3xl font-bold mb-4">Ready to Grow With Us?</h2>
             <p class="text-xl opacity-90 mb-8 max-w-2xl mx-auto">Join thousands of businesses already thriving on our
                 platform and discover new opportunities today.</p>
             <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
                 <a href="{{ route('signup') }}"
-                    class="bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-all flex items-center justify-center">
+                    class="bg-white text-amber-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-all flex items-center justify-center">
                     <span class="material-icons mr-2">storefront</span>
                     List Your Business
                 </a>
                 <a href="{{ route('contact') }}"
-                    class="border-2 border-white text-white hover:text-blue-600 px-8 py-4 rounded-lg font-semibold hover:bg-white hover:bg-opacity-10 transition-all flex items-center justify-center">
+                    class="border-2 border-white text-white hover:text-amber-600 px-8 py-4 rounded-lg font-semibold hover:bg-white hover:bg-opacity-10 transition-all flex items-center justify-center">
                     <span class="material-icons mr-2">forum</span>
                     Contact Our Team
                 </a>
