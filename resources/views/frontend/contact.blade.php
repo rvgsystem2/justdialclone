@@ -188,7 +188,7 @@
                         <!-- Submit Button -->
                         <div class="pt-2">
                             <button type="submit"
-                                class="w-full bg-gradient-to-r from-amber-600 to-purple-600 text-white py-4 px-6 rounded-lg hover:from-amber-700 hover:to-purple-700 transition-all duration-300 shadow-md hover:shadow-lg flex items-center justify-center">
+                                class="w-full bg-gradient-to-r from-amber-600 to-amber-700 text-white py-4 px-6 rounded-lg hover:from-amber-700 hover:to-amber-800 transition-all duration-300 shadow-md hover:shadow-lg flex items-center justify-center">
                                 <span class="material-icons mr-2">send</span>
                                 Send Message
                             </button>
