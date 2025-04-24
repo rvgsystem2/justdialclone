@@ -1,5 +1,5 @@
 <!-- Top Border Line Above Footer -->
-<hr class="border-t border-gray-800 opacity-60 mx-auto w-11/12 mb-[-1px]">
+<div class="w-full border-t border-white/20 h-[4px]"></div>
 
 <!-- Footer -->
 <footer class="bg-white text-black py-14 relative overflow-hidden shadow-2xl">
