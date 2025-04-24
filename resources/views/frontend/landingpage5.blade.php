@@ -3,7 +3,7 @@
 @section('landingcontent')
     <div class="font-sans bg-white text-gray-800">
         <!-- Navigation -->
-        <nav class="bg-white shadow-md sticky top-0 z-50">
+        {{-- <nav class="bg-white shadow-md sticky top-0 z-50">
             <div class="container mx-auto px-6 py-4">
                 <div class="flex items-center justify-between">
                     <div class="flex items-center">
@@ -28,7 +28,7 @@
                     </div>
                 </div>
             </div>
-        </nav>
+        </nav> --}}
 
         <!-- Hero Section -->
         <section class="relative bg-gray-100">
@@ -144,10 +144,13 @@
                             <h3 class="text-lg font-bold text-gray-800 mb-1">Eternal Diamond Ring</h3>
                             <p class="text-gray-600 text-sm mb-2">18K White Gold</p>
                             <div class="flex justify-between items-center">
-                                <span class="text-lg font-bold text-gray-800">$1,299</span>
+                                <span class="text-lg font-bold text-gray-800">₹107,817</span>
                                 <button class="text-amber-600 hover:text-amber-700">
                                     <i class="fas fa-shopping-bag"></i>
                                 </button>
+                            </div>
+                            <div class="mt-4">
+                                <a href="#" class="text-sm text-amber-600 hover:underline">See Details</a>
                             </div>
                         </div>
                     </div>
@@ -162,10 +165,13 @@
                             <h3 class="text-lg font-bold text-gray-800 mb-1">Pearl Elegance Necklace</h3>
                             <p class="text-gray-600 text-sm mb-2">South Sea Pearls</p>
                             <div class="flex justify-between items-center">
-                                <span class="text-lg font-bold text-gray-800">$899</span>
+                                <span class="text-lg font-bold text-gray-800">₹74,517</span>
                                 <button class="text-amber-600 hover:text-amber-700">
                                     <i class="fas fa-shopping-bag"></i>
                                 </button>
+                            </div>
+                            <div class="mt-4">
+                                <a href="#" class="text-sm text-amber-600 hover:underline">See Details</a>
                             </div>
                         </div>
                     </div>
@@ -183,10 +189,13 @@
                             <h3 class="text-lg font-bold text-gray-800 mb-1">Infinity Gold Bracelet</h3>
                             <p class="text-gray-600 text-sm mb-2">24K Solid Gold</p>
                             <div class="flex justify-between items-center">
-                                <span class="text-lg font-bold text-gray-800">$1,599</span>
+                                <span class="text-lg font-bold text-gray-800">₹132,717</span>
                                 <button class="text-amber-600 hover:text-amber-700">
                                     <i class="fas fa-shopping-bag"></i>
                                 </button>
+                            </div>
+                            <div class="mt-4">
+                                <a href="#" class="text-sm text-amber-600 hover:underline">See Details</a>
                             </div>
                         </div>
                     </div>
@@ -201,18 +210,22 @@
                             <h3 class="text-lg font-bold text-gray-800 mb-1">Diamond Stud Earrings</h3>
                             <p class="text-gray-600 text-sm mb-2">0.5ct each</p>
                             <div class="flex justify-between items-center">
-                                <span class="text-lg font-bold text-gray-800">$799</span>
+                                <span class="text-lg font-bold text-gray-800">₹66,357</span>
                                 <button class="text-amber-600 hover:text-amber-700">
                                     <i class="fas fa-shopping-bag"></i>
                                 </button>
+                            </div>
+                            <div class="mt-4">
+                                <a href="#" class="text-sm text-amber-600 hover:underline">See Details</a>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="text-center mt-12">
                     <a href="#"
-                        class="inline-block border-2 border-amber-600 text-amber-600 px-8 py-3 rounded-full font-medium hover:bg-amber-600 hover:text-white transition duration-300">View
-                        All Products</a>
+                        class="inline-block border-2 border-amber-600 text-amber-600 px-8 py-3 rounded-full font-medium hover:bg-amber-600 hover:text-white transition duration-300">
+                        View All Products
+                    </a>
                 </div>
             </div>
         </section>

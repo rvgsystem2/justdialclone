@@ -5,7 +5,7 @@
     <section class="relative bg-gradient-to-br from-gray-900 to-gray-800 text-white overflow-hidden">
         <!-- Hero Background Image -->
         <div class="absolute inset-0 z-0">
-            <img src="{{asset('asset/landingimg/sample (1).jpg')}}" alt="Luxury Jewelry Collection"
+            <img src="{{ asset('asset/landingimg/sample (1).jpg') }}" alt="Luxury Jewelry Collection"
                 class="w-full h-full object-cover opacity-40">
         </div>
 
