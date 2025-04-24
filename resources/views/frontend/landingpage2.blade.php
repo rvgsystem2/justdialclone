@@ -727,7 +727,7 @@
     </div>
 
     <!-- Footer -->
-    <footer class="bg-gray-900 text-white pt-16 pb-8">
+    {{-- <footer class="bg-gray-900 text-white pt-16 pb-8">
         <div class="container mx-auto px-4">
             <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
                 <!-- Branding and Social -->
@@ -810,5 +810,5 @@
                 </div>
             </div>
         </div>
-    </footer>
+    </footer> --}}
 @endsection

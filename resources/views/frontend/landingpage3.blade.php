@@ -386,7 +386,7 @@
         </section>
 
         <!-- Footer -->
-        <footer class="bg-black text-gray-400 py-16 px-8">
+        {{-- <footer class="bg-black text-gray-400 py-16 px-8">
             <div class="max-w-6xl mx-auto">
                 <div class="grid md:grid-cols-4 gap-12 mb-16">
                     <div>
@@ -441,7 +441,7 @@
                     </div>
                 </div>
             </div>
-        </footer>
+        </footer> --}}
     </div>
 
     <!-- Styles -->
