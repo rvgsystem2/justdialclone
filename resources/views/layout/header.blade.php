@@ -57,10 +57,10 @@
 </header> --}}
 
 <!-- Top Jeweller Profile Banner -->
-<section class="relative bg-gradient-to-r from-gray-800 to-gray-700 py-16 shadow-lg overflow-hidden">
+<section class="relative py-16 shadow-lg overflow-hidden bg-gradient-to-r from-[var(--from-color)] to-[var(--to-color)]">
     <!-- Background Large Text -->
     <h2
-        class="absolute text-gray-400 font-extrabold text-9xl opacity-10 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 pointer-events-none select-none whitespace-nowrap z-0">
+        class="absolute text-[var(--text-light)] font-extrabold text-9xl opacity-10 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 pointer-events-none select-none whitespace-nowrap z-0">
         ELEGANCE
     </h2>
 
@@ -70,23 +70,23 @@
             <div class="flex items-center gap-6">
                 <div class="relative">
                     <img src="{{ asset('asset/images/bussines.jpg') }}" alt="Elegance Jewellers"
-                        class="w-24 h-24 rounded-full border-4 border-yellow-300 shadow-xl object-cover transition-transform transform hover:scale-105">
+                        class="w-24 h-24 rounded-full border-4 border-[var(--accent-color)] shadow-xl object-cover transition-transform transform hover:scale-105">
                 </div>
                 <div>
-                    <h1 class="text-white font-serif text-3xl font-semibold leading-tight">Elegance Jewellers</h1>
-                    <p class="text-gray-300 text-base italic md:text-lg">Crafting Luxury Since 1985</p>
+                    <h1 class="text-[var(--text-main)] font-serif text-3xl font-semibold leading-tight">Elegance
+                        Jewellers</h1>
+                    <p class="text-[var(--text-subtle)] text-base italic md:text-lg">Crafting Luxury Since 1985</p>
                 </div>
             </div>
 
-            <!-- CTA Button with Google Icons -->
+            <!-- CTA Button -->
             <div>
-                <a href="https://wa.me/919876543210" 
-                   target="_blank"
-                   class="bg-yellow-200 hover:bg-yellow-100 text-yellow-900 font-medium text-base px-6 py-3 rounded-full shadow-lg flex items-center space-x-3 transition duration-300 ease-in-out transform hover:scale-105">
+                <a href="https://wa.me/919876543210" target="_blank"
+                    class="bg-[var(--accent-light)] hover:bg-[var(--accent-light-hover)] text-[var(--accent-dark)] font-medium text-base px-6 py-3 rounded-full shadow-lg flex items-center space-x-3 transition duration-300 ease-in-out transform hover:scale-105">
                     <span class="material-icons">calendar_today</span>
                     <span>Book Appointment</span>
                 </a>
-            </div>            
+            </div>
         </div>
     </div>
 </section>
