@@ -5,7 +5,7 @@
     <section class="relative bg-gradient-to-br from-gray-900 to-gray-800 text-white overflow-hidden">
         <!-- Hero Background Image -->
         <div class="absolute inset-0 z-0">
-            <img src="/api/placeholder/1920/1080" alt="Luxury Jewelry Collection"
+            <img src="{{asset('asset/landingimg/sample (1).jpg')}}" alt="Luxury Jewelry Collection"
                 class="w-full h-full object-cover opacity-40">
         </div>
 
@@ -128,7 +128,6 @@
                             <button
                                 class="flex items-center px-4 py-2 rounded-full bg-black text-white text-sm uppercase tracking-wider font-medium gallery-filter active"
                                 data-filter="all">
-                                <span class="material-icons mr-1 text-sm">apps</span>
                                 All
                             </button>
                         </li>
@@ -136,7 +135,6 @@
                             <button
                                 class="flex items-center px-4 py-2 rounded-full hover:bg-gray-100 text-sm uppercase tracking-wider font-medium gallery-filter"
                                 data-filter="rings">
-                                <span class="material-icons mr-1 text-sm">ring_volume</span>
                                 Rings
                             </button>
                         </li>
@@ -144,7 +142,6 @@
                             <button
                                 class="flex items-center px-4 py-2 rounded-full hover:bg-gray-100 text-sm uppercase tracking-wider font-medium gallery-filter"
                                 data-filter="necklaces">
-                                <span class="material-icons mr-1 text-sm">checkroom</span>
                                 Necklaces
                             </button>
                         </li>
@@ -152,7 +149,6 @@
                             <button
                                 class="flex items-center px-4 py-2 rounded-full hover:bg-gray-100 text-sm uppercase tracking-wider font-medium gallery-filter"
                                 data-filter="earrings">
-                                <span class="material-icons mr-1 text-sm">hearing</span>
                                 Earrings
                             </button>
                         </li>
@@ -160,12 +156,12 @@
                             <button
                                 class="flex items-center px-4 py-2 rounded-full hover:bg-gray-100 text-sm uppercase tracking-wider font-medium gallery-filter"
                                 data-filter="bracelets">
-                                <span class="material-icons mr-1 text-sm">watch</span>
                                 Bracelets
                             </button>
                         </li>
                     </ul>
                 </div>
+
             </div>
 
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8" id="product-gallery">
