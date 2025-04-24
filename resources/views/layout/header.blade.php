@@ -80,12 +80,13 @@
 
             <!-- CTA Button with Google Icons -->
             <div>
-                <a href="#consultation"
-                    class="bg-yellow-200 hover:bg-yellow-100 text-yellow-900 font-medium text-base px-6 py-3 rounded-full shadow-lg flex items-center space-x-3 transition duration-300 ease-in-out transform hover:scale-105">
+                <a href="https://wa.me/919876543210" 
+                   target="_blank"
+                   class="bg-yellow-200 hover:bg-yellow-100 text-yellow-900 font-medium text-base px-6 py-3 rounded-full shadow-lg flex items-center space-x-3 transition duration-300 ease-in-out transform hover:scale-105">
                     <span class="material-icons">calendar_today</span>
                     <span>Book Appointment</span>
                 </a>
-            </div>
+            </div>            
         </div>
     </div>
 </section>
