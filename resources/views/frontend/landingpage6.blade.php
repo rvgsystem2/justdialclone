@@ -227,7 +227,9 @@
             </div>
 
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8" id="product-gallery">
-                <!-- Product 1 -->
+
+                <!-- Product Template Start -->
+                <!-- Duplicate this block for more products -->
                 <div class="group bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300"
                     data-category="rings">
                     <div class="relative">
@@ -259,7 +261,7 @@
                         <h3 class="text-xl font-serif text-stone-800 mb-1">Lumière Diamond Ring</h3>
                         <p class="text-stone-600 mb-3">Platinum setting with 1.5ct brilliant cut</p>
                         <div class="flex justify-between items-center">
-                            <p class="text-xl font-bold text-rose-700">$4,850</p>
+                            <p class="text-xl font-bold text-rose-700">₹402,550</p>
                             <div class="flex items-center text-amber-500">
                                 <span class="material-icons text-sm">star</span>
                                 <span class="material-icons text-sm">star</span>
@@ -271,7 +273,7 @@
                     </div>
                 </div>
 
-                <!-- Product 2 -->
+                <!-- Add more products below -->
                 <div class="group bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300"
                     data-category="necklaces">
                     <div class="relative">
@@ -299,13 +301,93 @@
                         <h3 class="text-xl font-serif text-stone-800 mb-1">Azure Teardrop Pendant</h3>
                         <p class="text-stone-600 mb-3">18K gold with natural sapphire and diamonds</p>
                         <div class="flex justify-between items-center">
-                            <p class="text-xl font-bold text-rose-700">$3,295</p>
+                            <p class="text-xl font-bold text-rose-700">₹273,485</p>
                             <div class="flex items-center text-amber-500">
                                 <span class="material-icons text-sm">star</span>
                                 <span class="material-icons text-sm">star</span>
                                 <span class="material-icons text-sm">star</span>
                                 <span class="material-icons text-sm">star</span>
                                 <span class="material-icons text-sm">star</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="group bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300"
+                    data-category="earrings">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1602810311419-9bfe7f7b5f36" alt="Gold Earrings"
+                            class="w-full aspect-square object-cover">
+                        <div
+                            class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+                            <div class="flex gap-3">
+                                <button
+                                    class="w-10 h-10 rounded-full bg-white flex items-center justify-center hover:bg-rose-100 shadow-md">
+                                    <span class="material-icons text-rose-700">favorite_border</span>
+                                </button>
+                                <button
+                                    class="w-10 h-10 rounded-full bg-white flex items-center justify-center hover:bg-rose-100 shadow-md">
+                                    <span class="material-icons text-rose-700">visibility</span>
+                                </button>
+                                <button
+                                    class="w-10 h-10 rounded-full bg-white flex items-center justify-center hover:bg-rose-100 shadow-md">
+                                    <span class="material-icons text-rose-700">shopping_bag</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-5">
+                        <h3 class="text-xl font-serif text-stone-800 mb-1">Golden Leaf Earrings</h3>
+                        <p class="text-stone-600 mb-3">22K gold leaf design with intricate detailing</p>
+                        <div class="flex justify-between items-center">
+                            <p class="text-xl font-bold text-rose-700">₹165,000</p>
+                            <div class="flex items-center text-amber-500">
+                                <span class="material-icons text-sm">star</span>
+                                <span class="material-icons text-sm">star</span>
+                                <span class="material-icons text-sm">star</span>
+                                <span class="material-icons text-sm">star</span>
+                                <span class="material-icons text-sm">star_border</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="group bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300"
+                    data-category="necklaces">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1599940824396-62f11f7b6f5d" alt="Ruby Bracelet"
+                            class="w-full aspect-square object-cover">
+                        <div
+                            class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+                            <div class="flex gap-3">
+                                <button
+                                    class="w-10 h-10 rounded-full bg-white flex items-center justify-center hover:bg-rose-100 shadow-md">
+                                    <span class="material-icons text-rose-700">favorite_border</span>
+                                </button>
+                                <button
+                                    class="w-10 h-10 rounded-full bg-white flex items-center justify-center hover:bg-rose-100 shadow-md">
+                                    <span class="material-icons text-rose-700">visibility</span>
+                                </button>
+                                <button
+                                    class="w-10 h-10 rounded-full bg-white flex items-center justify-center hover:bg-rose-100 shadow-md">
+                                    <span class="material-icons text-rose-700">shopping_bag</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-5">
+                        <h3 class="text-xl font-serif text-stone-800 mb-1">Royal Ruby Bracelet</h3>
+                        <p class="text-stone-600 mb-3">Delicate 18K gold with handpicked rubies</p>
+                        <div class="flex justify-between items-center">
+                            <p class="text-xl font-bold text-rose-700">₹198,360</p>
+                            <div class="flex items-center text-amber-500">
+                                <span class="material-icons text-sm">star</span>
+                                <span class="material-icons text-sm">star</span>
+                                <span class="material-icons text-sm">star</span>
+                                <span class="material-icons text-sm">star_half</span>
+                                <span class="material-icons text-sm">star_border</span>
                             </div>
                         </div>
                     </div>
