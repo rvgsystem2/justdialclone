@@ -27,29 +27,30 @@
                     <a href="#"
                         class="w-14 h-14 flex items-center justify-center rounded-full shadow-xl bg-[var(--facebook)] hover:bg-[var(--facebook-hover)] transition-all duration-300 transform hover:scale-110"
                         aria-label="Facebook">
-                        <i class="fab fa-facebook-f text-xl"></i>
+                        <i class="fab fa-facebook-f text-xl text-black"></i>
                     </a>
                     <a href="#"
                         class="w-14 h-14 flex items-center justify-center rounded-full shadow-xl bg-[var(--whatsapp)] hover:bg-[var(--whatsapp-hover)] transition-all duration-300 transform hover:scale-110"
                         aria-label="WhatsApp">
-                        <i class="fab fa-whatsapp text-xl"></i>
+                        <i class="fab fa-whatsapp text-xl text-black"></i>
                     </a>
                     <a href="#"
                         class="w-14 h-14 flex items-center justify-center rounded-full shadow-xl bg-[var(--twitter)] hover:bg-[var(--twitter-hover)] transition-all duration-300 transform hover:scale-110"
                         aria-label="Twitter">
-                        <i class="fab fa-twitter text-xl"></i>
+                        <i class="fab fa-twitter text-xl text-black"></i>
                     </a>
                     <a href="#"
                         class="w-14 h-14 flex items-center justify-center rounded-full shadow-xl bg-[var(--instagram)] hover:bg-[var(--instagram-hover)] transition-all duration-300 transform hover:scale-110"
                         aria-label="Instagram">
-                        <i class="fab fa-instagram text-xl"></i>
+                        <i class="fab fa-instagram text-xl text-black"></i>
                     </a>
                     <a href="#"
                         class="w-14 h-14 flex items-center justify-center rounded-full shadow-xl bg-[var(--youtube)] hover:bg-[var(--youtube-hover)] transition-all duration-300 transform hover:scale-110"
                         aria-label="YouTube">
-                        <i class="fab fa-youtube text-xl"></i>
+                        <i class="fab fa-youtube text-xl text-black"></i>
                     </a>
                 </div>
+
             </div>
         </div>
     </div>
