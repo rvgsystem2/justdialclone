@@ -133,6 +133,77 @@
             </div>
         </section>
 
+        <!-- Products Section -->
+        <section id="products" class="py-20 bg-gray-50">
+            <div class="px-6 max-w-7xl mx-auto">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-light mb-4 text-gray-800">Our Finest Creations</h2>
+                    <p class="text-gray-600 max-w-2xl mx-auto">Discover exquisite designs that blend craftsmanship with
+                        timeless beauty.</p>
+                </div>
+
+                <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10">
+                    <!-- Product Card -->
+                    <div
+                        class="group bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition-shadow duration-500">
+                        <div class="relative overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=800&q=80"
+                                alt="Diamond Pendant"
+                                class="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-105">
+                        </div>
+                        <div class="p-5">
+                            <h3 class="text-lg font-medium text-gray-800 mb-1">Diamond Pendant</h3>
+                            <p class="text-sm text-gray-500 mb-2">Elegant and timeless piece</p>
+                            <div class="text-rose-600 font-semibold text-base">₹89,900</div>
+                        </div>
+                    </div>
+
+                    <!-- Repeat for more products -->
+                    <div
+                        class="group bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition-shadow duration-500">
+                        <div class="relative overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1608571425882-01d7f39bbca1?auto=format&fit=crop&w=800&q=80"
+                                alt="Gold Hoop Earrings"
+                                class="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-105">
+                        </div>
+                        <div class="p-5">
+                            <h3 class="text-lg font-medium text-gray-800 mb-1">Gold Hoop Earrings</h3>
+                            <p class="text-sm text-gray-500 mb-2">Versatile for every look</p>
+                            <div class="text-rose-600 font-semibold text-base">₹49,500</div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="group bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition-shadow duration-500">
+                        <div class="relative overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1600180758890-bbddbcf96be0?auto=format&fit=crop&w=800&q=80"
+                                alt="Ruby Studs"
+                                class="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-105">
+                        </div>
+                        <div class="p-5">
+                            <h3 class="text-lg font-medium text-gray-800 mb-1">Ruby Studs</h3>
+                            <p class="text-sm text-gray-500 mb-2">A bold touch of red</p>
+                            <div class="text-rose-600 font-semibold text-base">₹39,000</div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="group bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition-shadow duration-500">
+                        <div class="relative overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1579273162934-0cb0373a9f93?auto=format&fit=crop&w=800&q=80"
+                                alt="Sapphire Ring"
+                                class="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-105">
+                        </div>
+                        <div class="p-5">
+                            <h3 class="text-lg font-medium text-gray-800 mb-1">Sapphire Ring</h3>
+                            <p class="text-sm text-gray-500 mb-2">Crafted for elegance</p>
+                            <div class="text-rose-600 font-semibold text-base">₹1,29,000</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Bespoke Section -->
         <section class="py-24 bg-black text-white">
             <div class="px-8 max-w-6xl mx-auto">
