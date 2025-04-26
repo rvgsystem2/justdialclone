@@ -7,7 +7,7 @@
             <h1 class="text-4xl font-bold mb-4 text-amber-600">Privacy Policy</h1>
             <p class="text-lg text-gray-600 max-w-3xl mx-auto">
                 Your privacy matters to us. This page explains how we collect, use, and protect your personal data when you
-                use JustDial.
+                use Real Victory Groups.
             </p>
         </div>
 
@@ -18,10 +18,9 @@
                 <h2 class="text-2xl font-semibold text-gray-900 mb-3">Introduction</h2>
                 <p class="text-gray-700">
                     We are committed to protecting your privacy. This Privacy Policy outlines the types of personal
-                    information we collect,
-                    how we use that information, and the measures we take to ensure your privacy is maintained. By using our
-                    services,
-                    you agree to the collection and use of information as described in this policy.
+                    information we collect, how we use that information, and the measures we take to ensure your privacy is
+                    maintained. By using our services, you agree to the collection and use of information as described in
+                    this policy.
                 </p>
             </div>
 
@@ -69,8 +68,8 @@
                 <h2 class="text-2xl font-semibold text-gray-900 mb-3">Sharing of Information</h2>
                 <p class="text-gray-700">
                     We may share your personal information with third-party service providers who assist us in operating our
-                    platform,
-                    processing payments, or providing other services. We ensure that these parties maintain appropriate
+                    platform, processing payments, or providing other services. We ensure that these parties maintain
+                    appropriate
                     privacy safeguards.
                 </p>
                 <p class="text-gray-700 mt-2">
@@ -109,11 +108,12 @@
                 </p>
                 <p class="text-gray-700">
                     <strong>Email:</strong>
-                    <a href="mailto:support@justdial.com" class="text-amber-600 hover:underline">support@justdial.com</a>
+                    <a href="mailto:support@realvictorygroups.com"
+                        class="text-amber-600 hover:underline">support@realvictorygroups.com</a>
                 </p>
                 <p class="text-gray-700">
                     <strong>Phone:</strong>
-                    <a href="tel:+918888888888" class="text-amber-600 hover:underline">+91 8888888888</a>
+                    <a href="tel:+918299012292" class="text-amber-600 hover:underline">+918299012292</a>
                 </p>
             </div>
         </div>
