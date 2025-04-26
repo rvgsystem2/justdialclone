@@ -77,7 +77,7 @@
                         <span class="material-symbols-outlined text-amber-500 mr-3 mt-0.5">call</span>
                         <div>
                             <p class="text-gray-400 text-sm">Customer Care</p>
-                            <a href="tel:+918888888888" class="text-white hover:text-amber-300">+91 8888888888</a>
+                            <a href="tel:+918888888888" class="text-white hover:text-amber-300">+91 82990 12292</a>
                         </div>
                     </li>
                     <li class="flex items-start">
@@ -92,7 +92,9 @@
                         <span class="material-symbols-outlined text-amber-500 mr-3 mt-0.5">location_on</span>
                         <div>
                             <p class="text-gray-400 text-sm">Corporate Office</p>
-                            <p class="text-white">Mumbai, Maharashtra, India</p>
+                            <p class="text-white">73 Basement, Ekta Enclave Society,
+                                Lakhanpur, Khyora, Kanpur,
+                                Uttar Pradesh 208024</p>
                         </div>
                     </li>
                 </ul>

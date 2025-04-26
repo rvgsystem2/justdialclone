@@ -1,19 +1,19 @@
 @extends('components.main')
 
 @section('content')
-    <section class="min-h-screen bg-gradient-to-b from-blue-50 to-white py-24 px-4 sm:px-6 lg:px-8 flex items-center">
+    <section class="min-h-screen bg-gradient-to-b from-amber-50 to-white py-24 px-4 sm:px-6 lg:px-8 flex items-center">
         <div class="max-w-7xl mx-auto">
             <div class="flex flex-col lg:flex-row items-center justify-between gap-12">
                 <div class="text-center lg:text-left max-w-2xl">
                     <div class="inline-flex items-center justify-center lg:justify-start mb-6">
-                        <div class="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center mr-4">
-                            <span class="material-icons text-blue-600 text-3xl">error_outline</span>
+                        <div class="w-12 h-12 rounded-full bg-amber-100 flex items-center justify-center mr-4">
+                            <span class="material-icons text-amber-600 text-3xl">error_outline</span>
                         </div>
-                        <span class="text-lg font-medium text-blue-600">Error 404</span>
+                        <span class="text-lg font-medium text-amber-600">Error 404</span>
                     </div>
 
                     <h1 class="text-5xl sm:text-6xl md:text-7xl font-extrabold text-gray-900 mb-6 leading-tight">
-                        Lost in <span class="text-blue-600">Space</span>?
+                        Lost in <span class="text-amber-600">Space</span>?
                     </h1>
 
                     <p class="text-xl text-gray-600 mb-8">
@@ -24,12 +24,12 @@
                     <div
                         class="flex flex-col sm:flex-row justify-center lg:justify-start space-y-4 sm:space-y-0 sm:space-x-4">
                         <a href="{{ route('home') }}"
-                            class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-xl transition-all flex items-center justify-center shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+                            class="bg-amber-600 hover:bg-amber-700 text-white px-8 py-4 rounded-xl transition-all flex items-center justify-center shadow-lg hover:shadow-xl transform hover:-translate-y-1">
                             <span class="material-icons mr-3">home</span>
                             Back to Home
                         </a>
                         <a href="{{ route('contact') }}"
-                            class="border-2 border-blue-600 text-blue-600 px-8 py-4 rounded-xl hover:bg-blue-50 transition-all flex items-center justify-center shadow-sm hover:shadow-md">
+                            class="border-2 border-amber-600 text-amber-600 px-8 py-4 rounded-xl hover:bg-amber-50 transition-all flex items-center justify-center shadow-sm hover:shadow-md">
                             <span class="material-icons mr-3">support_agent</span>
                             Need Help?
                         </a>
