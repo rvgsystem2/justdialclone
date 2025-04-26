@@ -107,26 +107,31 @@
                 <!-- Social Media -->
                 <div class="mb-8">
                     <p class="text-gray-400 text-sm mb-4">Follow us on social media</p>
-                    <div class="flex space-x-6">
+                    <div class="flex space-x-3 sm:space-x-4">
+                        <!-- Facebook -->
                         <a href="#"
-                            class="bg-gray-800 hover:bg-amber-600 h-12 w-12 rounded-full flex items-center justify-center transition-colors">
-                            <i class="fab fa-facebook-f text-white text-lg"></i>
+                            class="h-10 w-10 rounded-full bg-gray-800 hover:bg-amber-600 flex items-center justify-center transition duration-300 ease-in-out shadow-md">
+                            <i class="fab fa-facebook-f text-white text-base"></i>
                         </a>
+                        <!-- Twitter -->
                         <a href="#"
-                            class="bg-gray-800 hover:bg-amber-500 h-12 w-12 rounded-full flex items-center justify-center transition-colors">
-                            <i class="fab fa-twitter text-white text-lg"></i>
+                            class="h-10 w-10 rounded-full bg-gray-800 hover:bg-amber-500 flex items-center justify-center transition duration-300 ease-in-out shadow-md">
+                            <i class="fab fa-twitter text-white text-base"></i>
                         </a>
+                        <!-- Instagram -->
                         <a href="#"
-                            class="bg-gray-800 hover:bg-amber-600 h-12 w-12 rounded-full flex items-center justify-center transition-colors">
-                            <i class="fab fa-instagram text-white text-lg"></i>
+                            class="h-10 w-10 rounded-full bg-gray-800 hover:bg-amber-600 flex items-center justify-center transition duration-300 ease-in-out shadow-md">
+                            <i class="fab fa-instagram text-white text-base"></i>
                         </a>
+                        <!-- LinkedIn -->
                         <a href="#"
-                            class="bg-gray-800 hover:bg-amber-500 h-12 w-12 rounded-full flex items-center justify-center transition-colors">
-                            <i class="fab fa-linkedin-in text-white text-lg"></i>
+                            class="h-10 w-10 rounded-full bg-gray-800 hover:bg-amber-500 flex items-center justify-center transition duration-300 ease-in-out shadow-md">
+                            <i class="fab fa-linkedin-in text-white text-base"></i>
                         </a>
+                        <!-- YouTube -->
                         <a href="#"
-                            class="bg-gray-800 hover:bg-amber-600 h-12 w-12 rounded-full flex items-center justify-center transition-colors">
-                            <i class="fab fa-youtube text-white text-lg"></i>
+                            class="h-10 w-10 rounded-full bg-gray-800 hover:bg-amber-600 flex items-center justify-center transition duration-300 ease-in-out shadow-md">
+                            <i class="fab fa-youtube text-white text-base"></i>
                         </a>
                     </div>
                 </div>

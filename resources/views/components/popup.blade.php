@@ -16,8 +16,8 @@
     }
 
     .input-focus:focus-within {
-        border-color: #3b82f6;
-        box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.3);
+        border-color: #f59e0b;
+        box-shadow: 0 0 0 2px rgba(245, 158, 11, 0.3);
     }
 
     .pulse-button {
@@ -26,15 +26,15 @@
 
     @keyframes pulse {
         0% {
-            box-shadow: 0 0 0 0 rgba(59, 130, 246, 0.7);
+            box-shadow: 0 0 0 0 rgba(245, 158, 11, 0.7);
         }
 
         70% {
-            box-shadow: 0 0 0 10px rgba(59, 130, 246, 0);
+            box-shadow: 0 0 0 10px rgba(245, 158, 11, 0);
         }
 
         100% {
-            box-shadow: 0 0 0 0 rgba(59, 130, 246, 0);
+            box-shadow: 0 0 0 0 rgba(245, 158, 11, 0);
         }
     }
 </style>
@@ -42,7 +42,7 @@
 <!-- Trigger button (for demo purposes) -->
 {{-- <div class="fixed bottom-4 right-4">
     <button onclick="showModal()"
-        class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg shadow-lg transition-all">
+        class="bg-amber-600 hover:bg-amber-700 text-white px-4 py-2 rounded-lg shadow-lg transition-all">
         Show Login Modal
     </button>
 </div> --}}
@@ -64,12 +64,13 @@
         <!-- Logo -->
         <div class="flex items-center justify-center mb-6">
             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Justdial_Logo.svg/2560px-Justdial_Logo.svg.png"
-                class="h-8" alt="Justdial" />
+                class="h-8" alt="Real Victory Groups Logo" />
         </div>
 
         <!-- Welcome text -->
         <h2 class="text-xl font-bold mb-2 text-gray-800">Welcome Back!</h2>
-        <p class="text-gray-600 mb-6">Log in for a personalized experience</p>
+        <p class="text-gray-600 mb-6">Log in to continue with <span class="text-amber-600 font-semibold">Real Victory
+                Groups</span></p>
 
         <!-- Phone input with animated focus -->
         <div class="flex border border-gray-300 rounded-lg overflow-hidden mb-5 input-focus transition-all">
@@ -80,30 +81,31 @@
                 oninput="validatePhoneNumber(this.value)" />
         </div>
 
-        <!-- Error message (initially hidden) -->
+        <!-- Error message -->
         <div id="errorMessage" class="text-left text-red-500 text-sm mb-4 hidden">
             Please enter a valid 10-digit mobile number
         </div>
 
-        <!-- Terms checkbox with improved styling -->
+        <!-- Terms checkbox -->
         <div class="flex items-start mb-5">
             <div class="flex items-center h-5">
                 <input id="terms" type="checkbox"
-                    class="w-5 h-5 text-blue-600 border-gray-300 rounded focus:ring-blue-500" checked>
+                    class="w-5 h-5 text-amber-600 border-gray-300 rounded focus:ring-amber-500" checked>
             </div>
             <label for="terms" class="ml-3 text-sm text-gray-700 text-left">
-                I agree to <a href="#" class="text-blue-600 hover:text-blue-800 font-medium">Terms of Service</a>
-                and <a href="#" class="text-blue-600 hover:text-blue-800 font-medium">Privacy Policy</a>
+                I agree to <a href="#" class="text-amber-600 hover:text-amber-800 font-medium">Terms of
+                    Service</a>
+                and <a href="#" class="text-amber-600 hover:text-amber-800 font-medium">Privacy Policy</a>
             </label>
         </div>
 
         <!-- Login button -->
         <button id="loginButton"
-            class="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 rounded-lg font-semibold transition-all transform hover:scale-[1.02] active:scale-[0.98] disabled:bg-blue-400 disabled:cursor-not-allowed">
+            class="w-full bg-amber-600 hover:bg-amber-700 text-white py-3 rounded-lg font-semibold transition-all transform hover:scale-[1.02] active:scale-[0.98] disabled:bg-amber-400 disabled:cursor-not-allowed">
             Login with OTP
         </button>
 
-        <!-- Alternative options -->
+        <!-- Alternative login options -->
         <div class="mt-6 pt-5 border-t border-gray-200 text-center">
             <p class="text-sm text-gray-600 mb-3">Or continue with</p>
             <div class="flex justify-center space-x-4">
@@ -134,18 +136,15 @@
 </div>
 
 <script>
-    // Phone validation function
     function validatePhoneNumber(value) {
         const phoneRegex = /^\d{0,10}$/;
         const errorMessage = document.getElementById('errorMessage');
         const loginButton = document.getElementById('loginButton');
 
-        // Force only digits
         if (!phoneRegex.test(value)) {
             document.getElementById('phoneInput').value = value.replace(/\D/g, '').substring(0, 10);
         }
 
-        // Show/hide error message and enable/disable button
         if (value.length === 10) {
             errorMessage.classList.add('hidden');
             loginButton.classList.add('pulse-button');
@@ -161,48 +160,38 @@
         }
     }
 
-    // Initialize button state
     document.getElementById('loginButton').disabled = true;
 
-    // Show modal with animation
     function showModal() {
         const modal = document.getElementById('popupModal');
         const modalContent = document.querySelector('.modal-content');
 
         modal.classList.remove('hidden');
-
-        // Add animation with a slight delay for better effect
         setTimeout(() => {
             modalContent.classList.add('show');
         }, 50);
     }
 
-    // Close modal with animation
     function closeModal() {
         const modal = document.getElementById('popupModal');
         const modalContent = document.querySelector('.modal-content');
 
         modalContent.classList.remove('show');
-
-        // Wait for animation to complete before hiding modal
         setTimeout(() => {
             modal.classList.add('hidden');
         }, 300);
     }
 
-    // Show popup after 5 seconds (reduced from 10 for demo purposes)
     window.addEventListener('load', () => {
         setTimeout(showModal, 5000);
     });
 
-    // Close modal when clicking outside
     document.getElementById('popupModal').addEventListener('click', (event) => {
         if (event.target === document.getElementById('popupModal')) {
             closeModal();
         }
     });
 
-    // Handle ESC key press
     document.addEventListener('keydown', (event) => {
         if (event.key === 'Escape' && !document.getElementById('popupModal').classList.contains('hidden')) {
             closeModal();

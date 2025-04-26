@@ -1,7 +1,7 @@
 @extends('components.main')
 
 @section('content')
-    {{-- @include('components.popup') --}}
+    @include('components.popup')
     <!-- Main Content -->
     <main class="px-4 py-10">
 
