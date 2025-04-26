@@ -9,7 +9,7 @@
                 pages and resources.</p>
             <div class="mt-6">
                 <div
-                    class="inline-flex items-center px-4 py-2 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-full shadow-lg">
+                    class="inline-flex items-center px-4 py-2 bg-gradient-to-r from-amber-500 to-amber-700 rounded-full shadow-lg">
                     <span class="material-icons text-white mr-2">map</span>
                     <span class="font-medium text-white">Full Sitemap</span>
                 </div>
