@@ -79,14 +79,25 @@
                     <div class="pt-8 border-t border-gray-200">
                         <h3 class="text-lg font-semibold text-gray-800 mb-4">Connect With Us</h3>
                         <div class="flex gap-3">
-                            @foreach ([['facebook-f', 'blue-600'], ['twitter', 'sky-500'], ['instagram', 'pink-500'], ['linkedin-in', 'blue-800']] as [$icon, $color])
-                                <a href="#"
-                                    class="w-11 h-11 rounded-full bg-gray-100 hover:bg-{{ $color }} hover:text-white text-{{ $color }} flex items-center justify-center transition duration-300">
-                                    <i class="fab fa-{{ $icon }}"></i>
-                                </a>
-                            @endforeach
+                            <a href="#"
+                                class="w-11 h-11 rounded-full bg-gray-100 hover:bg-blue-600 hover:text-white text-blue-600 flex items-center justify-center transition duration-300">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#"
+                                class="w-11 h-11 rounded-full bg-gray-100 hover:bg-sky-500 hover:text-white text-sky-500 flex items-center justify-center transition duration-300">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#"
+                                class="w-11 h-11 rounded-full bg-gray-100 hover:bg-pink-500 hover:text-white text-pink-500 flex items-center justify-center transition duration-300">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#"
+                                class="w-11 h-11 rounded-full bg-gray-100 hover:bg-blue-800 hover:text-white text-blue-800 flex items-center justify-center transition duration-300">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
                         </div>
                     </div>
+
                 </div>
             </div>
 
