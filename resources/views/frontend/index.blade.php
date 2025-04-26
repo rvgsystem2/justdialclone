@@ -3,7 +3,7 @@
 @section('content')
     {{-- @include('components.popup') --}}
     <!-- Main Content -->
-    <main class="container mx-auto px-4 py-10">
+    <main class="px-4 py-10">
 
         <!-- Main Carousel/Banner Section -->
         <div class="relative overflow-hidden bg-gradient-to-r from-[#fef9f3] to-[#f9f7f2]">
