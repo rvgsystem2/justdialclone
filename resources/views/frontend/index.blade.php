@@ -150,10 +150,9 @@
             </div>
         </div>
 
-        <!-- Jewelry Product Website Templates -->
+        <!-- Jewelry Product Website Templates Slider -->
         <section class="w-full px-4 sm:px-6 lg:px-12 py-12 bg-[#fefaf5]">
             <div class="bg-white border border-[#f3e8da] rounded-2xl shadow-lg p-6">
-
                 <!-- Heading -->
                 <div class="mb-6 text-center">
                     <h2 class="text-2xl font-semibold text-[#4b3621]">Jewelry Product Templates</h2>
@@ -161,12 +160,12 @@
                     </p>
                 </div>
 
-                <!-- Templates Grid -->
-                <div class="grid gap-6 grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
+                <!-- Scrollable Templates Slider -->
+                <div class="flex gap-4 overflow-x-auto scrollbar-hide scroll-smooth snap-x snap-mandatory pb-4">
 
                     <!-- Template 1 -->
                     <a href="{{ route('page.landing') }}" target="_blank"
-                        class="bg-amber-50 rounded-xl shadow hover:shadow-md transition transform group hover:scale-105 p-6 flex flex-col items-center text-center">
+                        class="min-w-[230px] sm:min-w-[250px] bg-amber-50 rounded-xl shadow hover:shadow-md transition transform group hover:scale-105 p-6 flex flex-col items-center text-center snap-start">
                         <span
                             class="material-symbols-outlined text-5xl text-amber-700 mb-3 group-hover:rotate-6 transition">
                             collections
@@ -176,7 +175,7 @@
 
                     <!-- Template 2 -->
                     <a href="{{ route('page.landing2') }}" target="_blank"
-                        class="bg-amber-50 rounded-xl shadow hover:shadow-md transition transform group hover:scale-105 p-6 flex flex-col items-center text-center">
+                        class="min-w-[230px] sm:min-w-[250px] bg-amber-50 rounded-xl shadow hover:shadow-md transition transform group hover:scale-105 p-6 flex flex-col items-center text-center snap-start">
                         <span
                             class="material-symbols-outlined text-5xl text-amber-700 mb-3 group-hover:rotate-6 transition">
                             slideshow
@@ -186,7 +185,7 @@
 
                     <!-- Template 3 -->
                     <a href="{{ route('page.landing3') }}" target="_blank"
-                        class="bg-amber-50 rounded-xl shadow hover:shadow-md transition transform group hover:scale-105 p-6 flex flex-col items-center text-center">
+                        class="min-w-[230px] sm:min-w-[250px] bg-amber-50 rounded-xl shadow hover:shadow-md transition transform group hover:scale-105 p-6 flex flex-col items-center text-center snap-start">
                         <span
                             class="material-symbols-outlined text-5xl text-amber-700 mb-3 group-hover:rotate-6 transition">
                             zoom_in
@@ -196,7 +195,7 @@
 
                     <!-- Template 4 -->
                     <a href="{{ route('page.landing4') }}" target="_blank"
-                        class="bg-amber-50 rounded-xl shadow hover:shadow-md transition transform group hover:scale-105 p-6 flex flex-col items-center text-center">
+                        class="min-w-[230px] sm:min-w-[250px] bg-amber-50 rounded-xl shadow hover:shadow-md transition transform group hover:scale-105 p-6 flex flex-col items-center text-center snap-start">
                         <span
                             class="material-symbols-outlined text-5xl text-amber-700 mb-3 group-hover:rotate-6 transition">
                             view_module
@@ -206,7 +205,7 @@
 
                     <!-- Template 5 -->
                     <a href="{{ route('page.landing5') }}" target="_blank"
-                        class="bg-amber-50 rounded-xl shadow hover:shadow-md transition transform group hover:scale-105 p-6 flex flex-col items-center text-center">
+                        class="min-w-[230px] sm:min-w-[250px] bg-amber-50 rounded-xl shadow hover:shadow-md transition transform group hover:scale-105 p-6 flex flex-col items-center text-center snap-start">
                         <span
                             class="material-symbols-outlined text-5xl text-amber-700 mb-3 group-hover:rotate-6 transition">
                             horizontal_rule
@@ -216,7 +215,7 @@
 
                     <!-- Template 6 -->
                     <a href="{{ route('page.landing6') }}" target="_blank"
-                        class="bg-amber-50 rounded-xl shadow hover:shadow-md transition transform group hover:scale-105 p-6 flex flex-col items-center text-center">
+                        class="min-w-[230px] sm:min-w-[250px] bg-amber-50 rounded-xl shadow hover:shadow-md transition transform group hover:scale-105 p-6 flex flex-col items-center text-center snap-start">
                         <span
                             class="material-symbols-outlined text-5xl text-amber-700 mb-3 group-hover:rotate-6 transition">
                             inventory_2
