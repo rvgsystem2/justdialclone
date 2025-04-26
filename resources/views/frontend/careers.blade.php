@@ -2,9 +2,10 @@
 
 @section('content')
     <section class="max-w-5xl mx-auto py-16 px-4">
-        <h1 class="text-3xl font-bold text-amber-600 mb-4">Careers at JustDial</h1>
+        <h1 class="text-3xl font-bold text-amber-600 mb-4">Careers at Real Victory Groups</h1>
         <p class="text-gray-700 text-lg mb-6">
-            Join one of India’s fastest-growing tech companies. Explore exciting job openings across various departments.
+            Join one of India’s emerging jewelry and business tech companies. Explore exciting job openings across various
+            departments.
         </p>
 
         <div class="space-y-8">
@@ -12,16 +13,14 @@
             <div>
                 <h2 class="text-2xl font-semibold text-amber-600 mb-4">Why Work with Us?</h2>
                 <p class="text-gray-600">
-                    At JustDial, we value innovation, collaboration, and growth. As part of our team, you’ll be at the
-                    forefront of
-                    technological innovation, contributing to the success of our platform that serves millions of users
-                    across the country.
+                    At Real Victory Groups, we believe in innovation, collaboration, and impact. As part of our team, you’ll
+                    be contributing to the success of our growing business showcase platform.
                 </p>
                 <ul class="list-inside list-disc text-gray-600">
-                    <li>Work with cutting-edge technologies and be part of a diverse, dynamic team.</li>
-                    <li>Enjoy a collaborative environment that encourages creativity and innovation.</li>
-                    <li>Competitive salaries and growth opportunities within the company.</li>
-                    <li>Comprehensive employee benefits, including health insurance and wellness programs.</li>
+                    <li>Be part of a rapidly growing digital company in the jewelry industry.</li>
+                    <li>Engage with a dynamic and motivated team across India.</li>
+                    <li>Enjoy career advancement opportunities and competitive pay.</li>
+                    <li>Employee-friendly benefits including wellness programs and insurance.</li>
                 </ul>
             </div>
 
@@ -31,12 +30,11 @@
                 <div class="space-y-6">
                     <!-- Job Listing 1 -->
                     <div class="bg-gray-800 text-white p-6 rounded-lg shadow-lg">
-                        <h3 class="text-xl font-semibold text-amber-400">Software Engineer</h3>
-                        <p class="text-gray-400 text-sm mb-4">Location: Mumbai, Maharashtra</p>
+                        <h3 class="text-xl font-semibold text-amber-400">Laravel Developer</h3>
+                        <p class="text-gray-400 text-sm mb-4">Location: Remote / Kanpur, Uttar Pradesh</p>
                         <p class="text-gray-300 mb-4">
-                            As a Software Engineer at JustDial, you’ll work on designing and developing scalable solutions
-                            that drive the success of our platform. You’ll be part of an agile team working with
-                            cutting-edge technologies.
+                            We're seeking a Laravel Developer to build advanced features for our jewelry listing platform.
+                            You'll work with a passionate team on real-time features, dashboards, and custom modules.
                         </p>
                         <a href="#" class="text-amber-400 hover:text-amber-300 font-medium text-sm">View Job
                             Details</a>
@@ -44,12 +42,11 @@
 
                     <!-- Job Listing 2 -->
                     <div class="bg-gray-800 text-white p-6 rounded-lg shadow-lg">
-                        <h3 class="text-xl font-semibold text-amber-400">Marketing Manager</h3>
-                        <p class="text-gray-400 text-sm mb-4">Location: Bangalore, Karnataka</p>
+                        <h3 class="text-xl font-semibold text-amber-400">UI/UX Designer</h3>
+                        <p class="text-gray-400 text-sm mb-4">Location: Remote</p>
                         <p class="text-gray-300 mb-4">
-                            We are looking for a Marketing Manager to drive our brand initiatives and digital marketing
-                            campaigns. You will work closely with cross-functional teams to enhance our platform’s reach and
-                            user engagement.
+                            We're looking for a designer who can craft modern and intuitive user interfaces for our
+                            platform. Experience in Tailwind CSS and Figma is a plus.
                         </p>
                         <a href="#" class="text-amber-400 hover:text-amber-300 font-medium text-sm">View Job
                             Details</a>
@@ -57,11 +54,11 @@
 
                     <!-- Job Listing 3 -->
                     <div class="bg-gray-800 text-white p-6 rounded-lg shadow-lg">
-                        <h3 class="text-xl font-semibold text-amber-400">Customer Support Executive</h3>
-                        <p class="text-gray-400 text-sm mb-4">Location: Remote</p>
+                        <h3 class="text-xl font-semibold text-amber-400">Business Development Executive</h3>
+                        <p class="text-gray-400 text-sm mb-4">Location: Kanpur, Uttar Pradesh</p>
                         <p class="text-gray-300 mb-4">
-                            Join our customer support team and help users navigate our platform. This role requires
-                            excellent communication skills, patience, and a passion for helping others.
+                            Help us grow our network of jewelry businesses by building strong client relationships,
+                            onboarding new showrooms, and supporting local engagement.
                         </p>
                         <a href="#" class="text-amber-400 hover:text-amber-300 font-medium text-sm">View Job
                             Details</a>
@@ -75,9 +72,9 @@
                 <ul class="list-inside list-disc text-gray-600">
                     <li>Health & Dental Insurance</li>
                     <li>Paid Time Off (PTO)</li>
-                    <li>Retirement Savings Plan</li>
-                    <li>Employee Stock Options</li>
-                    <li>Wellness Programs & Gym Membership</li>
+                    <li>Flexible Work Schedule</li>
+                    <li>Performance Bonuses</li>
+                    <li>Growth-Oriented Learning Environment</li>
                 </ul>
             </div>
 
@@ -85,15 +82,16 @@
             <div>
                 <h2 class="text-2xl font-semibold text-amber-600 mb-4">How to Apply</h2>
                 <p class="text-gray-600 mb-4">
-                    To apply for any of the listed positions, please send your resume and a cover letter to our HR
+                    To apply for any of the listed positions, please send your resume and a short introduction to our HR
                     department at:
                 </p>
                 <p class="text-gray-600 mb-4">
-                    <strong>Email:</strong> <a href="mailto:careers@justdial.com"
-                        class="text-amber-500 hover:underline">careers@justdial.com</a>
+                    <strong>Email:</strong>
+                    <a href="mailto:careers@rvggroups.com" class="text-amber-500 hover:underline">careers@rvggroups.com</a>
                 </p>
                 <p class="text-gray-600">
-                    We look forward to hearing from you and welcoming passionate individuals to our team!
+                    We’re excited to connect with talented individuals who are passionate about creating change in the
+                    business and jewelry industry.
                 </p>
             </div>
         </div>

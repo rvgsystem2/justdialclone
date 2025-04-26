@@ -38,8 +38,8 @@
                     <h3 class="text-xl font-semibold text-gray-800">How can I contact customer support?</h3>
                     <p class="text-gray-600 mt-2">
                         Visit our "Contact Us" page or email us at
-                        <a href="mailto:support@justdial.com"
-                            class="text-amber-600 hover:underline">support@justdial.com</a>.
+                        <a href="mailto:support@rvggroups.com"
+                            class="text-amber-600 hover:underline">support@rvggroups.com</a>.
                     </p>
                 </div>
 
@@ -68,8 +68,8 @@
                     <span class="material-symbols-outlined text-amber-500 text-2xl">call</span>
                     <div>
                         <p class="text-gray-600 text-sm">Customer Care</p>
-                        <a href="tel:+918888888888" class="text-amber-600 hover:underline text-lg font-medium">
-                            +91 8888888888
+                        <a href="tel:+918299012292" class="text-amber-600 hover:underline text-lg font-medium">
+                            +91 82990 12292
                         </a>
                     </div>
                 </div>
@@ -79,8 +79,8 @@
                     <span class="material-symbols-outlined text-amber-500 text-2xl">mail</span>
                     <div>
                         <p class="text-gray-600 text-sm">Email Support</p>
-                        <a href="mailto:support@justdial.com" class="text-amber-600 hover:underline text-lg font-medium">
-                            support@justdial.com
+                        <a href="mailto:support@rvggroups.com" class="text-amber-600 hover:underline text-lg font-medium">
+                            support@rvggroups.com
                         </a>
                     </div>
                 </div>
@@ -90,7 +90,9 @@
                     <span class="material-symbols-outlined text-amber-500 text-2xl">location_on</span>
                     <div>
                         <p class="text-gray-600 text-sm">Corporate Office</p>
-                        <p class="text-gray-800 font-medium">Mumbai, Maharashtra, India</p>
+                        <p class="text-gray-800 font-medium">
+                            73 Basement, Ekta Enclave Society, Lakhanpur, Khyora, Kanpur, Uttar Pradesh 208024
+                        </p>
                     </div>
                 </div>
             </div>
