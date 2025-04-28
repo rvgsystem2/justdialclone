@@ -31,7 +31,7 @@
                             <h2 class="text-xl font-semibold text-[#9e7a4f]">Exclusive Diamond Collection</h2>
                             <p class="text-sm text-[#8b6a43] leading-relaxed">
                                 Discover timeless elegance with our diamond jewelry, starting from
-                                <span class="text-[#d4a35c] font-bold text-base">$599</span>
+                                <span class="text-[#d4a35c] font-bold text-base">₹49,717</span>
                             </p>
                             <p class="text-sm text-[#8b6a43]">Curated by expert jewelers</p>
 
@@ -82,16 +82,6 @@
                     </div>
                 </div>
             </div>
-
-            <!-- Optional Slider Controls -->
-            <button
-                class="hidden lg:flex absolute left-2 top-1/2 transform -translate-y-1/2 bg-white shadow-md hover:bg-gray-100 transition p-2 rounded-full z-10">
-                <i class="fas fa-chevron-left text-gray-700 text-sm"></i>
-            </button>
-            <button
-                class="hidden lg:flex absolute right-2 top-1/2 transform -translate-y-1/2 bg-white shadow-md hover:bg-gray-100 transition p-2 rounded-full z-10">
-                <i class="fas fa-chevron-right text-gray-700 text-sm"></i>
-            </button>
         </div>
 
         <!-- Category Icons Section -->
