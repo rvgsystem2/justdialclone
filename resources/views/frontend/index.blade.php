@@ -1,4 +1,4 @@
-@extends('components.main')
+ @extends('components.main')
 
 @section('content')
     @include('components.popup')
