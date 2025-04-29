@@ -219,26 +219,26 @@
          </section>
 
          <!-- Search Section for Jewellers -->
-         <section class="bg-gradient-to-r from-yellow-400 to-yellow-600 text-white py-10 sm:py-14">
-             <div class="container mx-auto px-4">
+         <section class="bg-gradient-to-r from-yellow-400 to-yellow-600 text-white py-12 sm:py-16">
+             <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
                  <div class="text-center">
                      <!-- Heading -->
-                     <h1 class="text-2xl sm:text-4xl font-bold leading-tight mb-3">
+                     <h1 class="text-3xl sm:text-4xl font-bold tracking-tight mb-3 sm:mb-4">
                          Discover Top Jewellery Showrooms Near You
                      </h1>
                      <!-- Subtext -->
-                     <p class="text-base sm:text-lg mb-6 sm:mb-8">
+                     <p class="text-base sm:text-lg text-white/90 mb-6 sm:mb-8">
                          Explore trusted jewellers, compare designs, and read verified customer reviews
                      </p>
 
-                     <!-- Search Form -->
+                     <!-- Search Form Container -->
                      <div
-                         class="bg-white rounded-xl px-3 py-2 sm:px-4 sm:py-3 shadow-lg flex flex-col sm:flex-row gap-2 sm:gap-4 items-stretch sm:items-center">
+                         class="bg-white shadow-xl rounded-2xl px-4 py-3 sm:px-6 sm:py-4 flex flex-col sm:flex-row gap-3 sm:gap-4 items-stretch sm:items-center max-w-4xl mx-auto">
 
                          <!-- City Dropdown -->
                          <select
-                             class="w-full sm:w-1/3 px-4 py-2 rounded-full border border-gray-300 text-gray-700 focus:outline-none">
-                             <option>Select City</option>
+                             class="w-full sm:w-1/3 px-4 py-2 rounded-full border border-gray-300 text-gray-700 focus:outline-none focus:ring-2 focus:ring-yellow-400">
+                             <option selected disabled>Select City</option>
                              <option>Mumbai</option>
                              <option>Delhi</option>
                              <option>Bangalore</option>
@@ -246,13 +246,13 @@
                              <option>Hyderabad</option>
                          </select>
 
-                         <!-- Text Input for Jeweller Name or Type -->
+                         <!-- Input Field -->
                          <input type="text" placeholder="Enter jeweller's name or service..."
-                             class="w-full sm:flex-1 px-4 py-2 rounded-full border border-gray-300 text-gray-700 focus:outline-none">
+                             class="w-full sm:flex-1 px-4 py-2 rounded-full border border-gray-300 text-gray-700 focus:outline-none focus:ring-2 focus:ring-yellow-400">
 
                          <!-- Search Button -->
                          <a href="{{ route('jewellery') }}"
-                             class="w-full sm:w-auto bg-yellow-500 hover:bg-yellow-600 text-white font-medium px-6 py-2 rounded-full transition inline-block text-center">
+                             class="w-full sm:w-auto bg-yellow-500 hover:bg-yellow-600 text-white font-semibold px-6 py-2 rounded-full transition text-center inline-block">
                              Search
                          </a>
                      </div>
