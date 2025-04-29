@@ -174,11 +174,12 @@
                                 <p class="font-medium text-gray-800">Email Notifications</p>
                             </div>
                             <label class="relative inline-block w-12 h-6">
-                                <input type="checkbox" class="opacity-0 w-0 h-0" checked>
+                                <input type="checkbox" class="peer opacity-0 w-0 h-0" checked>
                                 <span
-                                    class="slider absolute cursor-pointer top-0 left-0 right-0 bottom-0 bg-amber-600 rounded-full">
-                                    <span
-                                        class="absolute left-1 top-1 bg-white w-4 h-4 rounded-full transition-transform duration-200 ease-in-out transform translate-x-6"></span>
+                                    class="absolute cursor-pointer top-0 left-0 right-0 bottom-0 bg-gray-300 peer-checked:bg-amber-500 rounded-full transition-colors duration-300">
+                                </span>
+                                <span
+                                    class="absolute left-1 top-1 bg-white w-4 h-4 rounded-full transition-transform duration-300 transform peer-checked:translate-x-6">
                                 </span>
                             </label>
                         </div>
