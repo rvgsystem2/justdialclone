@@ -161,7 +161,7 @@
                             class="material-symbols-outlined text-5xl text-amber-700 mb-3 group-hover:rotate-6 transition">
                             collections
                         </span>
-                        <h3 class="text-lg font-semibold text-amber-800">Template 1</h3>
+                        <h3 class="text-lg font-semibold text-amber-800">Template-1</h3>
                     </a>
 
                     <!-- Template 2 -->
@@ -171,7 +171,7 @@
                             class="material-symbols-outlined text-5xl text-amber-700 mb-3 group-hover:rotate-6 transition">
                             slideshow
                         </span>
-                        <h3 class="text-lg font-semibold text-amber-800">Template 2</h3>
+                        <h3 class="text-lg font-semibold text-amber-800">Template-2</h3>
                     </a>
 
                     <!-- Template 3 -->
@@ -181,7 +181,7 @@
                             class="material-symbols-outlined text-5xl text-amber-700 mb-3 group-hover:rotate-6 transition">
                             zoom_in
                         </span>
-                        <h3 class="text-lg font-semibold text-amber-800">Template 3</h3>
+                        <h3 class="text-lg font-semibold text-amber-800">Template-3</h3>
                     </a>
 
                     <!-- Template 4 -->
@@ -191,7 +191,7 @@
                             class="material-symbols-outlined text-5xl text-amber-700 mb-3 group-hover:rotate-6 transition">
                             view_module
                         </span>
-                        <h3 class="text-lg font-semibold text-amber-800">Template 4</h3>
+                        <h3 class="text-lg font-semibold text-amber-800">Template-4</h3>
                     </a>
 
                     <!-- Template 5 -->
@@ -201,7 +201,7 @@
                             class="material-symbols-outlined text-5xl text-amber-700 mb-3 group-hover:rotate-6 transition">
                             horizontal_rule
                         </span>
-                        <h3 class="text-lg font-semibold text-amber-800">Template 5</h3>
+                        <h3 class="text-lg font-semibold text-amber-800">Template-5</h3>
                     </a>
 
                     <!-- Template 6 -->
@@ -211,7 +211,7 @@
                             class="material-symbols-outlined text-5xl text-amber-700 mb-3 group-hover:rotate-6 transition">
                             inventory_2
                         </span>
-                        <h3 class="text-lg font-semibold text-amber-800">Template 6</h3>
+                        <h3 class="text-lg font-semibold text-amber-800">Template-6</h3>
                     </a>
 
                 </div>
