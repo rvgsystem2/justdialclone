@@ -221,7 +221,7 @@
          <!-- Search Section for Jewellers -->
          <section class="bg-gradient-to-r from-yellow-400 to-yellow-600 text-white py-10 sm:py-14">
              <div class="container mx-auto px-4">
-                 <div class="max-w-2xl mx-auto text-center">
+                 <div class="text-center">
                      <!-- Heading -->
                      <h1 class="text-2xl sm:text-4xl font-bold leading-tight mb-3">
                          Discover Top Jewellery Showrooms Near You
